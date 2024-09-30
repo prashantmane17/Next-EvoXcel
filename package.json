@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "evoxcel": "file:",
     "next": "14.2.13",
     "react": "^18",
