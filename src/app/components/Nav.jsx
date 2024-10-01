@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
- import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -80,7 +80,6 @@ const Nav = () => {
   }
 
   // Determine logo source based on route
- 
 
   return (
     <div className="relative z-50">
@@ -109,35 +108,35 @@ const Nav = () => {
             <section className="flex text-gray-700">
               <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
                 <Link href="/web-development" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
                     {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
-                    <div>
+                    <span>
                       <li className="font-semibold ">Web Development</li>
                       <li className="text-[14px]">
                         Unlock Your Digital Potential with Expert Web
                         Development...
                       </li>
-                    </div>
-                  </div>
+                    </span>
+                  </p>
                 </Link>
                 <Link href="/software-development" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={computer} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-computer  text-[2vw] mr-[1vw]"></i>
-                    <div>
+                    <span>
                       <li className="font-semibold ">Software Development</li>
                       <li className="text-[14px]">
                         In today’s fast-paced digital world, having robust,
                         scalable...
                       </li>
-                    </div>
-                  </div>
+                    </span>
+                  </p>
                 </Link>
               </article>
               <article className="w-[50%] py-[2vh] pr-[1vw]">
                 <Link href="/application-development" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     <a
                       href="https://www.flaticon.com/free-icons/design"
                       className="hidden"
@@ -147,7 +146,7 @@ const Nav = () => {
                     </a>
                     {/* <img src={application} className='w-[50px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
-                    <div>
+                    <span>
                       <li className="font-semibold ">
                         Application Development
                       </li>
@@ -155,22 +154,22 @@ const Nav = () => {
                         We specialize in crafting tailored application
                         development solutions ...
                       </li>
-                    </div>
-                  </div>
+                    </span>
+                  </p>
                 </Link>
                 <Link href="/lead-generation" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={lead} className='w-[60px] object-contain mr-2' alt="" /> */}
                     <i class="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
-                    <div>
+                    <p>
                       <li className="font-semibold ">Lead Generation</li>
                       <li className="text-[14px] font-[500]">
                         {" "}
                         Lead generation is more than just a marketing strategy
                         it's the...
                       </li>
-                    </div>
-                  </div>
+                    </p>
+                  </p>
                 </Link>
               </article>
             </section>
@@ -182,7 +181,7 @@ const Nav = () => {
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
                 <Link href="/linkedin-automation" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
                     <i class="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -192,10 +191,10 @@ const Nav = () => {
                         Development...
                       </li>
                     </div>
-                  </div>
+                  </p>
                 </Link>
                 <Link href="/email-automation" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={outlook} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i class="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -205,7 +204,7 @@ const Nav = () => {
                         scalable...
                       </li>
                     </div>
-                  </div>
+                  </p>
                 </Link>
               </article>
             </section>
@@ -223,7 +222,7 @@ const Nav = () => {
             <section className="flex">
               <article className="w-[50%] py-[2vh] px-[1vw] ">
                 <Link href="/blog" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i class="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -233,7 +232,7 @@ const Nav = () => {
                         Development...
                       </li>
                     </div>
-                  </div>
+                  </p>
                 </Link>
                 {/* <Link to='/case-study' className='flex '> */}
                 <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
