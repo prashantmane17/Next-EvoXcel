@@ -1,21 +1,9 @@
+"use client";
 import React, { useEffect } from "react";
-import automationImg from "../assets/linkedinhome.png"; // Replace with your image path
-import img3 from "/images/why.png"; // Replace with your image path
-import mvideo from "../assets/7.gif"; // Replace with your image path
 import AOS from "aos";
-import "../App.css";
+import "../globals.css";
 import "aos/dist/aos.css";
-import lead from "/images/MDC.png";
-import kpm from "/images/KPM.png";
-import eim from "/images/EIM.png";
-import si from "/images/SI.png";
-import sd from "/images/SD.png";
-import DDS from "/images/DDS.png";
-import MAM from "/images/MAM.png";
-import CA from "/images/CA.png";
-import BoostCompany from "/images/Boost Company.png";
-import PC from "/images/PC.png";
-import linkedin1 from "/images/Prospect Target.png";
+import Image from "next/image";
 
 const LinkedInAutomation = () => {
   useEffect(() => {
@@ -53,7 +41,13 @@ const LinkedInAutomation = () => {
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
         <figure className="md:w-[50%] flex justify-center">
-          <img src={automationImg} alt="Santa Claus" className="md:w-[65%]" />
+          <Image
+            src="/images/linkedinhome.png"
+            width={300}
+            height={300}
+            alt="Santa Claus"
+            className="md:w-[65%]"
+          />
         </figure>
       </section>
 
@@ -87,7 +81,13 @@ const LinkedInAutomation = () => {
       </section>
       <section className="md:flex justify-between flex-wrap w-[100%] px-[5vw] text-justify py-[4vh]">
         <figure className="md:w-[50%] flex justify-center" data-aos="fade-in">
-          <img src={img3} className="w-[57%]" alt="" />
+          <Image
+            src="/images/why.png"
+            width={300}
+            height={300}
+            className="w-[57%]"
+            alt=""
+          />
         </figure>
         <article className="md:w-[50%] mt-[5vh] md:mt-0">
           <h1 className="text-[7vw] md:text-[2vw] font-bold text-[#718BFF] headingfont">
@@ -183,12 +183,24 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
-          <img src={linkedin1} className="w-[80%]" alt="" />
+          <Image
+            src="/images/Prospect Target.png"
+            width={300}
+            height={300}
+            className="w-[80%]"
+            alt=""
+          />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
-          <img src={lead} className="w-[87%]" alt="" />
+          <Image
+            src="/images/MDC.png"
+            width={300}
+            height={300}
+            className="w-[87%]"
+            alt=""
+          />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
           <h1 className="md:text-[1.5vw] font-bold headingfont">
@@ -304,12 +316,24 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center">
-          <img src={kpm} className="w-[80%]" alt="" />
+          <Image
+            src="/images/KPM.png"
+            width={300}
+            height={300}
+            className="w-[80%]"
+            alt=""
+          />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
-          <img src={eim} className="w-[87%]" alt="" />
+          <Image
+            src="/images/EIM.png"
+            width={300}
+            height={300}
+            className="w-[87%]"
+            alt=""
+          />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
           <h1 className="md:text-[1.5vw] font-bold headingfont">
@@ -415,12 +439,24 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
-          <img src={si} className="w-[80%]" alt="" />
+          <Image
+            src="/images/SI.png"
+            width={300}
+            height={300}
+            className="w-[80%]"
+            alt=""
+          />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
-          <img src={sd} className="w-[87%]" alt="" />
+          <Image
+            src="/images/SD.png"
+            width={300}
+            height={300}
+            className="w-[87%]"
+            alt=""
+          />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
           <h1 className="md:text-[1.5vw] font-bold headingfont">
@@ -519,12 +555,24 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
-          <img src={MAM} className="w-[80%]" alt="" />
+          <Image
+            src="/images/MAM.png"
+            width={300}
+            height={300}
+            className="w-[80%]"
+            alt=""
+          />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
-          <img src={DDS} className="w-[87%]" alt="" />
+          <Image
+            src="/images/DDS.png"
+            width={300}
+            height={300}
+            className="w-[87%]"
+            alt=""
+          />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
           <h1 className="md:text-[1.5vw] font-bold headingfont">
@@ -631,12 +679,24 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
-          <img src={CA} className="w-[80%]" alt="" />
+          <Image
+            src="/images/CA.png"
+            width={300}
+            height={300}
+            className="w-[80%]"
+            alt=""
+          />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
-          <img src={BoostCompany} className="w-[90%]" alt="" />
+          <Image
+            src="/images/Boost Company.png"
+            width={300}
+            height={300}
+            className="w-[90%]"
+            alt=""
+          />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
           <h1 className="md:text-[1.5vw] font-bold headingfont">
@@ -746,7 +806,13 @@ const LinkedInAutomation = () => {
           </div>
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
-          <img src={PC} className="w-[85%]" alt="" />
+          <Image
+            src="/images/PC.png"
+            width={300}
+            height={300}
+            className="w-[85%]"
+            alt=""
+          />
         </article>
       </section>
     </>

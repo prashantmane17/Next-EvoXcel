@@ -160,7 +160,7 @@ const Nav = () => {
                 <Link href="/lead-generation" className="flex ">
                   <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={lead} className='w-[60px] object-contain mr-2' alt="" /> */}
-                    <i class="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
                     <p>
                       <li className="font-semibold ">Lead Generation</li>
                       <li className="text-[14px] font-[500]">
@@ -183,7 +183,7 @@ const Nav = () => {
                 <Link href="/linkedin-automation" className="flex ">
                   <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
-                    <i class="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <li className="font-semibold ">Linkedin Automation</li>
                       <li className="text-[14px] font-[500]">
@@ -196,7 +196,7 @@ const Nav = () => {
                 <Link href="/email-automation" className="flex ">
                   <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={outlook} className='w-[50px] object-contain mr-2' alt="" /> */}
-                    <i class="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <li className="font-semibold ">Email Automation</li>
                       <li className="text-[14px] font-[500]">
@@ -224,7 +224,7 @@ const Nav = () => {
                 <Link href="/blog" className="flex ">
                   <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
-                    <i class="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
                     <div>
                       <li className="font-semibold ">Blog</li>
                       <li className="text-[14px] font-[500]">

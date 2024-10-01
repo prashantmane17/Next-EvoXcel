@@ -23,7 +23,7 @@ const Footer = () => {
                     action="#"
                     className="f_subscribe_two mailchimp"
                     method="post"
-                    novalidate="true"
+                    noValidate
                   >
                     <input
                       type="text"
