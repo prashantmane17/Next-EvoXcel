@@ -1,13 +1,7 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import "../email-automation/emailAutomation.css";
 import Image from "next/image";
 const SoftwareDevelopment = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  }, []);
-
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
@@ -113,7 +107,7 @@ const SoftwareDevelopment = () => {
           <h1 className="text-[#718BFF] headingfont text-center font-bold text-3xl mb-8">
             Our Software Development Solutions
           </h1>
-          <div className="container mx-auto px-4">
+          <div className=" mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               {[
                 {

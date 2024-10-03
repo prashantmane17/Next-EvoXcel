@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-
+import { usePathname } from "next/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -38,6 +39,7 @@ const Nav = () => {
   };
 
   useEffect(() => {
+    AOS.init({ duration: 500 });
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("click", handleClickOutside);
 
@@ -66,12 +68,12 @@ const Nav = () => {
   if (scrolled) {
     navbarClasses.push("bg-white", "text-black");
   } else {
-    if (location.pathname === "/") {
+    if (location === "/") {
       navbarClasses.push("text-white", "bgnav");
     } else if (
-      location.pathname === "/sign-in" ||
-      location.pathname === "/sign-up" ||
-      location.pathname === "/blog"
+      location === "/sign-in" ||
+      location === "/sign-up" ||
+      location === "/blog"
     ) {
       navbarClasses.push("bg-white", "text-black");
     } else {
@@ -80,13 +82,19 @@ const Nav = () => {
   }
 
   // Determine logo source based on route
+  const logoSrc =
+    location === "/"
+      ? scrolled
+        ? "/images/Evoxcel.webp"
+        : "/images/Evoxcel White.webp"
+      : "/images/Evoxcel.webp";
 
   return (
     <div className="relative z-50">
       <nav ref={navRef} className={navbarClasses.concat("").join(" ")}>
         <Link href="/" onClick={() => setMenuOpen(false)}>
           <Image
-            src="/images/Evoxcel White.webp"
+            src={logoSrc}
             width={300}
             height={300}
             alt="Logo"

@@ -1,14 +1,8 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 
 import "./webDevelopment.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 const WebDevelopment = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  }, []);
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">

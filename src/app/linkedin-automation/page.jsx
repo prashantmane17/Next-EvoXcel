@@ -1,15 +1,8 @@
-"use client";
-import React, { useEffect } from "react";
-import AOS from "aos";
+import React from "react";
 import "../globals.css";
-import "aos/dist/aos.css";
 import Image from "next/image";
 
 const LinkedInAutomation = () => {
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  }, []);
-
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
@@ -51,9 +44,9 @@ const LinkedInAutomation = () => {
         </figure>
       </section>
 
-      <section data-aos="fade-right" className=" py-16 md:h-[70vh]">
+      <section data-aos="fade-right" className="pt-16 pb-10">
         <div data-aos="fade-right" className="text-center">
-          <h2 className="text-[7vw] headingfont md:text-[2vw] font-semibold text-[#718BFF]">
+          <h2 className="text-[7vw] md:text-[2vw] font-semibold text-[#718BFF] headingfont">
             Benefits of Using Our LinkedIn Automation Tool
           </h2>
           <p className="text-gray-700 pfont px-2 mt-4 md:text-[1.2vw]">
@@ -61,7 +54,7 @@ const LinkedInAutomation = () => {
             for your professional growth and business success.
           </p>
         </div>
-        <div data-aos="fade-right" className="container mx-auto  md:mt-[-11vh]">
+        <div data-aos="fade-right" className=" mx-auto md:mt-[11vh]">
           <div className="grid grid-cols-1 md:px-12 md:grid-cols-2 gap-8">
             {[
               "Efficient Networking: Save time by automating repetitive tasks, allowing you to focus on strategic networking.",
@@ -71,7 +64,7 @@ const LinkedInAutomation = () => {
             ].map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white p-6  rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
+                className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
               >
                 <p className="text-gray-700 pfont">{benefit}</p>
               </div>
@@ -79,6 +72,7 @@ const LinkedInAutomation = () => {
           </div>
         </div>
       </section>
+
       <section className="md:flex justify-between flex-wrap w-[100%] px-[5vw] text-justify py-[4vh]">
         <figure className="md:w-[50%] flex justify-center" data-aos="fade-in">
           <Image
