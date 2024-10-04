@@ -57,7 +57,7 @@ const Signup = () => {
         </Helmet> */}
         <aside className="h-[100%] hidden md:flex md:w-[40%]  items-center justify-end">
           <Image
-            src="/images/Sign up.png"
+            src="/images/sign/Sign_up.webp"
             width={300}
             height={300}
             className="w-[80%] pt-[10vh] object-contain "

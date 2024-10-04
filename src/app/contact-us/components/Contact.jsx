@@ -50,9 +50,10 @@ const Contactus = () => {
           Contact Us
         </h2>
         <p className="mt-2 text-lg pfont leading-8 text-gray-600">
-          We’re excited to hear from you! Whether you're looking to kickstart a
-          new project, need support with an existing one, or just want to
-          explore how we can help your business grow, you’re in the right place.
+          We&lsquo;re excited to hear from you! Whether you&lsquo;re looking to
+          kickstart a new project, need support with an existing one, or just
+          want to explore how we can help your business grow, you&lsquo;re in
+          the right place.
         </p>
       </div>
       <form

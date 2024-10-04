@@ -326,8 +326,8 @@ const LeadGeneration = () => {
               Scalability
             </span>
             <span className="process__subtitle">
-              Whether you're a startup or a large enterprise, our solutions are
-              scalable to meet your evolving business needs.
+              Whether you&lsquo;re a startup or a large enterprise, our
+              solutions are scalable to meet your evolving business needs.
             </span>
           </li>
         </ul>

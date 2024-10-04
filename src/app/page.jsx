@@ -34,13 +34,13 @@ const Home = () => {
               Welcome to EvoXcel
             </h2>
             <p className="md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify pt-[2vh] pfont">
-              "We empower your business success with a comprehensive range of
-              cutting-edge services and products. From custom web, software, and
-              application development to expert lead generation strategies, we
-              are here to drive your growth. Explore our advanced LinkedIn
+              &ldquo;We empower your business success with a comprehensive range
+              of cutting-edge services and products. From custom web, software,
+              and application development to expert lead generation strategies,
+              we are here to drive your growth. Explore our advanced LinkedIn
               automation and email automation tools designed to streamline
               outreach and maximize results. Let us partner with you to achieve
-              your business objectives. "
+              your business objectives. &ldquo;
             </p>
           </div>
         </article>
@@ -153,8 +153,10 @@ const Home = () => {
             </article>
           </div>
           <figure className="md:w-[45%] flex justify-end" data-aos="fade-in">
-            <img
+            <Image
               className="w-[100%] h-[100%] mb-5 object-cover"
+              width={300}
+              height={300}
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Our-services-image"
             />
@@ -261,7 +263,7 @@ const Home = () => {
             data-aos="fade-in"
           >
             <Image
-              src="/images/Home/Campaign-Image.web"
+              src="/images/Home/Campaign-Image.webp"
               width={300}
               height={300}
               className="w-[65%]"
@@ -275,7 +277,7 @@ const Home = () => {
             data-aos="fade-in"
           >
             <Image
-              src="/images/MC.png"
+              src="/images/Home/MC.webp"
               width={300}
               height={300}
               className="w-[80%]"
@@ -333,7 +335,7 @@ const Home = () => {
             data-aos="fade-in"
           >
             <Image
-              src="/images/SCIC.png"
+              src="/images/Home/SCIC.webp"
               width={300}
               height={300}
               className="w-[70%]"
@@ -347,7 +349,7 @@ const Home = () => {
             data-aos="fade-in"
           >
             <Image
-              src="/images/OWDDI.png"
+              src="/images/Home/OWDDI.webp"
               width={300}
               height={300}
               className="w-[60%]"
@@ -405,7 +407,7 @@ const Home = () => {
             data-aos="fade-in"
           >
             <Image
-              src="/images/SI.png"
+              src="/images/Home/SI.webp"
               width="300"
               height={300}
               className="w-[65%]"

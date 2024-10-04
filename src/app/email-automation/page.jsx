@@ -24,10 +24,10 @@ const EmailAutomation = () => {
             Revolutionize Your Communication with Our Email Automation Tool
           </h1>
           <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
-            Transform your marketing strategy with EvoXcel's Email Automation
-            Tool. Our cutting-edge solution is designed to enhance your email
-            marketing efforts, automate your campaigns, and deliver personalized
-            content to drive engagement and growth.
+            Transform your marketing strategy with EvoXcel&lsquo;s Email
+            Automation Tool. Our cutting-edge solution is designed to enhance
+            your email marketing efforts, automate your campaigns, and deliver
+            personalized content to drive engagement and growth.
           </p>
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
@@ -55,7 +55,9 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <img
+              <Image
+                width={300}
+                height={300}
                 src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
@@ -76,7 +78,7 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <img
+              <Image width={300} height={300}
                 src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
@@ -96,7 +98,7 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <img
+              <Image width={300} height={300}
                 src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />
@@ -116,7 +118,7 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0 hover:scale-105 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <img
+              <Image width={300} height={300}
                 src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt=""
               />

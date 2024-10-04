@@ -35,7 +35,7 @@ const LinkedInAutomation = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/linkedinhome.png"
+            src="/images/linkedin-automation/linkedinhome.webp"
             width={300}
             height={300}
             alt="Santa Claus"
@@ -76,7 +76,7 @@ const LinkedInAutomation = () => {
       <section className="md:flex justify-between flex-wrap w-[100%] px-[5vw] text-justify py-[4vh]">
         <figure className="md:w-[50%] flex justify-center" data-aos="fade-in">
           <Image
-            src="/images/why.png"
+            src="/images/linkedin-automation/linked-in-why-chooseUs.webp"
             width={300}
             height={300}
             className="w-[57%]"
@@ -178,7 +178,7 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
           <Image
-            src="/images/Prospect Target.png"
+            src="/images/linkedin-automation/Precision-Targeting_image.webp"
             width={300}
             height={300}
             className="w-[80%]"
@@ -189,7 +189,7 @@ const LinkedInAutomation = () => {
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
           <Image
-            src="/images/MDC.png"
+            src="/images/linkedin-automation/Manage-Campaigns_image.webp"
             width={300}
             height={300}
             className="w-[87%]"
@@ -311,7 +311,7 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center">
           <Image
-            src="/images/KPM.png"
+            src="/images/linkedin-automation/Inbox-Management_image.webp"
             width={300}
             height={300}
             className="w-[80%]"
@@ -322,11 +322,11 @@ const LinkedInAutomation = () => {
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
           <Image
-            src="/images/EIM.png"
+            src="/images/linkedin-automation/Essential-Performance-Metrics_image.webp"
             width={300}
             height={300}
             className="w-[87%]"
-            alt=""
+            alt="Essential-Performance-Metrics_image"
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
@@ -434,22 +434,22 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
           <Image
-            src="/images/SI.png"
+            src="/images/linkedin-automation/Effortless-Integrations_image.webp"
             width={300}
             height={300}
             className="w-[80%]"
-            alt=""
+            alt="Effortless-Integrations_image"
           />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
           <Image
-            src="/images/SD.png"
+            src="/images/linkedin-automation/Security-Data_image.webp"
             width={300}
             height={300}
             className="w-[87%]"
-            alt=""
+            alt="Security-Data_image"
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
@@ -550,22 +550,22 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
           <Image
-            src="/images/MAM.png"
+            src="/images/linkedin-automation/Multiple-Accounts-Management_image.webp"
             width={300}
             height={300}
             className="w-[80%]"
-            alt=""
+            alt="Multiple-Accounts-Management_image"
           />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
           <Image
-            src="/images/DDS.png"
+            src="/images/linkedin-automation/Support-Custom-Solutions_image.webp"
             width={300}
             height={300}
             className="w-[87%]"
-            alt=""
+            alt=" Support-Custom-Solutions_image"
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
@@ -674,22 +674,22 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
           <Image
-            src="/images/CA.png"
+            src="/images/linkedin-automation/Competitor-Insights_image.webp"
             width={300}
             height={300}
             className="w-[80%]"
-            alt=""
+            alt="Competitor-Insights_image"
           />
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
         <article className="md:w-[50%] hidden md:flex items-center justify-start">
           <Image
-            src="/images/Boost Company.png"
+            src="/images/linkedin-automation/Boost-Company_image.webp"
             width={300}
             height={300}
             className="w-[90%]"
-            alt=""
+            alt="Amplify Your LinkedIn Company Page"
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
@@ -697,8 +697,8 @@ const LinkedInAutomation = () => {
             Amplify Your LinkedIn Company Page
           </h1>
           <h2 className="md:text-[1vw] font-sans mt-2 text-justify  ">
-            Boost the visibility of your LinkedIn Company Page with EvoXcel's
-            powerful features.
+            Boost the visibility of your LinkedIn Company Page with
+            EvoXcel&lsquo;s powerful features.
           </h2>
           <div className="md:flex mt-[6vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
@@ -719,8 +719,9 @@ const LinkedInAutomation = () => {
               </h3>
               <p className="md:text-[1vw] mt-[2vh]">
                 As your followers grow, your page has a higher chance of
-                appearing in the 'Trending' section, leading to greater exposure
-                and attracting more professionals to your offerings.
+                appearing in the &lsquo;Trending&lsquo; section, leading to
+                greater exposure and attracting more professionals to your
+                offerings.
               </p>
             </div>
           </div>
@@ -801,11 +802,11 @@ const LinkedInAutomation = () => {
         </article>
         <article className="md:w-[50%] hidden md:flex items-center justify-center ">
           <Image
-            src="/images/PC.png"
+            src="/images/linkedin-automation/Paying-Customers_image.webp"
             width={300}
             height={300}
             className="w-[85%]"
-            alt=""
+            alt="Transform Followers into Paying Customers"
           />
         </article>
       </section>

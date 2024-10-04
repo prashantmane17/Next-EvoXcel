@@ -167,7 +167,7 @@ const Pricing = () => {
         <div className=" md:flex justify-center w-[100%] relative top-[10vh] ">
           <div className="bg-white rounded-[30px] relative  p-6 md:w-[24%] shadow-2xl border mb-[12vh]">
             <h3 className="text-2xl font-semibold mb-1 px-[3vw] headingfont">
-              Beginner\'s Package
+              Beginner&lsquo;s Package
             </h3>
             <hr className="py-[1vh] w-[70%] m-auto" />
             <ul className=" px-[3vw] ">
@@ -194,8 +194,8 @@ const Pricing = () => {
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
                 <div className="flex items-start">
-                  All features included', 'Access to experts to set up pitch and
-                  Target audience
+                  All features included&lsquo;, &lsquo;Access to experts to set
+                  up pitch and Target audience
                 </div>{" "}
               </li>
             </ul>

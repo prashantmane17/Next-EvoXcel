@@ -33,7 +33,7 @@ const SoftwareDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/Softwareeng.png"
+            src="/images/software-development/Softwareeng.webp"
             alt="Santa Claus"
             width={300}
             height={300}

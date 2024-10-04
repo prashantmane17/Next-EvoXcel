@@ -1,9 +1,8 @@
-"use client";
 import React from "react";
-import { useRouter } from "next/navigation"; // Using next/navigation for navigation
 import Image from "next/image"; // Using next/image for optimized images
 import Link from "next/link";
 
+// Sample blog posts data
 const blogPosts = {
   1: {
     title: "The Power of Personalization in Lead Generation.",
@@ -26,22 +25,21 @@ const blogPosts = {
   2: {
     title: "Why Multi-Channel Marketing is Essential for Modern Businesses",
     content:
-      "In today’s digital landscape, your audience is spread across multiple platforms. To engage them effectively, businesses must adopt a multi-channel marketing strategy. This blog discusses the importance of multi-channel marketing and how EvoXcel’s tools can help you execute it seamlessly.",
+      "In today’s digital landscape, your audience is spread across multiple platforms...",
     img: "/images/Two page.png",
     h1: "The Importance of Multi-Channel Marketing",
-    p11: "Reaching Your Audience Everywhere : Multi-channel marketing ensures that your brand’s message reaches your audience across various platforms, whether they are browsing social media, checking their email, or searching online.",
-    p12: "EvoXcel’s Integrated Solutions:EvoXcel offers tools that integrate your marketing efforts across different channels, providing a unified approach that maximizes your reach and impact.",
+    p11: "Reaching Your Audience Everywhere...",
+    p12: "EvoXcel’s Integrated Solutions...",
     h2: "Challenges of Multi-Channel Marketing",
-    p21: `Managing Complexity : Coordinating campaigns across multiple platforms can be challenging. EvoXcel simplifies this process by allowing you to manage all your channels from a single, user-friendly dashboard.`,
-    p22: `Across Channels: In multi-channel marketing, consistency is essential. EvoXcel’s tools ensure that your messaging remains consistent across all platforms, reinforcing your brand identity.`,
+    p21: `Managing Complexity...`,
+    p22: `Across Channels...`,
     h3: `Leveraging Automation for Efficiency`,
-    p31: `Automating Multi-Channel Campaigns : Automation is crucial for managing multi-channel campaigns effectively. EvoXcel’s solutions automate key tasks like scheduling posts, sending emails, and tracking performance, saving you time and effort.`,
-    p32: `Maximizing ROI with Automation : By automating repetitive tasks, EvoXcel allows you to focus on strategic decision-making, ultimately driving better results and a higher return on investment.`,
+    p31: `Automating Multi-Channel Campaigns...`,
+    p32: `Maximizing ROI with Automation...`,
     h4: `Staying Ahead of the Curve`,
-    p41: `Innovating with the Latest Trends : By staying informed and proactive about emerging trends, EvoXcel helps you maintain a competitive edge, ensuring that your applications are not only relevant but also ahead of the industry curve.`,
-    p42: `The EvoXcel Commitment to Excellence: We at EvoXcel are committed to providing innovative application development services that take advantage of the newest developments in technology and trends in order to assist you in reaching your business objectives.`,
+    p41: `Innovating with the Latest Trends...`,
+    p42: `The EvoXcel Commitment to Excellence...`,
   },
-
   3: {
     title: "Optimizing Your Website for Lead Conversion",
     content:
@@ -98,7 +96,7 @@ const blogPosts = {
     p41: `Innovating with the Latest Trends : By staying informed and proactive about emerging trends, EvoXcel helps you maintain a competitive edge, ensuring that your applications are not only relevant but also ahead of the industry curve.`,
     p42: `EvoXcel’s Commitment to Excellence:At EvoXcel, we are dedicated to delivering cutting-edge application development services that leverage the latest trends and technologies, helping you achieve your business goals.`,
   },
-  // Include other blog posts here...
+  // Additional blog posts...
 };
 
 function Blogpost({ params }) {
@@ -109,24 +107,16 @@ function Blogpost({ params }) {
     return <p>Blog not found!</p>; // Handling case for a non-existent blog
   }
 
-  const router = useRouter();
-
   return (
     <div className="pt-[15vh] md:pt-[20vh] px-[5vw] w-[100%]">
       <div>
         <h1 className="pl-[4vw] text-[4vw] md:text-[1vw] flex gap-3">
-          <span
-            className="text-gray-400 cursor-pointer"
-            onClick={() => router.push("/")}
-          >
+          <Link href="/" className="text-gray-400 cursor-pointer">
             Home /
-          </span>
-          <span
-            onClick={() => router.push("/blog")}
-            className="text-gray-400 cursor-pointer"
-          >
+          </Link>
+          <Link href="/blog" className="text-gray-400 cursor-pointer">
             Blog /
-          </span>
+          </Link>
           <span className="cursor-pointer hidden md:block">{blog.title}</span>
         </h1>
       </div>
@@ -212,5 +202,15 @@ function Blogpost({ params }) {
     </div>
   );
 }
-
 export default Blogpost;
+
+// Implementing generateStaticParams for static export
+export async function generateStaticParams() {
+  // Extract post IDs from your blogPosts object
+  const posts = Object.keys(blogPosts);
+
+  // Return an array of objects with the required params
+  return posts.map((id) => ({
+    id: id.toString(),
+  }));
+}

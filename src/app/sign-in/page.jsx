@@ -92,7 +92,7 @@ const Signin = () => {
         </aside>
         <aside className="h-[100%] hidden w-[55%] pt-[12vh] md:flex justify-center items-center">
           <Image
-            src="/images/Sign In.png"
+            src="/images/sign/Sign_In.webp"
             width={300}
             height={300}
             className="w-[70%]"

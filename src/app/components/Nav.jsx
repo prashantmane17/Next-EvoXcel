@@ -174,7 +174,7 @@ const Nav = () => {
                       <li className="text-[14px] font-[500]">
                         {" "}
                         Lead generation is more than just a marketing strategy
-                        it's the...
+                        it&lsquo;s the...
                       </li>
                     </p>
                   </p>
@@ -306,7 +306,7 @@ const Nav = () => {
           </div>
           <Link href={"/contact-us"}>
             <li className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
-              Let's Connect
+              Let&lsquo;s Connect
             </li>
           </Link>
         </ul>

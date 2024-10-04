@@ -34,7 +34,7 @@ const WebDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/Programmer.png"
+            src="/images/web-development/Programmer.webp"
             width={300}
             height={300}
             alt="Santa Claus"
@@ -45,7 +45,8 @@ const WebDevelopment = () => {
 
       <section className="w-[100%]  text-black h-100% py-9">
         <h1 className="text-center headingfont md:text-[2rem] font-bold px-2">
-          Unleash Your Brand's Potential with a Premium Web Development Company
+          Unleash Your Brand&lsquo;s Potential with a Premium Web Development
+          Company
         </h1>
         <div className="py-9 flex flex-wrap justify-center items-center">
           <div
@@ -137,8 +138,8 @@ const WebDevelopment = () => {
                         </li>
                         <li>
                           Understand Your Audience: Conduct in-depth market
-                          research to identify your audience's preferences and
-                          behaviors.
+                          research to identify your audience&lsquo;s preferences
+                          and behaviors.
                         </li>
                         <li>
                           Gather Requirements: Collaborate with stakeholders to
@@ -156,7 +157,7 @@ const WebDevelopment = () => {
                 <div className=" h-full w-full flex justify-center bg-cover bg-center">
                   <Image
                     className="w-[60%] object-contain"
-                    src="/images/statergy.png"
+                    src="/images/web-development/statergy.webp"
                     width={300}
                     height={300}
                     alt=""
@@ -172,7 +173,7 @@ const WebDevelopment = () => {
                   <div className=" h-full w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[60%] object-contain"
-                      src="/images/planning.png"
+                      src="/images/web-development/planning.webp"
                       width={300}
                       height={300}
                       alt=""
@@ -245,7 +246,7 @@ const WebDevelopment = () => {
                   <div className=" h-full w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[55%] object-contain"
-                      src="/images/design.png"
+                      src="/images/web-development/design.webp"
                       width={300}
                       height={300}
                       alt=""
@@ -264,7 +265,7 @@ const WebDevelopment = () => {
                       className="w-[60%] object-contain"
                       width={300}
                       height={300}
-                      src="/images/developmentprocess.png"
+                      src="/images/web-development/developmentprocess.webp"
                       alt=""
                     />
                   </div>
@@ -332,7 +333,7 @@ const WebDevelopment = () => {
                   <div className=" h-full w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[55%] object-contain"
-                      src="/images/consult.png"
+                      src="/images/web-development/consult.webp"
                       width={300}
                       height={300}
                       alt=""
@@ -349,7 +350,7 @@ const WebDevelopment = () => {
                   <div className="w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[70%] object-contain"
-                      src="/images/maintain.png"
+                      src="/images/web-development/maintain.webp"
                       width={300}
                       height={300}
                       alt=""
