@@ -10,7 +10,7 @@ const Home = () => {
       {/* <div className="carddoll hidden absolute md:top-[50vh] top-[55vh] right-[0vw] md:w-[16em] w-[12em]">
         <img
           src="https://uiverse.io/build/_assets/astronaut-WTFWARES.png"
-          alt=""
+          
           className="image w-[10vw]"
         />
       </div> */}
