@@ -2,7 +2,8 @@ import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Script from "next/script";
-import Head from "next/head";
+import { ToastContainer } from 'react-toastify';
+// import Head from "next/head";
 
 export const metadata = {
   title: "Evoxcel",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
      
 
       <body>
+      <ToastContainer/>
         <Nav />
         {children}
         <Footer />
