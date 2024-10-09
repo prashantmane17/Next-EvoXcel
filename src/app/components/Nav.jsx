@@ -11,8 +11,12 @@ const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = usePathname();
   const navRef = useRef();
+  const { user, logout } = useAuth();
+
+  console.log(user ? user.email : "empty" + " useer")
 
   const handleScroll = () => {
     setScrolled(window.scrollY > 0);
@@ -143,8 +147,8 @@ const Nav = () => {
                 </Link>
               </article>
               <article className="w-[50%] py-[2vh] pr-[1vw]">
-                <Link href="/application-development" className="flex ">
-                  <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                <Link href="/application-development">
+                  <div className="hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center">
                     <a
                       href="https://www.flaticon.com/free-icons/design"
                       className="hidden"
@@ -152,19 +156,17 @@ const Nav = () => {
                     >
                       Design icons created by Freepik - Flaticon
                     </a>
-                    {/* <img src={application} className='w-[50px] object-contain  mr-2' alt="" /> */}
-                    <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
-                    <span>
-                      <li className="font-semibold ">
-                        Application Development
-                      </li>
-                      <li className="text-[14px] font-[500]">
-                        We specialize in crafting tailored application
-                        development solutions ...
-                      </li>
-                    </span>
-                  </p>
+                    {/* <img src={application} className='w-[50px] object-contain mr-2' alt="" /> */}
+                    <i className="fa-solid fa-code text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <h4 className="font-semibold">Application Development</h4>
+                      <p className="text-[14px] font-[500]">
+                        We specialize in crafting tailored application development solutions ...
+                      </p>
+                    </div>
+                  </div>
                 </Link>
+
                 <Link href="/lead-generation" className="flex ">
                   <p className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={lead} className='w-[60px] object-contain mr-2' alt="" /> */}
@@ -282,61 +284,59 @@ const Nav = () => {
           </ul>
 
           <div className="relative left-[0.7vw]">
-            <li className="cursor-pointer logindropdown  w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw]">
-              Log in <i className="fa-solid fa-caret-down ml-1"></i>
-            </li>
-            <ul className="hidden absolute dropdown3 bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
-              <section className="flex">
-                <article className="w-[100%] justify-between flex text-gray-700">
-                  <Link
-                    className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%]"
-                    href="/sign-up"
-                  >
-                    <button>Sign up</button>
-                  </Link>
-                  <Link
-                    className="hover:bg-gray-400 hover:text-white rounded-ee-lg   px-[0.5vw] py-[1.5vh] w-[50%]"
-                    href="/sign-in"
-                  >
-                    <button>Sign in</button>
-                  </Link>
-                </article>
-              </section>
-            </ul>
+              <div className=" w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw] flex items-center"
+              onMouseEnter={() => setDropdownOpen(true)} 
+              onMouseLeave={() => setDropdownOpen(false)}>
+                <i className="fa-solid fa-user ml-1 cursor-pointer"></i> {/* Add your icon here */}
+                <i className="fa-solid fa-caret-down ml-1"></i>
+
+            {user ? (
+              
+              dropdownOpen && (  <ul className="absolute  bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
+                    <span>{user.email}</span> 
+                    <li
+                      className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[100%]"
+                      onClick={logout}
+                    >
+                      <button className="w-full text-left">Log out</button>
+                    </li>
+                  </ul>
+              )
+            ) : (
+              
+              dropdownOpen && ( <ul className="absolute   block bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
+                    <li className="flex">
+                      <Link
+                        className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
+                        href="/sign-up"
+                      >
+                        Sign up
+                      </Link>
+                      <Link
+                        className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
+                        href="/sign-in"
+                      >
+                        Sign in
+                      </Link>
+                    </li>
+                  </ul>
+              )               
+              )}
+              </div>
           </div>
+
+
+
           <Link href={"/contact-us"}>
             <li className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
               Let&lsquo;s Connect
             </li>
           </Link>
         </ul>
-        {/* <ul className={`md:flex hidden md:w-[40%] justify-between text-[1vw] font-[600] `}>
-                <li className='cursor-pointer servicedropdown navBar lg:py-[5px] relative z-20'>Services <i className="fa-solid fa-caret-down ml-1"></i></li>
-                <div className='text-black border-t-[5px] p-2 border-sky-500 dropdown bg-white absolute top-[7vh] z-10 font-[500] text-[1vw]'>
-                    <ul className='text-[0.9vw] font-[600]'>
-                        <Link to='/web-development'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Web Development</li></Link>
-                        <Link to='/software-development'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Software Development</li></Link>
-                        <Link to='/application-development'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Application Development</li></Link>
-                        <Link to='/lead-generation'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Lead Generation</li></Link>
-                    </ul>
-                </div>
-                <div>
-                    <li className='cursor-pointer productdropdown navBar lg:py-[5px] relative z-20'>Products <i className="fa-solid fa-caret-down ml-1"></i></li>
-                    <div className='text-black dropdown1 border-t-[5px] p-2 border-sky-500 bg-white absolute top-[7vh] z-10 font-[500] text-[1vw]'>
-                        <ul className='text-[0.9vw] font-[600]'>
-                            <Link to='/linkedin-automation'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Linkedin Automation</li></Link>
-                            <Link to='/email-automation'><li className='px-[1vw] py-[1vh] hover:bg-gray-400'>Email Automation</li></Link>
-                        </ul>
-                    </div>
-                </div>
-                <Link to={'/pricing'}><li className='cursor-pointer navBar lg:py-[5px] text-color relative z-20'>Pricing</li></Link>
-                <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[5px] text-color relative z-20'>About us</li></Link>
-                <Link to={'/contact-us'}><li className='cursor-pointer navBar lg:py-[5px] text-color relative z-20'>Let's Connect</li></Link>
-            </ul> */}
+
         <ul
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           <li
             className="px-4 py-2 border-b cursor-pointer text-black w-full"
