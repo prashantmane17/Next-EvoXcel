@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
+import Link from "next/link";
 
 const Signup = () => {
   const [isFocused, setIsFocused] = useState({
@@ -209,9 +210,9 @@ const Signup = () => {
 
               <p className="mt-6 text-center text-sm text-gray-600">
                 Already have an account?{" "}
-                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                <Link href="/sign-in" className="font-medium text-indigo-600 hover:text-indigo-500">
                   Log in
-                </a>
+                </Link>
               </p>
             </div>
           </div>
