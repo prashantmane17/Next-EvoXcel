@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; 
+import 'react-toastify/dist/ReactToastify.css';
 import { useAuth } from "../context/AuthContext";
 
 const Nav = () => {
@@ -17,7 +17,7 @@ const Nav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = usePathname();
   const navRef = useRef();
-  const { user, logoutUser} = useAuth();
+  const { user, logoutUser } = useAuth();
 
   console.log(user ? user.email : "empty" + " useer")
 
@@ -287,45 +287,45 @@ const Nav = () => {
           </ul>
 
           <div className="relative left-[0.7vw]">
-              <div className=" w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw] flex items-center"
-              onMouseEnter={() => setDropdownOpen(true)} 
+            <div className=" w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw] flex items-center"
+              onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}>
-                <i className="fa-solid fa-user ml-1 cursor-pointer"></i> {/* Add your icon here */}
-                <i className="fa-solid fa-caret-down ml-1"></i>
+              <i className="fa-solid fa-user ml-1 cursor-pointer"></i> {/* Add your icon here */}
+              <i className="fa-solid fa-caret-down ml-1"></i>
 
-            {user ? (
-              
-              dropdownOpen && (  <ul className="absolute  bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
-                    <span>{user.email}</span> 
-                    <li
-                      className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[100%]"
-                      onClick={logoutUser}
+              {user ? (
+
+                dropdownOpen && (<ul className="absolute  bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
+                  <span>{user.name}</span>
+                  <li
+                    className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[100%]"
+                    onClick={logoutUser}
+                  >
+                    <button className="w-full text-left">Log out</button>
+                  </li>
+                </ul>
+                )
+              ) : (
+
+                dropdownOpen && (<ul className="absolute   block bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
+                  <li className="flex">
+                    <Link
+                      className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
+                      href="/sign-up"
                     >
-                      <button className="w-full text-left">Log out</button>
-                    </li>
-                  </ul>
-              )
-            ) : (
-              
-              dropdownOpen && ( <ul className="absolute   block bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
-                    <li className="flex">
-                      <Link
-                        className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
-                        href="/sign-up"
-                      >
-                        Sign up
-                      </Link>
-                      <Link
-                        className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
-                        href="/sign-in"
-                      >
-                        Sign in
-                      </Link>
-                    </li>
-                  </ul>
-              )               
+                      Sign up
+                    </Link>
+                    <Link
+                      className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
+                      href="/sign-in"
+                    >
+                      Sign in
+                    </Link>
+                  </li>
+                </ul>
+                )
               )}
-              </div>
+            </div>
           </div>
 
 
