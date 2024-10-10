@@ -1,8 +1,7 @@
-// File: src/app/api/login/route.js
 import { connectDb } from "@/helper/db_connect";
 import { User } from "@/models/user"; 
 import bcrypt from "bcryptjs"; 
-import jwt from "jsonwebtoken"; // Import jsonwebtoken
+import jwt from "jsonwebtoken"; 
 import { NextResponse } from "next/server";
 
 connectDb();
@@ -32,15 +31,32 @@ export async function POST(request) {
         { status: 401 }
       );
     }
+    const token = jwt.sign(
+      { user: {
+        id: user._id,
+        email: user.email,
+        name: user.username // Include more fields as necessary
+      } }, 
+      process.env.JWT_SECRET, 
+      { expiresIn: '7d' } // Set token expiry
+    );
 
-    // Create a JWT token
-    const token = jwt.sign({ userId: user._id, email: user.email, name: user.username}, process.env.JWT_SECRET, { expiresIn: '7d' }); // Set token expiry
+    const response = NextResponse.json({
+      success: true,
+      message: "Login successful",
+      user: {
+        id: user._id,
+        email: user.email,
+        name: user.username // Include more fields as necessary
+      }
+    });
+    response.headers.set(
+      "Set-Cookie",
+      `token=${token}; HttpOnly; Path=/; Max-Age=604800; Secure; SameSite=Strict`
+    );
 
-    return NextResponse.json({ success: true, message: "Login successful", user: {
-      id: user._id,
-      email: user.email,
-      name: user.name // Include more fields as necessary
-    } , token });
+    return response;
+
   } catch (error) {
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }

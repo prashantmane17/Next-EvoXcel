@@ -3,22 +3,46 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
+import { useAuth } from "../context/AuthContext";
 
 const Signin = () => {
-  const { login } = useAuth(); // Get the login function from useAuth
+const {user,fetchUser} = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(""); // State to store error messages
   const [loading, setLoading] = useState(false); // State to manage loading
 
+
+  const loginUser = async (email, password) => {
+    const response = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+
+      fetchUser();
+      return data; // Return successful response
+    } else {
+      const error = await response.json();
+      throw new Error(error.message || "Login failed");
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submission
     setLoading(true); // Set loading to true
-
     try {
-      const response = await login(email, password); // Call the login function with email and password
+      const response = await loginUser(email, password); // Call the login function with email and password
 
       if (response.success) {
+        setEmail(""); 
+        setPassword(""); 
+        setError("");
         toast.success("Login Successful!", { position: "bottom-left" });
       } else {
         toast.error(response.message, { position: "bottom-center" }); // Use toast.error for errors

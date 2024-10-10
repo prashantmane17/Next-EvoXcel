@@ -5,6 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
+import { useAuth } from "../context/AuthContext";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -14,7 +17,7 @@ const Nav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = usePathname();
   const navRef = useRef();
-  const { user, logout } = useAuth();
+  const { user, logoutUser} = useAuth();
 
   console.log(user ? user.email : "empty" + " useer")
 
@@ -292,11 +295,11 @@ const Nav = () => {
 
             {user ? (
               
-              dropdownOpen && (  <ul className="absolute  bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
+              dropdownOpen && (  <ul className="absolute  bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
                     <span>{user.email}</span> 
                     <li
                       className="hover:bg-gray-400 hover:text-white rounded-ee-lg px-[0.5vw] py-[1.5vh] w-[100%]"
-                      onClick={logout}
+                      onClick={logoutUser}
                     >
                       <button className="w-full text-left">Log out</button>
                     </li>
@@ -304,7 +307,7 @@ const Nav = () => {
               )
             ) : (
               
-              dropdownOpen && ( <ul className="absolute   block bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
+              dropdownOpen && ( <ul className="absolute   block bg-white left-0 w-[10vw] top-[40px] text-black shadow-lg rounded-b-lg">
                     <li className="flex">
                       <Link
                         className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%] text-center"
