@@ -8,35 +8,35 @@ const blogs = [
   {
     id: 1,
     title: "The Power of Personalization in Lead Generation",
-    img: "/images/one img.png",
+    img: "/images/blog/blog-lead-generation.webp",
     summary:
       "Personalization has become a critical factor in effective lead generation. In an era where customers...",
   },
   {
     id: 2,
     title: "Why Multi-Channel Marketing is Essential for Modern Businesses",
-    img: "/images/Two page.png",
+    img: "/images/blog/blog-Essential-for-Modern-Businesses.webp",
     summary:
       "In today’s digital landscape, your audience is spread across multiple platforms. To engage them...",
   },
   {
     id: 3,
     title: "Optimizing Your Website for Lead Conversion",
-    img: "/images/Three Page.png",
+    img: "/images/blog/blog_Essential-for-Modern-Businesses.webp",
     summary:
       "Your website is more than just an online presence—it’s a powerful tool for generating leads. However...",
   },
   {
     id: 4,
     title: "The Role of Automation in Scaling Your Business",
-    img: "/images/four img.png",
+    img: "/images/blog/blog_Automation-in-Scaling-Your-Business.webp",
     summary:
       "As businesses grow, maintaining efficiency becomes a challenge. Automation offers a solution by...",
   },
   {
     id: 5,
     title: "Emerging Trends in Application Development",
-    img: "/images/Five Page.png",
+    img: "/images/blog/blog_Emerging-Trends-in-Application-Development.webp",
     summary:
       "The field of application development is rapidly evolving, driven by new technologies and changing...",
   },

@@ -12,18 +12,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
-        <Script
-          src="https://kit.fontawesome.com/a32e229695.js"
-          crossOrigin="anonymous"
-          strategy="beforeInteractive"
-        ></Script>
-     
-
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        
+      </Head>
       <body>
         <Nav />
         {children}
         <Footer />
+        <Script
+          src="https://kit.fontawesome.com/a32e229695.js"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );

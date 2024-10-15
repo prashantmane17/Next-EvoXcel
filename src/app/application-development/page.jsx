@@ -31,10 +31,10 @@ const ApplicationDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/applicationdev.png"
+            src="/images/application-development/application-development.webp"
             width={300}
             height={300}
-            alt="Santa Claus"
+            alt="application-development-image"
             className="md:w-[70%]"
           />
         </figure>
@@ -66,22 +66,22 @@ const ApplicationDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
-            src="/images/hello.png"
+            src="/images/application-development/application-development_understanding-vision.webp"
             width={300}
             height={300}
             className="md:w-[60%]"
-            alt=""
+            alt="Understanding-Your-Vision-images"
           />
         </figure>
       </section>
       <section className=" w-[100%] md:flex items-center px-[6vw] py-[2vh]">
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
-            src="/images/AP.png"
+            src="/images/application-development/application-development_designing.webp"
             width={300}
             height={300}
             className="md:w-[60%]"
-            alt=""
+            alt="Designing-Excellence-image"
           />
         </figure>
         <div className="md:w-[50%] text-justify">
@@ -130,22 +130,22 @@ const ApplicationDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
-            src="/images/APPP.png"
+            src="/images/application-development/application-development_fexible-development.webp"
             width={300}
             height={300}
             className="md:w-[50%]"
-            alt=""
+            alt="Flexible-Development-image"
           />
         </figure>
       </section>
       <section className=" w-[100%] md:flex items-center px-[6vw] py-[1vh] ">
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
-            src="/images/Asp.png"
+            src="/images/application-development/application-development_rigorous-testing.webp"
             width={300}
             height={300}
             className="md:w-[50%]"
-            alt=""
+            alt=" Rigorous Testing"
           />
         </figure>
         <div className="md:w-[50%] text-justify px-[2vw]">
@@ -191,11 +191,11 @@ const ApplicationDevelopment = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/asdf.png"
+            src="/images/application-development/application-development_seamless-deployment.webp"
             width={300}
             height={300}
             className="md:w-[50%] md:ml-10"
-            alt=""
+            alt="Seamless Deployment"
           />
         </figure>
       </section>

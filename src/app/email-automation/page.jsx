@@ -33,10 +33,10 @@ const EmailAutomation = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/email1.png"
+            src="/images/email-automation/email-automation.webp"
             width="300"
             height="300"
-            alt="Santa Claus"
+            alt="Email Automation Tool"
             className="md:w-[70%]"
           />
         </figure>
@@ -58,8 +58,8 @@ const EmailAutomation = () => {
               <Image
                 width={300}
                 height={300}
-                src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                src="/images/email-automation/email-automation_Email-Campaigns.webp"
+                alt="Personalized Email Campaigns"
               />
             </div>
             <div class="p-6">
@@ -79,8 +79,8 @@ const EmailAutomation = () => {
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image width={300} height={300}
-                src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                src="/images/email-automation/email-automation_Email-Workflows.webp"
+                alt="Automated Email Workflows"
               />
             </div>
             <div class="p-6">
@@ -99,8 +99,8 @@ const EmailAutomation = () => {
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image width={300} height={300}
-                src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                src="/images/email-automation/email-automation_Analytics-Reporting.webp"
+                alt="In-Depth Analytics and Reporting"
               />
             </div>
             <div class="p-6">
@@ -119,8 +119,8 @@ const EmailAutomation = () => {
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image width={300} height={300}
-                src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                src="/images/email-automation/email-automation_Seamless-Integration.webp"
+                alt="Seamless Integration"
               />
             </div>
             <div class="p-6">
@@ -199,7 +199,7 @@ const EmailAutomation = () => {
             className="w-[100%] object-contain"
             width={300}
             height={300}
-            src="/images/email.png"
+            src="/images/email-automation/email-automation_Our-Values.webp"
             alt=""
           />
         </figure>
@@ -208,10 +208,10 @@ const EmailAutomation = () => {
         <figure className="md:w-[35%]  flex justify-end">
           <Image
             className="w-[100%] object-contain"
-            src="/images/email2.png"
+            src="/images/email-automation/email-automation_Email-Automation-Tool.webp"
             width={300}
             height={300}
-            alt=""
+            alt="Email Automation Tool"
           />
         </figure>
         <div data-aos="fade-right" className="md:w-[55%]">

@@ -36,10 +36,10 @@ const LeadGeneration = () => {
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/leadgen.png"
+            src="/images/lead-generation/lead-generation.webp"
             width="300"
             height={300}
-            alt="Santa Claus"
+            alt="Advanced Lead Generation Solutions"
             className="md:w-[70%]"
           />
         </figure>
@@ -85,11 +85,11 @@ const LeadGeneration = () => {
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                 <div className="flex items-center justify-center w-[100%] h-[100%]">
                   <Image
-                    src="/images/zxc.png"
+                    src="/images/lead-generation/lead-generation_Market-Research.webp"
                     width={300}
                     height={300}
                     className="w-[60%]"
-                    alt=""
+                    alt="Market Research and Audience Targeting"
                   />
                 </div>
               </div>
@@ -107,11 +107,11 @@ const LeadGeneration = () => {
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                 <div className=" w-full h-full flex items-center justify-center">
                   <Image
-                    src="/images/asdfgh.png"
+                    src="/images/lead-generation/lead-generation_Multi-Channel-Lead-Capture.webp"
                     width={300}
                     height={300}
                     className="w-[70%]"
-                    alt=""
+                    alt="Multi-Channel Lead Capture"
                   />
                 </div>
               </div>
@@ -203,11 +203,11 @@ const LeadGeneration = () => {
               <div className=" hidden md:flex justify-center items-center">
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                 <Image
-                  src="/images/aaaa.png"
+                  src="/images/lead-generation/lead-generation_Lead-Qualification.webp"
                   width={300}
                   height={300}
                   className="w-[60%]"
-                  alt=""
+                  alt="Lead Qualification and Scoring"
                 />
                 {/* <div className="rounded-tr-[100px]  rounded-bl-[100px] overflow-hidden min-h-[20rem] w-full h-full bg-center bg-cover"></div> */}
               </div>
@@ -225,11 +225,11 @@ const LeadGeneration = () => {
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                 <div className=" w-full h-full flex items-center justify-center">
                   <Image
-                    src="/images/LNE.png"
+                    src="/images/lead-generation/lead-generation_Lead-Nurturing-Engagement.webp"
                     width={300}
                     height={300}
                     className="w-[60%]"
-                    alt=""
+                    alt="Lead Nurturing and Engagement"
                   />
                 </div>
               </div>

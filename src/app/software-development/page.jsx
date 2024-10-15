@@ -29,11 +29,10 @@ const SoftwareDevelopment = () => {
             productivity and unlock new possibilities with our cutting-edge
             integration expertise.
           </p>
-          {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image
-            src="/images/software-development/Softwareeng.webp"
+            src="/images/software-development/software-development.webp"
             alt="Santa Claus"
             width={300}
             height={300}

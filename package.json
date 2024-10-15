@@ -12,7 +12,7 @@
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "evoxcel": "file:",
-    "next": "14.2.13",
+    "next": "^15.0.0-canary.191",
     "react": "^18",
     "react-dom": "^18",
     "react-toastify": "^10.0.5"

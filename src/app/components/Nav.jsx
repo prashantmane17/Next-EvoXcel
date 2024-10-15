@@ -71,9 +71,9 @@ const Nav = () => {
     if (location === "/") {
       navbarClasses.push("text-white", "bgnav");
     } else if (
-      location === "/sign-in" ||
-      location === "/sign-up" ||
-      location === "/blog"
+      location === "/sign-in/" ||
+      location === "/sign-up/" ||
+      location === "/blog/"
     ) {
       navbarClasses.push("bg-white", "text-black");
     } else {
