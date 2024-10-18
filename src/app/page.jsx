@@ -14,7 +14,7 @@ const Home = () => {
           className="image w-[10vw]"
         />
       </div> */}
-      <section className="md:h-[75vh] w-[100%] pt-[5vh] mb-[5vh] md:mb-0 bg-slate-50">
+      <section className="md:h-[75vh] w-[100%]  mb-[5vh] md:mb-0 bg-slate-50">
         <article className="m-auto w-[90%] md:h-[75vh]  md:flex   justify-between">
           <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">
             {/* <img className='w-[100%] object-cover' src="https://images.unsplash.com/photo-1600275669283-4bf2bb8a990c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" /> */}
@@ -107,7 +107,7 @@ const Home = () => {
                 </div>
               </Link>
             </article>
-            <article className="md:flex justify-between text-white md:py-[9vh]  w-[100%]">
+            <article className="md:flex justify-between text-white md:py-[4vh]  w-[100%]">
               <Link
                 href="/application-development"
                 className="md:w-[45%] cursor-pointer"

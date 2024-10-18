@@ -42,10 +42,10 @@ const ApplicationDevelopment = () => {
 
       <section className="w-[100%] md:flex justify-between px-[6vw] md:py-[2vh] py-[-10vh]">
         <div className="md:w-[50%] flex flex-col justify-center text-justify">
-          <h3 className="font-[550]  md:text-[1vw]"></h3>
-          <h1 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
+          <h2 className="font-[550]  md:text-[1vw]"></h2>
+          <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             1. Understanding Your Vision
-          </h1>
+          </h3>
           <p className=" md:text-[1vw] pfont">
             <span className="font-[600]  text-[#3E4687]">
               Initial Consultation:{" "}
@@ -85,9 +85,9 @@ const ApplicationDevelopment = () => {
           />
         </figure>
         <div className="md:w-[50%] text-justify">
-          <h1 className="font-[600] headingfont md:text-[2vw] mt-5 mb-3 text-[#3E4687]">
+          <h3 className="font-[600] headingfont md:text-[2vw] mt-5 mb-3 text-[#3E4687]">
             2. Designing for Excellence
-          </h1>
+          </h3>
           <p className=" md:text-[1vw] pfont">
             <span className="font-[600] text-[#3E4687]">
               User-Centered Design:{" "}
@@ -108,9 +108,9 @@ const ApplicationDevelopment = () => {
       </section>
       <section className=" w-[100%] h-[50%] md:flex px-[6vw] items-center ">
         <div className="md:w-[50%] text-justify">
-          <h1 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
+          <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             3. Flexible Development
-          </h1>
+          </h3>
           <p className=" md:text-[1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               Iterative Approach:{" "}
@@ -149,9 +149,9 @@ const ApplicationDevelopment = () => {
           />
         </figure>
         <div className="md:w-[50%] text-justify px-[2vw]">
-          <h1 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
+          <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             4. Rigorous Testing
-          </h1>
+          </h3>
           <p className=" md:text-[1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               Quality Assurance:{" "}
@@ -170,9 +170,9 @@ const ApplicationDevelopment = () => {
       </section>
       <section className="w-[100%] md:flex items-center px-[6vw] justify-between">
         <div className="md:w-[50%] text-justify">
-          <h1 className="font-[600] md:text-[2vw] headingfont mt-5 mb-3 text-[#3E4687]">
+          <h3 className="font-[600] md:text-[2vw] headingfont mt-5 mb-3 text-[#3E4687]">
             5. Seamless Deployment
-          </h1>
+          </h3>
           <p className=" pfont  md:text-[1vw]">
             <span className="font-[600] text-[#3E4687]">
               Smooth Implementation:{" "}

@@ -21,15 +21,10 @@ const LinkedInAutomation = () => {
         </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
-            Revolutionize Your Networking with EvoXcel’s LinkedIn Automation
-            Solutions
+            Revolutionize Your Networking with LinkedIn Automation Solutions
           </h1>
           <p className="mt-4 pfont mb-10 max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
-            Use the LinkedIn Automation Tool from EvoXcel to fully utilize the
-            potential of LinkedIn automation. Designed to optimize your LinkedIn
-            activities, this tool will help you expand your professional
-            network, generate high-quality leads, and drive business growth
-            seamlessly.
+            Leverage EvoXcel&apos;s LinkedIn automation tool to fully unlock the potential of LinkedIn lead generation and professional networking automation. Our LinkedIn automation solutions are designed to streamline your LinkedIn activities, helping you expand your network, generate high-quality leads, and accelerate business growth through automated LinkedIn outreach.
           </p>
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
@@ -50,17 +45,17 @@ const LinkedInAutomation = () => {
             Benefits of Using Our LinkedIn Automation Tool
           </h2>
           <p className="text-gray-700 pfont px-2 mt-4 md:text-[1.2vw]">
-            Discover the advantages of leveraging our LinkedIn automation tool
-            for your professional growth and business success.
+            Maximize your business success and networking efficiency with our time-saving LinkedIn automation:
           </p>
         </div>
         <div data-aos="fade-right" className=" mx-auto md:mt-[11vh]">
           <div className="grid grid-cols-1 md:px-12 md:grid-cols-2 gap-8">
             {[
-              "Efficient Networking: Save time by automating repetitive tasks, allowing you to focus on strategic networking.",
-              "Enhanced Personalization: Deliver customized messages that resonate with your target audience, increasing the chances of meaningful interactions.",
-              "Increased Visibility: Maintain a consistent LinkedIn presence, boosting your brand's credibility and keeping you top of mind with your network.",
-              "Quality Lead Generation: Connect with high-quality leads that are more likely to convert, driving significant business growth.",
+              "Efficient LinkedIn Networking: Automate repetitive tasks, allowing you to focus on strategic networking",
+            "Enhanced LinkedIn Personalization: Deliver customized messages that resonate with your audience, increasing engagement",
+            "Increased LinkedIn Visibility: Maintain a consistent LinkedIn presence, boosting credibility and keeping you top-of-mind with your network",
+            "Quality Lead Generation on LinkedIn: Connect with high-quality leads that convert into real business opportunities",
+
             ].map((benefit, index) => (
               <div
                 key={index}
@@ -84,72 +79,58 @@ const LinkedInAutomation = () => {
           />
         </figure>
         <article className="md:w-[50%] mt-[5vh] md:mt-0">
-          <h1 className="text-[7vw] md:text-[2vw] font-bold text-[#718BFF] headingfont">
+          <h3 className="text-[7vw] md:text-[2vw] font-bold text-[#718BFF] headingfont">
             Why Choose Our LinkedIn Automation Tool?
-          </h1>
+          </h3>
           <ul className="md:text-[1vw] mt-5 list-disc list-outside pl-4 ">
             <li className="mt-2 pfont">
-              Unleash the Power of Automation: Our tool is designed to
-              streamline your LinkedIn activities, giving you more time to focus
-              on what truly matters - building meaningful connections and
-              closing deals.
+              Revolutionize LinkedIn Networking: Simplify your LinkedIn processes, giving you more time to focus on meaningful connections and closing deals.
             </li>
             <li className="mt-2 pfont">
-              Smart Targeting: Utilize advanced algorithms to precisely target
-              the right audience, ensuring your messages hit the mark every
-              time.
+              Smart LinkedIn Targeting: Use advanced algorithms to target your ideal audience with precision, enhancing your outreach success.
             </li>
             <li className="mt-2 pfont">
-              Seamless Integration: Easily integrate our tool with your existing
-              workflows and CRM systems for a hassle-free experience that
-              enhances productivity.
+              Seamless LinkedIn Workflow Integration: Effortlessly integrate our tool with your CRM system for improved efficiency.
             </li>
             <li className="mt-2 pfont">
-              Data-Driven Insights: To improve your approach and outcomes, get
-              insightful knowledge from in-depth analytics.
+              Data-Driven LinkedIn Insights: Gain valuable insights with LinkedIn performance metrics to improve your outreach approach.
             </li>
             <li className="mt-2 pfont">
-              Security and Compliance: Rest assured, our tool adheres to the
-              highest security standards and compliance regulations to protect
-              your data and privacy.
+              LinkedIn GDPR Compliance & Security: Ensure your data is secure with advanced LinkedIn data encryption and compliance with GDPR standards.
             </li>
-            <li className="mt-2 pfont">
+            {/* <li className="mt-2 pfont">
               User-Friendly Interface: Take advantage of an interface that is
               simple to use and intuitive, requiring no technical knowledge and
               making it available to everybody.
-            </li>
+            </li> */}
           </ul>
         </article>
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <h3 className="md:text-[1.5vw] font-bold headingfont">
             Precision Prospect Targeting
-          </h1>
+          </h3>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
-            EvoXcel offers the most dynamic and comprehensive suite of tools for
-            pinpointing and engaging with your ideal prospects:
+            EvoXcel&apos;s LinkedIn prospect targeting tools allow you to pinpoint your ideal leads with precision:
           </h2>
           <div className="md:flex mt-[3vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-filter-circle-dollar px-[10px] py-[11px]  text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.2vw] font-semibold pt-3 headingfont">
-                Advanced LinkedIn Search Filters
+                Advanced LinkedIn Search Filters:
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                : Harness the power of LinkedIn by applying sophisticated
-                filters on both Sales Navigator and standard LinkedIn searches
-                to zero in on the perfect set of leads.
+                Apply sophisticated filters on Sales Navigator to find the perfect set of leads
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-link px-[10px] py-[11px] text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.2vw] font-semibold pt-2 headingfont">
-                LinkedIn URLs
+                LinkedIn URL Upload:
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Effortlessly upload CSV files containing LinkedIn URLs and
-                names, streamlining your outreach process to key individuals.
+                Upload CSV files with LinkedIn URLs to streamline your outreach to key individuals.
               </p>
             </div>
           </div>
@@ -160,18 +141,16 @@ const LinkedInAutomation = () => {
                 Targeted LinkedIn Company Pages
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Upload a list of specific LinkedIn Company Pages to directly
-                connect with decision-makers within those organizations.
+                Directly connect with decision-makers by uploading lists of specific company pages.
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-users-viewfinder px-[10px] py-[11px] text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.2vw] headingfont font-semibold pt-2">
-                Domain Targeting
+                Domain Targeting:
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Provide a list of targeted website domains, enabling direct
-                access to key stakeholders within those companies.
+              Access key stakeholders from targeted website domains for enhanced lead generation.
               </p>
             </div>
           </div>
@@ -197,18 +176,17 @@ const LinkedInAutomation = () => {
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <h3 className="md:text-[1.5vw] font-bold headingfont">
             Manage Drip Campaigns
-          </h1>
+          </h3>
           <h2 className="md:text-[1vw] font-sans mt-2 text-justify  ">
-            Set up and monitor multiple LinkedIn outreach campaigns, each
-            designed to engage and elicit responses from your leads:
+            Set up and monitor multiple LinkedIn drip campaigns designed to engage your prospects effectively:
           </h2>
           <div className="md:flex mt-[6vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-filter-circle-dollar px-[10px] py-[11px]  text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.1vw] font-semibold headingfont pt-2">
-                Connect Invites to 2nd/3rd Degree Connections: s
+                Connect Invites to 2nd/3rd Degree Connections: 
               </h3>
               <p className="md:text-[0.9vw]">
                 Create a drip campaign to send new connection invites, with the
@@ -219,7 +197,7 @@ const LinkedInAutomation = () => {
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-link px-[10px] py-[11px] text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.1vw] headingfont font-semibold pt-2">
-                Group Members Targeting:{" "}
+                Group Members Targeting:
               </h3>
               <p className="md:text-[0.9vw]">
                 Launch targeted outreach campaigns to specific Group members.
@@ -255,12 +233,11 @@ const LinkedInAutomation = () => {
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <h3 className="md:text-[1.5vw] font-bold headingfont">
             Optimized Inbox Management
-          </h1>
+          </h3>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
-            EvoXcel offers seamless solutions to manage responses from engaged
-            leads, keeping your inbox organized and efficient.
+            EvoXcel offers seamless solutions for managing leads through LinkedIn inbox management:
           </h2>
           <div className="md:flex mt-[3vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
@@ -269,19 +246,16 @@ const LinkedInAutomation = () => {
                 Automatic Reply Detection
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Automatically identify and categorize all responses from
-                prospects, ensuring nothing slips through the cracks.
+                Automatically categorize responses from prospects.
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
               <i className="fa-solid fa-link px-[10px] py-[11px] text-white bg-purple-300 rounded-full md:text-[1.3vw]"></i>
               <h3 className="md:text-[1.2vw] font-semibold pt-2 headingfont">
-                Comprehensive Chat History
+                Comprehensive Chat History:
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                : Maintain a thorough chat history with prospects right from
-                your EvoXcel inbox, tracking every discussion you have with
-                them.
+                Track all interactions in one place to keep conversations organized.
               </p>
             </div>
           </div>
@@ -292,9 +266,7 @@ const LinkedInAutomation = () => {
                 Sentiment- Based Analysis
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Assess the tone of prospect replies, categorizing them as
-                Positive, Negative, Inquiry, or Neutral to prioritize your
-                follow-up efforts.
+                Prioritize follow-ups based on positive, negative, or inquiry responses.
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
@@ -303,8 +275,7 @@ const LinkedInAutomation = () => {
                 Direct In-App Chat Response
               </h3>
               <p className="md:text-[0.9vw] text-start pfont">
-                Respond to leads instantly from within the EvoXcel inbox,
-                streamlining your communication process.
+                Respond to leads instantly from within your EvoXcel inbox
               </p>
             </div>
           </div>
@@ -330,12 +301,11 @@ const LinkedInAutomation = () => {
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <h2 className="md:text-[1.5vw] font-bold headingfont">
             Essential Performance Metrics
-          </h1>
+          </h2>
           <h2 className="md:text-[1vw] font-sans mt-2 text-justify ">
-            Access all the vital statistics needed to continually enhance your
-            campaign performance and drive more lead generation.
+            Access LinkedIn performance metrics to enhance your campaigns:
           </h2>
           <div className="md:flex mt-[6vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
@@ -344,9 +314,7 @@ const LinkedInAutomation = () => {
                 Campaign KPIs
               </h3>
               <p className="md:text-[0.9vw]">
-                Monitor crucial performance indicators such as Invite Acceptance
-                Rate, Reply Rate, and Positive Response Rate to evaluate
-                campaign success.
+                Monitor key metrics such as Invite Acceptance Rate, Reply Rate, and Positive Response Rate.
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
@@ -355,8 +323,7 @@ const LinkedInAutomation = () => {
                 Demographic Insights
               </h3>
               <p className="md:text-[0.9vw]">
-                Gain insights into the demographic details of engaged leads,
-                including Location, Title, and Company.
+                Utilize demographic insights like Location, Title, and Company for better targeting.
               </p>
             </div>
           </div>
@@ -367,9 +334,7 @@ const LinkedInAutomation = () => {
                 A/B Testing
               </h3>
               <p className="md:text-[0.9vw]">
-                Simultaneously run multiple campaigns with A/B testing,
-                experimenting with variations in content and target audience to
-                refine and optimize performance.
+                Test variations in your campaigns with LinkedIn A/B testing.
               </p>
             </div>
             <div className="text-justify md:w-[45%]">
@@ -378,8 +343,7 @@ const LinkedInAutomation = () => {
                 Data Export
               </h3>
               <p className="md:text-[0.9vw]">
-                Easily export all performance and lead-related data into CSV
-                files for in-depth analysis and reporting.
+                Export data to CSV for detailed reporting and analysis.
               </p>
             </div>
           </div>
@@ -387,12 +351,11 @@ const LinkedInAutomation = () => {
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <h2 className="md:text-[1.5vw] font-bold headingfont">
             Effortless Integrations
-          </h1>
+          </h2>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
-            Because EvoXcel integrates seamlessly with the tools you already
-            have, improving productivity and increasing efficiency is simple.
+            EvoXcel’s LinkedIn CRM integration and data enrichment tools allow for seamless integration with your existing workflows:
           </h2>
           <div className="md:flex mt-[3vh] justify-between w-[100%]">
             <div className="text-justify md:w-[45%]">
@@ -453,9 +416,9 @@ const LinkedInAutomation = () => {
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             Robust Security & Data Protection
-          </h1>
+          </p>
           <h2 className="md:text-[16px] font-sans mt-2 text-justify  ">
             EvoXcel is committed to ensuring the highest level of security and
             data protection.
@@ -501,9 +464,9 @@ const LinkedInAutomation = () => {
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             Streamlined Multiple Accounts Management
-          </h1>
+          </p>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
             Efficiently manage all your LinkedIn accounts from a single
             platform, enhancing productivity and organization.
@@ -569,9 +532,9 @@ const LinkedInAutomation = () => {
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             Comprehensive Support & Custom Solutions
-          </h1>
+          </p>
           <h2 className="md:text-[1vw] font-sans mt-2 text-justify  ">
             EvoXcel offers personalized support and custom solutions to ensure
             your success.
@@ -617,9 +580,9 @@ const LinkedInAutomation = () => {
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             360° Competitor Insights
-          </h1>
+          </p>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
             Stay ahead of the competition by gaining deep insights into their
             strategies and performance.
@@ -693,9 +656,9 @@ const LinkedInAutomation = () => {
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             Amplify Your LinkedIn Company Page
-          </h1>
+          </p>
           <h2 className="md:text-[1vw] font-sans mt-2 text-justify  ">
             Boost the visibility of your LinkedIn Company Page with
             EvoXcel&lsquo;s powerful features.
@@ -742,9 +705,9 @@ const LinkedInAutomation = () => {
       </section>
       <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between mt-4">
         <article className="md:w-[50%] flex flex-col justify-center items-start">
-          <h1 className="md:text-[1.5vw] font-bold headingfont">
+          <p className="md:text-[1.5vw] font-bold headingfont">
             Transform Followers into Paying Customers
-          </h1>
+          </p>
           <h2 className="md:text-[16px] pfont font-sans mt-1">
             Convert your LinkedIn followers into paying customers with targeted
             strategies and drip campaigns.

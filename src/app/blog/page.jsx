@@ -52,9 +52,9 @@ const Aboutus = () => {
   return (
     <section>
       <div className="h-[20vh] md:h-[45vh] bg-[#01114A] flex items-end pl-[5vw]">
-        <h1 className="bg-slate-100 px-[5vw] pt-[2vh] md:text-[3vw] font-[550] text-[#01114A]">
+        <h2 className="bg-slate-100 px-[5vw] pt-[2vh] md:text-[3vw] font-[550] text-[#01114A]">
           Read Our Latest Blogs On <br /> EvoXcel
-        </h1>
+        </h2>
       </div>
       <div className="px-[5vw] flex flex-wrap justify-start bg-slate-100 gap-[4vw] py-[10vh] w-[100%]">
         {blogs.map((blog) => (
@@ -63,10 +63,24 @@ const Aboutus = () => {
             className="md:w-[30%] hover:shadow-2xl bg-white p-[1vw] cursor-pointer"
             onClick={() => handleBlogClick(blog.id)}
           >
-            <Image src={blog.img} alt={blog.title} width={300} height={200} />
-            <h1 className="mt-2 md:text-[1.5vw] hfont font-[550] text-slate-700">
+           {blog.id === 1 && (
+      <Image src="/images/blog/blog-lead-generation.webp" alt={blog.title} width={300} height={200} />
+    )}
+    {blog.id === 2 && (
+      <Image src="/images/blog/blog-Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
+    )}
+    {blog.id === 3 && (
+      <Image src="/images/blog/blog_Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
+    )}
+    {blog.id === 4 && (
+      <Image src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp" alt={blog.title} width={300} height={200} />
+    )}
+    {blog.id === 5 && (
+      <Image src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp" alt={blog.title} width={300} height={200} />
+    )}
+            <h2 className="mt-2 md:text-[1.5vw] hfont font-[550] text-slate-700">
               {blog.title}
-            </h1>
+            </h2>
             <p className="my-[1vh] md:text-[1vw]">{blog.summary}</p>
             <button className="bg-blue-500 p-2 rounded-sm text-white">
               Read More

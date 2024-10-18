@@ -107,10 +107,10 @@ const Nav = () => {
             <i className="fa-solid fa-bars relative z-30 text-[1.5rem] cursor-pointer"></i>
           )}
         </div>
-        <ul className="md:flex hidden justify-between pfont relative w-[55%] text-[1vw] font-[600]">
-          <li className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[2.3vw]">
+        <div className="md:flex hidden justify-between pfont relative w-[55%] text-[1vw] font-[600]">
+          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[2.3vw]">
             Services <i className="fa-solid fa-caret-down ml-1"></i>
-          </li>
+          </div>
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
               <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
@@ -180,14 +180,14 @@ const Nav = () => {
               </article>
             </section>
           </div>
-          <li className="cursor-pointer productdropdown lg:pr-[2.3vw] navBar lg:py-[15px] ">
+          <div className="cursor-pointer productdropdown lg:pr-[2.3vw] navBar lg:py-[15px] ">
             Products <i className="fa-solid fa-caret-down ml-1"></i>
-          </li>
+          </div>
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
-                <Link href="/linkedin-automation" className="flex " legacyBehavior>
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                <Link href="/linkedin-automation" className="flex " >
+                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -197,7 +197,7 @@ const Nav = () => {
                         Development...
                       </p>
                     </div>
-                  </a>
+                  </div>
                 </Link>
                 <Link href="/email-automation" className="flex " legacyBehavior>
                   <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
@@ -215,15 +215,15 @@ const Nav = () => {
               </article>
             </section>
           </div>
-          <li className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20">
+          <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20">
             <Link href={"/pricing"}>
               Pricing
             </Link>
-          </li>
+          </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
-          <li className="cursor-pointer resourcedropdown navBar lg:py-[15px]">
+          <div className="cursor-pointer resourcedropdown navBar lg:py-[15px]">
             Insights <i className="fa-solid fa-caret-down ml-1"></i>
-          </li>
+          </div>
           <div className="hidden absolute rounded-b-lg text-gray-700 dropdown2 shadow-lg bg-white w-[100%] top-[50px]">
             <section className="flex">
               <article className="w-[50%] py-[2vh] px-[1vw] ">
@@ -273,9 +273,9 @@ const Nav = () => {
           </div>
 
           <div className="relative left-[0.7vw]">
-            <li className="cursor-pointer logindropdown  w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw]">
+            <div className="cursor-pointer logindropdown  w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw]">
               Log in <i className="fa-solid fa-caret-down ml-1"></i>
-            </li>
+            </div>
             <div className="hidden absolute dropdown3 bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
               <section className="flex">
                 <article className="w-[100%] justify-between flex text-gray-700">
@@ -293,14 +293,14 @@ const Nav = () => {
                   </Link>
                 </article>
               </section>
-            </div>
+            </div> 
           </div>
-          <li className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
+          <div className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
             <Link href={"/contact-us"}>
               Let&lsquo;s Connect
             </Link>
-          </li>
-        </ul>
+          </div>
+        </div>
         <ul
           className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
             }`}

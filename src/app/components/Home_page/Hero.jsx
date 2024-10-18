@@ -11,7 +11,7 @@ export default function Hero() {
     {
       text: "LinkedIn Automation",
       text1:
-        "Automated LinkedIn Outreach | AI-Powered Lead Generation Efficiently connect with decision-makers through LinkedIn outreach automation. Utilize AI-powered lead generation tools to identify and engage with high-potential leads, expanding your network and boosting conversions. Our LinkedIn marketing solutions include B2B social media automation, LinkedIn prospecting tools, and automated LinkedIn networking for seamless business growth.",
+        "Automated LinkedIn Outreach | AI-Powered Lead Generation Efficiently connect with decision-makers through LinkedIn outreach automation. Utilize AI-powered lead generation tools to identify and engage with high-potential leads, expanding your network and boosting conversions. Our LinkedIn marketing solutions include B2B social media automation, LinkedIn prospecting tools.",
     },
     {
       text: "Email Automation",
@@ -93,7 +93,7 @@ export default function Hero() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="relative h-[13vh]  overflow-hidden">
+            <div className="relative h-[15.3vh]  overflow-hidden">
               <div className="absolute w-full h-full">
                 {slides.map((slide, index) => (
                   <div
@@ -109,7 +109,7 @@ export default function Hero() {
                         : "-translate-y-full"
                     }`}
                   >
-                    <p className="md:text-xl text-[4vw] font-light cursor-pointer">
+                    <p className="md:text-[1.4vw] text-[4vw] font-light cursor-pointer">
                       {slide.text1}
                     </p>
                   </div>

@@ -42,9 +42,9 @@ const SoftwareDevelopment = () => {
       </section>
       <section className="bg-gray-50">
         <div data-aos="zoom-in" className="h-[100%] py-4 xls:h-[80vh]">
-          <h1 className="text-[1.8rem] headingfont text-center md:text-[2.5rem] font-bold text-[#718BFF]">
+          <p className="text-[1.8rem] headingfont text-center md:text-[2.5rem] font-bold text-[#718BFF]">
             Innovate. Build. Thrive.
-          </h1>
+          </p>
           <p className="text-center sd:text-[1.3vw] px-[5vw] pfont  mt-4 font-[400] mb-12">
             Chart a visionary course through your digital frontier with
             state-of-the-art software solutions. We pioneer innovation with
@@ -103,9 +103,9 @@ const SoftwareDevelopment = () => {
 
       <section>
         <div className="py-12 h-[100%] xls:h-[70vh] flex flex-col justify-center bg-[#E3F1F4]">
-          <h1 className="text-[#718BFF] headingfont text-center font-bold text-3xl mb-8">
+          <p className="text-[#718BFF] headingfont text-center font-bold text-3xl mb-8">
             Our Software Development Solutions
-          </h1>
+          </p>
           <div className=" mx-auto px-4">
             <div className="flex flex-wrap -mx-4">
               {[
@@ -173,10 +173,10 @@ const SoftwareDevelopment = () => {
             />
           </svg>
         </span>
-        <h1 className="text-white headingfont text-4xl md:text-4xl xl:text-5xl font-semibold px-4 mx-auto mb-1 leading-snug">
+        <p className="text-white headingfont text-4xl md:text-4xl xl:text-5xl font-semibold px-4 mx-auto mb-1 leading-snug">
           We follow a structured approach to deliver high-quality software
           solutions that exceed client expectations.
-        </h1>
+        </p>
         <div className="grid-offer text-left grid sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
           <div className="emailcard bg-gray-800 p-10 relative">
             <div className="circle"></div>

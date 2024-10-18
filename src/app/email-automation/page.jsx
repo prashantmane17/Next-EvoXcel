@@ -24,10 +24,7 @@ const EmailAutomation = () => {
             Revolutionize Your Communication with Our Email Automation Tool
           </h1>
           <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
-            Transform your marketing strategy with EvoXcel&lsquo;s Email
-            Automation Tool. Our cutting-edge solution is designed to enhance
-            your email marketing efforts, automate your campaigns, and deliver
-            personalized content to drive engagement and growth.
+            Transform your marketing strategy with EvoXcel&apos;s email automation tool, designed to streamline automated email campaigns, enhance personalized email marketing, and deliver targeted content that boosts engagement and growth.
           </p>
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
@@ -42,12 +39,11 @@ const EmailAutomation = () => {
         </figure>
       </section>
       <section className="bg-gray-50 pb-13">
-        <h1 className="text-3xl text-center headingfont md:text-4xl font-semibold text-[#718BFF] mb-4">
+        <h2 className="text-3xl text-center headingfont md:text-4xl font-semibold text-[#718BFF] mb-4">
           Comprehensive Features of Our Email Automation Service
-        </h1>
+        </h2>
         <p className="text-lg text-center headingfont text-gray-700">
-          Discover the robust capabilities of our email automation solution
-          tailored to elevate your marketing strategy:
+          Our cutting-edge solution offers a range of feature-specific capabilities that elevate your email marketing efforts:
         </p>
         <article className="px-[7vw] pt-[10vh] w-[100%] md:flex gap-4">
           <div
@@ -67,9 +63,7 @@ const EmailAutomation = () => {
                 Personalized Email Campaigns
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Deliver highly personalized content based on user behavior,
-                preferences, and interactions to increase engagement and
-                conversions.
+                Create customized emails based on user behavior and preferences to drive increased email engagement and higher conversion rates.
               </p>
             </div>
           </div>
@@ -88,8 +82,7 @@ const EmailAutomation = () => {
                 Automated Email Workflows
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Create automated workflows triggered by specific actions or
-                behaviors to streamline communication and save time.
+                Simplify the process with email workflow automation triggered by specific actions to save time and enhance communication.
               </p>
             </div>
           </div>
@@ -105,11 +98,10 @@ const EmailAutomation = () => {
             </div>
             <div class="p-6">
               <h3 class="text-[#718BFF] mb-2 block headingfont font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                In-Depth Analytics and Reporting
+                Email Analytics and Reporting
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Gain valuable insights with advanced analytics and reporting
-                features to track performance and optimize your strategies.
+                Leverage in-depth email analytics to gain valuable insights and optimize your marketing strategies.
               </p>
             </div>
           </div>
@@ -125,11 +117,10 @@ const EmailAutomation = () => {
             </div>
             <div class="p-6">
               <h3 class="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                Seamless Integration
+                CRM Integration for Email
               </h3>
               <p class="block font-sans pfont text-base font-normal leading-relaxed text-inherit antialiased">
-                Integrate effortlessly with existing CRM and marketing tools to
-                create a unified and efficient workflow.
+                Enjoy seamless integration with your existing CRM systems for a unified, efficient workflow.
               </p>
             </div>
           </div>
@@ -144,8 +135,7 @@ const EmailAutomation = () => {
               Advantages of Our Email Automation Service
             </h2>
             <p className="text-lg text-gray-700 pfont">
-              Experience the benefits of using our email automation service to
-              enhance your marketing efforts
+              By utilizing our email automation software, you can:
             </p>
           </div>
           <div
@@ -153,10 +143,11 @@ const EmailAutomation = () => {
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             {[
-              "Effortless Campaign Management: Automate your email campaigns to save time and focus on strategic planning.",
-              "Personalized Messaging: Send customized emails that resonate with your audience and drive higher conversion rates.",
-              "Consistent Outreach: Maintain regular communication with your contacts to ensure your brand stays top-of-mind.",
-              "Data-Driven Insights: Utilize analytics to refine your email campaigns and achieve better results with actionable insights.",
+              "Revolutionize your email communication with streamlined email campaign management",
+              "Increase conversions with personalized email campaigns that resonate with your audience",
+              "Maintain consistent outreach with time-saving email automation",
+              "Make data-driven decisions with detailed email performance tracking and reporting",
+
               // "Insightful Analytics: Make informed decisions with comprehensive data."
             ].map((benefit, index) => (
               <div
@@ -169,29 +160,22 @@ const EmailAutomation = () => {
           </div>
         </div>
       </section>
-      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-[60vh]">
+      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-fit">
         <div data-aos="fade-right" className="md:w-[55%]">
           <h2 className="text-[#718BFF] headingfont text-[10vw] md:text-[2.5vw] font-[600] mt-[6vh]">
             Our Values
           </h2>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Innovation - </span>We continuously
-            evolve our tools to adapt to market changes, exploring new
-            technologies and approaches to keep our clients ahead of the
-            competition.
+            <span className="font-[600]">Innovation - </span>We continually evolve our email personalization technology to stay ahead of industry trends.
           </p>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Customer Success - </span> Your success
-            is our top priority. We are dedicated to providing exceptional
-            support and services to help you achieve your marketing goals.
+            <span className="font-[600]">Customer Success - </span> We prioritize customer-centric email automation to ensure your business thrives.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Integrity - </span> We uphold honest
-            and transparent business practices, ensuring that every decision and
-            action is guided by our commitment to integrity.
+            <span className="font-[600]">Integrity - </span>Guided by honest business practices, we provide cutting-edge email technology to help you succeed.
           </p>
         </div>
         <figure className="md:w-[35%]  flex justify-end">
@@ -204,7 +188,7 @@ const EmailAutomation = () => {
           />
         </figure>
       </article>
-      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-[70vh]">
+      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-fit">
         <figure className="md:w-[35%]  flex justify-end">
           <Image
             className="w-[100%] object-contain"
@@ -221,26 +205,19 @@ const EmailAutomation = () => {
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Streamlined Automation - </span>{" "}
-            Simplify the process of creating and managing email campaigns,
-            allowing you to focus on what matters most.
+            Automate and manage your B2B email automation or e-commerce email marketing efficiently.
           </p>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Smart Segmentation - </span> Target
-            specific segments of your audience with tailored messages to
-            maximize engagement and effectiveness.
+            <span className="font-[600]">Smart Segmentation - </span> Use email list segmentation to target specific audience groups for maximum effectiveness.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Seamless Integration - </span> Easily
-            integrate our tool with your existing CRM and other systems for a
-            cohesive workflow.
+            <span className="font-[600]">Seamless Integration - </span> : Integrate smoothly with your CRM for a cohesive, efficient workflow.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Advanced Analytics - </span> Access
-            detailed reports and insights to continuously improve your email
-            marketing strategy and achieve superior results.
+            <span className="font-[600]">Advanced Analytics - </span> Access data-driven email insights that help you continuously improve your strategy and results.
           </p>
         </div>
       </article>

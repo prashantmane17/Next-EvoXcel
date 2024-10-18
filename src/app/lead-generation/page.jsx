@@ -278,12 +278,12 @@ const LeadGeneration = () => {
       </section>
 
       <section className="overflow-hidden bg-[#003C71] lg:h-auto pt-[10vh] pb-[12vh]">
-        <h1
+        <h2
           data-aos="fade-down"
           className="text-[10vw] md:text-[3vw] headingfont text-white font-semibold text-center pb-7"
         >
           Our Process
-        </h1>
+        </h2>
         <ul className="process">
           <li data-aos="fade-right" className="process__item headingfont">
             <span className="process__number text-[15vw] md:text-[5vw]">1</span>

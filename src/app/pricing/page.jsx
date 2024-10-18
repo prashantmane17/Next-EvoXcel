@@ -79,15 +79,15 @@ const Pricing = () => {
                 <div className="flex items-start">
                   5-Page Website (Home, About, Services, Portfolio/Gallery,
                   Contact)
-                </div>{" "}
+                </div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">Responsive Design</div>{" "}
+                <div className="flex items-start">Responsive Design</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">On-Page SEO Optimization</div>{" "}
+                <div className="flex items-start">On-Page SEO Optimization</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
@@ -97,17 +97,17 @@ const Pricing = () => {
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="">Social Media Links Integration</div>{" "}
+                <div className="">Social Media Links Integration</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 bg-white text-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">14 Days Turnaround Time</div>{" "}
+                <div className="flex items-start">14 Days Turnaround Time</div>
               </li>
             </ul>
             <div className="mt-10 text-center">
               <p className="text-3xl font-bold headingfont">
                 $399{" "}
-                <sub className="font-normal text-[0.9vw]">(one time fee)</sub>{" "}
+                <sub className="font-normal text-[0.9vw]">(one time fee)</sub>
               </p>
               <button className="hover:bg-gray-200 bg-purple-600 text-white hover:text-purple-600 font-bold py-[2vh] px-[4vw] mb-4 rounded mt-4">
                 <Link href="/sign-in">Choose Plan</Link>
@@ -125,15 +125,15 @@ const Pricing = () => {
             <ul className=" px-[3vw]">
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">Up to 15 Product Pages</div>{" "}
+                <div className="flex items-start">Up to 15 Product Pages</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">Responsive Design</div>{" "}
+                <div className="flex items-start">Responsive Design</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">Complete SEO Setup</div>{" "}
+                <div className="flex items-start">Complete SEO Setup</div>
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
@@ -149,7 +149,7 @@ const Pricing = () => {
               </li>
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">Hosting & Maintenance</div>{" "}
+                <div className="flex items-start">Hosting & Maintenance</div>
               </li>
             </ul>
             <div className="mt-6 text-center">
@@ -173,7 +173,7 @@ const Pricing = () => {
             <ul className=" px-[3vw] ">
               <li className="flex items-start py-2 pfont">
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-                <div className="flex items-start">All features included</div>{" "}
+                <div className="flex items-start">All features included</div>
               </li>
             </ul>
             <div className="mt-6 text-center">
@@ -196,12 +196,12 @@ const Pricing = () => {
                 <div className="flex items-start">
                   All features included&lsquo;, &lsquo;Access to experts to set
                   up pitch and Target audience
-                </div>{" "}
+                </div>
               </li>
             </ul>
             <div className="mt-10 text-center">
               <p className="text-3xl font-bold headingfont">
-                $89<sub className="font-normal text-[0.9vw]">/Month </sub>{" "}
+                $89<sub className="font-normal text-[0.9vw]">/Month </sub>
               </p>
               <button className="hover:bg-gray-200 bg-purple-600 text-white hover:text-purple-600 font-bold py-[2vh] px-[4vw] mb-4 rounded mt-4">
                 <Link href="/sign-in">Choose Plan</Link>
@@ -218,7 +218,7 @@ const Pricing = () => {
                 <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
                 <div className="flex items-start">
                   Access to multiple accounts, and customized features
-                </div>{" "}
+                </div>
               </li>
             </ul>
             <div className="mt-6 text-center">
@@ -243,37 +243,37 @@ const Pricing = () => {
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Unique IP Address and desktop
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Smart AI based reply management
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Drip campaigns for new invites
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Integration with 3rd party apps
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Drip campaigns for 1st degree leads
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Get campaign performance emails
-              </div>{" "}
+              </div>
             </li>
           </div>
           <div>
@@ -281,35 +281,35 @@ const Pricing = () => {
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 View/Analyze Prospect profile
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Download all data in CSV format
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
-              <div className="flex items-start">Message to Linkedin groups</div>{" "}
+              <div className="flex items-start">Message to Linkedin groups</div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Send personalized images & gifs
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Easily track and manage campaigns
-              </div>{" "}
+              </div>
             </li>
             <li className="flex items-start py-2 pfont">
               <i className="fa-solid mr-3 text-white bg-[#180B5B] rounded-full p-1 text-[0.5vw] fa-check"></i>
               <div className="flex items-start">
                 Setup own tags to segregate leads
-              </div>{" "}
+              </div>
             </li>
           </div>
         </ul>
