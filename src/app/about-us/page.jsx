@@ -67,13 +67,52 @@ export default function page() {
         </div>
         <div className="w-full"></div>
       </div> */}
-      <div className="flex items-center justify-between p-10">
+      <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between p-10 pt-5">
         <Image
           src="/images/about-us/about-us_mission.png"
-          width={400}
+          width={300}
           height={300}
-          className="pl-14"
+          className="pl-14 mt-8 lg:mt-0 lg:order-first"
           alt="about-us-mission"
+          data-aos="fade-up" // Add AOS animation class
+        />
+        <div
+          className="max-w-xl text-center lg:text-left"
+          data-aos="fade-right"
+        >
+          <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
+          <p className="text-lg">
+            Empower businesses by providing innovative, reliable, and efficient
+            digital solutions. We strive to be the catalyst for our clients'
+            success, helping them navigate the digital landscape with confidence
+            and agility. Through our commitment to excellence and customer
+            satisfaction, we aim to build lasting partnerships that drive mutual
+            growth and prosperity.
+          </p>
+        </div>
+      </div>
+      <div className="relative flex flex-col lg:flex-row items-center justify-between p-10 pt-5">
+        <div
+          className="max-w-xl text-center lg:text-left"
+          data-aos="fade-right"
+        >
+          <h2 className="text-4xl font-bold mb-4">Our Vission</h2>
+          <p className="text-lg">
+            Empower businesses by providing innovative, reliable, and efficient
+            digital solutions. We strive to be the catalyst for our clients'
+            success, helping them navigate the digital landscape with confidence
+            and agility. Through our commitment to excellence and customer
+            satisfaction, we aim to build lasting partnerships that drive mutual
+            growth and prosperity.
+          </p>
+        </div>
+        <Image
+          src="/images/about-us/about-us-vision.png"
+          width={300}
+          height={300}
+          className="pl-14 mt-8 lg:mt-0"
+          alt="about-us-mission"
+          data-aos="fade-up" // Add AOS animation class
         />
       </div>
     </>
