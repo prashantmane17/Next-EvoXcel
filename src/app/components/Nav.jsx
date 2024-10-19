@@ -39,7 +39,7 @@ const Nav = () => {
     document.addEventListener("click", handleClickOutside);
 
     // Initial check for scroll position to prevent hydration issues
-    handleScroll(); 
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -128,21 +128,29 @@ const Nav = () => {
                   </a>
                 </Link>
 
-                <Link href="/software-development" className="flex" legacyBehavior>
+                <Link
+                  href="/software-development"
+                  className="flex"
+                  legacyBehavior
+                >
                   <a className="hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center">
                     <i className="fa-solid fa-computer text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold">Software Development</p>
                       <p className="text-[14px]">
-                        In today’s fast-paced digital world, having robust, scalable...
+                        In today’s fast-paced digital world, having robust,
+                        scalable...
                       </p>
                     </div>
                   </a>
                 </Link>
-
               </article>
               <article className="w-[50%] py-[2vh] pr-[1vw]">
-                <Link href="/application-development" className="flex " legacyBehavior>
+                <Link
+                  href="/application-development"
+                  className="flex "
+                  legacyBehavior
+                >
                   <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <a
                       href="https://www.flaticon.com/free-icons/design"
@@ -154,9 +162,7 @@ const Nav = () => {
                     {/* <img src={application} className='w-[50px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
                     <div>
-                      <p className="font-semibold ">
-                        Application Development
-                      </p>
+                      <p className="font-semibold ">Application Development</p>
                       <p className="text-[14px] font-[500]">
                         We specialize in crafting tailored application
                         development solutions ...
@@ -186,7 +192,7 @@ const Nav = () => {
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
-                <Link href="/linkedin-automation" className="flex " >
+                <Link href="/linkedin-automation" className="flex ">
                   <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
                     {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
@@ -216,12 +222,10 @@ const Nav = () => {
             </section>
           </div>
           <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20">
-            <Link href={"/pricing"}>
-              Pricing
-            </Link>
+            <Link href={"/pricing"}>Pricing</Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
-          <div className="cursor-pointer resourcedropdown navBar lg:py-[15px]">
+          <div className="cursor-pointer resourcedropdown navBar lg:pr-[2vw] lg:py-[15px]">
             Insights <i className="fa-solid fa-caret-down ml-1"></i>
           </div>
           <div className="hidden absolute rounded-b-lg text-gray-700 dropdown2 shadow-lg bg-white w-[100%] top-[50px]">
@@ -257,7 +261,6 @@ const Nav = () => {
               <article className="w-[50%] py-[2vh] pr-[1vw]">
                 {/* <Link to='/helpdesk' className='flex ' legacyBehavior> */}
                 <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
-                 
                   <i className="fa-solid fa-handshake-angle text-[2vw] mr-[1vw]"></i>
                   <div>
                     <p className="font-semibold ">Helpdesk </p>
@@ -271,9 +274,12 @@ const Nav = () => {
               </article>
             </section>
           </div>
+          <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20">
+            <Link href={"/about-us"}>About Us</Link>
+          </div>
 
           <div className="relative left-[0.7vw]">
-            <div className="cursor-pointer logindropdown  w-[10vw] navBar lg:py-[15px] lg:pl-[2.3vw]">
+            <div className="cursor-pointer logindropdown   navBar lg:py-[15px] lg:pr-[2vw]">
               Log in <i className="fa-solid fa-caret-down ml-1"></i>
             </div>
             <div className="hidden absolute dropdown3 bg-white left-0 w-[10vw] top-[50px] text-black shadow-lg rounded-b-lg">
@@ -293,17 +299,16 @@ const Nav = () => {
                   </Link>
                 </article>
               </section>
-            </div> 
+            </div>
           </div>
           <div className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
-            <Link href={"/contact-us"}>
-              Let&lsquo;s Connect
-            </Link>
+            <Link href={"/contact-us"}>Let&lsquo;s Connect</Link>
           </div>
         </div>
         <ul
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${
+            menuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           <li
             className="px-4 py-2 border-b cursor-pointer text-black w-full"
@@ -329,11 +334,10 @@ const Nav = () => {
                 onClick={() => {
                   toggleMenu();
                   setServicesOpen(false);
-                }} legacyBehavior
+                }}
+                legacyBehavior
               >
-                <a className="px-4 py-2  text-black">
-                  Application Development
-                </a>
+                <a className="px-4 py-2  text-black">Application Development</a>
               </Link>
               <Link
                 href="/lead-generation"
@@ -360,7 +364,8 @@ const Nav = () => {
                 onClick={() => {
                   toggleMenu();
                   setProductsOpen(false);
-                }} legacyBehavior
+                }}
+                legacyBehavior
               >
                 <a className="px-4 py-2 text-black">Linkedin Automation</a>
               </Link>
@@ -369,46 +374,47 @@ const Nav = () => {
                 onClick={() => {
                   toggleMenu();
                   setProductsOpen(false);
-                }} legacyBehavior
+                }}
+                legacyBehavior
               >
                 <a className="px-4 py-2 text-black">Email Automation</a>
               </Link>
             </div>
           )}
-            <li className="px-4 py-2 text-black border-b">
-          <Link href="/pricing" onClick={toggleMenu} className="w-full">
+          <li className="px-4 py-2 text-black border-b">
+            <Link href="/pricing" onClick={toggleMenu} className="w-full">
               Pricing
-          </Link>
-              </li>
-            <li className="px-4 py-2 text-black border-b">
-          <Link href="/about-us" onClick={toggleMenu} className="w-full">
+            </Link>
+          </li>
+          <li className="px-4 py-2 text-black border-b">
+            <Link href="/about-us" onClick={toggleMenu} className="w-full">
               About Us
-          </Link>
-              </li>
-            <li className="px-4 py-2 text-black border-b">
-          <Link href="/contact-us" onClick={toggleMenu} className="w-full">
+            </Link>
+          </li>
+          <li className="px-4 py-2 text-black border-b">
+            <Link href="/contact-us" onClick={toggleMenu} className="w-full">
               Contact Us
-          </Link>
-              </li>
+            </Link>
+          </li>
 
-            <li className="px-[4vw] py-[2vw] text-[3vw] text-black border-b border-transparent">
-          <Link
-            href="/sign-in"
-            onClick={toggleMenu}
-            className="absolute bottom-[6vh] left-[3vw] border border-gray-400 rounded-lg"
-          >
+          <li className="px-[4vw] py-[2vw] text-[3vw] text-black border-b border-transparent">
+            <Link
+              href="/sign-in"
+              onClick={toggleMenu}
+              className="absolute bottom-[6vh] left-[3vw] border border-gray-400 rounded-lg"
+            >
               Sign in
-          </Link>
-            </li>
-            <li className="px-[4vw] py-[2vw] text-[3vw]  text-black border-b border-transparent">
-          <Link
-            href="/sign-up"
-            onClick={toggleMenu}
-            className="absolute bottom-[6vh] left-[25vw] border border-gray-400 rounded-lg"
-          >
+            </Link>
+          </li>
+          <li className="px-[4vw] py-[2vw] text-[3vw]  text-black border-b border-transparent">
+            <Link
+              href="/sign-up"
+              onClick={toggleMenu}
+              className="absolute bottom-[6vh] left-[25vw] border border-gray-400 rounded-lg"
+            >
               Sign Up
-          </Link>
-            </li>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

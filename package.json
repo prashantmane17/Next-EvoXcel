@@ -12,6 +12,7 @@
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "evoxcel": "file:",
+    "framer-motion": "^11.11.9",
     "next": "^15.0.0-canary.191",
     "react": "^18",
     "react-dom": "^18",
