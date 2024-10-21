@@ -83,11 +83,11 @@ export default function page() {
           <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
           <p className="text-lg">
             Empower businesses by providing innovative, reliable, and efficient
-            digital solutions. We strive to be the catalyst for our clients'
-            success, helping them navigate the digital landscape with confidence
-            and agility. Through our commitment to excellence and customer
-            satisfaction, we aim to build lasting partnerships that drive mutual
-            growth and prosperity.
+            digital solutions. We strive to be the catalyst for our
+            clients&apos; success, helping them navigate the digital landscape
+            with confidence and agility. Through our commitment to excellence
+            and customer satisfaction, we aim to build lasting partnerships that
+            drive mutual growth and prosperity.
           </p>
         </div>
       </div>
@@ -99,11 +99,11 @@ export default function page() {
           <h2 className="text-4xl font-bold mb-4">Our Vission</h2>
           <p className="text-lg">
             Empower businesses by providing innovative, reliable, and efficient
-            digital solutions. We strive to be the catalyst for our clients'
-            success, helping them navigate the digital landscape with confidence
-            and agility. Through our commitment to excellence and customer
-            satisfaction, we aim to build lasting partnerships that drive mutual
-            growth and prosperity.
+            digital solutions. We strive to be the catalyst for our
+            clients&apos; success, helping them navigate the digital landscape
+            with confidence and agility. Through our commitment to excellence
+            and customer satisfaction, we aim to build lasting partnerships that
+            drive mutual growth and prosperity.
           </p>
         </div>
         <Image
