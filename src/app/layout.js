@@ -15,7 +15,10 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        
+        <meta
+          name="google-site-verification"
+          content="91HPARuc7N0w5aoN-NvsTj3zjD7uH_gdqQhKIFBaamw"
+        />
       </Head>
       <body>
         <Nav />
