@@ -2,7 +2,14 @@ import React from "react";
 import "./leadgen.css";
 
 import Image from "next/image";
-
+export const metadata = {
+  title: "Targeted Lead Generation Services | EvoXcel",
+  description:
+    "Drive business success with EvoXcel’s data-driven lead generation strategies. From B2B to multi-channel lead capture, we help you generate high-quality prospects and optimize conversion",
+  alternates: {
+    canonical: "https://www.evoxcel.com/lead-generation/",
+  },
+};
 const LeadGeneration = () => {
   return (
     <>

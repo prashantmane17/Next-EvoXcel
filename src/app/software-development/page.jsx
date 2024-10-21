@@ -1,23 +1,18 @@
 import React from "react";
 import "../email-automation/emailAutomation.css";
 import Image from "next/image";
+export const metadata = {
+  title: "Innovative Software Development Solutions | EvoXcel",
+  description:
+    "Leverage EvoXcel’s expertise in software development. We offer scalable, customized software solutions to streamline operations and drive business growth.",
+  alternates: {
+    canonical: "https://www.evoxcel.com/software-development/",
+  },
+};
 const SoftwareDevelopment = () => {
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>
-            Software Excellence: Elevating Businesses to New Heights
-          </title>
-          <meta
-            name="description"
-            content="Elevate your business with EvoXcel’s custom software development. Seamlessly integrate, optimize, and scale with innovative solutions designed for maximum efficiency."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/software-development"
-          />
-        </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-extrabold pt-[7vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Software Excellence, Elevating Businesses to New Heights

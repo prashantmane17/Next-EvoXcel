@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import "./appDevelopement.css";
-
+export const metadata = {
+  title: "Custom Application Development Services | EvoXcel",
+  description:
+    "Create innovative, user-focused applications with EvoXcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+  alternates: {
+    canonical: "https://www.evoxcel.com/application-development/",
+  },
+};
 const ApplicationDevelopment = () => {
   return (
     <>

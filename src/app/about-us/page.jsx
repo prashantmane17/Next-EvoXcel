@@ -1,5 +1,13 @@
 import React from "react";
 import Image from "next/image";
+export const metadata = {
+  title: "About Us",
+  description: "about us",
+  alternates: {
+    canonical: "https://www.evoxcel.com/about-us/",
+  },
+};
+
 export default function page() {
   return (
     <>

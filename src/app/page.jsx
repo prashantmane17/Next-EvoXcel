@@ -1,19 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import Hero from "./components/Home_page/Hero";
-
+export const metadata = {
+  title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+  description:
+    "Discover EvoXcel’s customized IT staffing solutions. From flexible staffing to expert project management, we help businesses achieve excellence with scalable and cost-effective IT services.",
+  alternates: {
+    canonical: "https://www.evoxcel.com/",
+  },
+};
 const Home = () => {
   return (
     <div className="w-[100%]">
       <Hero />
-
-      {/* <div className="carddoll hidden absolute md:top-[50vh] top-[55vh] right-[0vw] md:w-[16em] w-[12em]">
-        <img
-          src="https://uiverse.io/build/_assets/astronaut-WTFWARES.png"
-          alt=""
-          className="image w-[10vw]"
-        />
-      </div> */}
       <section className="md:h-[75vh] w-[100%]  mb-[5vh] md:mb-0 bg-slate-50">
         <article className="m-auto w-[90%] md:h-[75vh]  md:flex   justify-between">
           <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">

@@ -2,29 +2,30 @@ import React from "react";
 import Image from "next/image";
 
 import "./webDevelopment.css";
+export const metadata = {
+  title: "Custom Web Development Services | EvoXcel",
+  description:
+    "Elevate your online presence with EvoXcel’s custom web development services. From responsive design to seamless integration, we create high-performance websites tailored to your business",
+  alternates: {
+    canonical: "https://www.evoxcel.com/web-development/",
+  },
+};
 const WebDevelopment = () => {
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>
-            Expert Web Development Solutions for Business Growth | EvoXcel
-          </title>
-          <meta
-            name="description"
-            content="Boost your online presence with EvoXcel’s custom web development. Get tailored designs, advanced functionality, and ongoing support to drive growth and engagement."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/web-development"
-          />
-        </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Crafting Digital Experiences that Ignite and Elevate
           </h1>
           <p className="mt-4 pfont mb-10 max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify pfont text-black">
-            We specialize in creating exceptional web experiences that captivate your audience and deliver measurable results for your business. By leveraging our web development expertise, we help you establish a dynamic online presence that sets you apart in today’s fast-paced digital landscape. As a premium web development company, we offer custom web solutions tailored to your specific needs, ensuring your brand stands out in the digital world.
+            We specialize in creating exceptional web experiences that captivate
+            your audience and deliver measurable results for your business. By
+            leveraging our web development expertise, we help you establish a
+            dynamic online presence that sets you apart in today’s fast-paced
+            digital landscape. As a premium web development company, we offer
+            custom web solutions tailored to your specific needs, ensuring your
+            brand stands out in the digital world.
           </p>
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>

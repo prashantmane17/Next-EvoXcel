@@ -1,6 +1,15 @@
 import React from "react";
 import "./emailAutomation.css";
 import Image from "next/image";
+
+export const metadata = {
+  title: "Email Automation Services | EvoXcel",
+  description:
+    "Boost engagement with EvoXcel’s email automation services. From personalized campaigns to automated workflows, we help you optimize conversions and improve your email marketing ROI.",
+  alternates: {
+    canonical: "https://www.evoxcel.com/email-automation/",
+  },
+};
 const EmailAutomation = () => {
   return (
     <>
@@ -24,7 +33,10 @@ const EmailAutomation = () => {
             Revolutionize Your Communication with Our Email Automation Tool
           </h1>
           <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
-            Transform your marketing strategy with EvoXcel&apos;s email automation tool, designed to streamline automated email campaigns, enhance personalized email marketing, and deliver targeted content that boosts engagement and growth.
+            Transform your marketing strategy with EvoXcel&apos;s email
+            automation tool, designed to streamline automated email campaigns,
+            enhance personalized email marketing, and deliver targeted content
+            that boosts engagement and growth.
           </p>
           {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
@@ -43,7 +55,8 @@ const EmailAutomation = () => {
           Comprehensive Features of Our Email Automation Service
         </h2>
         <p className="text-lg text-center headingfont text-gray-700">
-          Our cutting-edge solution offers a range of feature-specific capabilities that elevate your email marketing efforts:
+          Our cutting-edge solution offers a range of feature-specific
+          capabilities that elevate your email marketing efforts:
         </p>
         <article className="px-[7vw] pt-[10vh] w-[100%] md:flex gap-4">
           <div
@@ -63,7 +76,8 @@ const EmailAutomation = () => {
                 Personalized Email Campaigns
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Create customized emails based on user behavior and preferences to drive increased email engagement and higher conversion rates.
+                Create customized emails based on user behavior and preferences
+                to drive increased email engagement and higher conversion rates.
               </p>
             </div>
           </div>
@@ -72,7 +86,9 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <Image width={300} height={300}
+              <Image
+                width={300}
+                height={300}
                 src="/images/email-automation/email-automation_Email-Workflows.webp"
                 alt="Automated Email Workflows"
               />
@@ -82,7 +98,8 @@ const EmailAutomation = () => {
                 Automated Email Workflows
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Simplify the process with email workflow automation triggered by specific actions to save time and enhance communication.
+                Simplify the process with email workflow automation triggered by
+                specific actions to save time and enhance communication.
               </p>
             </div>
           </div>
@@ -91,7 +108,9 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <Image width={300} height={300}
+              <Image
+                width={300}
+                height={300}
                 src="/images/email-automation/email-automation_Analytics-Reporting.webp"
                 alt="In-Depth Analytics and Reporting"
               />
@@ -101,7 +120,8 @@ const EmailAutomation = () => {
                 Email Analytics and Reporting
               </h3>
               <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
-                Leverage in-depth email analytics to gain valuable insights and optimize your marketing strategies.
+                Leverage in-depth email analytics to gain valuable insights and
+                optimize your marketing strategies.
               </p>
             </div>
           </div>
@@ -110,7 +130,9 @@ const EmailAutomation = () => {
             class="relative flex md:w-[24%] mt-[7vh] md:mt-0 hover:scale-105 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
             <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-              <Image width={300} height={300}
+              <Image
+                width={300}
+                height={300}
                 src="/images/email-automation/email-automation_Seamless-Integration.webp"
                 alt="Seamless Integration"
               />
@@ -120,7 +142,8 @@ const EmailAutomation = () => {
                 CRM Integration for Email
               </h3>
               <p class="block font-sans pfont text-base font-normal leading-relaxed text-inherit antialiased">
-                Enjoy seamless integration with your existing CRM systems for a unified, efficient workflow.
+                Enjoy seamless integration with your existing CRM systems for a
+                unified, efficient workflow.
               </p>
             </div>
           </div>
@@ -167,15 +190,21 @@ const EmailAutomation = () => {
           </h2>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Innovation - </span>We continually evolve our email personalization technology to stay ahead of industry trends.
+            <span className="font-[600]">Innovation - </span>We continually
+            evolve our email personalization technology to stay ahead of
+            industry trends.
           </p>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Customer Success - </span> We prioritize customer-centric email automation to ensure your business thrives.
+            <span className="font-[600]">Customer Success - </span> We
+            prioritize customer-centric email automation to ensure your business
+            thrives.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Integrity - </span>Guided by honest business practices, we provide cutting-edge email technology to help you succeed.
+            <span className="font-[600]">Integrity - </span>Guided by honest
+            business practices, we provide cutting-edge email technology to help
+            you succeed.
           </p>
         </div>
         <figure className="md:w-[35%]  flex justify-end">
@@ -205,19 +234,25 @@ const EmailAutomation = () => {
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Streamlined Automation - </span>{" "}
-            Automate and manage your B2B email automation or e-commerce email marketing efficiently.
+            Automate and manage your B2B email automation or e-commerce email
+            marketing efficiently.
           </p>
           <p className="text-black mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Smart Segmentation - </span> Use email list segmentation to target specific audience groups for maximum effectiveness.
+            <span className="font-[600]">Smart Segmentation - </span> Use email
+            list segmentation to target specific audience groups for maximum
+            effectiveness.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Seamless Integration - </span> : Integrate smoothly with your CRM for a cohesive, efficient workflow.
+            <span className="font-[600]">Seamless Integration - </span> :
+            Integrate smoothly with your CRM for a cohesive, efficient workflow.
           </p>
           <p className="text-black my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Advanced Analytics - </span> Access data-driven email insights that help you continuously improve your strategy and results.
+            <span className="font-[600]">Advanced Analytics - </span> Access
+            data-driven email insights that help you continuously improve your
+            strategy and results.
           </p>
         </div>
       </article>
