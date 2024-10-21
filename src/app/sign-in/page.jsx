@@ -1,7 +1,16 @@
+"use client"
 import React from "react";
 // import img from "../assets/Sign In.png";
 import Image from "next/image";
 const Signin = () => {
+  const handleSubmit = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    
+    // Redirect to the external page
+    window.location.href = "https://dashboard.evoxcel.com/login";
+  };
+
   return (
     <>
       <section className="h-[100vh] w-[100%] flex justify-between">
@@ -20,10 +29,10 @@ const Signin = () => {
             </div>
 
             <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm p-3 md:p-0">
-              <form class="space-y-6" action="#" method="POST">
+              <form class="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label
-                    for="email"
+                    htmlFor="email"
                     class="block headingfont text-sm font-medium leading-6 text-gray-900"
                   >
                     Email address
@@ -43,7 +52,7 @@ const Signin = () => {
                 <div>
                   <div class="flex items-center justify-between">
                     <label
-                      for="password"
+                      htmlFor="password"
                       class="block headingfont text-sm font-medium leading-6 text-gray-900"
                     >
                       Password
