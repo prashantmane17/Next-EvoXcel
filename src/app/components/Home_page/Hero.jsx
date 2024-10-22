@@ -93,7 +93,7 @@ export default function Hero() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="relative h-[15.3vh]  overflow-hidden">
+            <div className="relative h-[15.9vh]  overflow-hidden">
               <div className="absolute w-full h-full">
                 {slides.map((slide, index) => (
                   <div

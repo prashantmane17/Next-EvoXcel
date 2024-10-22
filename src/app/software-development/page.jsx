@@ -32,6 +32,7 @@ const SoftwareDevelopment = () => {
             width={300}
             height={300}
             className="md:w-[70%]"
+            priority
           />
         </figure>
       </section>
@@ -60,7 +61,7 @@ const SoftwareDevelopment = () => {
               {
                 title: "Customized Software",
                 description:
-                  ": Meticulously tailored to meet your unique business challenges",
+                  "Meticulously tailored to meet your unique business challenges",
                 icon: "fas fa-cogs",
               },
               {
@@ -77,7 +78,7 @@ const SoftwareDevelopment = () => {
               },
             ].map((service, index) => (
               <div key={index} className="box">
-                <div className="box__head relative h-[83px] w-[83px] bg-white rounded-full">
+                <div className="box__head relative h-[75px] w-[75px] bg-white rounded-full">
                   <i
                     className={`${service.icon} fa-3x mb-4 text-[#718BFF] absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 `}
                   ></i>
@@ -114,7 +115,7 @@ const SoftwareDevelopment = () => {
                   icon: "fa-mobile-alt",
                   title: "Mobile App Development",
                   description:
-                    ": Engage customers across iOS, Android, and cross-platform solutions.",
+                    "Engage customers across iOS, Android, and cross-platform solutions.",
                 },
                 {
                   icon: "fa-cogs",
@@ -157,13 +158,13 @@ const SoftwareDevelopment = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
             className="text-indigo-600 ml-3 w-6 h-6"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
             />
           </svg>

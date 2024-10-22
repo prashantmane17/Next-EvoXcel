@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Footer = () => {
+  const email = "sales@evoxcel.com";
   return (
     <>
       <footer className="new_footer_area bg_color">
@@ -213,11 +214,11 @@ const Footer = () => {
                         5th Block, Koramangala, Bangalore 560095
                       </li>
                       <a
-                        href=""
+                        href={`mailto:${email}`}
                         className="d:text-[1.1vw] text-gray-600 hover:text-gray-800 block"
                       >
                         <i className="fa-solid fa-envelope mr-1 my-2"></i>{" "}
-                        sales@evoxcel.com
+                        {email}
                       </a>
                     </ul>
                   </div>

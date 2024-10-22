@@ -22,7 +22,7 @@ const Home = () => {
               src="/images/Home/welcomeImage.webp"
               width={300}
               height={300}
-              alt=""
+              alt="welcomeImage"
             />
           </figure>
           <div
@@ -266,7 +266,7 @@ const Home = () => {
               width={300}
               height={300}
               className="w-[65%]"
-              alt=""
+              alt="Campaign-Image"
             />
           </figure>
         </section>
@@ -280,7 +280,7 @@ const Home = () => {
               width={300}
               height={300}
               className="w-[80%]"
-              alt=""
+              alt="" 
             />
           </figure>
           <aside

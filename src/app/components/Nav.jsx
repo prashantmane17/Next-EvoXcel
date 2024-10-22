@@ -13,41 +13,8 @@ const Nav = () => {
   const [productsOpen, setProductsOpen] = useState(false);
   const location = usePathname();
   const navRef = useRef();
+  const menuRef = useRef(null);
 
-  // Handle scroll event
-  const handleScroll = () => {
-    setScrolled(window.scrollY > 0);
-  };
-
-  // Toggle menu states
-  const toggleMenu = () => setMenuOpen((prev) => !prev);
-  const toggleServices = () => setServicesOpen((prev) => !prev);
-  const toggleProducts = () => setProductsOpen((prev) => !prev);
-
-  // Close menu if clicking outside
-  const handleClickOutside = (event) => {
-    if (navRef.current && !navRef.current.contains(event.target)) {
-      setMenuOpen(false);
-      setServicesOpen(false);
-      setProductsOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    AOS.init({ duration: 500 });
-    window.addEventListener("scroll", handleScroll);
-    document.addEventListener("click", handleClickOutside);
-
-    // Initial check for scroll position to prevent hydration issues
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
-
-  // Determine navbar classes based on scroll and location
   let navbarClasses = [
     "h-[8vh]",
     "md:h-[10vh]",
@@ -63,7 +30,6 @@ const Nav = () => {
     "transition-colors",
     "duration-300",
   ];
-
   if (scrolled) {
     navbarClasses.push("bg-white", "text-black");
   } else {
@@ -79,6 +45,68 @@ const Nav = () => {
       navbarClasses.push("text-black", "bg-transparent");
     }
   }
+  const isActiveLink = (path) => {
+    return path === location ? "text-sky-500" : "";
+  };
+  // Handle scroll event
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 0);
+  };
+
+  // Toggle menu states
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+    navbarClasses.push("bg-white", "text-black");
+  };
+  const toggleServices = () => {
+    setServicesOpen((prev) => !prev);
+    setProductsOpen(false); // Close products when services are opened
+  };
+
+  const toggleProducts = () => {
+    setProductsOpen((prev) => !prev);
+    setServicesOpen(false); // Close services when products are opened
+  };
+
+  // Close menu if clicking outside
+  const handleClickOutside = (event) => {
+    if (navRef.current && !navRef.current.contains(event.target)) {
+      setMenuOpen(false);
+      setServicesOpen(false);
+      setProductsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("click", handleClickOutside);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target)
+      ) {
+        toggleMenu(); // Close menu if click is outside the menu
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  // Determine navbar classes based on scroll and location
 
   // Determine logo source based on route
   const logoSrc =
@@ -114,8 +142,12 @@ const Nav = () => {
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
               <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
-                <Link href="/web-development" className="flex " legacyBehavior>
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                <Link href="/web-development" className={`flex`} legacyBehavior>
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/web-development/"
+                    )}`}
+                  >
                     <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
                     {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <div>
@@ -133,7 +165,11 @@ const Nav = () => {
                   className="flex"
                   legacyBehavior
                 >
-                  <a className="hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <a
+                    className={`hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/software-development/"
+                    )}`}
+                  >
                     <i className="fa-solid fa-computer text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold">Software Development</p>
@@ -151,7 +187,11 @@ const Nav = () => {
                   className="flex "
                   legacyBehavior
                 >
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/application-development/"
+                    )}`}
+                  >
                     {/* <a
                       href="https://www.flaticon.com/free-icons/design"
                       className="hidden"
@@ -165,13 +205,17 @@ const Nav = () => {
                       <p className="font-semibold ">Application Development</p>
                       <p className="text-[14px] font-[500]">
                         We specialize in crafting tailored application
-                        development solutions ...
+                        development solutions
                       </p>
                     </div>
                   </a>
                 </Link>
                 <Link href="/lead-generation" className="flex " legacyBehavior>
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/lead-generation/"
+                    )}`}
+                  >
                     {/* <img src={lead} className='w-[60px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -192,8 +236,16 @@ const Nav = () => {
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
-                <Link href="/linkedin-automation" className="flex ">
-                  <div className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                <Link
+                  href="/linkedin-automation"
+                  className="flex "
+                  legacyBehavior
+                >
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/linkedin-automation/"
+                    )}`}
+                  >
                     {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -203,10 +255,14 @@ const Nav = () => {
                         Development...
                       </p>
                     </div>
-                  </div>
+                  </a>
                 </Link>
                 <Link href="/email-automation" className="flex " legacyBehavior>
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/email-automation/"
+                    )}`}
+                  >
                     {/* <img src={outlook} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -222,7 +278,9 @@ const Nav = () => {
             </section>
           </div>
           <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20">
-            <Link href={"/pricing"}>Pricing</Link>
+            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")}`}>
+              Pricing
+            </Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
           <div className="cursor-pointer resourcedropdown navBar lg:pr-[2vw] lg:py-[15px]">
@@ -232,7 +290,11 @@ const Nav = () => {
             <section className="flex">
               <article className="w-[50%] py-[2vh] px-[1vw] ">
                 <Link href="/blog" className="flex " legacyBehavior>
-                  <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/blog/"
+                    )}`}
+                  >
                     {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
                     <div>
@@ -275,7 +337,12 @@ const Nav = () => {
             </section>
           </div>
           <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20">
-            <Link href={"/about-us"}>About Us</Link>
+            <Link
+              href={"/about-us"}
+              className={`${isActiveLink("/about-us/")}`}
+            >
+              About Us
+            </Link>
           </div>
 
           <div className="relative left-[0.7vw]">
@@ -286,13 +353,17 @@ const Nav = () => {
               <section className="flex">
                 <article className="w-[100%] justify-between flex text-gray-700">
                   <Link
-                    className="hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%]"
+                    className={`hover:bg-gray-400 hover:text-white rounded-es-lg px-[0.5vw] py-[1.5vh] w-[50%] ${isActiveLink(
+                      "/sign-up/"
+                    )}`}
                     href="/sign-up"
                   >
                     Sign up
                   </Link>
                   <Link
-                    className="hover:bg-gray-400 hover:text-white rounded-ee-lg   px-[0.5vw] py-[1.5vh] w-[50%]"
+                    className={`hover:bg-gray-400 hover:text-white rounded-ee-lg   px-[0.5vw] py-[1.5vh] w-[50%] ${isActiveLink(
+                      "/sign-in/"
+                    )}`}
                     href="/sign-in"
                   >
                     Sign in
@@ -302,14 +373,36 @@ const Nav = () => {
             </div>
           </div>
           <div className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
-            <Link href={"/contact-us"}>Let&lsquo;s Connect</Link>
+            <Link
+              href={"/contact-us"}
+              className={`${isActiveLink("/contact-us/")}`}
+            >
+              Let&lsquo;s Connect
+            </Link>
           </div>
         </div>
+
+        {menuOpen && (
+          <div
+            className="fixed top-0 left-0 w-full h-full bg-black opacity-0 z-10"
+            onClick={toggleMenu} // Close menu when clicking on the overlay
+          ></div>
+        )}
         <ul
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-screen pt-5 z-20 transition-transform duration-300 ${
+          ref={menuRef}
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100dvh] pt-5 z-50 transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
+          <li className="px-4 py-2 ">
+            <Image
+              src={logoSrc}
+              width={300}
+              height={300}
+              alt="Logo"
+              className="md:w-[5vw] w-[15vw] z-5"
+            />
+          </li>
           <li
             className="px-4 py-2 border-b cursor-pointer text-black w-full"
             onClick={toggleServices}
@@ -317,7 +410,7 @@ const Nav = () => {
             Services <i className="fa-solid fa-caret-down ml-1"></i>
           </li>
           {servicesOpen && (
-            <div className="pl-4">
+            <div className=" w-full">
               <Link
                 href="/web-development"
                 onClick={() => {
@@ -326,7 +419,29 @@ const Nav = () => {
                 }}
                 legacyBehavior
               >
-                <a className="px-4 py-2  text-black">Web Development</a>
+                <a
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/web-development/"
+                  )}`}
+                >
+                  Web Development
+                </a>
+              </Link>
+              <Link
+                href="/software-development"
+                onClick={() => {
+                  toggleMenu();
+                  setServicesOpen(false);
+                }}
+                legacyBehavior
+              >
+                <a
+                  className={`px-4 py-2  w-full inline-block text-black ${isActiveLink(
+                    "/software-development/"
+                  )}`}
+                >
+                  Software Development
+                </a>
               </Link>
 
               <Link
@@ -337,7 +452,13 @@ const Nav = () => {
                 }}
                 legacyBehavior
               >
-                <a className="px-4 py-2  text-black">Application Development</a>
+                <a
+                  className={`px-4 py-2  w-full inline-block text-black ${isActiveLink(
+                    "/application-development/"
+                  )}`}
+                >
+                  Application Development
+                </a>
               </Link>
               <Link
                 href="/lead-generation"
@@ -347,7 +468,13 @@ const Nav = () => {
                 }}
                 legacyBehavior
               >
-                <a className="px-4 py-2  text-black">Lead Generation</a>
+                <a
+                  className={`px-4 py-2  w-full inline-block text-black ${isActiveLink(
+                    "/lead-generation/"
+                  )}`}
+                >
+                  Lead Generation
+                </a>
               </Link>
             </div>
           )}
@@ -358,7 +485,7 @@ const Nav = () => {
             Products <i className="fa-solid fa-caret-down ml-1"></i>
           </li>
           {productsOpen && (
-            <div className="pl-4">
+            <div className="w-full ">
               <Link
                 href="/linkedin-automation"
                 onClick={() => {
@@ -367,7 +494,13 @@ const Nav = () => {
                 }}
                 legacyBehavior
               >
-                <a className="px-4 py-2 text-black">Linkedin Automation</a>
+                <a
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/linkedin-automation/"
+                  )}`}
+                >
+                  Linkedin Automation
+                </a>
               </Link>
               <Link
                 href="/email-automation"
@@ -377,44 +510,65 @@ const Nav = () => {
                 }}
                 legacyBehavior
               >
-                <a className="px-4 py-2 text-black">Email Automation</a>
+                <a
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/email-automation/"
+                  )}`}
+                >
+                  Email Automation
+                </a>
               </Link>
             </div>
           )}
           <li className="px-4 py-2 text-black border-b">
-            <Link href="/pricing" onClick={toggleMenu} className="w-full">
+            <Link
+              href="/pricing"
+              onClick={toggleMenu}
+              className={`w-full ${isActiveLink("/pricing/")}`}
+            >
               Pricing
             </Link>
           </li>
           <li className="px-4 py-2 text-black border-b">
-            <Link href="/about-us" onClick={toggleMenu} className="w-full">
+            <Link
+              href="/about-us"
+              onClick={toggleMenu}
+              className={`w-full ${isActiveLink("/about-us/")}`}
+            >
               About Us
             </Link>
           </li>
           <li className="px-4 py-2 text-black border-b">
-            <Link href="/contact-us" onClick={toggleMenu} className="w-full">
+            <Link
+              href="/contact-us"
+              onClick={toggleMenu}
+              className={`w-full ${isActiveLink("/contact-us/")}`}
+            >
               Contact Us
             </Link>
           </li>
 
-          <li className="px-[4vw] py-[2vw] text-[3vw] text-black border-b border-transparent">
+          <li className="px-[4vw] pt-7 py-[2vw] text-[4vw] w-full relative  border-b border-transparent">
             <Link
               href="/sign-in"
               onClick={toggleMenu}
-              className="absolute bottom-[6vh] left-[3vw] border border-gray-400 rounded-lg"
+              className={`absolute w-fit left-5 rounded-lg bg-black text-white px-2 py-[2px] first:last:only:border-gray-400 ${isActiveLink(
+                "/pricing/"
+              )}`}
             >
               Sign in
             </Link>
-          </li>
-          <li className="px-[4vw] py-[2vw] text-[3vw]  text-black border-b border-transparent">
             <Link
               href="/sign-up"
               onClick={toggleMenu}
-              className="absolute bottom-[6vh] left-[25vw] border border-gray-400 rounded-lg"
+              className={`absolute w-fit right-9  border-gray-400 rounded-lg bg-black text-white px-2 py-[2px] ${isActiveLink(
+                "/pricing/"
+              )}`}
             >
               Sign Up
             </Link>
           </li>
+          <li className="px-[4vw] py-[2vw] text-[4vw]  text-black border-b border-transparent"></li>
         </ul>
       </nav>
     </div>
