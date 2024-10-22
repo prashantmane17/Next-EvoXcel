@@ -11,17 +11,17 @@ export default function Hero() {
     {
       text: "LinkedIn Automation",
       text1:
-        "Automated LinkedIn Outreach | AI-Powered Lead Generation Efficiently connect with decision-makers through LinkedIn outreach automation. Utilize AI-powered lead generation tools to identify and engage with high-potential leads, expanding your network and boosting conversions. Our LinkedIn marketing solutions include B2B social media automation, LinkedIn prospecting tools.",
+        "Automated LinkedIn Outreach | AI-Powered Lead Generation Efficiently connect with decision-makers through LinkedIn outreach automation. Utilize AI-powered lead generation tools to identify and engage with high-potential leads.",
     },
     {
       text: "Email Automation",
       text1:
-        "Email Campaign Automation | Personalized Email Marketing Automate your email campaigns with powerful email automation tools that ensure consistent engagement and higher conversion rates. Enhance your marketing efforts with personalized email campaigns that drive email conversion optimization. Our services include automated email workflows and drip email campaigns focused on improving your email marketing ROI.",
+        "Email Campaign Automation | Personalized Email Marketing Automate your email campaigns with powerful email automation tools that ensure consistent engagement and higher conversion rates. Enhance your marketing efforts with personalized email campaigns.",
     },
     {
       text: "Lead Generation",
       text1:
-        "Targeted Lead Generation | ROI Optimization Implement strategic lead generation techniques to attract the right audience and convert prospects into loyal customers. Optimize your ROI with data-driven strategies that cultivate high-quality leads",
+        "Targeted Lead Generation | ROI Optimization Implement strategic lead generation techniques to attract the right audience and convert prospects into loyal customers. Optimize your ROI with data-driven strategies that cultivate high-quality leads.",
     },
     {
       text: "Software Development",
@@ -109,7 +109,7 @@ export default function Hero() {
                         : "-translate-y-full"
                     }`}
                   >
-                    <p className="md:text-[1.4vw] text-[4vw] font-light cursor-pointer">
+                    <p className="md:text-[1.2vw] text-[4vw] font-light cursor-pointer">
                       {slide.text1}
                     </p>
                   </div>
