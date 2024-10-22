@@ -14,7 +14,7 @@ const SoftwareDevelopment = () => {
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
-          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-extrabold pt-[7vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
+          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Software Excellence, Elevating Businesses to New Heights
           </h1>
           <p className="mt-4 mb-10 pfont max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">

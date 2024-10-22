@@ -213,7 +213,7 @@ const EmailAutomation = () => {
             width={300}
             height={300}
             src="/images/email-automation/email-automation_Our-Values.webp"
-            alt=""
+            alt="email-automation_Our-Values"
           />
         </figure>
       </article>

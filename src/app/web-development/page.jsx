@@ -157,7 +157,7 @@ const WebDevelopment = () => {
                     src="/images/web-development/statergy.webp"
                     width={300}
                     height={300}
-                    alt=""
+                    alt="web-development_statergy"
                   />
                 </div>
               </div>
@@ -173,7 +173,7 @@ const WebDevelopment = () => {
                       src="/images/web-development/planning.webp"
                       width={300}
                       height={300}
-                      alt=""
+                      alt="web-development_planning"
                     />
                   </div>
                 </div>
@@ -246,7 +246,7 @@ const WebDevelopment = () => {
                       src="/images/web-development/design.webp"
                       width={300}
                       height={300}
-                      alt=""
+                      alt="web-development_design"
                     />
                   </div>
                 </div>
@@ -257,13 +257,13 @@ const WebDevelopment = () => {
             <div className=" flex flex-wrap">
               <div className=" flex flex-wrap">
                 <div className="lg:w-1/2 px-4">
-                  <div className=" h-[70vh] w-full flex justify-center bg-cover bg-center">
+                  <div className=" h-fit py-8 w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[60%] object-contain"
                       width={300}
                       height={300}
                       src="/images/web-development/developmentprocess.webp"
-                      alt=""
+                      alt="web-developmentproces"
                     />
                   </div>
                 </div>
@@ -333,7 +333,7 @@ const WebDevelopment = () => {
                       src="/images/web-development/consult.webp"
                       width={300}
                       height={300}
-                      alt=""
+                      alt="web-development_consult"
                     />
                   </div>
                 </div>
@@ -350,7 +350,7 @@ const WebDevelopment = () => {
                       src="/images/web-development/maintain.webp"
                       width={300}
                       height={300}
-                      alt=""
+                      alt="web-development_maintain"
                     />
                   </div>
                 </div>

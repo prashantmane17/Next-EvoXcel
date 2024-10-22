@@ -104,7 +104,7 @@ const Nav = () => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuOpen]);
+  }, [menuOpen, toggleMenu]);
 
   // Determine navbar classes based on scroll and location
 
@@ -149,7 +149,6 @@ const Nav = () => {
                     )}`}
                   >
                     <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
-                    {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <div>
                       <p className="font-semibold ">Web Development</p>
                       <p className="text-[14px]">
@@ -199,7 +198,6 @@ const Nav = () => {
                     >
                       Design icons created by Freepik - Flaticon
                     </a> */}
-                    {/* <img src={application} className='w-[50px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Application Development</p>
@@ -216,7 +214,6 @@ const Nav = () => {
                       "/lead-generation/"
                     )}`}
                   >
-                    {/* <img src={lead} className='w-[60px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Lead Generation</p>
@@ -246,7 +243,6 @@ const Nav = () => {
                       "/linkedin-automation/"
                     )}`}
                   >
-                    {/* <img src={linkedin} className='w-[40px] object-contain  mr-2' alt="" /> */}
                     <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Linkedin Automation</p>
@@ -263,7 +259,6 @@ const Nav = () => {
                       "/email-automation/"
                     )}`}
                   >
-                    {/* <img src={outlook} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Email Automation</p>
@@ -295,7 +290,6 @@ const Nav = () => {
                       "/blog/"
                     )}`}
                   >
-                    {/* <img src={laptop} className='w-[50px] object-contain mr-2' alt="" /> */}
                     <i className="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Blog</p>
@@ -308,7 +302,6 @@ const Nav = () => {
                 </Link>
                 {/* <Link to='/case-study' className='flex ' legacyBehavior> */}
                 <a className="hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center">
-                  {/* <img src={computer} className='w-[50px] object-contain mr-2' alt="" /> */}
                   <i className="fa-solid fa-note-sticky text-[2vw] mr-[1vw]"></i>
                   <div>
                     <p className="font-semibold ">Case Studies</p>
@@ -390,13 +383,13 @@ const Nav = () => {
         )}
         <ul
           ref={menuRef}
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100dvh] pt-5 z-50 transition-transform duration-300 ${
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100vh] pt-5 z-50 transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <li className="px-4 py-2 ">
             <Image
-              src={logoSrc}
+              src="/images/Evoxcel.webp"
               width={300}
               height={300}
               alt="Logo"

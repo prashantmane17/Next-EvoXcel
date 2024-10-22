@@ -4,7 +4,7 @@ import "./appDevelopement.css";
 export const metadata = {
   title: "Custom Application Development Services | EvoXcel",
   description:
-    "Create innovative, user-focused applications with EvoXcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+    "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
   alternates: {
     canonical: "https://www.evoxcel.com/application-development/",
   },
@@ -53,7 +53,7 @@ const ApplicationDevelopment = () => {
           <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             1. Understanding Your Vision
           </h3>
-          <p className=" md:text-[1vw] pfont">
+          <p className=" md:text-[1.1vw] pfont">
             <span className="font-[600]  text-[#3E4687]">
               Initial Consultation:{" "}
             </span>{" "}
@@ -61,7 +61,7 @@ const ApplicationDevelopment = () => {
             challenges, and specific needs to ensure that the final product
             perfectly aligns with your vision.
           </p>
-          <p className="mt-3 md:text-[1vw] pfont">
+          <p className="mt-3 md:text-[1.1vw] pfont">
             <span className="font-[600] text-[#3E4687]">
               Comprehensive Requirements Analysis:{" "}
             </span>{" "}
@@ -95,7 +95,7 @@ const ApplicationDevelopment = () => {
           <h3 className="font-[600] headingfont md:text-[2vw] mt-5 mb-3 text-[#3E4687]">
             2. Designing for Excellence
           </h3>
-          <p className=" md:text-[1vw] pfont">
+          <p className=" md:text-[1.1vw] pfont">
             <span className="font-[600] text-[#3E4687]">
               User-Centered Design:{" "}
             </span>
@@ -103,7 +103,7 @@ const ApplicationDevelopment = () => {
             deliver a seamless and enjoyable user experience in every
             application.
           </p>
-          <p className="mt-3 md:text-[1vw] pfont">
+          <p className="mt-3 md:text-[1.1vw] pfont">
             <span className="font-[600] text-[#3E4687]">
               Prototyping and Refinement:{" "}
             </span>{" "}
@@ -118,7 +118,7 @@ const ApplicationDevelopment = () => {
           <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             3. Flexible Development
           </h3>
-          <p className=" md:text-[1vw]">
+          <p className=" md:text-[1.1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               Iterative Approach:{" "}
             </span>{" "}
@@ -126,7 +126,7 @@ const ApplicationDevelopment = () => {
             allowing for flexibility and ongoing enhancements as the project
             progresses.
           </p>
-          <p className="mt-10 md:text-[1vw]">
+          <p className="mt-10 md:text-[1.1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               Collaborative Process:{" "}
             </span>{" "}
@@ -159,14 +159,14 @@ const ApplicationDevelopment = () => {
           <h3 className="font-[600] md:text-[2vw] mt-5 mb-3 headingfont text-[#3E4687]">
             4. Rigorous Testing
           </h3>
-          <p className=" md:text-[1vw]">
+          <p className=" md:text-[1.1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               Quality Assurance:{" "}
             </span>{" "}
             We conduct thorough testing to identify and resolve any issues,
             ensuring that the application performs flawlessly.
           </p>
-          <p className="mt-3 md:text-[1vw]">
+          <p className="mt-3 md:text-[1.1vw]">
             <span className="font-[600] pfont text-[#3E4687]">
               End-User Validation:{" "}
             </span>{" "}
@@ -180,7 +180,7 @@ const ApplicationDevelopment = () => {
           <h3 className="font-[600] md:text-[2vw] headingfont mt-5 mb-3 text-[#3E4687]">
             5. Seamless Deployment
           </h3>
-          <p className=" pfont  md:text-[1vw]">
+          <p className=" pfont  md:text-[1.1vw]">
             <span className="font-[600] text-[#3E4687]">
               Smooth Implementation:{" "}
             </span>{" "}
@@ -188,7 +188,7 @@ const ApplicationDevelopment = () => {
             your operations, integrating the application seamlessly into your
             chosen environment.
           </p>
-          <p className="pfont mt-10 md:text-[1vw]">
+          <p className="pfont mt-10 md:text-[1.1vw]">
             <span className="font-[600] text-[#3E4687]">
               Ongoing Maintenance:{" "}
             </span>{" "}

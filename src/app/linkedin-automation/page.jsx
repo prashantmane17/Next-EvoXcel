@@ -87,7 +87,7 @@ const LinkedInAutomation = () => {
             width={300}
             height={300}
             className="w-[57%]"
-            alt=""
+            alt="linked-in-why-chooseUs"
           />
         </figure>
         <article className="md:w-[50%] mt-[5vh] md:mt-0">
@@ -185,7 +185,7 @@ const LinkedInAutomation = () => {
             width={300}
             height={300}
             className="w-[80%]"
-            alt=""
+            alt="Precision-Targeting_image"
           />
         </article>
       </section>
@@ -196,7 +196,7 @@ const LinkedInAutomation = () => {
             width={300}
             height={300}
             className="w-[87%]"
-            alt=""
+            alt="Manage-Campaigns_image"
           />
         </article>
         <article className="md:w-[50%] flex flex-col justify-center items-start">
@@ -314,7 +314,7 @@ const LinkedInAutomation = () => {
             width={300}
             height={300}
             className="w-[80%]"
-            alt=""
+            alt="Inbox-Management_image"
           />
         </article>
       </section>

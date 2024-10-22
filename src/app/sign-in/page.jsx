@@ -105,7 +105,7 @@ const Signin = () => {
             width={300}
             height={300}
             className="w-[70%]"
-            alt=""
+            alt="Sign_In-image"
           />
         </aside>
       </section>

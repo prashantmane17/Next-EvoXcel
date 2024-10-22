@@ -185,22 +185,41 @@ const Footer = () => {
                     Team Solutions
                   </h3>
                   <div className="f_social_icon flex space-x-4">
-                    <Link
-                      href="/"
+                    <a
+                      href="https://www.facebook.com/profile.php?id=61566321227448"
                       className="fab fa-facebook text-gray-600 hover:text-gray-800"
-                    ></Link>
-                    <Link
-                      href="/"
-                      className="fab fa-twitter text-gray-600 hover:text-gray-800"
-                    ></Link>
+                      title="Follow us on Facebook"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></a>
+
+                    <a
+                      href="https://www.youtube.com/@EvoXcel-tech"
+                      className="fab fa-youtube text-gray-600 hover:text-gray-800"
+                      title="Subscribe to our YouTube channel"
+                      aria-label="YouTube"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></a>
+
                     <a
                       href="https://www.linkedin.com/company/evoxcel-tech/"
                       className="fab fa-linkedin text-gray-600 hover:text-gray-800"
+                      title="Connect with us on LinkedIn"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     ></a>
-                    <Link
-                      href="/"
-                      className="fab fa-pinterest text-gray-600 hover:text-gray-800"
-                    ></Link>
+
+                    <a
+                      href="https://www.instagram.com/evoxcel/"
+                      className="fab fa-instagram text-gray-600 hover:text-gray-800"
+                      title="Follow us on Instagram"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    ></a>
                   </div>
                   <div>
                     <h3 className="mt-[5vh] mb-[1vh] text-gray-600 hover:text-gray-800">

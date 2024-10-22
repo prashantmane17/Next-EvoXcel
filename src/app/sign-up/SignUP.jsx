@@ -61,7 +61,7 @@ const Signup = () => {
             width={300}
             height={300}
             className="w-[80%] pt-[10vh] object-contain "
-            alt=""
+            alt="Sign_up-image"
           />
         </aside>
         <aside className="h-[100%] w-full md:w-[60%]  mx-5 md:m-0">
