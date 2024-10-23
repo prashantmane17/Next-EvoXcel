@@ -41,6 +41,7 @@ const ApplicationDevelopment = () => {
             src="/images/application-development/application-development.webp"
             width={300}
             height={300}
+            loading="lazy"
             alt="application-development-image"
             className="md:w-[70%]"
           />
@@ -76,6 +77,7 @@ const ApplicationDevelopment = () => {
             src="/images/application-development/application-development_understanding-vision.webp"
             width={300}
             height={300}
+            loading="lazy"
             className="md:w-[60%]"
             alt="Understanding-Your-Vision-images"
           />
@@ -87,6 +89,7 @@ const ApplicationDevelopment = () => {
             src="/images/application-development/application-development_designing.webp"
             width={300}
             height={300}
+            loading="lazy"
             className="md:w-[60%]"
             alt="Designing-Excellence-image"
           />
@@ -140,6 +143,7 @@ const ApplicationDevelopment = () => {
             src="/images/application-development/application-development_fexible-development.webp"
             width={300}
             height={300}
+            loading="lazy"
             className="md:w-[50%]"
             alt="Flexible-Development-image"
           />
@@ -152,6 +156,7 @@ const ApplicationDevelopment = () => {
             width={300}
             height={300}
             className="md:w-[50%]"
+            loading="lazy"
             alt=" Rigorous Testing"
           />
         </figure>
@@ -201,6 +206,7 @@ const ApplicationDevelopment = () => {
             src="/images/application-development/application-development_seamless-deployment.webp"
             width={300}
             height={300}
+            loading="lazy"
             className="md:w-[50%] md:ml-10"
             alt="Seamless Deployment"
           />

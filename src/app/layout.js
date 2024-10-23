@@ -14,7 +14,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <meta charSet="UTF-8" />
         <title>{metadata.title}</title>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "EvoXcel",
+              url: "https://www.evoxcel.com",
+              logo: "https://www.evoxcel.com/images/e_logo.png",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "sales@evoxcel.com",
+                contactType: "IT Service",
+                areaServed: "IN",
+                availableLanguage: "English",
+              },
+              sameAs: [
+                "https://www.facebook.com/profile.php?id=61566321227448",
+                "https://www.instagram.com/evoxcel/",
+                "https://www.linkedin.com/company/evoxcel-tech/",
+              ],
+            }),
+          }}
+        />
         <meta name="description" content={metadata.description} />
       </Head>
       <body>

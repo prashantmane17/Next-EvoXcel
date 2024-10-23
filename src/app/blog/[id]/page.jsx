@@ -129,19 +129,19 @@ function Blogpost({ params }) {
       <section className="flex w-[100%] justify-between px-[4vw]">
         <aside className="md:w-[68%] mt-[7vh] md:pr-[4vw] md:border-r border-black">
         {blog.id === 1 && (
-      <Image src="/images/blog/blog-lead-generation.webp" alt={blog.title} width={300} height={200} />
+      <img src="/images/blog/blog-lead-generation.webp" alt={blog.title} width={300} height={200} />
     )}
     {blog.id === 2 && (
-      <Image src="/images/blog/blog-Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
+      <img src="/images/blog/blog-Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
     )}
     {blog.id === 3 && (
-      <Image src="/images/blog/blog_Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
+      <img src="/images/blog/blog_Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
     )}
     {blog.id === 4 && (
-      <Image src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp" alt={blog.title} width={300} height={200} />
+      <img src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp" alt={blog.title} width={300} height={200} />
     )}
     {blog.id === 5 && (
-      <Image src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp" alt={blog.title} width={300} height={200} />
+      <img src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp" alt={blog.title} width={300} height={200} />
     )}
           <p className="mt-[7vh] text-justify md:text-[1vw] pfont">
             {blog.content}

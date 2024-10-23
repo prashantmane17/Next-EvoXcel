@@ -45,6 +45,7 @@ export default function page() {
               src="/images/about-us/about-us.png"
               width={300}
               height={300}
+              loading="lazy"
               className=" pt-8 md:pt-0 md:w-[28vw] h-[58]"
               alt="about-us"
             />
@@ -52,34 +53,12 @@ export default function page() {
         </div>
       </div>
 
-      {/* <div className="w-full h-screen">
-        <div className="w-full flex items-center justify-center">
-          <div className="border-sky-200 border-4 w-[800px] h-[200px] relative">
-            <p className="w-20 flex flex-col text-[3vw] font-extrabold tracking-wide bg-white absolute -left-5 top-[15%]">
-              <span>
-                <span className="text-sky-700">O</span>ur
-              </span>
-              <span>
-                <span className="text-sky-700">M</span>isson
-              </span>
-            </p>
-            <div className="bg-white border-none absolute -right-2 -top-2">
-              <Image
-                src="/images/about-us/about-us.png"
-                width={300}
-                height={300}
-                className="h-[100px] w-[200px]"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="w-full"></div>
-      </div> */}
       <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between p-10 pt-5">
         <Image
           src="/images/about-us/about-us_mission.png"
           width={300}
           height={300}
+          loading="lazy"
           className="pl-14 mt-8 lg:mt-0 lg:order-first"
           alt="about-us-mission"
           data-aos="fade-up" // Add AOS animation class
@@ -118,6 +97,7 @@ export default function page() {
           src="/images/about-us/about-us-vision.png"
           width={300}
           height={300}
+          loading="lazy"
           className="pl-14 mt-8 lg:mt-0"
           alt="about-us-mission"
           data-aos="fade-up" // Add AOS animation class

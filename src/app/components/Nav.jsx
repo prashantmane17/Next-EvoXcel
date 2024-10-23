@@ -125,6 +125,7 @@ const Nav = () => {
             width={300}
             height={300}
             alt="Logo"
+            loading="lazy"
             className="md:w-[5vw] w-[15vw] z-5"
           />
         </Link>
@@ -393,6 +394,7 @@ const Nav = () => {
               width={300}
               height={300}
               alt="Logo"
+              loading="lazy"
               className="md:w-[5vw] w-[15vw] z-5"
             />
           </li>

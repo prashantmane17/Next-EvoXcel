@@ -5,10 +5,57 @@ export const metadata = {
   title: "EvoXcel – Tailored IT Staffing & Business Solutions",
   description:
     "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+
   alternates: {
     canonical: "https://www.evoxcel.com/",
   },
+
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
 };
+
 const Home = () => {
   return (
     <div className="w-[100%]">
@@ -21,6 +68,7 @@ const Home = () => {
               src="/images/Home/welcomeImage.webp"
               width={300}
               height={300}
+              loading="lazy"
               alt="welcomeImage"
             />
           </figure>
@@ -155,6 +203,7 @@ const Home = () => {
               className="w-[100%] h-[100%] mb-5 object-cover"
               width={300}
               height={300}
+              loading="lazy"
               src="/images/Home/Our_Services.webp"
               alt="Our-services-image"
             />
@@ -170,6 +219,7 @@ const Home = () => {
               src="/images/Home/product-Image.webp"
               width={300}
               height={300}
+              loading="lazy"
               alt="our-products-Image"
             />
           </figure>
@@ -264,6 +314,7 @@ const Home = () => {
               src="/images/Home/Campaign-Image.webp"
               width={300}
               height={300}
+              loading="lazy"
               className="w-[65%]"
               alt="Campaign-Image"
             />
@@ -278,6 +329,7 @@ const Home = () => {
               src="/images/Home/MC.webp"
               width={300}
               height={300}
+              loading="lazy"
               className="w-[80%]"
               alt="Boost Conversions with Smart Sequences."
             />
@@ -336,6 +388,7 @@ const Home = () => {
               src="/images/Home/SCIC.webp"
               width={300}
               height={300}
+              loading="lazy"
               className="w-[70%]"
               alt="Enhance Connections with Intelligent Communication."
             />
@@ -350,6 +403,7 @@ const Home = () => {
               src="/images/Home/OWDDI.webp"
               width={300}
               height={300}
+              loading="lazy"
               className="w-[60%]"
               alt="Optimize with Data-Driven Insights"
             />
@@ -408,6 +462,7 @@ const Home = () => {
               src="/images/Home/SI.webp"
               width="300"
               height={300}
+              loading="lazy"
               className="w-[65%]"
               alt="Seamless Tool Integration"
             />

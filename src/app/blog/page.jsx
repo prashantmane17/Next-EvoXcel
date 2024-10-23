@@ -63,21 +63,51 @@ const Aboutus = () => {
             className="md:w-[30%] hover:shadow-2xl bg-white p-[1vw] cursor-pointer"
             onClick={() => handleBlogClick(blog.id)}
           >
-           {blog.id === 1 && (
-      <Image src="/images/blog/blog-lead-generation.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 2 && (
-      <Image src="/images/blog/blog-Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 3 && (
-      <Image src="/images/blog/blog_Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 4 && (
-      <Image src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 5 && (
-      <Image src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp" alt={blog.title} width={300} height={200} />
-    )}
+            {blog.id === 1 && (
+              <img
+                src="/images/blog/blog-lead-generation.webp"
+                loading="lazy"
+                alt={blog.title}
+                width={300}
+                height={200}
+              />
+            )}
+            {blog.id === 2 && (
+              <img
+                src="/images/blog/blog-Essential-for-Modern-Businesses.webp"
+                alt={blog.title}
+                width={300}
+                height={200}
+                loading="lazy"
+              />
+            )}
+            {blog.id === 3 && (
+              <img
+                src="/images/blog/blog_Essential-for-Modern-Businesses.webp"
+                alt={blog.title}
+                width={300}
+                height={200}
+                loading="lazy"
+              />
+            )}
+            {blog.id === 4 && (
+              <img
+                src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp"
+                alt={blog.title}
+                width={300}
+                height={200}
+                loading="lazy"
+              />
+            )}
+            {blog.id === 5 && (
+              <img
+                src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp"
+                alt={blog.title}
+                width={300}
+                height={200}
+                loading="lazy"
+              />
+            )}
             <h2 className="mt-2 md:text-[1.5vw] hfont font-[550] text-slate-700">
               {blog.title}
             </h2>
