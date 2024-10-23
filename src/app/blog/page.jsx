@@ -64,8 +64,8 @@ const Aboutus = () => {
             onClick={() => handleBlogClick(blog.id)}
           >
             {blog.id === 1 && (
-              <img
-                src="/images/blog/blog-lead-generation.webp"
+              <Image
+                src="/images/Blog/blog-lead-generation.webp"
                 loading="lazy"
                 alt={blog.title}
                 width={300}
@@ -73,8 +73,8 @@ const Aboutus = () => {
               />
             )}
             {blog.id === 2 && (
-              <img
-                src="/images/blog/blog-Essential-for-Modern-Businesses.webp"
+              <Image
+                src="/images/Blog/blog-Essential-for-Modern-Businesses.webp"
                 alt={blog.title}
                 width={300}
                 height={200}
@@ -82,8 +82,8 @@ const Aboutus = () => {
               />
             )}
             {blog.id === 3 && (
-              <img
-                src="/images/blog/blog_Essential-for-Modern-Businesses.webp"
+              <Image
+                src="/images/Blog/blog_Essential-for-Modern-Businesses.webp"
                 alt={blog.title}
                 width={300}
                 height={200}
@@ -91,8 +91,8 @@ const Aboutus = () => {
               />
             )}
             {blog.id === 4 && (
-              <img
-                src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp"
+              <Image
+                src="/images/Blog/blog_Automation-in-Scaling-Your-Business.webp"
                 alt={blog.title}
                 width={300}
                 height={200}
@@ -100,8 +100,8 @@ const Aboutus = () => {
               />
             )}
             {blog.id === 5 && (
-              <img
-                src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp"
+              <Image
+                src="/images/Blog/blog_Emerging-Trends-in-Application-Development.webp"
                 alt={blog.title}
                 width={300}
                 height={200}

@@ -114,10 +114,7 @@ const Contactus = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label
-              htmlFor="phone-number"
-              className="block text-sm font-semibold leading-6 text-gray-900"
-            >
+            <label htmlFor="phone-number"className="block text-sm font-semibold leading-6 text-gray-900">
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -125,11 +122,7 @@ const Contactus = () => {
                 <label htmlFor="country" className="sr-only">
                   Country
                 </label>
-                <select
-                  id="country"
-                  name="country"
-                  className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                >
+                <select id="country" name="country" className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
                   <option>IN</option>
                   <option>US</option>
                   <option>CA</option>

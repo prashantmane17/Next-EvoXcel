@@ -8,7 +8,53 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/application-development/",
   },
+
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title: "Custom Application Development Services | EvoXcel",
+    description:
+      "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Application Development Services | EvoXcel",
+    description:
+      "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
 };
+
 const ApplicationDevelopment = () => {
   return (
     <>

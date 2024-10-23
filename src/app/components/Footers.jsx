@@ -1,8 +1,17 @@
-import React from "react";
+"use client"; // Ensure this is a client component
+
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Footer = () => {
+const Footers = () => {
+  const [isMounted, setIsMounted] = useState(false);
   const email = "sales@evoxcel.com";
+
+  useEffect(() => {
+    setIsMounted(true); // Set mounted state
+  }, []);
+
+  if (!isMounted) return null; // Prevent rendering until mounted
   return (
     <>
       <footer className="new_footer_area bg_color">
@@ -97,12 +106,18 @@ const Footer = () => {
                   </h3>
                   <ul className="list-none space-y-2">
                     <li>
-                      <Link href="/linkedin-automation" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="/linkedin-automation"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Linkedin Automation
                       </Link>
                     </li>
                     <li>
-                      <Link href="/email-automation" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="/email-automation"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Email Automation
                       </Link>
                     </li>
@@ -119,32 +134,50 @@ const Footer = () => {
                   </h3>
                   <ul className="list-none space-y-2">
                     <li>
-                      <Link href="" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href=""
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         FAQ
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="#"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Term &amp; conditions
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="#"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Reporting
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="#"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Documentation
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="#"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Support Policy
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="text-gray-600 hover:text-gray-800" >
+                      <Link
+                        href="#"
+                        className="text-gray-600 hover:text-gray-800"
+                      >
                         Privacy
                       </Link>
                     </li>
@@ -161,14 +194,41 @@ const Footer = () => {
                     Team Solutions
                   </h3>
                   <div className="f_social_icon flex space-x-4">
-                    <a href="https://www.facebook.com/profile.php?id=61566321227448" className="fab fa-facebook text-gray-600 hover:text-gray-800" title="Follow us on Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer" ></a>
+                    <Link
+                      href="https://www.facebook.com/profile.php?id=61566321227448"
+                      className="fab fa-facebook text-gray-600 hover:text-gray-800"
+                      title="Follow us on Facebook"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
 
-                    <a href="https://www.youtube.com/@EvoXcel-tech" className="fab fa-youtube text-gray-600 hover:text-gray-800" title="Subscribe to our YouTube channel" aria-label="YouTube" target="_blank" rel="noopener noreferrer" ></a>
+                    <Link
+                      href="https://www.youtube.com/@EvoXcel-tech"
+                      className="fab fa-youtube text-gray-600 hover:text-gray-800"
+                      title="Subscribe to our YouTube channel"
+                      aria-label="YouTube"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
 
-                    <a href="https://www.linkedin.com/company/evoxcel-tech/" className="fab fa-linkedin text-gray-600 hover:text-gray-800" title="Connect with us on LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" ></a>
+                    <Link
+                      href="https://www.linkedin.com/company/evoxcel-tech/"
+                      className="fab fa-linkedin text-gray-600 hover:text-gray-800"
+                      title="Connect with us on LinkedIn"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
 
-                    <a href="https://www.instagram.com/evoxcel/" className="fab fa-instagram text-gray-600 hover:text-gray-800"
-                      title="Follow us on Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"     ></a>
+                    <Link
+                      href="https://www.instagram.com/evoxcel/"
+                      className="fab fa-instagram text-gray-600 hover:text-gray-800"
+                      title="Follow us on Instagram"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
                   </div>
                   <div>
                     <h3 className="mt-[5vh] mb-[1vh] text-gray-600 hover:text-gray-800">
@@ -181,7 +241,10 @@ const Footer = () => {
                       <li className="text-gray-600 hover:text-gray-800 md:text-[1.1vw]">
                         5th Block, Koramangala, Bangalore 560095
                       </li>
-                      <a href={`mailto:${email}`} className="d:text-[1.1vw] text-gray-600 hover:text-gray-800 block">
+                      <a
+                        href={`mailto:${email}`}
+                        className="d:text-[1.1vw] text-gray-600 hover:text-gray-800 block"
+                      >
                         <i className="fa-solid fa-envelope mr-1 my-2"></i>{" "}
                         {email}
                       </a>
@@ -206,4 +269,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footers;

@@ -56,7 +56,6 @@ const Nav = () => {
   // Toggle menu states
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
-    navbarClasses.push("bg-white", "text-black");
   };
   const toggleServices = () => {
     setServicesOpen((prev) => !prev);

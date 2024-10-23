@@ -1,8 +1,9 @@
 import "./globals.css";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Script from "next/script";
 import Head from "next/head";
+import Footers from "./components/Footers";
 // import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export const metadata = {
@@ -16,30 +17,6 @@ export default function RootLayout({ children }) {
       <Head>
         <meta charSet="UTF-8" />
         <title>{metadata.title}</title>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "EvoXcel",
-              url: "https://www.evoxcel.com",
-              logo: "https://www.evoxcel.com/images/e_logo.png",
-              contactPoint: {
-                "@type": "ContactPoint",
-                email: "sales@evoxcel.com",
-                contactType: "IT Service",
-                areaServed: "IN",
-                availableLanguage: "English",
-              },
-              sameAs: [
-                "https://www.facebook.com/profile.php?id=61566321227448",
-                "https://www.instagram.com/evoxcel/",
-                "https://www.linkedin.com/company/evoxcel-tech/",
-              ],
-            }),
-          }}
-        />
         <meta name="description" content={metadata.description} />
       </Head>
       <body>
@@ -60,7 +37,8 @@ export default function RootLayout({ children }) {
         </Script>
         <Nav />
         {children}
-        <Footer />
+        {/* <Footer /> */}
+        <Footers />
         <Script
           src="https://kit.fontawesome.com/a32e229695.js"
           crossOrigin="anonymous"

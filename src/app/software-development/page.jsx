@@ -8,6 +8,50 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/software-development/",
   },
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title: "Innovative Software Development Solutions | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Innovative Software Development Solutions | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
 };
 const SoftwareDevelopment = () => {
   return (

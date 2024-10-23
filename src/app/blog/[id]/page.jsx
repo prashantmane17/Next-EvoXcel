@@ -8,8 +8,8 @@ const blogPosts = {
     title: "The Power of Personalization in Lead Generation.",
     content:
       "Personalization has become a critical factor in effective lead generation...",
-      img: "/images/blog/blog-lead-generation.webp",
-      h1: "Why Personalization Matters",
+    img: "/images/blog/blog-lead-generation.webp",
+    h1: "Why Personalization Matters",
     p11: "Understanding Customer Expectations...",
     p12: "EvoXcel’s Approach to Personalization...",
     h2: "Data-Driven Insights for Targeted Campaigns",
@@ -27,7 +27,7 @@ const blogPosts = {
     title: "Why Multi-Channel Marketing is Essential for Modern Businesses",
     content:
       "In today’s digital landscape, your audience is spread across multiple platforms...",
-      img: "/images/blog/blog-Essential-for-Modern-Businesses.webp",
+    img: "/images/blog/blog-Essential-for-Modern-Businesses.webp",
     h1: "The Importance of Multi-Channel Marketing",
     p11: "Reaching Your Audience Everywhere...",
     p12: "EvoXcel’s Integrated Solutions...",
@@ -46,7 +46,7 @@ const blogPosts = {
     title: "Optimizing Your Website for Lead Conversion",
     content:
       "Your website is more than just an online presence—it’s a powerful tool for generating leads. However, to fully leverage this potential, your website must be optimized for lead conversion. This blog explores the key elements of a high-converting website and how EvoXcel can help you enhance your online presence.",
-      img: "/images/blog/blog_Essential-for-Modern-Businesses.webp",
+    img: "/images/blog/blog_Essential-for-Modern-Businesses.webp",
     h1: "The Role of Website Design in Conversion",
     p11: "Creating a User-Friendly Experience : A well-designed website keeps visitors engaged and guides them smoothly towards conversion points. EvoXcel’s web development services focus on creating intuitive, attractive websites that enhance user experience.",
     p12: "Responsive and Mobile-Optimized Design : With more users browsing on mobile devices, having a responsive design is crucial. EvoXcel ensures that your website performs well across all devices, providing a seamless experience for every visitor.",
@@ -66,7 +66,7 @@ const blogPosts = {
     title: "The Role of Automation in Scaling Your Business",
     content:
       "As businesses grow, maintaining efficiency becomes a challenge. Automation offers a solution by streamlining processes, reducing manual tasks, and enabling businesses to scale effectively. This blog explores the benefits of automation and how EvoXcel’s solutions can support your growth.",
-      img: "/images/blog/blog_Automation-in-Scaling-Your-Business.webp",
+    img: "/images/blog/blog_Automation-in-Scaling-Your-Business.webp",
     h1: "Understanding the Need for Automation",
     p11: "Scaling with Efficiency : Growth brings complexity, and without automation, businesses can struggle to maintain efficiency. EvoXcel’s automation tools help streamline operations, allowing you to scale without sacrificing quality.",
     p12: "Reducing Manual Tasks : Automation eliminates repetitive manual tasks, freeing up your team to focus on higher-level strategic activities that drive business growth.",
@@ -86,7 +86,7 @@ const blogPosts = {
     title: "Emerging Trends in Application Development",
     content:
       "The field of application development is rapidly evolving, driven by new technologies and changing user expectations. Staying ahead of these trends is essential for businesses looking to maintain a competitive edge. This blog examines the latest trends in application development and how EvoXcel can help you leverage these innovations.",
-      img: "/images/blog/blog_Emerging-Trends-in-Application-Development.webp",
+    img: "/images/blog/blog_Emerging-Trends-in-Application-Development.webp",
     h1: "The Rise of Low-Code Development Platforms",
     p11: "Accelerating Development with Low-Code : Low-code platforms are revolutionizing application development by enabling faster, more efficient creation of applications. EvoXcel’s development services incorporate low-code solutions to help you bring products to market faster.",
     p12: "Empowering Non-Technical Teams : Low-code platforms allow non-technical team members to participate in the development process, fostering innovation and collaboration across your organization.",
@@ -128,21 +128,46 @@ function Blogpost({ params }) {
       </h2>
       <section className="flex w-[100%] justify-between px-[4vw]">
         <aside className="md:w-[68%] mt-[7vh] md:pr-[4vw] md:border-r border-black">
-        {blog.id === 1 && (
-      <img src="/images/blog/blog-lead-generation.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 2 && (
-      <img src="/images/blog/blog-Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 3 && (
-      <img src="/images/blog/blog_Essential-for-Modern-Businesses.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 4 && (
-      <img src="/images/blog/blog_Automation-in-Scaling-Your-Business.webp" alt={blog.title} width={300} height={200} />
-    )}
-    {blog.id === 5 && (
-      <img src="/images/blog/blog_Emerging-Trends-in-Application-Development.webp" alt={blog.title} width={300} height={200} />
-    )}
+          {blog.id === 1 && (
+            <Image
+              src="/images/Blog/blog-lead-generation.webp"
+              alt={blog.title}
+              width={300}
+              height={200}
+            />
+          )}
+          {blog.id === 2 && (
+            <Image
+              src="/images/Blog/blog-Essential-for-Modern-Businesses.webp"
+              alt={blog.title}
+              width={300}
+              height={200}
+            />
+          )}
+          {blog.id === 3 && (
+            <Image
+              src="/images/Blog/blog_Essential-for-Modern-Businesses.webp"
+              alt={blog.title}
+              width={300}
+              height={200}
+            />
+          )}
+          {blog.id === 4 && (
+            <Image
+              src="/images/Blog/blog_Automation-in-Scaling-Your-Business.webp"
+              alt={blog.title}
+              width={300}
+              height={200}
+            />
+          )}
+          {blog.id === 5 && (
+            <Image
+              src="/images/Blog/blog_Emerging-Trends-in-Application-Development.webp"
+              alt={blog.title}
+              width={300}
+              height={200}
+            />
+          )}
           <p className="mt-[7vh] text-justify md:text-[1vw] pfont">
             {blog.content}
           </p>
@@ -215,10 +240,9 @@ function Blogpost({ params }) {
 }
 export default Blogpost;
 
-
 export async function generateStaticParams() {
   const posts = Object.keys(blogPosts);
   return posts.map((id) => ({
-    id: id.toString(), 
+    id: id.toString(),
   }));
 }

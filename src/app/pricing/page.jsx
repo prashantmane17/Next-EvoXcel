@@ -1,19 +1,64 @@
 import React from "react";
 import "./pricing.css";
 import Link from "next/link";
+export const metadata = {
+  title:
+    "Flexible Pricing for Lead Generation, Web, Software Development | EvoXcel",
+  description:
+    "Explore EvoXcel’s transparent pricing for lead generation, LinkedIn automation, web, app, and software development. Tailored packages designed to fit your budget and goals.",
+  alternates: {
+    canonical: "https://www.evoxcel.com/pricing",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title:
+      "Flexible Pricing for Lead Generation, Web, Software Development | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Flexible Pricing for Lead Generation, Web, Software Development | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
+};
 const Pricing = () => {
   return (
     <section className="bg-slate-100 pb-[10vh]">
-      {/* <Helmet>
-        <title>
-          Flexible Pricing for Lead Generation, Web, Software Development
-        </title>
-        <meta
-          name="description"
-          content="Explore EvoXcel’s transparent pricing for lead generation, LinkedIn automation, web, app, and software development. Tailored packages designed to fit your budget and goals."
-        />
-        <link rel="canonical" href="https://www.evoxcel.com/pricing" />
-      </Helmet> */}
       <section className="pt-[10vh] pb-[5vh]">
         <h1 className="text-3xl font-bold text-[#180B5B] headingfont text-center py-[5vh]">
           Web Service Pricing Plans
@@ -314,56 +359,6 @@ const Pricing = () => {
           </div>
         </ul>
       </div>
-      {/* <div className="containerpricing main-container-body w-[100%]">
-        <div className="grid md:mt-[-3vh] mt-[5vh]">
-            <div className="cardpricing">
-                <h2 className="card_title">Basic Plan</h2>
-                <p>Perfect for individuals and small terms starting eith LinkedIn automation</p>
-                <p className="pricing">29$<span className="small">/per month</span></p>
-                <hr/>
-                <ul className="features list-decimal">
-                    <li>100 Automated Connections/Month.</li>
-                    <li>Magic Message Wizard.</li>
-                    <li>Basic Analytics.</li>
-                    <li>Email Support.</li>
-                    <li>Ninja Mode.</li>
-                </ul>
-                <a href="#" className="cta_btn">Get Started</a>
-            </div>
-            <div className="cardpricing">
-                <h2 className="card_title">Professional Plan</h2>
-                <p>Ideal for growing business looking to enhance their LinkedIn outreach</p>
-                <p className="pricing">69$<span className="small">/per month</span></p>
-                <hr/>
-                <ul className="features list-decimal">
-                    <li>500 Automated connection/Month</li>
-                    <li>Magic Mesage Wizard</li>
-                    <li>Advance Analytics</li>
-                    <li>Priority Email Support</li>
-                    <li>Ninja Mode</li>
-                    <li>Siggle Generation</li>
-                </ul>
-                 <a href="#" className="cta_btn">Get Started</a>
-            </div>
-            <div className="cardpricing">
-                <h2 className="card_title">Enterprise Plan</h2>
-                <p className=''>Best for large teams and enterprises needing comprehensive LinkedIn automation solutions</p>
-                <p className="pricing">149$<span className="small">/per month</span></p>
-                <hr/>
-                <ul className="features list-decimal">
-                    <li>Unlimited Automated Connections</li>
-                    <li>Magic Message Wizard</li>
-                    <li>Advance Analytics</li>
-                    <li>24/7 Premium Support</li>
-                    <li>Ninja Mode</li>
-                    <li>Giggle Generator</li>
-                    <li>Growth Generator</li>
-                    <li>Custom Integration</li>     
-                </ul>
-                 <a href="#" className="cta_btn">Get Started</a>
-            </div>
-        </div>
-    </div> */}
     </section>
   );
 };

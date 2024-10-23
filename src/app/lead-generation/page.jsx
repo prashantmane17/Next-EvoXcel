@@ -9,24 +9,55 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/lead-generation/",
   },
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title: "Targeted Lead Generation Services | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Targeted Lead Generation Services | EvoXcel",
+    description:
+      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
 };
 const LeadGeneration = () => {
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>
-            Effective Lead Generation Strategies for Business Growth
-          </title>
-          <meta
-            name="description"
-            content="Drive qualified leads with EvoXcel’s advanced lead generation services. Utilize data-driven strategies and automation tools to attract, nurture, and convert prospects."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/lead-generation"
-          />
-        </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Unlock Your Business Potential with Advanced Lead Generation
@@ -39,7 +70,6 @@ const LeadGeneration = () => {
             equipped with high-quality leads that are primed for conversion into
             valuable customers.
           </p>
-          {/* <a href="#" className="inline-block capitalize font-semibold bg-gradient-to-r from-purple-500 to-pink-800 rounded-full px-7 py-2 hover:from-purple-500 hover:to-gray-800">learn more</a> */}
         </div>
         <figure className="md:w-[50%] flex justify-center">
           <Image

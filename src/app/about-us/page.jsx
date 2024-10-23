@@ -6,6 +6,48 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/about-us/",
   },
+  openGraph: {
+    type: "website",
+    url: "https://www.evoxcel.com/",
+    title: "EvoXcel - About Us",
+    description: "Evoxcel-about us.",
+    site_name: "EvoXcel",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EvoXcel-about us",
+    description: "Evoxcel-about us ",
+    site: "@yourTwitterHandle",
+    creator: "@yourTwitterHandle",
+    images: [
+      {
+        url: "https://www.evoxcel.com/images/e_logo.png",
+        alt: "EvoXcel",
+      },
+    ],
+  },
+
+  facebookAppId: "your_facebook_app_id_here",
+
+  metadata: {
+    keywords: [
+      "IT Staffing",
+      "Business Solutions",
+      "EvoXcel",
+      "Project Management",
+    ],
+    author: "EvoXcel",
+  },
 };
 
 export default function page() {
