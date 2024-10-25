@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "LinkedIn Automation Solutions | EvoXcel",
+    title: "Automate Your LinkedIn Growth with EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Optimize your LinkedIn outreach and lead generation with EvoXcel’s automation tool, designed for seamless business networking",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -28,14 +28,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "LinkedIn Automation Solutions | EvoXcel",
+    title: "Automate Your LinkedIn Growth with EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Optimize your LinkedIn outreach and lead generation with EvoXcel’s automation tool, designed for seamless business networking",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -57,19 +57,6 @@ const LinkedInAutomation = () => {
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>
-            Advanced LinkedIn Automation Tools for Lead Generation | EvoXcel
-          </title>
-          <meta
-            name="description"
-            content="Maximize your LinkedIn strategy with EvoXcel’s automation tools. Enhance lead generation, optimize outreach, and grow your network effortlessly with cutting-edge solutions."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/linkedin-automation"
-          />
-        </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Revolutionize Your Networking with LinkedIn Automation Solutions

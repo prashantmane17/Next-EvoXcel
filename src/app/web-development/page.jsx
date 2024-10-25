@@ -12,14 +12,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "Custom Web Development Services | EvoXcel",
+    title: "Professional Web Development by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Build high-performance websites that enhance user experiences and drive growth with EvoXcel’s custom web development services.",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -29,14 +29,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Custom Web Development Services | EvoXcel",
+    title: "Professional Web Development by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Build high-performance websites that enhance user experiences and drive growth with EvoXcel’s custom web development services.",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -374,7 +374,7 @@ const WebDevelopment = () => {
                   <div className=" h-full w-full flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[55%] object-contain"
-                      src="/images/web-development/consult.webp"
+                      src="/images/web-development/consul.webp"
                       width={300}
                       height={300}
                       alt="web-development_consult"

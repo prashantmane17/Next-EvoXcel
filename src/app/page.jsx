@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Hero from "./components/Home_page/Hero";
 import Script from "next/script";
+
 export const metadata = {
   title: "EvoXcel – Tailored IT Staffing & Business Solutions",
   description:
@@ -14,14 +15,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+    title: "EvoXcel | Your Partner in IT Excellence",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "At EvoXcel, we offer dynamic IT solutions, including staffing, software development, and business-enhancing technologies to drive success.",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -31,14 +32,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+    title: "EvoXcel | Your Partner in IT Excellence",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "At EvoXcel, we offer dynamic IT solutions, including staffing, software development, and business-enhancing technologies to drive success.",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -78,9 +79,9 @@ const Home = () => {
               className="md:w-[50%] justify-center px-[5vw]"
               data-aos="fade-in"
             >
-              <h2 className="text-center pt-[7vh] headingfont text-[#112029] md:text-[2.3vw] font-[700]">
+              <p className="text-center pt-[7vh] headingfont text-[#112029] md:text-[2.3vw] font-[700]">
                 Welcome to EvoXcel
-              </h2>
+              </p>
               <p className="md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify pt-[2vh] pfont">
                 &ldquo;We empower your business success with a comprehensive
                 range of cutting-edge services and products. From custom web,
@@ -96,21 +97,21 @@ const Home = () => {
         <section className="bghome3 pl-[3vw]">
           <article className="w-[100%] md:flex">
             <div className="md:w-[55%] pr-[3vw]">
-              {/* <h2 className='text-white text-[2vw]'>~</h2> */}
-              <h2
+              {/* <p className='text-white text-[2vw]'>~</p> */}
+              <p
                 className="text-[7vw] md:text-[1.3vw] pt-[5vh] text-[#fff] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
                 WHAT WE PROVIDE
-              </h2>
-              <h2
+              </p>
+              <p
                 className=" text-[10vw] md:text-[3.1vw] font-bold text-[#fff] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
                 Our Services
-              </h2>
+              </p>
               <article className="md:flex justify-between text-white mt-[5vh] w-[100%]">
                 <Link
                   href="/web-development"
@@ -120,9 +121,9 @@ const Home = () => {
                 >
                   <div>
                     <i className="fa-solid fa-laptop md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
                       Web Development
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Specializing in custom web development, we craft visually
                       stunning and high-performing websites that drive revenue
@@ -141,9 +142,9 @@ const Home = () => {
                 >
                   <div>
                     <i className="fa-solid fa-code md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
                       Software Development
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Our expert team utilizes state-of-the-art technology to
                       create scalable, secure, and innovative software solutions
@@ -164,9 +165,9 @@ const Home = () => {
                 >
                   <div>
                     <i className="fa-solid fa-computer md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
                       Application Development
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Whether you need bespoke software, scalable web apps, or
                       robust mobile applications, our skilled team delivers
@@ -185,9 +186,9 @@ const Home = () => {
                 >
                   <div>
                     <i className="fa-solid fa-filter-circle-dollar md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
                       Lead Generation
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Leverage targeted lead generation to attract and engage
                       high-quality prospects. Our all-encompassing approach
@@ -226,27 +227,27 @@ const Home = () => {
               />
             </figure>
             <div className="md:w-[50%] px-[4vw] md:px-0 pt-[5vh] ">
-              <h2
+              <p
                 className="text-[7vw] md:text-[1.3vw] font-[500] text-[#112029] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
                 WHAT WE PROVIDE
-              </h2>
-              <h2
+              </p>
+              <p
                 className="text-[10vw] md:text-[3.1vw] font-bold text-[#112029] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
                 Our Products
-              </h2>
+              </p>
               <article className="md:flex justify-between gap-[2vw] text-white mt-[5vh] w-[100%]">
                 <Link href="/linkedin-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
                     <i className="fa-brands fa-linkedin md:text-[1.5vw] p-2 bg-[#112029] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
                       LinkedIn Automation
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pfont pt-[1vh] text-[#112029]">
                       Automate your outreach with precision. Our LinkedIn
                       automation tools are designed to boost response rates,
@@ -261,9 +262,9 @@ const Home = () => {
                 <Link href="/email-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
                     <i className="fa-solid fa-envelope md:text-[1.5vw] p-2 bg-[#112029] rounded-full"></i>
-                    <h2 className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
+                    <p className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
                       Email Automation
-                    </h2>
+                    </p>
                     <p className="md:text-[1vw] pfont pt-[1vh] text-[#112029]">
                       Maximize your email campaigns with our powerful automation
                       tools, ensuring personalized messaging that engages and
@@ -279,20 +280,20 @@ const Home = () => {
           </article>
         </section>
         <article className="px-[5vw] py-[10vh] bghomecolor">
-          <h2
+          <p
             className="text-center md:text-[2.5vw] font-[600] headingfont text-white"
             data-aos="fade-right"
           >
             Why Choose ExoXcel?
-          </h2>
+          </p>
           <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
             <aside
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
               data-aos="fade-right"
             >
-              <h2 className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
+              <p className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
                 Confident Campaign Launches.
-              </h2>
+              </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
@@ -340,9 +341,9 @@ const Home = () => {
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
               data-aos="fade-right"
             >
-              <h2 className="md:text-[2.5vw] font-[600] headingfont  text-white">
+              <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Boost Conversions with Smart Sequences.
-              </h2>
+              </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
@@ -364,9 +365,9 @@ const Home = () => {
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
               data-aos="fade-right"
             >
-              <h2 className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
+              <p className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
                 Enhance Connections with Intelligent Communication.
-              </h2>
+              </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
@@ -414,9 +415,9 @@ const Home = () => {
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
               data-aos="fade-right"
             >
-              <h2 className="md:text-[2.5vw] font-[600] headingfont  text-white">
+              <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Optimize with Data-Driven Insights
-              </h2>
+              </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
@@ -438,9 +439,9 @@ const Home = () => {
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
               data-aos="fade-right"
             >
-              <h2 className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
+              <p className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
                 Seamless Tool Integration.
-              </h2>
+              </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
@@ -481,7 +482,7 @@ const Home = () => {
             "@type": "Organization",
             name: "EvoXcel",
             url: "https://www.evoxcel.com",
-            logo: "https://www.evoxcel.com/images/e_logo.png",
+            logo: "https://www.evoxcel.com/images/e_logo.webp",
             contactPoint: {
               "@type": "ContactPoint",
               email: "sales@evoxcel.com",

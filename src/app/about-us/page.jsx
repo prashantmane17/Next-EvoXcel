@@ -15,7 +15,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -31,7 +31,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -84,7 +84,7 @@ export default function page() {
         <div className=" sm:w-1/3 sm:mx-auto">
           <div className="image object-center text-center">
             <Image
-              src="/images/about-us/about-us.png"
+              src="/images/about-us/about-us.webp"
               width={300}
               height={300}
               loading="lazy"
@@ -97,7 +97,7 @@ export default function page() {
 
       <div className="relative flex flex-col-reverse lg:flex-row items-center justify-between p-10 pt-5">
         <Image
-          src="/images/about-us/about-us_mission.png"
+          src="/images/about-us/about-us_mission.webp"
           width={300}
           height={300}
           loading="lazy"
@@ -136,7 +136,7 @@ export default function page() {
           </p>
         </div>
         <Image
-          src="/images/about-us/about-us-vision.png"
+          src="/images/about-us/about-us-vision.webp"
           width={300}
           height={300}
           loading="lazy"

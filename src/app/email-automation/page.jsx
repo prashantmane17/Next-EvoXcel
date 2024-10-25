@@ -12,14 +12,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "Email Automation Services | EvoXcel",
+    title: "Streamline Your Email Campaigns with EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Boost engagement and conversion with EvoXcel’s personalized email automation services, delivering targeted content to your audience",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -29,14 +29,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Email Automation Services | EvoXcel",
+    title: "Streamline Your Email Campaigns with EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Boost engagement and conversion with EvoXcel’s personalized email automation services, delivering targeted content to your audience",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -59,19 +59,6 @@ const EmailAutomation = () => {
     <>
       {/* Hero Section */}
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>
-            Powerful Email Automation Tools for Business Growth | EvoXcel
-          </title>
-          <meta
-            name="description"
-            content="Boost your marketing with EvoXcel’s email automation tools. Enjoy personalized messaging, seamless campaign management, and data-driven insights to enhance engagement and conversions."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/email-automation"
-          />
-        </Helmet> */}
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7.5vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Revolutionize Your Communication with Our Email Automation Tool

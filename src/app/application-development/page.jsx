@@ -12,14 +12,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "Custom Application Development Services | EvoXcel",
+    title: "Application Development Services Tailored to Your Business",
     description:
-      "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+      "Innovate with EvoXcel’s application development services. We create engaging, scalable mobile and web apps that fuel business success.",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -29,14 +29,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Custom Application Development Services | EvoXcel",
+    title: "Application Development Services Tailored to Your Business",
     description:
-      "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
+      "Innovate with EvoXcel’s application development services. We create engaging, scalable mobile and web apps that fuel business success.",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

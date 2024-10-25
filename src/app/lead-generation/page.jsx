@@ -12,14 +12,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "Targeted Lead Generation Services | EvoXcel",
+    title: "Lead Generation Solutions by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Maximize your business reach with EvoXcel’s strategic lead generation services, driving targeted, high-quality prospects to your business.",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -29,14 +29,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Targeted Lead Generation Services | EvoXcel",
+    title: "Lead Generation Solutions by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Maximize your business reach with EvoXcel’s strategic lead generation services, driving targeted, high-quality prospects to your business.",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    title: "Innovative Software Development Solutions | EvoXcel",
+    title: "Custom Software Solutions by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Create tailored software applications with EvoXcel’s expert software development services, designed for growth and efficiency.",
     site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -28,14 +28,14 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Innovative Software Development Solutions | EvoXcel",
+    title: "Custom Software Solutions by EvoXcel",
     description:
-      "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+      "Create tailored software applications with EvoXcel’s expert software development services, designed for growth and efficiency.",
     site: "@yourTwitterHandle",
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.png",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
