@@ -1,12 +1,23 @@
-"use client"
+"use client";
 import React from "react";
 // import img from "../assets/Sign In.png";
 import Image from "next/image";
+export const metadata = {
+  title: "EvoXcel – Tailored IT Staffing & Business Solutions",
+  description:
+    "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
+
+  alternates: {
+    canonical: "https://www.evoxcel.com/sign-in",
+  },
+  siteName: "EvoXcel",
+};
+
 const Signin = () => {
   const handleSubmit = (event) => {
     // Prevent the default form submission behavior
     event.preventDefault();
-    
+
     // Redirect to the external page
     window.location.href = "https://dashboard.evoxcel.com/login";
   };

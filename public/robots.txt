@@ -11,6 +11,7 @@ Allow: /lead-generation/
 Allow: /blog/
 Allow: /helpdesk/
 Allow: /case-study/
+Allow: /about-us/
 Allow: /sign-in/
 Allow: /sign-up/
 Disallow: /private/

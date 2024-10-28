@@ -9,13 +9,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/web-development/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
     title: "Professional Web Development by EvoXcel",
     description:
       "Build high-performance websites that enhance user experiences and drive growth with EvoXcel’s custom web development services.",
-    site_name: "EvoXcel",
+    siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {

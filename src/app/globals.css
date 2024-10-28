@@ -9,8 +9,53 @@
   @apply text-[red];
 }
 
-.bgwebdev{
-  background-image: radial-gradient(circle at 50% 56%, hsla(0, 86%, 72%, 0.1) 0%, hsla(0, 87%, 46%, 0.1) 13%,transparent 13%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 75% 75%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 26%,transparent 26%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 43% 6%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 29%,transparent 29%, transparent 92%,transparent 92%, transparent 100%),radial-gradient(circle at 39% 61%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 44%,transparent 44%, transparent 83%,transparent 83%, transparent 100%),radial-gradient(circle at 5% 14%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 46%,transparent 46%, transparent 99%,transparent 99%, transparent 100%),linear-gradient(90deg, rgb(10, 22, 107),rgb(133, 136, 202));
+.bgwebdev {
+  background-image: radial-gradient(
+      circle at 50% 56%,
+      hsla(0, 86%, 72%, 0.1) 0%,
+      hsla(0, 87%, 46%, 0.1) 13%,
+      transparent 13%,
+      transparent 44%,
+      transparent 44%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      hsla(16, 0%, 59%, 0.1) 0%,
+      hsla(16, 0%, 59%, 0.1) 26%,
+      transparent 26%,
+      transparent 57%,
+      transparent 57%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 43% 6%,
+      hsla(16, 0%, 59%, 0.1) 0%,
+      hsla(16, 0%, 59%, 0.1) 29%,
+      transparent 29%,
+      transparent 92%,
+      transparent 92%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 39% 61%,
+      hsla(16, 0%, 59%, 0.1) 0%,
+      hsla(16, 0%, 59%, 0.1) 44%,
+      transparent 44%,
+      transparent 83%,
+      transparent 83%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 5% 14%,
+      hsla(16, 0%, 59%, 0.1) 0%,
+      hsla(16, 0%, 59%, 0.1) 46%,
+      transparent 46%,
+      transparent 99%,
+      transparent 99%,
+      transparent 100%
+    ),
+    linear-gradient(90deg, rgb(10, 22, 107), rgb(133, 136, 202));
   background-image: linear-gradient(0deg, #fcfcfc 30%, #9deeff 100%);
 }
 /* @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
@@ -21,11 +66,12 @@
   /* background: linear-gradient(-45deg, #FA80AD, #4C90E0); */
   background: linear-gradient(-45deg, #003c71, #003c71db, #32ddd4);
   background: #000000;
-  /* background: linear-gradient(-45deg, #e6f4f4, #4C90E0); */
-  /* background: linear-gradient(-45deg, #3b3c3c, #010101); */
-  /* background: #000; */
-  /* background: url(./assets/wave1.png); */
   background: linear-gradient(#0e1c26, #2a454b);
+  /* background: url("/evo_bg.png"); */
+  /* background: url("/bg_evo.png"); */
+  /* background: url("/background.png"); */
+  /* background: url("/bgg.png"); */
+  /* background: url("/gol.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

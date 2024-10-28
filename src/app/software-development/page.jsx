@@ -8,13 +8,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/software-development/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
     title: "Custom Software Solutions by EvoXcel",
     description:
       "Create tailored software applications with EvoXcel’s expert software development services, designed for growth and efficiency.",
-    site_name: "EvoXcel",
+    siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {

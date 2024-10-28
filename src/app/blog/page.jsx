@@ -3,7 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation"; // Use next/navigation for routing
-
+export const metadata = {
+  title: "About Us",
+  description: "about us",
+  alternates: {
+    canonical: "https://www.evoxcel.com/blog/",
+  },
+  siteName: "EvoXcel",
+};
 const blogs = [
   {
     id: 1,

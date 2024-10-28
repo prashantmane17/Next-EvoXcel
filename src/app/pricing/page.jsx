@@ -7,16 +7,17 @@ export const metadata = {
   description:
     "Explore EvoXcel’s transparent pricing for lead generation, LinkedIn automation, web, app, and software development. Tailored packages designed to fit your budget and goals.",
   alternates: {
-    canonical: "https://www.evoxcel.com/pricing",
+    canonical: "https://www.evoxcel.com/pricing/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://www.evoxcel.com/pricing/",
     title:
       "Flexible Pricing for Lead Generation, Web, Software Development | EvoXcel",
     description:
       "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
-    site_name: "EvoXcel",
+    siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {

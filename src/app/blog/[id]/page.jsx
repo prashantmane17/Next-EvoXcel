@@ -2,6 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Us",
+  description: "about us",
+  alternates: {
+    canonical: "https://www.evoxcel.com/blog/",
+  },
+  siteName: "EvoXcel",
+};
 const blogPosts = {
   1: {
     id: 1,

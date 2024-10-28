@@ -9,13 +9,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/email-automation/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://www.evoxcel.com/email-automation/",
     title: "Streamline Your Email Campaigns with EvoXcel",
     description:
       "Boost engagement and conversion with EvoXcel’s personalized email automation services, delivering targeted content to your audience",
-    site_name: "EvoXcel",
+    siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {

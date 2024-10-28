@@ -9,13 +9,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/lead-generation/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://www.evoxcel.com/lead-generation/",
     title: "Lead Generation Solutions by EvoXcel",
+    siteName: "EvoXcel",
     description:
       "Maximize your business reach with EvoXcel’s strategic lead generation services, driving targeted, high-quality prospects to your business.",
-    site_name: "EvoXcel",
     locale: "en_US",
     images: [
       {

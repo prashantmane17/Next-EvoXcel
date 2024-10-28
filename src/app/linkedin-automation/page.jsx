@@ -8,13 +8,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.evoxcel.com/linkedin-automation/",
   },
+  siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://www.evoxcel.com/linkedin-automation/",
     title: "Automate Your LinkedIn Growth with EvoXcel",
     description:
       "Optimize your LinkedIn outreach and lead generation with EvoXcel’s automation tool, designed for seamless business networking",
-    site_name: "EvoXcel",
+    siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {
