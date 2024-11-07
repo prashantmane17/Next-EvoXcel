@@ -11,7 +11,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
         <meta charSet="UTF-8" />
-        <meta property="og:siteName" content="EvoXcel" />
+        <meta property="og:site_Name" content="EvoXcel" />
+        <title>EvoXcel</title>
       </Head>
       <body>
         <Script

@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://www.evoxcel.com/",
-    siteName: "EvoXcel",
+    site_name: "EvoXcel",
     title: "EvoXcel | Your Partner in IT Excellence",
     description:
       "At EvoXcel, we offer dynamic IT solutions, including staffing, software development, and business-enhancing technologies to drive success.",
