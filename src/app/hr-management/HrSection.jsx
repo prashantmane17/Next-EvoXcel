@@ -44,7 +44,7 @@ const FeatureCard = ({ feature, index }) => (
 
 export default function HrSection() {
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden flex items-center">
+    <div className="min-h-screen bg-white relative overflow-hidden flex item">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-64 h-64 bg-purple-100 rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-100 rounded-full translate-x-1/3 translate-y-1/3" />

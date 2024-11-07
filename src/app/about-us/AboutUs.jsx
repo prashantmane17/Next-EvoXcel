@@ -32,12 +32,12 @@ export default function AboutUs() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="lg:w-1/2 mt-12 mx-auto lg:mt-0"
+          className="lg:w-1/2 mt-12 mx-auto lg:mt-0 flex justify-center"
         >
           <Image
             src="/images/about-us/about-us.webp"
-            width={300}
-            height={300}
+            width={350}
+            height={350}
             alt="About EvoXcel"
             className=""
           />
