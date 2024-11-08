@@ -21,4 +21,4 @@ Allow: /sign-up/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://web.evoxcel.com/sitemap.xml
+Sitemap: https://www.evoxcel.com/sitemap.xml

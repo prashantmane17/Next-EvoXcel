@@ -8,12 +8,12 @@ export const metadata = {
   description:
     "Explore EvoXcel’s transparent pricing for lead generation, LinkedIn automation, web, app, and software development. Tailored packages designed to fit your budget and goals.",
   alternates: {
-    canonical: "https://web.evoxcel.com/pricing/",
+    canonical: "https://www.evoxcel.com/pricing/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://web.evoxcel.com/pricing/",
+    url: "https://www.evoxcel.com/pricing/",
     title:
       "Flexible Pricing for Lead Generation, Web, Software Development | EvoXcel",
     description:
@@ -22,7 +22,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -40,7 +40,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

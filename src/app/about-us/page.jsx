@@ -3,19 +3,19 @@ export const metadata = {
   title: "About Us",
   description: "about us",
   alternates: {
-    canonical: "https://web.evoxcel.com/about-us/",
+    canonical: "https://www.evoxcel.com/about-us/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://web.evoxcel.com/about-us/",
+    url: "https://www.evoxcel.com/about-us/",
     title: "EvoXcel - About Us",
     description: "Evoxcel-about us.",
     siteName: "EvoXcel",
     locale: "en_US",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -31,7 +31,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

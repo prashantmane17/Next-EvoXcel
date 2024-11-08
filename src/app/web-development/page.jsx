@@ -7,12 +7,12 @@ export const metadata = {
   description:
     "Elevate your online presence with EvoXcel’s custom web development services. From responsive design to seamless integration, we create high-performance websites tailored to your business",
   alternates: {
-    canonical: "https://web.evoxcel.com/web-development/",
+    canonical: "https://www.evoxcel.com/web-development/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://web.evoxcel.com/",
+    url: "https://www.evoxcel.com/",
     title: "Professional Web Development by EvoXcel",
     description:
       "Build high-performance websites that enhance user experiences and drive growth with EvoXcel’s custom web development services.",
@@ -20,7 +20,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -37,7 +37,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

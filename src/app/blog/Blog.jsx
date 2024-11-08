@@ -7,7 +7,7 @@ export const metadata = {
   title: "About Us",
   description: "about us",
   alternates: {
-    canonical: "https://web.evoxcel.com/blog/",
+    canonical: "https://www.evoxcel.com/blog/",
   },
   siteName: "EvoXcel",
 };

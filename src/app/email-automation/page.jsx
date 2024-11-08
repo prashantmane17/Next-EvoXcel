@@ -8,12 +8,12 @@ export const metadata = {
   description:
     "Boost engagement with EvoXcel’s email automation services. From personalized campaigns to automated workflows, we help you optimize conversions and improve your email marketing ROI.",
   alternates: {
-    canonical: "https://web.evoxcel.com/email-automation/",
+    canonical: "https://www.evoxcel.com/email-automation/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://web.evoxcel.com/email-automation/",
+    url: "https://www.evoxcel.com/email-automation/",
     title: "Streamline Your Email Campaigns with EvoXcel",
     description:
       "Boost engagement and conversion with EvoXcel’s personalized email automation services, delivering targeted content to your audience",
@@ -21,7 +21,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -38,7 +38,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

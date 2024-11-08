@@ -7,12 +7,12 @@ export const metadata = {
   description:
     "Drive business success with EvoXcel’s data-driven lead generation strategies. From B2B to multi-channel lead capture, we help you generate high-quality prospects and optimize conversion",
   alternates: {
-    canonical: "https://web.evoxcel.com/lead-generation/",
+    canonical: "https://www.evoxcel.com/lead-generation/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://web.evoxcel.com/lead-generation/",
+    url: "https://www.evoxcel.com/lead-generation/",
     title: "Lead Generation Solutions by EvoXcel",
     siteName: "EvoXcel",
     description:
@@ -20,7 +20,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -37,7 +37,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://web.evoxcel.com/images/e_logo.webp",
+        url: "https://www.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

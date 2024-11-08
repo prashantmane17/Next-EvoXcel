@@ -7,7 +7,7 @@ export const metadata = {
     "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
 
   alternates: {
-    canonical: "https://web.evoxcel.com/sign-in",
+    canonical: "https://www.evoxcel.com/sign-in",
   },
   siteName: "EvoXcel",
 };
