@@ -1,15 +1,13 @@
-import React from 'react'
-import Blog from './Blog'
+import React from "react";
+import Blog from "./Blog";
 export const metadata = {
   title: "About Us",
   description: "about us",
   alternates: {
-    canonical: "https://www.evoxcel.com/blog/",
+    canonical: "https://web.evoxcel.com/blog/",
   },
   siteName: "EvoXcel",
 };
 export default function page() {
-  return (
-    <Blog/>
-  )
+  return <Blog />;
 }

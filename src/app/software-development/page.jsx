@@ -6,12 +6,12 @@ export const metadata = {
   description:
     "Leverage EvoXcel’s expertise in software development. We offer scalable, customized software solutions to streamline operations and drive business growth.",
   alternates: {
-    canonical: "https://www.evoxcel.com/software-development/",
+    canonical: "https://web.evoxcel.com/software-development/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://web.evoxcel.com/",
     title: "Custom Software Solutions by EvoXcel",
     description:
       "Create tailored software applications with EvoXcel’s expert software development services, designed for growth and efficiency.",
@@ -19,7 +19,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -36,7 +36,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

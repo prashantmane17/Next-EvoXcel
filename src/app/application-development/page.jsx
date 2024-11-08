@@ -6,12 +6,12 @@ export const metadata = {
   description:
     "Create innovative, user-focused applications with Evoxcel. Our application development services cover mobile, web, and cross-platform solutions to boost engagement and growth.",
   alternates: {
-    canonical: "https://www.evoxcel.com/application-development/",
+    canonical: "https://web.evoxcel.com/application-development/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/application-development/",
+    url: "https://web.evoxcel.com/application-development/",
     title: "Application Development Services Tailored to Your Business",
     description:
       "Innovate with EvoXcel’s application development services. We create engaging, scalable mobile and web apps that fuel business success.",
@@ -19,7 +19,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -36,7 +36,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -67,7 +67,7 @@ const ApplicationDevelopment = () => {
           />
           <link
             rel="canonical"
-            href="https://www.evoxcel.com/application-development"
+            href="https://web.evoxcel.com/application-development"
           />
         </Helmet> */}
         <div className="md:w-[50%] text-white my-14 lg:my-0 fade-up">

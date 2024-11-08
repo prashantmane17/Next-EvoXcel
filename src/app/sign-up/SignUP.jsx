@@ -65,7 +65,7 @@ const Signup = () => {
           />
         </aside>
         <aside className="h-[100%] w-full md:w-[60%]  mx-5 md:m-0">
-          <div class="flex flex-col justify-start px-0 py-12 lg:px-0 pt-[12vh] md:pt-[10vh]">
+          <div className="flex flex-col justify-start px-0 py-12 lg:px-0 pt-[12vh] md:pt-[10vh]">
             <div className="max-w-lg w-full pt-[5vh] bg-white border p-8 rounded-lg shadow-lg transform transition-all duration-300">
               <h2 className=" text-2xl md:text-3xl font-bold text-center text-gray-900">
                 Create an Account

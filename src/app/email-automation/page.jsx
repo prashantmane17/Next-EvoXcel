@@ -1,18 +1,19 @@
 import React from "react";
-import "./emailAutomation.css";
+// import "./emailAutomation.css";
 import Image from "next/image";
+import Head from "next/head";
 
 export const metadata = {
   title: "Email Automation Services | EvoXcel",
   description:
     "Boost engagement with EvoXcel’s email automation services. From personalized campaigns to automated workflows, we help you optimize conversions and improve your email marketing ROI.",
   alternates: {
-    canonical: "https://www.evoxcel.com/email-automation/",
+    canonical: "https://web.evoxcel.com/email-automation/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/email-automation/",
+    url: "https://web.evoxcel.com/email-automation/",
     title: "Streamline Your Email Campaigns with EvoXcel",
     description:
       "Boost engagement and conversion with EvoXcel’s personalized email automation services, delivering targeted content to your audience",
@@ -20,7 +21,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -37,7 +38,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -58,6 +59,9 @@ export const metadata = {
 const EmailAutomation = () => {
   return (
     <>
+      <Head>
+        <link rel="stylesheet" href="./emailAutomation.css" />
+      </Head>
       {/* Hero Section */}
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
@@ -93,9 +97,9 @@ const EmailAutomation = () => {
         <article className="px-[7vw] pt-[10vh] w-[100%] md:flex gap-4">
           <div
             data-aos="fade-up"
-            class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -103,11 +107,11 @@ const EmailAutomation = () => {
                 alt="Personalized Email Campaigns"
               />
             </div>
-            <div class="p-6">
-              <h3 class="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <div className="p-6">
+              <h3 className="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                 Personalized Email Campaigns
               </h3>
-              <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
+              <p className="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
                 Create customized emails based on user behavior and preferences
                 to drive increased email engagement and higher conversion rates.
               </p>
@@ -115,9 +119,9 @@ const EmailAutomation = () => {
           </div>
           <div
             data-aos="fade-up"
-            class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -125,11 +129,11 @@ const EmailAutomation = () => {
                 alt="Automated Email Workflows"
               />
             </div>
-            <div class="p-6">
-              <h3 class="text-[#718BFF] mb-2 headingfont block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <div className="p-6">
+              <h3 className="text-[#718BFF] mb-2 headingfont block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                 Automated Email Workflows
               </h3>
-              <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
+              <p className="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
                 Simplify the process with email workflow automation triggered by
                 specific actions to save time and enhance communication.
               </p>
@@ -137,9 +141,9 @@ const EmailAutomation = () => {
           </div>
           <div
             data-aos="fade-up"
-            class="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -147,11 +151,11 @@ const EmailAutomation = () => {
                 alt="In-Depth Analytics and Reporting"
               />
             </div>
-            <div class="p-6">
-              <h3 class="text-[#718BFF] mb-2 block headingfont font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <div className="p-6">
+              <h3 className="text-[#718BFF] mb-2 block headingfont font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                 Email Analytics and Reporting
               </h3>
-              <p class="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
+              <p className="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
                 Leverage in-depth email analytics to gain valuable insights and
                 optimize your marketing strategies.
               </p>
@@ -159,9 +163,9 @@ const EmailAutomation = () => {
           </div>
           <div
             data-aos="fade-up"
-            class="relative flex md:w-[24%] mt-[7vh] md:mt-0 hover:scale-105 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative flex md:w-[24%] mt-[7vh] md:mt-0 hover:scale-105 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -169,11 +173,11 @@ const EmailAutomation = () => {
                 alt="Seamless Integration"
               />
             </div>
-            <div class="p-6">
-              <h3 class="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+            <div className="p-6">
+              <h3 className="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                 CRM Integration for Email
               </h3>
-              <p class="block font-sans pfont text-base font-normal leading-relaxed text-inherit antialiased">
+              <p className="block font-sans pfont text-base font-normal leading-relaxed text-inherit antialiased">
                 Enjoy seamless integration with your existing CRM systems for a
                 unified, efficient workflow.
               </p>

@@ -6,12 +6,12 @@ export const metadata = {
   description:
     "Automate your LinkedIn outreach with EvoXcel’s LinkedIn automation tool. Expand your network, generate leads, and grow your business effortlessly with our advanced solutions.",
   alternates: {
-    canonical: "https://www.evoxcel.com/linkedin-automation/",
+    canonical: "https://web.evoxcel.com/linkedin-automation/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/linkedin-automation/",
+    url: "https://web.evoxcel.com/linkedin-automation/",
     title: "Automate Your LinkedIn Growth with EvoXcel",
     description:
       "Optimize your LinkedIn outreach and lead generation with EvoXcel’s automation tool, designed for seamless business networking",
@@ -19,7 +19,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -36,7 +36,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],

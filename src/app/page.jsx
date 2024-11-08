@@ -9,12 +9,12 @@ export const metadata = {
     "Evoxcel offers customized IT staffing solutions, from flexible staffing to expert project management, helping businesses achieve scalable and cost-effective results.",
 
   alternates: {
-    canonical: "https://www.evoxcel.com/",
+    canonical: "https://web.evoxcel.com/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://web.evoxcel.com/",
     site_name: "EvoXcel",
     title: "EvoXcel | Your Partner in IT Excellence",
     description:
@@ -22,7 +22,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -39,7 +39,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -482,8 +482,8 @@ const Home = () => {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Evoxcel",
-              url: "https://www.evoxcel.com",
-              logo: "https://www.evoxcel.com/images/e_logo.webp",
+              url: "https://web.evoxcel.com",
+              logo: "https://web.evoxcel.com/images/e_logo.webp",
               contactPoint: {
                 "@type": "ContactPoint",
                 email: "sales@evoxcel.com",
@@ -502,7 +502,7 @@ const Home = () => {
               "@type": "WebSite",
               name: "Evoxcel",
               alternateName: "Evoxcel Technologies",
-              url: "https://www.evoxcel.com",
+              url: "https://web.evoxcel.com",
             },
           ]),
         }}

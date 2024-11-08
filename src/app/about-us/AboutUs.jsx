@@ -60,8 +60,8 @@ export default function AboutUs() {
               <p className="text-lg leading-relaxed">
                 Empower businesses by providing innovative, reliable, and
                 efficient digital solutions. We strive to be the catalyst for
-                our clients' success, helping them navigate the digital
-                landscape with confidence and agility.
+                our clients success, helping them navigate the digital landscape
+                with confidence and agility.
               </p>
             </motion.div>
             <motion.div
@@ -122,7 +122,7 @@ export default function AboutUs() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-12">
-            Let's collaborate to drive your success in the digital age.
+            Let&apos;s collaborate to drive your success in the digital age.
           </p>
           <button className="bg-white text-indigo-900 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-200 transition duration-300 ease-in-out transform hover:scale-105">
             Get Started Today

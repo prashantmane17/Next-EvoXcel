@@ -182,7 +182,7 @@ export default function EvoXcelContent() {
 
   return (
     <div className="bg-white text-gray-900 font-sans">
-     <HrSection/>
+      <HrSection />
 
       <section className="min-h-screen flex items-center justify-center py-20">
         <div className="container mx-auto px-4">
@@ -365,7 +365,7 @@ export default function EvoXcelContent() {
         <div className="container mx-auto px-4">
           <FadeInSection>
             <h2 className="text-4xl font-bold mb-12 text-center">
-              Optick's Unique Features
+              Optick&apos;s Unique Features
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {uniqueFeatures.map((feature, index) => (

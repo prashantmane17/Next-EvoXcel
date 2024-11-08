@@ -1,18 +1,18 @@
 import React from "react";
 import Image from "next/image";
-
-import "./webDevelopment.css";
+import Head from "next/head";
+// import "./webDevelopment.css";
 export const metadata = {
   title: "Custom Web Development Services | EvoXcel",
   description:
     "Elevate your online presence with EvoXcel’s custom web development services. From responsive design to seamless integration, we create high-performance websites tailored to your business",
   alternates: {
-    canonical: "https://www.evoxcel.com/web-development/",
+    canonical: "https://web.evoxcel.com/web-development/",
   },
   siteName: "EvoXcel",
   openGraph: {
     type: "website",
-    url: "https://www.evoxcel.com/",
+    url: "https://web.evoxcel.com/",
     title: "Professional Web Development by EvoXcel",
     description:
       "Build high-performance websites that enhance user experiences and drive growth with EvoXcel’s custom web development services.",
@@ -20,7 +20,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         width: 1200,
         height: 630,
         alt: "EvoXcel",
@@ -37,7 +37,7 @@ export const metadata = {
     creator: "@yourTwitterHandle",
     images: [
       {
-        url: "https://www.evoxcel.com/images/e_logo.webp",
+        url: "https://web.evoxcel.com/images/e_logo.webp",
         alt: "EvoXcel",
       },
     ],
@@ -58,6 +58,9 @@ export const metadata = {
 const WebDevelopment = () => {
   return (
     <>
+      <Head>
+        <link rel="stylesheet" href="./webDevelopment.css" />
+      </Head>
       <section className="w-[100%]  bgwebdev px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">

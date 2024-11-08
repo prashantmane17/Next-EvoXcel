@@ -233,42 +233,69 @@ const Nav = () => {
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
-                <Link
-                  href="/linkedin-automation"
-                  className="flex "
-                  legacyBehavior
-                >
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/linkedin-automation/"
-                    )}`}
+                <div className="w-full">
+                  <Link
+                    href="/linkedin-automation"
+                    className="flex "
+                    legacyBehavior
                   >
-                    <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Linkedin Automation</p>
-                      <p className="text-[14px] font-[500]">
-                        Unlock Your Digital Potential with Expert Web
-                        Development...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                <Link href="/email-automation" className="flex " legacyBehavior>
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/email-automation/"
-                    )}`}
+                    <a
+                      className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                        "/linkedin-automation/"
+                      )}`}
+                    >
+                      <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
+                      <div>
+                        <p className="font-semibold ">Linkedin Automation</p>
+                        <p className="text-[14px] font-[500]">
+                          Unlock Your Digital Potential with Expert Web
+                          Development...
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                  <Link
+                    href="/email-automation"
+                    className="flex "
+                    legacyBehavior
                   >
-                    <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Email Automation</p>
-                      <p className="text-[14px] font-[500]">
-                        In today’s fast-paced digital world, having robust,
-                        scalable...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
+                    <a
+                      className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                        "/email-automation/"
+                      )}`}
+                    >
+                      <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
+                      <div>
+                        <p className="font-semibold ">Email Automation</p>
+                        <p className="text-[14px] font-[500]">
+                          In today’s fast-paced digital world, having robust,
+                          scalable...
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
+                <div className="w-full">
+                  <Link
+                    href="/hr-management"
+                    className="flex w-1/2"
+                    legacyBehavior
+                  >
+                    <a
+                      className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                        "/hr-management"
+                      )}`}
+                    >
+                      <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
+                      <div>
+                        <p className="font-semibold">HR Management</p>
+                        <p className="text-[14px] font-[500]">
+                          HR Management boosts employee streamlines processes...
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
+                </div>
               </article>
             </section>
           </div>
