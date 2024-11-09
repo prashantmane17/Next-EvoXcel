@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Script from "next/script";
 import Head from "next/head";
 import Footers from "./components/Footers";
+import NewNav from "./components/NewNav";
 // import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export default function RootLayout({ children }) {
@@ -30,7 +31,8 @@ export default function RootLayout({ children }) {
           gtag('config', 'GTM-NC8WGKLC');
         `}
         </Script>
-        <Nav />
+        {/* <Nav /> */}
+        <NewNav/>
         {children}
         {/* <Footer /> */}
         <Footers />

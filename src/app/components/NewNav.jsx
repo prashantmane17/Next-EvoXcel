@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 
-const Nav = () => {
+const NewNav = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -48,23 +48,26 @@ const Nav = () => {
   const isActiveLink = (path) => {
     return path === location ? "text-sky-500" : "";
   };
+  // Handle scroll event
   const handleScroll = () => {
     setScrolled(window.scrollY > 0);
   };
 
+  // Toggle menu states
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
   const toggleServices = () => {
     setServicesOpen((prev) => !prev);
-    setProductsOpen(false);
+    setProductsOpen(false); // Close products when services are opened
   };
 
   const toggleProducts = () => {
     setProductsOpen((prev) => !prev);
-    setServicesOpen(false);
+    setServicesOpen(false); // Close services when products are opened
   };
 
+  // Close menu if clicking outside
   const handleClickOutside = (event) => {
     if (navRef.current && !navRef.current.contains(event.target)) {
       setMenuOpen(false);
@@ -92,7 +95,7 @@ const Nav = () => {
         menuRef.current &&
         !menuRef.current.contains(event.target)
       ) {
-        toggleMenu();
+        toggleMenu(); // Close menu if click is outside the menu
       }
     };
 
@@ -101,6 +104,10 @@ const Nav = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuOpen, toggleMenu]);
+
+  // Determine navbar classes based on scroll and location
+
+  // Determine logo source based on route
   const logoSrc =
     location === "/"
       ? scrolled
@@ -184,6 +191,13 @@ const Nav = () => {
                       "/application-development/"
                     )}`}
                   >
+                    {/* <a
+                      href="https://www.flaticon.com/free-icons/design"
+                      className="hidden"
+                      title="design icons"
+                    >
+                      Design icons created by Freepik - Flaticon
+                    </a> */}
                     <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Application Development</p>
@@ -582,4 +596,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NewNav;
