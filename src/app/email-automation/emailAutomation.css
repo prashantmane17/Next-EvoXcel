@@ -228,11 +228,7 @@ body {
   padding: 20px 0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
 
 .quotes {
   display: flex;

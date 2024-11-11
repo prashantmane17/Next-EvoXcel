@@ -292,9 +292,9 @@ const HomePage = () => {
               />
             </figure>
           </section>
-          <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
+          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
             <figure
-              className="md:w-[50%] flex justify-center items-center"
+              className="md:w-[50%] flex justify-center items-center "
               data-aos="fade-in"
             >
               <Image
@@ -366,7 +366,7 @@ const HomePage = () => {
               />
             </figure>
           </section>
-          <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
+          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
             <figure
               className="md:w-[50%] flex justify-center items-center"
               data-aos="fade-in"

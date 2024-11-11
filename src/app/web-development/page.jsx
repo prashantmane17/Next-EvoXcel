@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-// import "./webDevelopment.css";
+import "./webDevelopment.css";
 export const metadata = {
   title: "Custom Web Development Services | EvoXcel",
   description:
@@ -58,9 +58,7 @@ export const metadata = {
 const WebDevelopment = () => {
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="./webDevelopment.css" />
-      </Head>
+      <Head>{/* <link rel="stylesheet" href="./webDevelopment.css" /> */}</Head>
       <section className="w-[100%]  bgwebdev px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">

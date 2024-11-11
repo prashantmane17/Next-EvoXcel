@@ -1,7 +1,8 @@
 import React from "react";
+// import Head from "next/head";
+import Image from "next/image";
 import "./leadgen.css";
 
-import Image from "next/image";
 export const metadata = {
   title: "Targeted Lead Generation Services | EvoXcel",
   description:
@@ -58,6 +59,9 @@ export const metadata = {
 const LeadGeneration = () => {
   return (
     <>
+      {/* <Head>
+        <link rel="stylesheet" href="./leadgen.css" />
+      </Head> */}
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">

@@ -145,13 +145,6 @@
 
 /* -------------------------------------------- */
 
-.container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container .glass {
   position: relative;
   /* width: 180px; */

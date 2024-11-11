@@ -10,8 +10,8 @@ import Image from "next/image";
 
 export default function RemoteWork() {
   return (
-    <div className="w-full p-14 ">
-      <h2 className="text-center text-[40px] font-semibold">
+    <div className="w-full p-4 md:p-14 ">
+      <h2 className="text-center text-[30px] md:text-[40px] font-bold">
         Revolutionize Your Remote Workforce
       </h2>
       {/* Analytics Dashboard Section */}
@@ -125,7 +125,7 @@ export default function RemoteWork() {
       <section className="w-full py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+            <div className="relative order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden  ">
                 <Image
                   src="/images/hr-management/time-management.svg"
@@ -137,7 +137,7 @@ export default function RemoteWork() {
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-2xl" />
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 order-1 lg:order-2">
               <div>
                 <h3 className="text-4xl font-bold mt-2">
                   Task and Time Management
@@ -338,7 +338,7 @@ export default function RemoteWork() {
       <section className="w-full py-14 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+            <div className="relative order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden  ">
                 <Image
                   src="/images/hr-management/salesImage.svg"
@@ -350,7 +350,7 @@ export default function RemoteWork() {
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-2xl" />
             </div>
-            <div className="space-y-8">
+            <div className="space-y-8 order-1 lg:order-2">
               <div>
                 <h3 className="text-4xl font-bold mt-2">
                   Empower Your Sales Team

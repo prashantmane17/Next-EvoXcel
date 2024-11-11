@@ -142,22 +142,6 @@ const NewNav = () => {
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
               <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
-                <Link href="/lead-generation" className="flex " legacyBehavior>
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/lead-generation/"
-                    )}`}
-                  >
-                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Lead Generation</p>
-                      <p className="text-[14px] font-[500]">
-                        Lead generation is more than just a marketing strategy
-                        it&lsquo;s the...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
                 <Link
                   href="/software-development"
                   className="flex"
@@ -174,6 +158,22 @@ const NewNav = () => {
                       <p className="text-[14px]">
                         In today’s fast-paced digital world, having robust,
                         scalable...
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/lead-generation" className="flex " legacyBehavior>
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/lead-generation/"
+                    )}`}
+                  >
+                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <p className="font-semibold ">Lead Generation</p>
+                      <p className="text-[14px] font-[500]">
+                        Lead generation is more than just a marketing strategy
+                        it&lsquo;s the...
                       </p>
                     </div>
                   </a>
@@ -432,22 +432,6 @@ const NewNav = () => {
           {servicesOpen && (
             <div className=" w-full">
               <Link
-                href="/web-development"
-                onClick={() => {
-                  toggleMenu();
-                  setServicesOpen(false);
-                }}
-                legacyBehavior
-              >
-                <a
-                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
-                    "/web-development/"
-                  )}`}
-                >
-                  Web Development
-                </a>
-              </Link>
-              <Link
                 href="/software-development"
                 onClick={() => {
                   toggleMenu();
@@ -463,7 +447,22 @@ const NewNav = () => {
                   Software Development
                 </a>
               </Link>
-
+              <Link
+                href="/lead-generation"
+                onClick={() => {
+                  toggleMenu();
+                  setServicesOpen(false);
+                }}
+                legacyBehavior
+              >
+                <a
+                  className={`px-4 py-2  w-full inline-block text-black ${isActiveLink(
+                    "/lead-generation/"
+                  )}`}
+                >
+                  Lead Generation
+                </a>
+              </Link>
               <Link
                 href="/application-development"
                 onClick={() => {
@@ -481,7 +480,7 @@ const NewNav = () => {
                 </a>
               </Link>
               <Link
-                href="/lead-generation"
+                href="/web-development"
                 onClick={() => {
                   toggleMenu();
                   setServicesOpen(false);
@@ -489,11 +488,11 @@ const NewNav = () => {
                 legacyBehavior
               >
                 <a
-                  className={`px-4 py-2  w-full inline-block text-black ${isActiveLink(
-                    "/lead-generation/"
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/web-development/"
                   )}`}
                 >
-                  Lead Generation
+                  Web Development
                 </a>
               </Link>
             </div>
@@ -520,6 +519,22 @@ const NewNav = () => {
                   )}`}
                 >
                   Linkedin Automation
+                </a>
+              </Link>
+              <Link
+                href="/hr-management"
+                onClick={() => {
+                  toggleMenu();
+                  setProductsOpen(false);
+                }}
+                legacyBehavior
+              >
+                <a
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/linkedin-automation/"
+                  )}`}
+                >
+                  HR Management
                 </a>
               </Link>
               <Link

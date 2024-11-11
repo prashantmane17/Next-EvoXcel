@@ -4,13 +4,13 @@ import "./hr-management.css";
 
 export default function Facial() {
   return (
-    <div className="container mx-auto p-4 md:p-6 px-14">
+    <div className="container mx-auto p-4 md:p-6 px-4 md:px-14">
       <h2 className="text-center font-semibold text-[30px] py-8">
         Enhance Productivity with Optick, Our Premier AI Platform
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* 1M+ Daily Transactions Card */}
-        <div className="bg-gradient-to-br from-sky-50 to-blue-100 p-8 rounded-3xl w-[118.5%] bg_hover">
+        <div className="bg-gradient-to-br from-sky-50 to-blue-100 p-8 rounded-3xl md:w-[118.5%] bg_hover">
           <div className="space-y-4">
             <Image
               src="/images/hr-management/transaction.svg"
@@ -34,7 +34,7 @@ export default function Facial() {
         </div>
 
         {/* Facial Recognition Card */}
-        <div className="bg_hover bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl  ml-[21%]">
+        <div className="bg_hover bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl  md:ml-[21%]">
           <div className="space-y-4">
             <div className="bg-white rounded-xl w-16 h-16 flex items-center justify-center">
               {/* <Scan className="w-8 h-8 text-blue-500" /> */}
