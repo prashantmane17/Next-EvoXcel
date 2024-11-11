@@ -1,5 +1,5 @@
 import React from "react";
-// import "./emailAutomation.css";
+import "./emailAutomation.css";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -59,9 +59,6 @@ export const metadata = {
 const EmailAutomation = () => {
   return (
     <>
-      <Head>
-        <link rel="stylesheet" href="./emailAutomation.css" />
-      </Head>
       {/* Hero Section */}
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
@@ -253,7 +250,7 @@ const EmailAutomation = () => {
           />
         </figure>
       </article>
-      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-fit">
+      <article className="flex flex-col-reverse md:flex-row w-[100%] justify-between px-[8vw] bg-white md:h-fit">
         <figure className="md:w-[35%]  flex justify-end">
           <Image
             className="w-[100%] object-contain"

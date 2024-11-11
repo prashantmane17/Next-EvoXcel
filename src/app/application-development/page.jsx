@@ -59,17 +59,6 @@ const ApplicationDevelopment = () => {
   return (
     <>
       <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        {/* <Helmet>
-          <title>Innovative Application Development Services | EvoXcel</title>
-          <meta
-            name="description"
-            content="Transform your business with EvoXcel’s custom application development. Get scalable, user-centric solutions designed to enhance performance and drive growth."
-          />
-          <link
-            rel="canonical"
-            href="https://www.evoxcel.com/application-development"
-          />
-        </Helmet> */}
         <div className="md:w-[50%] text-white my-14 lg:my-0 fade-up">
           <h1 className="capitalize headingfont headingfont text-[2rem]  leading-tight lg:text-[3vw] font-semibold text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Driving Innovation with Custom Application Development
@@ -129,7 +118,7 @@ const ApplicationDevelopment = () => {
           />
         </figure>
       </section>
-      <section className=" w-[100%] md:flex items-center px-[6vw] py-[2vh]">
+      <section className=" w-[100%] flex flex-col-reverse md:flex-row items-center px-[6vw] py-[2vh]">
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
             src="/images/application-development/application-development_designing.webp"
@@ -195,7 +184,7 @@ const ApplicationDevelopment = () => {
           />
         </figure>
       </section>
-      <section className=" w-[100%] md:flex items-center px-[6vw] py-[1vh] ">
+      <section className=" w-[100%] flex flex-col-reverse md:flex-row items-center px-[6vw] py-[1vh] ">
         <figure className="md:w-[50%] flex items-center justify-center">
           <Image
             src="/images/application-development/application-development_rigorous-testing.webp"

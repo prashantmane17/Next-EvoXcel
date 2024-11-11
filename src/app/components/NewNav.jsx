@@ -531,7 +531,7 @@ const NewNav = () => {
               >
                 <a
                   className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
-                    "/linkedin-automation/"
+                    "/hr-management/"
                   )}`}
                 >
                   HR Management

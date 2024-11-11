@@ -211,7 +211,7 @@ const LinkedInAutomation = () => {
             </div>
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center ">
+        <article className="md:w-[50%]  md:flex items-center justify-center ">
           <Image
             src="/images/linkedin-automation/Precision-Targeting_image.webp"
             width={300}
@@ -221,8 +221,8 @@ const LinkedInAutomation = () => {
           />
         </article>
       </section>
-      <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
-        <article className="md:w-[50%] hidden md:flex items-center justify-start">
+      <section className="w-[100%] px-[7vw]  py-[5vh] flex flex-col-reverse md:flex-row justify-between">
+        <article className="md:w-[50%]  md:flex items-center justify-start">
           <Image
             src="/images/linkedin-automation/Manage-Campaigns_image.webp"
             width={300}
@@ -340,7 +340,7 @@ const LinkedInAutomation = () => {
             </div>
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center">
+        <article className="md:w-[50%]  md:flex items-center justify-center">
           <Image
             src="/images/linkedin-automation/Inbox-Management_image.webp"
             width={300}
@@ -350,8 +350,8 @@ const LinkedInAutomation = () => {
           />
         </article>
       </section>
-      <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
-        <article className="md:w-[50%] hidden md:flex items-center justify-start">
+      <section className="w-[100%] px-[7vw]  py-[5vh] flex flex-col-reverse md:flex-row  justify-between">
+        <article className="md:w-[50%]  md:flex items-center justify-start">
           <Image
             src="/images/linkedin-automation/Essential-Performance-Metrics_image.webp"
             width={300}
@@ -458,7 +458,7 @@ const LinkedInAutomation = () => {
             </div>
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center ">
+        <article className="md:w-[50%]  md:flex items-center justify-center ">
           <Image
             src="/images/linkedin-automation/Effortless-Integrations_image.webp"
             width={300}
@@ -468,8 +468,8 @@ const LinkedInAutomation = () => {
           />
         </article>
       </section>
-      <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
-        <article className="md:w-[50%] hidden md:flex items-center justify-start">
+      <section className="w-[100%] px-[7vw]  py-[5vh] flex flex-col-reverse md:flex-row  justify-between">
+        <article className="md:w-[50%]  md:flex items-center justify-start">
           <Image
             src="/images/linkedin-automation/Security-Data_image.webp"
             width={300}
@@ -574,7 +574,7 @@ const LinkedInAutomation = () => {
             </div> */}
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center ">
+        <article className="md:w-[50%]  md:flex items-center justify-center ">
           <Image
             src="/images/linkedin-automation/Multiple-Accounts-Management_image.webp"
             width={300}
@@ -584,8 +584,8 @@ const LinkedInAutomation = () => {
           />
         </article>
       </section>
-      <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
-        <article className="md:w-[50%] hidden md:flex items-center justify-start">
+      <section className="w-[100%] px-[7vw]  py-[5vh] flex flex-col-reverse md:flex-row  justify-between">
+        <article className="md:w-[50%]  md:flex items-center justify-start">
           <Image
             src="/images/linkedin-automation/Support-Custom-Solutions_image.webp"
             width={300}
@@ -698,7 +698,7 @@ const LinkedInAutomation = () => {
             </div>
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center ">
+        <article className="md:w-[50%]  md:flex items-center justify-center ">
           <Image
             src="/images/linkedin-automation/Competitor-Insights_image.webp"
             width={300}
@@ -708,8 +708,8 @@ const LinkedInAutomation = () => {
           />
         </article>
       </section>
-      <section className="w-[100%] px-[7vw]  py-[5vh] md:flex justify-between">
-        <article className="md:w-[50%] hidden md:flex items-center justify-start">
+      <section className="w-[100%] px-[7vw]  py-[5vh] flex flex-col-reverse md:flex-row  justify-between">
+        <article className="md:w-[50%]  md:flex items-center justify-start">
           <Image
             src="/images/linkedin-automation/Boost-Company_image.webp"
             width={300}
@@ -826,7 +826,7 @@ const LinkedInAutomation = () => {
             }
           </div>
         </article>
-        <article className="md:w-[50%] hidden md:flex items-center justify-center ">
+        <article className="md:w-[50%]  md:flex items-center justify-center ">
           <Image
             src="/images/linkedin-automation/Paying-Customers_image.webp"
             width={300}

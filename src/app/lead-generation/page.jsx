@@ -143,9 +143,9 @@ const LeadGeneration = () => {
           className="flex justify-center items-center  px-[3vw]"
           style={{ backgroundColor: "#f9fafb" }}
         >
-          <div className="text-white p-0 flex flex-col bg-[#f9fafb] items-center justify-center">
+          <div className="text-white p-0 flex md:flex-col bg-[#f9fafb] items-center justify-center">
             <div className="w-full grid grid-cols-1  lg:grid-cols-2 p-0">
-              <div className="p-4 md:p-12 relative">
+              <div className="p-4 md:p-12 relative order-2 md:order-1">
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                 <div className=" w-full h-full flex items-center justify-center">
                   <Image
@@ -157,7 +157,10 @@ const LeadGeneration = () => {
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" className="md:p-12 text-white">
+              <div
+                data-aos="fade-right"
+                className="md:p-12 text-white order-1 md:order-2"
+              >
                 <h2 className="text-[1.6rem] text-black lg:text-[2.3rem] headingfont py-4 font-semibold">
                   Multi-Channel Lead Capture
                 </h2>

@@ -211,7 +211,7 @@ const WebDevelopment = () => {
           </div>
           <div className=" my-[7vh] mx-auto bgcolor">
             <div className=" flex flex-wrap">
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap flex-col-reverse md:flex-row">
                 <div className="lg:w-1/2 px-4">
                   <div className=" h-full w-full flex justify-center bg-cover bg-center">
                     <Image
@@ -301,7 +301,7 @@ const WebDevelopment = () => {
           </div>
           <div className=" mx-auto">
             <div className=" flex flex-wrap">
-              <div className=" flex flex-wrap">
+              <div className=" flex flex-wrap flex-col-reverse md:flex-row">
                 <div className="lg:w-1/2 px-4">
                   <div className=" h-fit py-8 w-full flex justify-center bg-cover bg-center">
                     <Image
@@ -388,7 +388,7 @@ const WebDevelopment = () => {
           </div>
           <div className="content1 py-8 px-[5vw] text-justify">
             <div className=" flex flex-wrap">
-              <div className=" flex flex-wrap">
+              <div className=" flex flex-wrap flex-col-reverse md:flex-row">
                 <div className="lg:w-1/2 px-4">
                   <div className="w-full flex justify-center bg-cover bg-center">
                     <Image
