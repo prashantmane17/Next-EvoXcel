@@ -40,7 +40,7 @@ export default function Component() {
               Get in Touch
             </h3>
             <p className="text-gray-400 mb-4">
-              Don't miss any updates of our new templates and extensions!
+              Don&apos;t miss any updates of our new templates and extensions!
             </p>
             <form className="flex gap-2">
               <input

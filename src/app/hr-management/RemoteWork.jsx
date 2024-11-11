@@ -37,7 +37,7 @@ export default function RemoteWork() {
                       Monitor Remote Teams:
                     </h4>
                     <p className="text-gray-600">
-                      Track remote employees' locations and statuses with high
+                      Track remote employees locations and statuses with high
                       accuracy.
                     </p>
                   </div>

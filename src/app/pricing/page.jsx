@@ -61,9 +61,9 @@ export const metadata = {
 const Pricing = () => {
   return (
     <>
-      <Head>
+      {/* <Head>
         <link rel="stylesheet" href="./pricing.css" />
-      </Head>
+      </Head> */}
       <section className="bg-slate-100 pb-[10vh]">
         <section className="pt-[10vh] pb-[5vh]">
           <h1 className="text-3xl font-bold text-[#180B5B] headingfont text-center py-[5vh]">
