@@ -142,23 +142,22 @@ const NewNav = () => {
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
               <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
-                <Link href="/web-development" className={`flex`} legacyBehavior>
+                <Link href="/lead-generation" className="flex " legacyBehavior>
                   <a
                     className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/web-development/"
+                      "/lead-generation/"
                     )}`}
                   >
-                    <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
                     <div>
-                      <p className="font-semibold ">Web Development</p>
-                      <p className="text-[14px]">
-                        Unlock Your Digital Potential with Expert Web
-                        Development...
+                      <p className="font-semibold ">Lead Generation</p>
+                      <p className="text-[14px] font-[500]">
+                        Lead generation is more than just a marketing strategy
+                        it&lsquo;s the...
                       </p>
                     </div>
                   </a>
                 </Link>
-
                 <Link
                   href="/software-development"
                   className="flex"
@@ -208,18 +207,18 @@ const NewNav = () => {
                     </div>
                   </a>
                 </Link>
-                <Link href="/lead-generation" className="flex " legacyBehavior>
+                <Link href="/web-development" className={`flex`} legacyBehavior>
                   <a
                     className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/lead-generation/"
+                      "/web-development/"
                     )}`}
                   >
-                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
+                    <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
                     <div>
-                      <p className="font-semibold ">Lead Generation</p>
-                      <p className="text-[14px] font-[500]">
-                        Lead generation is more than just a marketing strategy
-                        it&lsquo;s the...
+                      <p className="font-semibold ">Web Development</p>
+                      <p className="text-[14px] font-normal">
+                        Unlock Your Digital Potential with Expert Web
+                        Development...
                       </p>
                     </div>
                   </a>

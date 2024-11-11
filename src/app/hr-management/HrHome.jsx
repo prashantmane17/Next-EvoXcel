@@ -8,6 +8,8 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import HrSection from "./HrSection";
+import Facial from "./Facial";
+import RemoteWork from "./RemoteWork";
 
 const FadeInSection = ({ children }) => {
   const controls = useAnimation();
@@ -183,111 +185,10 @@ export default function HrHome() {
   return (
     <div className="bg-white text-gray-900 font-sans">
       <HrSection />
+      <Facial />
+      <RemoteWork />
 
-      <section className="min-h-screen flex items-center justify-center py-20">
-        <div className="container mx-auto px-4">
-          <FadeInSection>
-            <h2 className="text-4xl font-bold mb-12 text-center">
-              Transform Your Remote Operations
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "1M+ Daily Transactions",
-                  description:
-                    "Leverage a robust architecture capable of handling over 1 million API calls daily.",
-                },
-                {
-                  title: "Advanced Facial Recognition",
-                  description:
-                    "Utilize fast and accurate biometric identification through sophisticated facial recognition technology.",
-                },
-                {
-                  title: "Real-Time Location Tracking",
-                  description:
-                    "Monitor precise geo-spatial data for accurate, real-time location tracking of remote teams.",
-                },
-                {
-                  title: "Platform Compatibility",
-                  description:
-                    "Access our solutions on any Android or iOS device, including smartphones and tablets.",
-                },
-                {
-                  title: "Extensive Deployment",
-                  description:
-                    "Join over 400 sites across India successfully utilizing our technology under diverse real-world conditions.",
-                },
-                {
-                  title: "Seamless Integration",
-                  description:
-                    "Easily integrate with existing biometric hardware systems, ensuring smooth deployment and functionality.",
-                },
-              ].map((feature, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-gray-100 p-6 rounded-lg shadow-lg"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <h3 className="text-xl font-semibold mb-3 text-indigo-600">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-700">{feature.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
-
-      <section className=" flex items-center justify-center bg-gray-100 py-20">
-        <div className="container mx-auto px-4">
-          <FadeInSection>
-            <h2 className="text-4xl font-bold mb-12 text-center">
-              Revolutionize Your Remote Workforce
-            </h2>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-              <div className="w-full md:w-1/3">
-                {features.map((feature, index) => (
-                  <motion.button
-                    key={index}
-                    className={`w-full text-left p-4 mb-2 rounded-lg transition-colors ${
-                      activeFeature === index
-                        ? `bg-gradient-to-r ${feature.color} text-white`
-                        : "bg-white text-gray-700 hover:bg-gray-200"
-                    }`}
-                    onClick={() => setActiveFeature(index)}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                  >
-                    {feature.title}
-                  </motion.button>
-                ))}
-              </div>
-              <div className="w-full md:w-2/3 bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-indigo-600">
-                  {features[activeFeature].title}
-                </h3>
-                <ul className="list-disc list-inside space-y-2">
-                  {features[activeFeature].items.map((item, index) => (
-                    <motion.li
-                      key={index}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="text-gray-700"
-                    >
-                      {item}
-                    </motion.li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
-
-      <section className="min-h-screen flex items-center justify-center bg-white py-20">
+      <section className=" flex items-center justify-center bg-white py-20">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-12 text-center text-gray-800">
             Industries We Serve
@@ -361,7 +262,7 @@ export default function HrHome() {
         </div>
       </section>
 
-      <section className="min-h-screen flex items-center justify-center bg-gray-100 py-20">
+      <section className=" flex items-center justify-center bg-gray-100 py-20">
         <div className="container mx-auto px-4">
           <FadeInSection>
             <h2 className="text-4xl font-bold mb-12 text-center">

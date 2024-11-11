@@ -65,7 +65,7 @@ export default function HrSection() {
         </div>
       </div>
 
-      <div className="relative container mx-auto px-4 py-20">
+      <div className="relative container mx-auto px-4 py-20 flex items-center">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <motion.div
