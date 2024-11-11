@@ -1,6 +1,6 @@
 import "./globals.css";
 import Nav from "./components/Nav";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 import Script from "next/script";
 import Head from "next/head";
 import Footers from "./components/Footers";
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         `}
         </Script>
         {/* <Nav /> */}
-        <NewNav/>
+        <NewNav />
         {children}
         {/* <Footer /> */}
         <Footers />

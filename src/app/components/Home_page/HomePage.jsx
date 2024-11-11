@@ -12,7 +12,12 @@ const HomePage = () => {
     setScrolled(window.scrollY > 0);
   };
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({
+      offset: 1, // Adjust offset as needed
+      delay: 10, // Delay animation to avoid blank sections
+      duration: 500,
+      easing: "ease-in-out", // Animation duration for smooth effect
+    });
     window.addEventListener("scroll", handleScroll);
     // document.addEventListener("click", handleClickOutside);
 

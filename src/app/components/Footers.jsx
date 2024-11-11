@@ -281,7 +281,7 @@ const Footers = () => {
           </div> */}
         </div>
         <div className="footer_bottom">
-          <div className="w-[100%] text-center mt-8">
+          <div className="w-[100%] text-center text-black mt-8">
             <p className="">© EvoXcel Inc.. 2024 All rights reserved.</p>
           </div>
         </div>

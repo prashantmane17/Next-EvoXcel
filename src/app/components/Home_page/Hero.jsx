@@ -121,7 +121,7 @@ export default function Hero() {
             <button
               data-aos="fade-up"
               data-aos-duration="2500"
-              className="md:py-4 md:px-16 md:text-[1vw] rounded-3xl mt-[2vh] getstarted pfont"
+              className="md:py-4 md:px-16 md:text-[1vw] rounded-3xl mt-[2vh] getstarted pfont "
             >
               <span className="text">
                 Get Started <i className="fa-solid fa-rocket ml-2"></i>
@@ -136,7 +136,7 @@ export default function Hero() {
             width="300"
             height="300"
             alt="Hero"
-            className="w-[90%]"
+            className="w-[90%] imagePop"
           />
         </article>
       </section>
