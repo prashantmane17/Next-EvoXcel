@@ -14,9 +14,30 @@ const Footers = () => {
   if (!isMounted) return null; // Prevent rendering until mounted
   return (
     <>
-      <footer className="new_footer_area bg_color">
-        <div className="new_footer_top">
-          <div className=" mx-auto px-[4vw]">
+      <footer className="new_footer_area bg_color relative">
+        {/* <div className="absolute w-full h-full bottom-0 z-1">
+          <svg
+            id="wave"
+            style={{ transform: "rotate(0deg)", transition: "0.3s" }}
+            viewBox="0 0 1440 490"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stopColor="rgba(243, 106, 62, 1)" offset="0%"></stop>
+                <stop stopColor="rgba(255, 179, 11, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style={{ transform: "translate(0, 0px)", opacity: 1 }}
+              fill="url(#sw-gradient-0)"
+              d="M0,0L720,196L1440,49L2160,49L2880,49L3600,196L4320,98L5040,441L5760,392L6480,0L7200,441L7920,392L8640,49L9360,392L10080,245L10800,98L11520,441L12240,441L12960,294L13680,196L14400,49L15120,245L15840,294L16560,0L17280,392L17280,490L16560,490L15840,490L15120,490L14400,490L13680,490L12960,490L12240,490L11520,490L10800,490L10080,490L9360,490L8640,490L7920,490L7200,490L6480,490L5760,490L5040,490L4320,490L3600,490L2880,490L2160,490L1440,490L720,490L0,490Z"
+            ></path>
+          </svg>
+        </div> */}
+        <div className="new_footer_top z-2">
+          <div className=" mx-auto px-[4vw] ">
             <div className="flex flex-wrap justify-between">
               <div className="w-full md:w-1/2 lg:w-[15%] pl-4 mb-8">
                 <div
@@ -52,7 +73,7 @@ const Footers = () => {
                   </form>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-4 mb-8">
+              <div className="w-full md:w-1/2 lg:w-[15%] px-4 ">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.4s"
@@ -96,7 +117,7 @@ const Footers = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-4 mb-8">
+              <div className="w-full md:w-1/2 lg:w-[15%] px-4">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.4s"
@@ -124,7 +145,7 @@ const Footers = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-2 mb-8">
+              <div className="w-full md:w-1/2 lg:w-[15%] px-2">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.6s"
@@ -185,7 +206,7 @@ const Footers = () => {
                 </div>
               </div>
 
-              <div className="w-full md:w-1/2 lg:w-[25%] px-4 mb-8">
+              <div className="w-full md:w-1/2 lg:w-[25%] px-4">
                 <div
                   className="social-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.8s"
@@ -254,10 +275,10 @@ const Footers = () => {
               </div>
             </div>
           </div>
-          <div className="footer_bg">
+          {/* <div className="footer_bg">
             <div className="footer_bg_one"></div>
             <div className="footer_bg_two"></div>
-          </div>
+          </div> */}
         </div>
         <div className="footer_bottom">
           <div className="w-[100%] text-center mt-8">
