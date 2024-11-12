@@ -5,6 +5,7 @@ import Script from "next/script";
 import Head from "next/head";
 import Footers from "./components/Footers";
 import NewNav from "./components/NewNav";
+import Chatbot from "./components/Chatbot";
 // import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export default function RootLayout({ children }) {
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
         {children}
         {/* <Footer /> */}
         <Footers />
+        <Chatbot />
         <Script
           src="https://kit.fontawesome.com/a32e229695.js"
           crossOrigin="anonymous"

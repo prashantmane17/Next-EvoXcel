@@ -4,6 +4,7 @@ import Image from "next/image";
 import Hero from "./Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typewriter from "typewriter-effect";
 import { useEffect, useState } from "react";
 
 const HomePage = () => {
@@ -13,19 +14,16 @@ const HomePage = () => {
   };
   useEffect(() => {
     AOS.init({
-      offset: 1, // Adjust offset as needed
-      delay: 10, // Delay animation to avoid blank sections
+      offset: 1,
+      delay: 10,
       duration: 500,
-      easing: "ease-in-out", // Animation duration for smooth effect
+      easing: "ease-in-out",
     });
     window.addEventListener("scroll", handleScroll);
-    // document.addEventListener("click", handleClickOutside);
-
     handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      //   document.removeEventListener("click", handleClickOutside);
     };
   }, []);
   return (
@@ -48,9 +46,24 @@ const HomePage = () => {
               className="md:w-[50%] justify-center px-[5vw]"
               data-aos="fade-in"
             >
-              <p className="text-center pt-[7vh] headingfont text-[#112029] md:text-[2.3vw] font-[700]">
-                Welcome to EvoXcel
-              </p>
+              <div className="text-center pt-[7vh] headingfont text-[#112029] md:text-[2.9vw] font-[700]">
+                Welcome to{" "}
+                <span
+                  style={{ display: "inline-block" }}
+                  className="text-sky-600"
+                >
+                  <Typewriter
+                    options={{
+                      strings: ["EvoXcel"],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                      deleteSpeed: 50,
+                    }}
+                  />
+                </span>
+              </div>
+
               <p className="md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify pt-[2vh] pfont">
                 &ldquo;We empower your business success with a comprehensive
                 range of cutting-edge services and products. From custom web,
@@ -439,6 +452,43 @@ const HomePage = () => {
                 alt="Seamless Tool Integration"
               />
             </figure>
+          </section>
+          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+            <figure
+              className="md:w-[50%] flex justify-center items-center"
+              data-aos="fade-in"
+            >
+              <Image
+                src="/images/Home/Hr_management.svg"
+                width={300}
+                height={300}
+                loading="lazy"
+                className="w-[60%]"
+                alt="Enhance Productivity"
+              />
+            </figure>
+            <aside
+              className="md:w-[50%] flex flex-col items-start justify-center pl-7"
+              data-aos="fade-right"
+            >
+              <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
+                Enhance Productivity with Optick, Our Premier AI Platform
+              </p>
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Track real-time locations for improved operational efficiency.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Streamline task scheduling and time tracking effortlessly.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Boost productivity and close more deals faster.
+                </li>
+              </ul>
+            </aside>
           </section>
         </article>
       </div>

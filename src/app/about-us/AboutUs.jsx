@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function AboutUs() {
   return (
     <div className="bg-gradient-to-b from-white to-gray-100">
-      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center p-6 lg:p-16 overflow-hidden">
+      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center p-6 pt-[30vw] lg:p-16 lg:pt-6 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}

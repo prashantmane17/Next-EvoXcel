@@ -1,0 +1,19 @@
+.chat_bot {
+  animation: chatBot 3s linear infinite;
+}
+
+@keyframes chatBot {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.chat_botMain {
+  background: linear-gradient(to bottom,#6fc3ff, #2a454b);
+}
