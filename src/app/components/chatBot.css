@@ -14,6 +14,30 @@
   }
 }
 
-.chat_botMain {
-  background: linear-gradient(to bottom,#6fc3ff, #2a454b);
+#notificationModal {
+  background: linear-gradient(#20ace0, #20ace0, #ffffff);
+}
+.no-scrollBar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollBar {
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.navLink {
+  position: relative;
+}
+.navLink::after {
+  position: absolute;
+  content: "";
+  bottom: 22%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(38, 190, 255);
+  transition:width 0.5s ease;
+}
+.navLink:hover::after {
+width: 73%;
 }

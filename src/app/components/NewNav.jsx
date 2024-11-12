@@ -135,8 +135,8 @@ const NewNav = () => {
             <i className="fa-solid fa-bars relative z-30 text-[1.5rem] cursor-pointer"></i>
           )}
         </div>
-        <div className="md:flex hidden justify-between pfont relative w-[55%] text-[1vw] font-[600]">
-          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[2.3vw]">
+        <div className="md:flex hidden justify-between pfont relative w-[61%] text-[1vw] font-[600]">
+          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[2.3vw] navLink">
             Services <i className="fa-solid fa-caret-down ml-1"></i>
           </div>
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
@@ -226,7 +226,7 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer productdropdown lg:pr-[2.3vw] navBar lg:py-[15px] ">
+          <div className="cursor-pointer productdropdown lg:pr-[2.3vw] navBar lg:py-[15px] navLink">
             Products <i className="fa-solid fa-caret-down ml-1"></i>
           </div>
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
@@ -298,13 +298,13 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20">
+          <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20 navLink">
             <Link href={"/pricing"} className={`${isActiveLink("/pricing/")}`}>
               Pricing
             </Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
-          <div className="cursor-pointer resourcedropdown navBar lg:pr-[2vw] lg:py-[15px]">
+          <div className="cursor-pointer resourcedropdown navBar lg:pr-[2vw] lg:py-[15px] navLink">
             Insights <i className="fa-solid fa-caret-down ml-1"></i>
           </div>
           <div className="hidden absolute rounded-b-lg text-gray-700 dropdown2 shadow-lg bg-white w-[100%] top-[50px]">
@@ -355,7 +355,7 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20">
+          <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20 navLink">
             <Link
               href={"/about-us"}
               className={`${isActiveLink("/about-us/")}`}
@@ -364,7 +364,7 @@ const NewNav = () => {
             </Link>
           </div>
 
-          <div className="relative left-[0.7vw]">
+          {/* <div className="relative left-[0.7vw]">
             <div className="cursor-pointer logindropdown   navBar lg:py-[15px] lg:pr-[2vw]">
               Log in <i className="fa-solid fa-caret-down ml-1"></i>
             </div>
@@ -390,13 +390,28 @@ const NewNav = () => {
                 </article>
               </section>
             </div>
-          </div>
-          <div className="cursor-pointer navBar lg:py-[15px] text-color relative z-20">
+          </div> */}
+          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20 navLink">
             <Link
               href={"/contact-us"}
               className={`${isActiveLink("/contact-us/")}`}
             >
               Let&lsquo;s Connect
+            </Link>
+          </div>
+          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1.8vw] text-color relative z-20 navLink">
+            <Link href={"/sign-up"} className={`${isActiveLink("/sign-up/")}`}>
+              Sign up
+            </Link>
+          </div>
+          <div className="cursor-pointer navBar lg:py-[15px] text-white font-bold relative z-20 ">
+            <Link
+              href={"/sign-in"}
+              className={`${isActiveLink(
+                "/sign-in/"
+              )} py-2 p-2 rounded bg-black`}
+            >
+              Log in
             </Link>
           </div>
         </div>

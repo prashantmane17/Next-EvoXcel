@@ -2,15 +2,19 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footers = () => {
   const [isMounted, setIsMounted] = useState(false);
   const email = "sales@evoxcel.com";
+  const location = usePathname();
 
   useEffect(() => {
     setIsMounted(true); // Set mounted state
   }, []);
-
+  const isActiveLink = (path) => {
+    return path === location ? "text-sky-500" : "";
+  };
   if (!isMounted) return null; // Prevent rendering until mounted
   return (
     <>
@@ -73,7 +77,7 @@ const Footers = () => {
                   </form>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-4 ">
+              <div className="w-full md:w-1/2 lg:w-[15%]">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.4s"
@@ -81,43 +85,51 @@ const Footers = () => {
                   <h3 className="f-title font-semibold text-lg text-gray-800 mb-4">
                     Services
                   </h3>
-                  <ul className="list-none space-y-2">
-                    <li>
-                      <Link
-                        href="/web-development"
-                        className="text-gray-600 hover:text-gray-800"
-                      >
-                        Web Development
-                      </Link>
-                    </li>
-                    <li>
+                  <ul className="list-none space-y-2 ">
+                    <li className="">
                       <Link
                         href="/software-development"
-                        className="text-gray-600 hover:text-gray-800"
+                        className={`text-gray-600  hover:text-gray-800  ${isActiveLink(
+                          "/software-development/"
+                        )}`}
                       >
                         Software Development
                       </Link>
                     </li>
                     <li>
                       <Link
+                        href="/lead-generation"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/lead-generation/"
+                        )}`}
+                      >
+                        Lead Generation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="/application-development"
-                        className="text-gray-600 hover:text-gray-800"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/application-development/"
+                        )}`}
                       >
                         Application Development
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/lead-generation"
-                        className="text-gray-600 hover:text-gray-800"
+                        href="/web-development"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/web-development/"
+                        )}`}
                       >
-                        Lead Generation
+                        Web Development
                       </Link>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-4">
+              <div className="w-full md:w-1/2 lg:w-[15%]">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.4s"
@@ -129,15 +141,29 @@ const Footers = () => {
                     <li>
                       <Link
                         href="/linkedin-automation"
-                        className="text-gray-600 hover:text-gray-800"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/linkedin-automation/"
+                        )}`}
                       >
                         Linkedin Automation
                       </Link>
                     </li>
                     <li>
                       <Link
+                        href="/hr-management"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/hr-management/"
+                        )}`}
+                      >
+                        HR Management
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="/email-automation"
-                        className="text-gray-600 hover:text-gray-800"
+                        className={`text-gray-600 hover:text-gray-800 ${isActiveLink(
+                          "/email-automation/"
+                        )}`}
                       >
                         Email Automation
                       </Link>
@@ -145,7 +171,7 @@ const Footers = () => {
                   </ul>
                 </div>
               </div>
-              <div className="w-full md:w-1/2 lg:w-[15%] px-2">
+              <div className="w-full md:w-1/2 lg:w-[15%]">
                 <div
                   className="about-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.6s"
@@ -205,8 +231,7 @@ const Footers = () => {
                   </ul>
                 </div>
               </div>
-
-              <div className="w-full md:w-1/2 lg:w-[25%] px-4">
+              <div className="w-full md:w-1/2 lg:w-[25%]">
                 <div
                   className="social-widget pl-0 md:pl-8 wow fadeInLeft"
                   data-wow-delay="0.8s"
