@@ -14,8 +14,8 @@ const HomePage = () => {
   };
   useEffect(() => {
     AOS.init({
-      offset: 1,
-      delay: 10,
+      offset: 0,
+      delay: 1,
       duration: 500,
       easing: "ease-in-out",
     });
@@ -472,20 +472,102 @@ const HomePage = () => {
               data-aos="fade-right"
             >
               <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
-                Enhance Productivity with Optick, Our Premier AI Platform
+                Geo-Spatial Tracking
               </p>
               <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
-                  Track real-time locations for improved operational efficiency.
+                  Track remote employees locations and statuses with high
+                  accuracy.
                 </li>
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
-                  Streamline task scheduling and time tracking effortlessly.
+                  Ensure precise time tracking, reducing errors and preventing
+                  fraud.
                 </li>
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
-                  Boost productivity and close more deals faster.
+                  Maintain a detailed record of staff movements and locations.
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
+            <aside
+              className="md:w-[50%] flex flex-col items-start justify-center pl-7"
+              data-aos="fade-right"
+            >
+              <p className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
+                Task and Time Management
+              </p>
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Gain real-time insights into task progress and employee
+                  performance.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Use AI algorithms to create optimal schedules tailored to your
+                  workforce’s needs
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Automatically generate rosters based on set rules and employee
+                  preferences, improving operational efficiency.
+                </li>
+              </ul>
+            </aside>
+            <figure
+              className="md:w-[50%] flex justify-center items-center"
+              data-aos="fade-in"
+            >
+              <Image
+                src="/images/Home/SI.webp"
+                width="300"
+                height={300}
+                loading="lazy"
+                className="w-[65%]"
+                alt="Seamless Tool Integration"
+              />
+            </figure>
+          </section>
+          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+            <figure
+              className="md:w-[50%] flex justify-center items-center"
+              data-aos="fade-in"
+            >
+              <Image
+                src="/images/Home/Hr_management.svg"
+                width={300}
+                height={300}
+                loading="lazy"
+                className="w-[60%]"
+                alt="Enhance Productivity"
+              />
+            </figure>
+            <aside
+              className="md:w-[50%] flex flex-col items-start justify-center pl-7"
+              data-aos="fade-right"
+            >
+              <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
+                Data-Driven Insights
+              </p>
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Access real-time metrics for individuals and teams, driving
+                  data-informed decisions.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Analyze data on resource utilization to optimize personnel use
+                  and improve productivity.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Predict future resource needs with advanced forecasting tools
+                  to ensure optimal staffing levels.
                 </li>
               </ul>
             </aside>
