@@ -258,11 +258,11 @@ const Chatbot = () => {
     return (
       <Button
         onClick={() => setIsOpen(true)} // Open modal on button click
-        className="fixed bottom-4 right-6 rounded-full w-[7.5vw] h-[7.5vw] p-0 bg-transparent chat_bot"
+        className="fixed bottom-5 right-5 md:bottom-10 md:right-10 rounded-full w-[50px] h-[50px] md:w-[80px] md:h-[80px] lg:w-[4.5vw] lg:h-[4.5vw] p-0 bg-transparent chat_bot"
         aria-label="Open chat"
       >
         <Image
-          src="/images/chatbot/chatBot_icon.svg"
+          src="/images/chatbot/chatBot.svg"
           width={80}
           height={80}
           alt="Chatbot"
@@ -275,10 +275,10 @@ const Chatbot = () => {
   // Render the modal if isOpen is true
   return (
     <>
-      <div className="fixed w-full h-[90vh] pt-[10vh] z-10 top-[10vh] bg-[#00000038] "></div>
+      <div className="fixed w-full h-[90vh] pt-[10vh] z-10 top-[8vh] lg:top-[10vh] bg-[#00000038] "></div>
       <div
         id="notificationModal"
-        className="fixed bottom-4 right-4 z-50 w-[380px] h-[80vh] rounded-md shadow-xl "
+        className="fixed bottom-4 right-0 md:right-4 z-50 w-full md:w-[380px]  md:h-[80vh] rounded-md shadow-xl "
       >
         <div className=" h-[60vh] md:h-[76vh]  py-5 rounded-lg ">
           <article className="px-5">
@@ -298,7 +298,7 @@ const Chatbot = () => {
               <i className="fa-solid fa-magnifying-glass text-[#20ACE0] w-[10%]"></i>
             </div>
           </article>
-          <div className="overflow-y-scroll h-[65%] no-scrollBar pr-4">
+          <div className="overflow-y-scroll h-[65%] no-scrollBar md:pr-4">
             {data
               .filter((x) =>
                 search.toLowerCase() === ""

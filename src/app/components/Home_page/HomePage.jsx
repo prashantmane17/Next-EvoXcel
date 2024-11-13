@@ -5,7 +5,9 @@ import Hero from "./Hero";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Typewriter from "typewriter-effect";
+import WhyChooseUs from "./WhyChooseUs";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -14,9 +16,9 @@ const HomePage = () => {
   };
   useEffect(() => {
     AOS.init({
-      offset: 0,
+      offset: 1,
       delay: 1,
-      duration: 500,
+      duration: 400,
       easing: "ease-in-out",
     });
     window.addEventListener("scroll", handleScroll);
@@ -379,7 +381,12 @@ const HomePage = () => {
               />
             </figure>
           </section>
-          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]"
+          >
             <figure
               className="md:w-[50%] flex justify-center items-center"
               data-aos="fade-in"
@@ -415,11 +422,13 @@ const HomePage = () => {
                 </li>
               </ul>
             </aside>
-          </section>
+          </motion.div>
           <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
-            <aside
+            <motion.aside
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
-              data-aos="fade-right"
             >
               <p className="md:text-[2.5vw] font-[600] headingfont text-slate-800">
                 Seamless Tool Integration.
@@ -438,10 +447,12 @@ const HomePage = () => {
                   Data enrichment tool integrations for enriched outreach.
                 </li>
               </ul>
-            </aside>
-            <figure
+            </motion.aside>
+            <motion.figure
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex justify-center items-center"
-              data-aos="fade-in"
             >
               <Image
                 src="/images/Home/SI.webp"
@@ -451,9 +462,9 @@ const HomePage = () => {
                 className="w-[65%]"
                 alt="Seamless Tool Integration"
               />
-            </figure>
+            </motion.figure>
           </section>
-          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+          {/* <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
             <figure
               className="md:w-[50%] flex justify-center items-center"
               data-aos="fade-in"
@@ -572,7 +583,45 @@ const HomePage = () => {
               </ul>
             </aside>
           </section>
+          <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+            <figure
+              className="md:w-[50%] flex justify-center items-center"
+              data-aos="fade-in"
+            >
+              <Image
+                src="/images/Home/Hr_management.svg"
+                width={300}
+                height={300}
+                loading="lazy"
+                className="w-[60%]"
+                alt="Enhance Productivity"
+              />
+            </figure>
+            <aside
+              className="md:w-[50%] flex flex-col items-start justify-center pl-7"
+              data-aos="fade-right"
+            >
+              <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
+              Upskill Your Workforce
+              </p>
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Identify strengths and areas for improvement in employee skills, supporting targeted development.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Provide interactive training accessible via mobile devices, facilitating learning on-the-go.
+                </li>
+                <li>
+                  <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
+                  Evaluate employee progress and skill acquisition with automated assessments for continuous improvement.
+                </li>
+              </ul>
+            </aside>
+          </section> */}
         </article>
+        <WhyChooseUs />
       </div>
     </>
   );

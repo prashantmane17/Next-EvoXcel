@@ -54,7 +54,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-8 text-white shadow-xl"
+              className="bg-gradient-to-br from-indigo-500 to-purple-600 h-full rounded-xl p-8 text-white shadow-xl"
             >
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-lg leading-relaxed">
@@ -68,7 +68,7 @@ export default function AboutUs() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="bg-gradient-to-br from-pink-500 to-orange-400 rounded-xl p-8 text-white shadow-xl"
+              className="bg-gradient-to-br from-pink-500 to-orange-400 h-full rounded-xl p-8 text-white shadow-xl"
             >
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-lg leading-relaxed">

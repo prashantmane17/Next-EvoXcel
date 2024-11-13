@@ -8,6 +8,10 @@
 .primary {
   @apply text-[red];
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .bgwebdev {
   background-image: radial-gradient(
@@ -324,7 +328,8 @@
 /* ---------footer----------- */
 
 .new_footer_area {
-  background: #fbfbfd;
+  background: #001141;
+  /* background: #39a274; */
 }
 
 .new_footer_top {
@@ -347,7 +352,7 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 28px;
-  color: #6a7695;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 .new_footer_top .company_widget .f_subscribe_two .btn_get {
@@ -448,7 +453,7 @@ button:focus {
 }
 .new_footer_top .f-title {
   margin-bottom: 30px;
-  color: #263b5e;
+  color: #ffffff;
 }
 .f_600 {
   font-weight: 600;

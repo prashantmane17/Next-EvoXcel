@@ -17,7 +17,8 @@ const NewNav = () => {
 
   let navbarClasses = [
     "h-[8vh]",
-    "md:h-[10vh]",
+    "md:h-[8vh]",
+    "lg:h-[10vh]",
     "fixed",
     "top-0",
     "z-50",
@@ -135,9 +136,11 @@ const NewNav = () => {
             <i className="fa-solid fa-bars relative z-30 text-[1.5rem] cursor-pointer"></i>
           )}
         </div>
-        <div className="md:flex hidden justify-between pfont relative w-[61%] text-[1vw] font-[600]">
-          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[2.3vw] navLink">
+        <div className="md:flex hidden justify-between pfont relative items-center md:w-[67%] lg:w-[64%] text-[1vw] md:text-[1.2vw] lg:text-[1vw] font-[600]">
+          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[1vw] navLink ">
+            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
             Services <i className="fa-solid fa-caret-down ml-1"></i>
+</span>
           </div>
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
@@ -226,8 +229,10 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer productdropdown lg:pr-[2.3vw] navBar lg:py-[15px] navLink">
+          <div className="cursor-pointer productdropdown lg:pr-[1vw] navBar lg:py-[15px] navLink ">
+          <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
             Products <i className="fa-solid fa-caret-down ml-1"></i>
+</span>
           </div>
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
@@ -298,14 +303,16 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer lg:pr-[2vw] navBar lg:py-[15px] text-color relative z-20 navLink">
-            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")}`}>
+          <div className="cursor-pointer lg:pr-[1vw] navBar lg:py-[15px] text-color relative z-20 navLink">
+            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
               Pricing
             </Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
-          <div className="cursor-pointer resourcedropdown navBar lg:pr-[2vw] lg:py-[15px] navLink">
+          <div className="cursor-pointer resourcedropdown navBar lg:pr-[1vw] lg:py-[15px] navLink ">
+          <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
             Insights <i className="fa-solid fa-caret-down ml-1"></i>
+</span>
           </div>
           <div className="hidden absolute rounded-b-lg text-gray-700 dropdown2 shadow-lg bg-white w-[100%] top-[50px]">
             <section className="flex">
@@ -355,10 +362,10 @@ const NewNav = () => {
               </article>
             </section>
           </div>
-          <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20 navLink">
+          <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/about-us"}
-              className={`${isActiveLink("/about-us/")}`}
+              className={`${isActiveLink("/about-us/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               About Us
             </Link>
@@ -391,16 +398,16 @@ const NewNav = () => {
               </section>
             </div>
           </div> */}
-          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[2vw] text-color relative z-20 navLink">
+          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/contact-us"}
-              className={`${isActiveLink("/contact-us/")}`}
+              className={`${isActiveLink("/contact-us/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               Let&lsquo;s Connect
             </Link>
           </div>
-          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1.8vw] text-color relative z-20 navLink">
-            <Link href={"/sign-up"} className={`${isActiveLink("/sign-up/")}`}>
+          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
+            <Link href={"/sign-up"} className={`${isActiveLink("/sign-up/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
               Sign up
             </Link>
           </div>
@@ -409,7 +416,7 @@ const NewNav = () => {
               href={"/sign-in"}
               className={`${isActiveLink(
                 "/sign-in/"
-              )} py-2 p-2 rounded bg-black`}
+              )} py-2 p-2 rounded bg-black hover:bg-gray-800`}
             >
               Log in
             </Link>
@@ -418,7 +425,7 @@ const NewNav = () => {
 
         {menuOpen && (
           <div
-            className="fixed top-0 left-0 w-full h-full bg-black opacity-0 z-10"
+            className="fixed top-0 left-0 w-full h-full bg-black  opacity-0 z-10"
             onClick={toggleMenu} // Close menu when clicking on the overlay
           ></div>
         )}

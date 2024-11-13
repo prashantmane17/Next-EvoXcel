@@ -28,7 +28,7 @@
 .navLink {
   position: relative;
 }
-.navLink::after {
+/* .navLink::after {
   position: absolute;
   content: "";
   bottom: 22%;
@@ -40,4 +40,4 @@
 }
 .navLink:hover::after {
 width: 73%;
-}
+} */
