@@ -381,15 +381,16 @@ const HomePage = () => {
               />
             </figure>
           </section>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+          <div
+           
             className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]"
           >
-            <figure
+            <motion.figure
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex justify-center items-center"
-              data-aos="fade-in"
+              
             >
               <Image
                 src="/images/Home/OWDDI.webp"
@@ -399,10 +400,13 @@ const HomePage = () => {
                 className="w-[60%]"
                 alt="Optimize with Data-Driven Insights"
               />
-            </figure>
-            <aside
+            </motion.figure>
+            <motion.aside
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
-              data-aos="fade-right"
+              
             >
               <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Optimize with Data-Driven Insights
@@ -421,8 +425,8 @@ const HomePage = () => {
                   Identify trends across LinkedIn accounts.
                 </li>
               </ul>
-            </aside>
-          </motion.div>
+            </motion.aside>
+          </div>
           <section className="md:flex homepagelast justify-between w-[100%] mt-[5vh]">
             <motion.aside
               initial={{ opacity: 0, y: 50 }}

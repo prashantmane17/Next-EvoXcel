@@ -22,7 +22,7 @@ const Footers = () => {
     <div className="w-full h-20vh relative top-[1px]">
       <Image
       // src="/images/chatbot/mountain-bg.webp"
-      src="/images/chatbot/ngg.svg"
+      src="/images/chatbot/footer_background.svg"
       width={200}
       height={300}
       alt="Footer"

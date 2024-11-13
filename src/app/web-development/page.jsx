@@ -197,7 +197,7 @@ const WebDevelopment = () => {
                 </div>
               </div>
               <div className="lg:w-1/2 px-4">
-                <div className=" h-full w-full flex justify-center bg-cover bg-center">
+                <div className=" h-[92%] w-[92%] flex justify-center bg-cover bg-center">
                   <Image
                     className="w-[60%] object-contain"
                     src="/images/web-development/statergy.webp"
@@ -213,7 +213,7 @@ const WebDevelopment = () => {
             <div className=" flex flex-wrap">
               <div className="flex flex-wrap flex-col-reverse md:flex-row">
                 <div className="lg:w-1/2 px-4">
-                  <div className=" h-full w-full flex justify-center bg-cover bg-center">
+                  <div className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[60%] object-contain"
                       src="/images/web-development/planning.webp"
@@ -286,7 +286,7 @@ const WebDevelopment = () => {
                   </div>
                 </div>
                 <div className="lg:w-1/2 px-4">
-                  <div className=" h-full w-full flex justify-center bg-cover bg-center">
+                  <div className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[55%] object-contain"
                       src="/images/web-development/design.webp"
@@ -373,7 +373,7 @@ const WebDevelopment = () => {
                   </div>
                 </div>
                 <div className="lg:w-1/2 px-4">
-                  <div className=" h-full w-full flex justify-center bg-cover bg-center">
+                  <div className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
                     <Image
                       className="w-[55%] object-contain"
                       src="/images/web-development/consul.webp"

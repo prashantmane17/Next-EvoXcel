@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
             />
           ))}
         </div>
-        <div className="mt-16 text-center" legacyBehavior>
+        <div className="mt-16 text-center" >
         <Link
       href="/contact-us"
       className="bouce_button inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105"

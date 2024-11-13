@@ -1,6 +1,4 @@
 import "./globals.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
 import Script from "next/script";
 import Head from "next/head";
 import Footers from "./components/Footers";

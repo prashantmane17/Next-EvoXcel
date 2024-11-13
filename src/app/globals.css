@@ -11,7 +11,11 @@
 html {
   scroll-behavior: smooth;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+section {
+  font-family: "Poppins", sans-serif;
+}
 
 .bgwebdev {
   background-image: radial-gradient(
@@ -967,7 +971,6 @@ button:focus {
   font-style: normal;
 }
 .pfont {
-  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
