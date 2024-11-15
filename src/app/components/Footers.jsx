@@ -19,17 +19,16 @@ const Footers = () => {
   if (!isMounted) return null; // Prevent rendering until mounted
   return (
     <>
-    <div className="w-full h-20vh relative top-[1px]">
-      <Image
-      // src="/images/chatbot/mountain-bg.webp"
-      src="/images/chatbot/footer_background.svg"
-      width={200}
-      height={300}
-      alt="Footer"
-      className="w-full h-full" />
-     
-     
-    </div>  
+      <div className="w-full h-20vh relative top-[1px]">
+        <Image
+          // src="/images/chatbot/mountain-bg.webp"
+          src="/images/chatbot/footer_background.svg"
+          width={200}
+          height={300}
+          alt="Footer"
+          className="w-full h-full"
+        />
+      </div>
       <footer className="new_footer_area bg_color relative ">
         <div className="new_footer_top z-2">
           <div className=" mx-auto px-[4vw] ">
@@ -172,50 +171,32 @@ const Footers = () => {
                   </h3>
                   <ul className="list-none space-y-2">
                     <li>
-                      <Link
-                        href=""
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="" className="text-white hover:text-gray-300">
                         FAQ
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="#"
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="#" className="text-white hover:text-gray-300">
                         Term &amp; conditions
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="#"
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="#" className="text-white hover:text-gray-300">
                         Reporting
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="#"
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="#" className="text-white hover:text-gray-300">
                         Documentation
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="#"
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="#" className="text-white hover:text-gray-300">
                         Support Policy
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="#"
-                        className="text-white hover:text-gray-300"
-                      >
+                      <Link href="#" className="text-white hover:text-gray-300">
                         Privacy
                       </Link>
                     </li>
@@ -273,10 +254,10 @@ const Footers = () => {
                     </h3>
                     <ul>
                       <li className="text-white hover:text-gray-300 md:text-[1.1vw]">
-                        No.8, 2nd Floor, 20th Main,
+                        #99, 10th Cross, 20th Main
                       </li>
                       <li className="text-white hover:text-gray-300 md:text-[1.1vw]">
-                        5th Block, Koramangala, Bangalore 560095
+                        BTM loayout 1st stage, Bangalore 560068
                       </li>
                       <a
                         href={`mailto:${email}`}

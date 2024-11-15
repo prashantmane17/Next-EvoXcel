@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
 import WhyChooseUs from "./WhyChooseUs";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Evoxcel from "./Evoxcel";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ const HomePage = () => {
   }, []);
   return (
     <>
-      <div className="w-[100%]">
+      <div className="w-[100%] scroll-smooth">
         <Hero />
         <section className="md:h-fit w-[100%]  mb-[5vh] md:mb-0 bg-slate-50">
           <article className="m-auto w-[90%] md:h-fit  md:flex   justify-between">
@@ -381,16 +382,12 @@ const HomePage = () => {
               />
             </figure>
           </section>
-          <div
-           
-            className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]"
-          >
+          <div className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
             <motion.figure
-             initial={{ opacity: 0, y: 50 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex justify-center items-center"
-              
             >
               <Image
                 src="/images/Home/OWDDI.webp"
@@ -402,11 +399,10 @@ const HomePage = () => {
               />
             </motion.figure>
             <motion.aside
-             initial={{ opacity: 0, y: 50 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8, delay: 0.2 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
               className="md:w-[50%] flex flex-col items-start justify-center pl-7"
-              
             >
               <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Optimize with Data-Driven Insights
@@ -626,6 +622,7 @@ const HomePage = () => {
           </section> */}
         </article>
         <WhyChooseUs />
+        {/* <Evoxcel/> */}
       </div>
     </>
   );

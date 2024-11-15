@@ -262,7 +262,7 @@ const Chatbot = () => {
         aria-label="Open chat"
       >
         <Image
-          src="/images/chatbot/chatBot.svg"
+          src="/images/chatbot/chatbot.svg"
           width={80}
           height={80}
           alt="Chatbot"

@@ -4,11 +4,15 @@ import Head from "next/head";
 import Footers from "./components/Footers";
 import NewNav from "./components/NewNav";
 import Chatbot from "./components/Chatbot";
+import { GeistSans } from "geist/font/sans";
+import SmoothScroll from "./components/SmoothScroll";
+// import { GeistMono } from "geist/font/mono";
+
 // import GoogleAnalytics from "./components/GoogleAnalytics";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={GeistSans.className}>
       <Head>
         <meta charSet="UTF-8" />
         <meta property="og:site_Name" content="EvoXcel" />
@@ -32,7 +36,9 @@ export default function RootLayout({ children }) {
         </Script>
         {/* <Nav /> */}
         <NewNav />
+        {/* <SmoothScroll> */}
         {children}
+        {/* </SmoothScroll> */}
         {/* <Footer /> */}
         <Footers />
         <Chatbot />
