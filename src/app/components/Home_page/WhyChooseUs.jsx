@@ -167,7 +167,7 @@ export default function Evoxcel() {
                 />
               </div>
               <div
-                className={` p-8 rounded-lg text-white space-y-4 ${
+                className={` p-8 rounded-lg text-gray-800 space-y-4 ${
                   index % 2 === 1 ? "boxColor2" : "boxColor1"
                 }`}
               >
@@ -175,7 +175,7 @@ export default function Evoxcel() {
                   {content.title}
                 </h2>
                 {content.items.map((item, itemIndex) => (
-                  <p key={itemIndex} className="text-white md:text-[1.2vw]">
+                  <p key={itemIndex} className="text-gray-700 md:text-[1.2vw]">
                     {item}
                   </p>
                 ))}

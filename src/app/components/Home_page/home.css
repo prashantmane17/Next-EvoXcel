@@ -47,9 +47,10 @@
 }
 .boxColor1 {
   /* background: linear-gradient(45deg, #93a3bc, #87a2cc); */
-  background: #3d3d3d;
+  background: #d3d3d3;
 }
 .boxColor2 {
-  background: #f15a29;
+  background: #f9ede8;
+
   /* background: linear-gradient(45deg, #87a2cc, #93a3bc); */
 }
