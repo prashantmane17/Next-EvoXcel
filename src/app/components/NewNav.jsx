@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
 import "./chat_Bot.css"
+import { DollarSign } from "lucide-react";
 
 const NewNav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,7 +36,7 @@ const NewNav = () => {
   if (scrolled) {
     navbarClasses.push("bg-white", "text-black");
   } else {
-    if (location === "/") {
+    if (location === "/" || location === '/finance/') {
       navbarClasses.push("text-white", "bgnav");
     } else if (
       location === "/sign-in/" ||
@@ -111,7 +112,7 @@ const NewNav = () => {
 
   // Determine logo source based on route
   const logoSrc =
-    location === "/"
+    location === "/" || location === "/finance/"
       ? scrolled
         ? "/images/Evoxcel.webp"
         : "/images/Evoxcel White.webp"
@@ -140,8 +141,8 @@ const NewNav = () => {
         <div className="md:flex hidden justify-between pfont relative items-center md:w-[67%] lg:w-[64%] text-[1vw] md:text-[1.2vw] lg:text-[1vw] font-[600]">
           <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[1vw] navLink ">
             <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
-            Services <i className="fa-solid fa-caret-down ml-1"></i>
-</span>
+              Services <i className="fa-solid fa-caret-down ml-1"></i>
+            </span>
           </div>
           <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
             <section className="flex text-gray-700">
@@ -231,30 +232,29 @@ const NewNav = () => {
             </section>
           </div>
           <div className="cursor-pointer productdropdown lg:pr-[1vw] navBar lg:py-[15px] navLink ">
-          <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
-            Products <i className="fa-solid fa-caret-down ml-1"></i>
-</span>
+            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+              Products <i className="fa-solid fa-caret-down ml-1"></i>
+            </span>
           </div>
           <div className="hidden absolute dropdown1 bg-white w-[100%] top-[50px] text-black shadow-lg rounded-b-lg">
             <section className="flex text-gray-700">
               <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw] ">
                 <div className="w-full">
                   <Link
-                    href="/linkedin-automation"
+                    href="/finance"
                     className="flex "
                     legacyBehavior
                   >
                     <a
                       className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                        "/linkedin-automation/"
+                        "/finance/"
                       )}`}
                     >
-                      <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
+                      <i className="fa-solid fa-sack-dollar text-[2vw] mr-[1vw]"></i>
                       <div>
-                        <p className="font-semibold ">Linkedin Automation</p>
+                        <p className="font-semibold ">Finanace </p>
                         <p className="text-[14px] font-[500]">
-                          Unlock Your Digital Potential with Expert Web
-                          Development...
+                          Empower Your Financial Journey with Budgeting, and Wealth Management...
                         </p>
                       </div>
                     </a>
@@ -281,6 +281,26 @@ const NewNav = () => {
                   </Link>
                 </div>
                 <div className="w-full">
+                  <Link
+                    href="/linkedin-automation"
+                    className="flex "
+                    legacyBehavior
+                  >
+                    <a
+                      className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                        "/linkedin-automation/"
+                      )}`}
+                    >
+                      <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
+                      <div>
+                        <p className="font-semibold ">Linkedin Automation</p>
+                        <p className="text-[14px] font-[500]">
+                          Unlock Your Digital Potential with Expert Web
+                          Development...
+                        </p>
+                      </div>
+                    </a>
+                  </Link>
                   <Link
                     href="/hr-management"
                     className="flex w-1/2"
@@ -311,9 +331,9 @@ const NewNav = () => {
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
           <div className="cursor-pointer resourcedropdown navBar lg:pr-[1vw] lg:py-[15px] navLink ">
-          <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
-            Insights <i className="fa-solid fa-caret-down ml-1"></i>
-</span>
+            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+              Insights <i className="fa-solid fa-caret-down ml-1"></i>
+            </span>
           </div>
           <div className="hidden absolute rounded-b-lg text-gray-700 dropdown2 shadow-lg bg-white w-[100%] top-[50px]">
             <section className="flex">
@@ -432,9 +452,8 @@ const NewNav = () => {
         )}
         <ul
           ref={menuRef}
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100vh] pt-5 z-50 transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100vh] pt-5 z-50 transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           <li className="px-4 py-2 ">
             <Image
@@ -528,6 +547,22 @@ const NewNav = () => {
           </li>
           {productsOpen && (
             <div className="w-full ">
+              <Link
+                href="/finance"
+                onClick={() => {
+                  toggleMenu();
+                  setProductsOpen(false);
+                }}
+                legacyBehavior
+              >
+                <a
+                  className={`px-4 py-2 w-full inline-block text-black ${isActiveLink(
+                    "/finance/"
+                  )}`}
+                >
+                  Finance
+                </a>
+              </Link>
               <Link
                 href="/linkedin-automation"
                 onClick={() => {

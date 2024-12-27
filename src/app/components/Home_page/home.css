@@ -45,12 +45,12 @@
     transform: scale(1, 1) translateY(0);
   }
 }
-.boxColor1 {
+/* .boxColor1 { */
   /* background: linear-gradient(45deg, #93a3bc, #87a2cc); */
-  background: #d3d3d3;
+  /* background: #d3d3d3;
 }
 .boxColor2 {
-  background: #f9ede8;
+  background: #f9ede8; */
 
   /* background: linear-gradient(45deg, #87a2cc, #93a3bc); */
-}
+/* } */
