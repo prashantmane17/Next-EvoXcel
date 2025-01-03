@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
+
+.bgleadgen {
+  /* background-image: radial-gradient(circle at 50% 56%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 13%,transparent 13%, transparent 44%,transparent 44%, transparent 100%),radial-gradient(circle at 75% 75%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 26%,transparent 26%, transparent 57%,transparent 57%, transparent 100%),radial-gradient(circle at 43% 6%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 29%,transparent 29%, transparent 92%,transparent 92%, transparent 100%),radial-gradient(circle at 39% 61%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 44%,transparent 44%, transparent 83%,transparent 83%, transparent 100%),radial-gradient(circle at 5% 14%, hsla(16,0%,59%,0.1) 0%, hsla(16,0%,59%,0.1) 46%,transparent 46%, transparent 99%,transparent 99%, transparent 100%),linear-gradient(90deg, rgb(10, 22, 107),rgb(133, 136, 202)); */
+  background-image: linear-gradient(0deg, #fcfcfc 30%, #9deeff 100%);
+}
+/* .leadgeneration1{
+  background: url(../assets/zxc.png);
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+.leadgeneration2 {
+  background: url(/images/asdfgh.png);
+}
+.leadgeneration3 {
+  background: url(/images/aaaa.png);
+}
+.leadgeneration4 {
+  background: url(/images/ssssssvvvvvvggg.svg);
+}
+.linearcolor {
+  background-image: linear-gradient(
+    45deg,
+    rgb(56, 120, 78),
+    rgb(175, 255, 102)
+  );
+  background-image: radial-gradient(
+      circle at center center,
+      rgba(33, 33, 33, 0),
+      rgb(33, 33, 33)
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgb(33, 33, 33) 0px,
+      rgb(33, 33, 33) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgb(56, 56, 56) 0px,
+      rgb(56, 56, 56) 5px,
+      transparent 5px,
+      transparent 6px
+    ),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+}
+
+/* Features */
+
+/* ---------------------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap");
+
+:root {
+  --primary-color: white;
+  --secondary-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.process {
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.process__item {
+  user-select: none;
+  text-align: center;
+  position: relative;
+  padding: 15px 35px;
+  transition: 0.4s ease-in-out;
+}
+
+.process__item:hover {
+  background: darken(var(--secondary-color), 5%);
+}
+
+.process__item:hover .process__number {
+  transform: translateY(5px);
+  color: var(--primary-color);
+}
+
+.process__number {
+  /* font-size: 90px; */
+  -webkit-text-stroke: 1px var(--primary-color);
+  display: block;
+  color: transparent;
+  /* font-family: "Roboto Condensed"; */
+  font-weight: 700;
+  transition: 0.4s ease-in-out;
+}
+
+.process__subtitle {
+  display: block;
+  /* font-family: "Josefin Slab"; */
+  font-size: 20px;
+  /* color: rgba(255, 255, 255, 0.55); */
+  color: rgb(193, 193, 193);
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .process {
+    display: inline-block;
+  }
+
+  .process__item {
+    width: 49%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .process__item {
+    width: 100%;
+  }
+
+  .process__item:not(:last-of-type)::after {
+    content: "";
+    width: 1px;
+    height: 75%;
+    /* background: rgba(255, 255, 255, 0.45); */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    opacity: 0.2;
+    transform: translateY(-50%);
+  }
+}
+
+/* -------------------------------------------- */
+
+.container .glass {
+  position: relative;
+  /* width: 180px; */
+  width: 400px;
+  height: 400px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.133), transparent); */
+  background: #74226c;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(10px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+/* --------------------------------------------- */
+
+.card3 {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.card3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card3::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.card3 p:not(.heading) {
+  font-size: 14px;
+}
+
+.card3 p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card3:hover::after {
+  filter: blur(30px);
+}
+
+.card3:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+/* -------------------------lead end--------------------- */

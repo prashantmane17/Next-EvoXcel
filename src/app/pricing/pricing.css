@@ -1,0 +1,128 @@
+.main-container-body {
+  /* min-height: 100vh; */
+  background: url("https://images.unsplash.com/photo-1686100510118-207f1434d807?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background: #fff;
+  background-size: cover;
+  /* color: white; */
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.containerpricing {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  /* background: linear-gradient(21deg, black, transparent); */
+}
+
+.cardpricing {
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  border: 2px solid black;
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+}
+
+.card_title {
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  font-weight: normal;
+  font-size: 96px;
+}
+
+.pricing .small {
+  font-size: 16px;
+}
+
+hr {
+  margin-top: 70px;
+}
+
+.features {
+  margin: 40px 0;
+  list-style-position: inside;
+}
+
+.features li {
+  padding-bottom: 10px;
+}
+
+a.cta_btn {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background: rgba(21, 23, 24, 0.7);
+  border-radius: 29px;
+  padding: 20px 0;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: background 0.3s ease;
+}
+
+a.cta_btn:hover {
+  background: #000;
+}
+.link {
+  position: fixed;
+  background-color: #d12322;
+  padding: 23px 40px;
+  right: -99px;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.1s ease-in-out;
+}
+
+.link i {
+  padding-left: 7px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  background-color: black;
+}
+
+@media only screen and (max-width: 425px) {
+  .containerpricing {
+    padding: 0 1rem;
+  }
+
+  .main-container-body {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .card_title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .pricing {
+    font-size: 52px;
+  }
+
+  hr {
+    margin-top: 50px;
+  }
+
+  a.cta_btn {
+    font-size: 11px;
+  }
+}

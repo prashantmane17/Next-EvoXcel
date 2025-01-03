@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Specific pages and sections allowed for crawling
+Allow: /pricing/
+Allow: /contact-us/
+Allow: /web-development/
+Allow: /application-development/
+Allow: /software-development/
+Allow: /email-automation/
+Allow: /linkedin-automation/
+Allow: /lead-generation/
+Allow: /blog/
+Allow: /helpdesk/
+Allow: /case-study/
+Allow: /about-us/
+Allow: /sign-in/
+Allow: /sign-up/
+
+# Disallow any crawling of private section
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.evoxcel.com/sitemap.xml

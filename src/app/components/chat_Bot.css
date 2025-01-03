@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+nav {
+  font-family: "Poppins", sans-serif;
+}
+
+.chat_bot {
+  animation: chatBot 3s linear infinite;
+}
+
+@keyframes chatBot {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#notificationModal {
+  background: linear-gradient(#20ace0, #20ace0, #ffffff);
+}
+.no-scrollBar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollBar {
+  -ms-overflow-style: none; /* For IE and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.navLink {
+  position: relative;
+}
+/* .navLink::after {
+  position: absolute;
+  content: "";
+  bottom: 22%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(38, 190, 255);
+  transition:width 0.5s ease;
+}
+.navLink:hover::after {
+width: 73%;
+} */

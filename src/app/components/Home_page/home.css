@@ -1,0 +1,56 @@
+.bouce_button {
+  border-radius: 2em;
+  padding: 0.75rem 2rem;
+  display: inline-block;
+  -webkit-box-shadow: 0px 2px 27px rgba(84, 95, 123, 0.2);
+  box-shadow: 0px 2px 27px rgba(84, 95, 123, 0.2);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-size: 300% 100%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  /* background-image: linear-gradient(to right, #B85CC7, #E460EF, #E460EF, #B85CC7); */
+  color: white;
+  animation: bouceBall 4s linear infinite;
+}
+
+@keyframes bouceBall {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  3% {
+    -webkit-transform: scale(1.1, 0.9) translateY(0);
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  8% {
+    -webkit-transform: scale(0.9, 1.1) translateY(-30px);
+    transform: scale(0.9, 1.1) translateY(-30px);
+  }
+  13% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  15% {
+    -webkit-transform: scale(1, 1) translateY(-7px);
+    transform: scale(1, 1) translateY(-7px);
+  }
+  18% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+  25% {
+    -webkit-transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
+  }
+}
+/* .boxColor1 { */
+  /* background: linear-gradient(45deg, #93a3bc, #87a2cc); */
+  /* background: #d3d3d3;
+}
+.boxColor2 {
+  background: #f9ede8; */
+
+  /* background: linear-gradient(45deg, #87a2cc, #93a3bc); */
+/* } */
