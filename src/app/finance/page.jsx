@@ -1,5 +1,6 @@
 import { DollarSign, PieChart, Link2, ShieldCheck, Users } from 'lucide-react'
 import Image from 'next/image';
+import Link from 'next/link';
 const Home = () => {
     const features = [
         {
@@ -75,6 +76,61 @@ const Home = () => {
                                     management. From budget planning and expense tracking to real-time financial analytics, it’s
                                     designed to optimize resources and ensure compliance across global operations.
                                 </p>
+                                <div className="navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 ">
+
+
+                                    <button className="relative flex items-center overflow-hidden rounded-full bg-white text-gray-900 shadow-md hover:text-blue">
+                                        <a href="https://finance.evoxcel.com/" target='_blank' className='text-white'>
+                                            <span className="absolute inset-0 bg-green-600 -translate-x-full transition-transform duration-300 hover:translate-x-0"></span>
+                                            <div className="flex items-center relative z-10">
+                                                <div className="flex items-center justify-center w-12 h-10 bg-green-600">
+                                                    <svg
+                                                        viewBox="0 0 50 50"
+                                                        fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                    >
+                                                        <circle
+                                                            opacity="0.5"
+                                                            cx="25"
+                                                            cy="25"
+                                                            r="23"
+                                                            fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"
+                                                        ></circle>
+                                                        <mask id="icon-payments-cat_svg__a" fill="#fff">
+                                                            <path
+                                                                fillRule="evenodd"
+                                                                clipRule="evenodd"
+                                                                d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z"
+                                                            ></path>
+                                                        </mask>
+                                                        <path
+                                                            fillRule="evenodd"
+                                                            clipRule="evenodd"
+                                                            d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z"
+                                                            fill="#fff"
+                                                        ></path>
+                                                        <defs>
+                                                            <linearGradient
+                                                                id="icon-payments-cat_svg__paint0_linear_1141_21101"
+                                                                x1="25"
+                                                                y1="2"
+                                                                x2="25"
+                                                                y2="48"
+                                                                gradientUnits="userSpaceOnUse"
+                                                            >
+                                                                <stop stopColor="#fff" stopOpacity="0.71"></stop>
+                                                                <stop offset="1" stopColor="#fff" stopOpacity="0"></stop>
+                                                            </linearGradient>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <span className="pl-3 pr-6 text-sm font-semibold text-black">Get Started</span>
+                                            </div>
+                                        </a>
+                                    </button>
+
+                                </div>
                             </div>
                         </div>
                         <div className="w-full md:w-1/2 h-[500px] relative ">

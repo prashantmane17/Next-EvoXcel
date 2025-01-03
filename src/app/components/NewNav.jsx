@@ -427,12 +427,12 @@ const NewNav = () => {
               Let&lsquo;s Connect
             </Link>
           </div>
-          <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
+          {/* <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link href={"/sign-up"} className={`${isActiveLink("/sign-up/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
               Sign up
             </Link>
-          </div>
-          <div className="cursor-pointer navBar lg:py-[15px] text-white font-bold relative z-20 ">
+          </div> */}
+          {/* <div className="cursor-pointer navBar lg:py-[15px] text-white font-bold relative z-20 ">
             <Link
               href={"/sign-in"}
               className={`${isActiveLink(
@@ -441,7 +441,7 @@ const NewNav = () => {
             >
               Log in
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {menuOpen && (
