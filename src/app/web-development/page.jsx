@@ -59,12 +59,12 @@ const WebDevelopment = () => {
   return (
     <>
       <Head>{/* <link rel="stylesheet" href="./webDevelopment.css" /> */}</Head>
-      <section className="w-[100%]  bgwebdev px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
+      <section className="w-[100%]   px-[8vw] pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Crafting Digital Experiences that Ignite and Elevate
           </h1>
-          <p className="mt-4 pfont mb-10 max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify pfont text-black">
+          <p className="text-white mt-4 pfont mb-10 max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify pfont text-black">
             We specialize in creating exceptional web experiences that captivate
             your audience and deliver measurable results for your business. By
             leveraging our web development expertise, we help you establish a
@@ -86,7 +86,7 @@ const WebDevelopment = () => {
         </figure>
       </section>
 
-      <section className="w-[100%]  text-black h-100% py-9">
+      <section className="w-[100%]  text-white h-100% py-9">
         <p className="text-center headingfont md:text-[2rem] font-bold px-2">
           Unleash Your Brand&lsquo;s Potential with a Premium Web Development
           Company
@@ -96,10 +96,10 @@ const WebDevelopment = () => {
             data-aos="fade-up"
             className="card block relative w-[290px] h-[250px] bg-[#f2f8f9] "
           >
-            <p className="card-title pfont headingfont">
+            <p className=" text-white card-title pfont headingfont">
               Web Development Services
             </p>
-            <p className="small-desc pfont">
+            <p className="text-white small-desc pfont">
               Craft a Dynamic Online Presence Utilize the latest platforms and
               technologies to build a robust and engaging website that’s
               tailored to your specific needs.
@@ -157,7 +157,7 @@ const WebDevelopment = () => {
       <section>
         <div className="w-width ">
           <div className="w-full  py-3">
-            <h2 className="text-center font-semibold text-[8vw] md:text-[2.5rem] text-black headingfont">
+            <h2 className="text-white text-center font-semibold text-[8vw] md:text-[2.5rem]  headingfont">
               Our Process Involves
             </h2>
           </div>
@@ -166,15 +166,15 @@ const WebDevelopment = () => {
               <div className=" lg:w-1/2 px-4">
                 <div className="">
                   <div className=" text-center">
-                    <p className="text-[7vw] md:text-4xl font-semibold headingfont">
+                    <p className="text-white text-[7vw] md:text-4xl font-semibold headingfont">
                       Discovery & Strategy
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       We begin by thoroughly understanding your business vision
                       and target audience. Through detailed consultations, we:
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           Set Clear Objectives: Align your business goals with a
                           tailored web strategy.
@@ -225,14 +225,14 @@ const WebDevelopment = () => {
                 </div>
                 <div className=" lg:w-1/2 px-4">
                   <div className=" text-center">
-                    <p className="text-4xl font-semibold headingfont">
+                    <p className="text-white text-4xl font-semibold headingfont">
                       Strategic Project Planning
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       We create a comprehensive project roadmap that includes:{" "}
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           Timelines: Establish clear deadlines for each phase of
                           the project.
@@ -259,14 +259,14 @@ const WebDevelopment = () => {
               <div className=" flex flex-wrap">
                 <div className=" lg:w-1/2 px-4">
                   <div className=" text-center">
-                    <p className="text-4xl font-semibold headingfont">
+                    <p className=" text-white text-4xl font-semibold headingfont">
                       Our Design Process
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       Your concept is realized by our design team using:
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           Wireframes: Establish the structure and functionality
                           of the website.
@@ -315,15 +315,15 @@ const WebDevelopment = () => {
                 </div>
                 <div className=" lg:w-1/2 px-4 flex flex-col justify-center">
                   <div className=" text-center">
-                    <p className="text-4xl font-semibold headingfont">
+                    <p className="text-white text-4xl font-semibold headingfont">
                       Development Process
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       Our developers turn designs into a fully-functional,
                       scalable website:
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           Front-End Development: Create a dynamic, responsive
                           interface that adapts to all devices.
@@ -350,14 +350,14 @@ const WebDevelopment = () => {
               <div className=" flex flex-wrap">
                 <div className=" lg:w-1/2 px-4">
                   <div className=" text-center">
-                    <p className="text-4xl font-semibold  headingfont">
+                    <p className=" text-white text-4xl font-semibold  headingfont">
                       Comprehensive Website Testing
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       We guarantee top-notch performance with:
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           UX Evaluation: Ensure smooth navigation and optimal
                           usability.
@@ -402,14 +402,14 @@ const WebDevelopment = () => {
                 </div>
                 <div className=" lg:w-1/2 px-4 py-[7vh]">
                   <div className=" text-center">
-                    <p className="text-4xl font-semibold headingfont">
+                    <p className="text-white text-4xl font-semibold headingfont">
                       Comprehensive Website Maintenance
                     </p>
                   </div>
                   <div className="content1 py-4 px-[5vw] text-justify flex flex-col justify-center items-center">
-                    <div className="text-gray-800 font-[400] text-[1rem] pfont sans-serif">
+                    <div className="text-white font-[400] text-[1rem] pfont sans-serif">
                       We keep your website running efficiently with:
-                      <ul className="list-disc pfont py-4 pl-5 sans-serif">
+                      <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
                         <li>
                           Regular Updates: Stay updated with the latest
                           technologies and industry standards.

@@ -21,12 +21,12 @@ const NewNav = () => {
     "h-[8vh]",
     "md:h-[8vh]",
     "lg:h-[10vh]",
-    "fixed",
+    "sticky",
     "top-0",
     "z-50",
     "flex",
     "justify-between",
-    "w-[100%]",
+    "width-[100%]",
     "pl-[5vw]",
     "pr-[7vw]",
     "items-center",
@@ -34,18 +34,18 @@ const NewNav = () => {
     "duration-300",
   ];
   if (scrolled) {
-    navbarClasses.push("bg-white", "text-black");
+    navbarClasses.push("bg-black", "text-white");
   } else {
-    if (location === "/" || location === '/finance/') {
+    if (location === "/" || location === '/finance/' || location === '/email-automation/' || location === '/linkedin-automation/' || location === '/hr-management/' || location === '/software-development/' || location === '/lead-generation/' || location === '/application-development/' || location === '/web-development/' || location === '/pricing/' || location === '/about-us/' || location === '/contact-us/') {
       navbarClasses.push("text-white", "bgnav");
     } else if (
       location === "/sign-in/" ||
       location === "/sign-up/" ||
       location === "/blog/"
     ) {
-      navbarClasses.push("bg-white", "text-black");
+      navbarClasses.push("bg-black", "text-white");
     } else {
-      navbarClasses.push("text-black", "bg-transparent");
+      navbarClasses.push("text-text", "bg-black");
     }
   }
   const isActiveLink = (path) => {
@@ -119,7 +119,7 @@ const NewNav = () => {
       : "/images/Evoxcel.webp";
 
   return (
-    <div className="relative z-50">
+    <div className=" sticky top-0  z-50">
       <nav ref={navRef} className={navbarClasses.concat("").join(" ")}>
         <Link href="/" onClick={() => setMenuOpen(false)}>
           <Image
@@ -139,100 +139,8 @@ const NewNav = () => {
           )}
         </div>
         <div className="md:flex hidden justify-between pfont relative items-center md:w-[67%] lg:w-[64%] text-[1vw] md:text-[1.2vw] lg:text-[1vw] font-[600]">
-          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[1vw] navLink ">
-            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
-              Services <i className="fa-solid fa-caret-down ml-1"></i>
-            </span>
-          </div>
-          <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
-            <section className="flex text-gray-700">
-              <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
-                <Link
-                  href="/software-development"
-                  className="flex"
-                  legacyBehavior
-                >
-                  <a
-                    className={`hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/software-development/"
-                    )}`}
-                  >
-                    <i className="fa-solid fa-computer text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold">Software Development</p>
-                      <p className="text-[14px]">
-                        In today’s fast-paced digital world, having robust,
-                        scalable...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                <Link href="/lead-generation" className="flex " legacyBehavior>
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/lead-generation/"
-                    )}`}
-                  >
-                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Lead Generation</p>
-                      <p className="text-[14px] font-[500]">
-                        Lead generation is more than just a marketing strategy
-                        it&lsquo;s the...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-              </article>
-              <article className="w-[50%] py-[2vh] pr-[1vw]">
-                <Link
-                  href="/application-development"
-                  className="flex "
-                  legacyBehavior
-                >
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/application-development/"
-                    )}`}
-                  >
-                    {/* <a
-                      href="https://www.flaticon.com/free-icons/design"
-                      className="hidden"
-                      title="design icons"
-                    >
-                      Design icons created by Freepik - Flaticon
-                    </a> */}
-                    <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Application Development</p>
-                      <p className="text-[14px] font-[500]">
-                        We specialize in crafting tailored application
-                        development solutions
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-                <Link href="/web-development" className={`flex`} legacyBehavior>
-                  <a
-                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
-                      "/web-development/"
-                    )}`}
-                  >
-                    <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
-                    <div>
-                      <p className="font-semibold ">Web Development</p>
-                      <p className="text-[14px] font-normal">
-                        Unlock Your Digital Potential with Expert Web
-                        Development...
-                      </p>
-                    </div>
-                  </a>
-                </Link>
-              </article>
-            </section>
-          </div>
           <div className="cursor-pointer productdropdown lg:pr-[1vw] navBar lg:py-[15px] navLink ">
-            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
               Products <i className="fa-solid fa-caret-down ml-1"></i>
             </span>
           </div>
@@ -324,14 +232,108 @@ const NewNav = () => {
               </article>
             </section>
           </div>
+
+          <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[1vw] navLink ">
+            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+              Services <i className="fa-solid fa-caret-down ml-1"></i>
+            </span>
+          </div>
+          <div className="hidden absolute rounded-b-lg dropdown shadow-lg bg-white w-[100%] top-[50px] text-black">
+            <section className="flex text-gray-700">
+              <article className="w-[50%] py-[2vh] px-[1vw] font-[500]">
+                <Link
+                  href="/software-development"
+                  className="flex"
+                  legacyBehavior
+                >
+                  <a
+                    className={`hover:bg-gray-200 px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/software-development/"
+                    )}`}
+                  >
+                    <i className="fa-solid fa-computer text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <p className="font-semibold">Software Development</p>
+                      <p className="text-[14px]">
+                        In today’s fast-paced digital world, having robust,
+                        scalable...
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/lead-generation" className="flex " legacyBehavior>
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/lead-generation/"
+                    )}`}
+                  >
+                    <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <p className="font-semibold ">Lead Generation</p>
+                      <p className="text-[14px] font-[500]">
+                        Lead generation is more than just a marketing strategy
+                        it&lsquo;s the...
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+              </article>
+              <article className="w-[50%] py-[2vh] pr-[1vw]">
+                <Link
+                  href="/application-development"
+                  className="flex "
+                  legacyBehavior
+                >
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/application-development/"
+                    )}`}
+                  >
+                    {/* <a
+                      href="https://www.flaticon.com/free-icons/design"
+                      className="hidden"
+                      title="design icons"
+                    >
+                      Design icons created by Freepik - Flaticon
+                    </a> */}
+                    <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <p className="font-semibold ">Application Development</p>
+                      <p className="text-[14px] font-[500]">
+                        We specialize in crafting tailored application
+                        development solutions
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+                <Link href="/web-development" className={`flex`} legacyBehavior>
+                  <a
+                    className={`hover:bg-gray-200  px-[1vw] py-[3vh] rounded-lg flex items-center ${isActiveLink(
+                      "/web-development/"
+                    )}`}
+                  >
+                    <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
+                    <div>
+                      <p className="font-semibold ">Web Development</p>
+                      <p className="text-[14px] font-normal">
+                        Unlock Your Digital Potential with Expert Web
+                        Development...
+                      </p>
+                    </div>
+                  </a>
+                </Link>
+              </article>
+            </section>
+          </div>
+
           <div className="cursor-pointer lg:pr-[1vw] navBar lg:py-[15px] text-color relative z-20 navLink">
-            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
+            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")} text-[1vw] md:text-[0.7vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
               Pricing
             </Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
           <div className="cursor-pointer resourcedropdown navBar lg:pr-[1vw] lg:py-[15px] navLink ">
-            <span className="py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
               Insights <i className="fa-solid fa-caret-down ml-1"></i>
             </span>
           </div>
@@ -386,7 +388,7 @@ const NewNav = () => {
           <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/about-us"}
-              className={`${isActiveLink("/about-us/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
+              className={`${isActiveLink("/about-us/")} text-[1vw] md:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               About Us
             </Link>
@@ -422,7 +424,7 @@ const NewNav = () => {
           <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/contact-us"}
-              className={`${isActiveLink("/contact-us/")} py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
+              className={`${isActiveLink("/contact-us/")} text-[1vw] md:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               Let&lsquo;s Connect
             </Link>

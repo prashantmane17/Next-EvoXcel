@@ -64,9 +64,9 @@ const Pricing = () => {
       {/* <Head>
         <link rel="stylesheet" href="./pricing.css" />
       </Head> */}
-      <section className="bg-slate-100 pb-[10vh]">
+      <section className=" pb-[10vh]">
         <section className="pt-[10vh] pb-[5vh]">
-          <h1 className="text-3xl font-bold text-[#180B5B] headingfont text-center py-[5vh]">
+          <h1 className="text-3xl font-bold text-white headingfont text-center py-[5vh]">
             Web Service Pricing Plans
           </h1>
           <div className=" md:flex justify-center w-[100%] relative top-[10vh]  ">
@@ -218,7 +218,7 @@ const Pricing = () => {
           </div>
         </section>
         <section className="pb-[5vh] ">
-          <h2 className="text-3xl font-bold text-[#180B5B] headingfont text-center py-[5vh]">
+          <h2 className="text-3xl font-bold text-white headingfont text-center py-[5vh]">
             LinkedIn Automation Pricing Plans
           </h2>
           <div className=" md:flex justify-center w-[100%] relative top-[10vh] ">

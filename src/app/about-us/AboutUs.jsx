@@ -6,19 +6,20 @@ import { motion } from "framer-motion";
 
 export default function AboutUs() {
   return (
-    <div className="bg-gradient-to-b from-white to-gray-100">
-      <section className="min-h-screen flex flex-col lg:flex-row items-center justify-center p-6 pt-[30vw] lg:p-16 lg:pt-6 overflow-hidden">
+    // bg - gradient - to - b from - white to - gray - 100 ,min-h-screen
+    <div className="">
+      <section className=" flex flex-col lg:flex-row items-center justify-center p-6 pt-[30vw] lg:p-16 lg:pt-6 overflow-hidden">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="lg:w-1/2 lg:pr-12"
         >
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-gray-800 leading-tight">
+          <h1 className="text-4xl lg:text-6xl font-bold mb-6 text-white leading-tight">
             Welcome to{" "}
             <span className="text-indigo-600 font-extrabold">EvoXcel</span>
           </h1>
-          <p className="text-lg lg:text-xl text-gray-600 mb-8 leading-relaxed">
+          <p className="text-lg lg:text-xl text-white mb-8 leading-relaxed">
             Your trusted partner in business growth and digital transformation.
             We specialize in cutting-edge LinkedIn and email automation
             services, as well as comprehensive web, software, and application
@@ -44,9 +45,9 @@ export default function AboutUs() {
         </motion.div>
       </section>
 
-      <section className="py-20 px-6 lg:px-16 bg-white">
+      <section className="py-20 px-6 lg:px-16 ">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-gray-800">
+          <h2 className=" text-white text-3xl lg:text-5xl font-bold text-center mb-16 ">
             Our Mission & Vision
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -85,7 +86,7 @@ export default function AboutUs() {
 
       <section className="py-20 px-6 lg:px-16">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-gray-800">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center mb-16 text-white">
             Why Choose EvoXcel?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -105,7 +106,7 @@ export default function AboutUs() {
                 className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2"
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -116,7 +117,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="py-20 px-6 lg:px-16 bg-indigo-900 text-white">
+      <section className="py-20 px-6 lg:px-16  text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-5xl font-bold mb-8">
             Ready to Transform Your Business?

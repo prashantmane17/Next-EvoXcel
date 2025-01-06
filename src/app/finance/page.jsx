@@ -58,15 +58,16 @@ const Home = () => {
     ]
     return (
         <div>
-            <main className="min-h-screen bg-gradient-to-r from-[#022e2b] to-[#031356] relative overflow-hidden">
-                <div className="container mx-auto px-6 py-12 md:py-20">
+            {/* bg-gradient-to-r from-[#022e2b] to-[#031356] */}
+            <main className=" relative overflow-hidden">
+                <div className="container mx-auto px-6 pt-[11rem] md:pt-[7rem]">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="w-full md:w-1/2 space-y-6 z-10 pl-[4vw]">
                             <div className="text-gray-200 text-sm md:text-base">
                                 Transform Financial Management with
                             </div>
                             <div className="space-y-4">
-                                <h1 className="text-[3.6rem] md:text-[3.6rem] font-bold text-white tracking-tight">
+                                <h1 className="text-[3.6rem] md:text-[3.1rem] font-bold text-white tracking-tight">
                                     EvoXcel&apos;s Advanced
                                     <br />
                                     <span className="text-emerald-400">Finance Software</span>
@@ -148,9 +149,10 @@ const Home = () => {
                 </div>
                 {/* <div className="absolute top-0 right-0 w-1/2 h-full bg-emerald-50/10 -skew-x-12 transform origin-top"></div> */}
             </main>
-            <section className="min-h-screen bg-gradient-to-br from-blue-100 to-indigo-200 py-12 px-4 sm:px-6 lg:px-8">
+            {/* bg-gradient-to-br from-blue-100 to-indigo-200 */}
+            <section className=" py-12 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-[4.2vw]">
-                    <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-12">
+                    <h2 className="text-4xl font-extrabold text-center text-white mb-12">
                         Why Choose EvoXcel Finance Software?
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -171,11 +173,12 @@ const Home = () => {
                     </div>
                 </div>
             </section >
-            <section className=" bg-gradient-to-br from-blue-50 to-indigo-100">
-                <main className="container  py-[6.25rem]">
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mx-[6vw]">
+            {/* bg-gradient-to-br from-blue-50 to-indigo-100 */}
+            <section className=" ">
+                <main className="container py-[6.25rem]">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12 ">
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-4xl font-bold text-gray-800 mb-8">Key Features</h2>
+                            <h2 className="text-4xl font-bold text-white mb-8">Key Features</h2>
 
                             <div className="space-y-6">
                                 {featuredata.map((featuredatas, index) => (
@@ -184,8 +187,8 @@ const Home = () => {
                                             <featuredatas.icon className="w-6 h-6 text-indigo-600" />
                                         </div>
                                         <div>
-                                            <h3 className="text-xl font-semibold text-gray-800 mb-1 group-hover:text-indigo-600 transition-colors duration-300">{featuredatas.title}</h3>
-                                            <p className="text-gray-600">{featuredatas.description}</p>
+                                            <h3 className="text-xl font-semibold text-white mb-1 group-hover:text-indigo-600 transition-colors duration-300">{featuredatas.title}</h3>
+                                            <p className="text-white">{featuredatas.description}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -197,8 +200,8 @@ const Home = () => {
                             <div className="relative">
                                 {/* <div className="absolute inset-0 bg-gradient-to-r from-indigo-200 to-blue-200 transform skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-[11rem]"></div> */}
                                 <Image
-                                    width={300}
-                                    height={300}
+                                    width={700}
+                                    height={700}
                                     src="/images/finance/img2.jpg"
                                     alt="Expense Tracking Dashboard"
                                     className="relative rounded-3xl shadow-lg"
@@ -208,11 +211,12 @@ const Home = () => {
                     </div>
                 </main>
             </section>
-            <section className="w-[100%] py-[5vh] bg-[#191D31] px-[6vw] flex items-center">
+            {/* bg-[#191D31] */}
+            <section className="w-[100%] py-[5vh]  flex items-center">
                 <figure className="w-[50%] flex items-center justify-center">
                     <Image
-                        width={300}
-                        height={300} className="md:h-[96%] w-[96%]"
+                        width={900}
+                        height={900} className="md:h-[96%] w-[96%]"
                         src="/images/finance/finance-s.png"
                         loading="lazy" alt="" />
                 </figure>

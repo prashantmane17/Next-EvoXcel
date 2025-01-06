@@ -59,7 +59,7 @@ const Blog = () => {
   return (
     <section>
       <div className="h-[20vh] md:h-[45vh] bg-[#01114A] flex items-end pl-[5vw]">
-        <h2 className="bg-slate-100 px-[5vw] pt-[2vh] md:text-[3vw] font-[550] text-[#01114A]">
+        <h2 className="px-[5vw] pt-[2vh] md:text-[3vw] font-[550] text-white">
           Read Our Latest Blogs On <br /> EvoXcel
         </h2>
       </div>
@@ -67,7 +67,7 @@ const Blog = () => {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="md:w-[30%] hover:shadow-2xl bg-white p-[1vw] cursor-pointer"
+            className="md:w-[30%] hover:shadow-2xl  p-[1vw] cursor-pointer"
             onClick={() => handleBlogClick(blog.id)}
           >
             {blog.id === 1 && (
