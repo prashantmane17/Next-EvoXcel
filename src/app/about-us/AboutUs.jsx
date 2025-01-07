@@ -106,7 +106,7 @@ export default function AboutUs() {
                 className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-2"
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-2 text-sky-600">{item.title}</h3>
                 <p className="text-gray-600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.

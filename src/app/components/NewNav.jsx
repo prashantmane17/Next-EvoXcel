@@ -45,7 +45,7 @@ const NewNav = () => {
     ) {
       navbarClasses.push("bg-black", "text-white");
     } else {
-      navbarClasses.push("text-text", "bg-black");
+      navbarClasses.push("bg-black", "text-white");
     }
   }
   const isActiveLink = (path) => {

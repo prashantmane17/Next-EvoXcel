@@ -58,12 +58,12 @@ const Blog = () => {
 
   return (
     <section>
-      <div className="h-[20vh] md:h-[45vh] bg-[#01114A] flex items-end pl-[5vw]">
+      <div className="h-[20vh] md:h-[45vh]  flex items-end pl-[5vw]">
         <h2 className="px-[5vw] pt-[2vh] md:text-[3vw] font-[550] text-white">
           Read Our Latest Blogs On <br /> EvoXcel
         </h2>
       </div>
-      <div className="px-[5vw] flex flex-wrap justify-start bg-slate-100 gap-[4vw] py-[10vh] w-[100%]">
+      <div className="px-[5vw] flex flex-wrap justify-start  gap-[4vw] py-[10vh] w-[100%]">
         {blogs.map((blog) => (
           <div
             key={blog.id}
@@ -115,10 +115,10 @@ const Blog = () => {
                 loading="lazy"
               />
             )}
-            <h2 className="mt-2 md:text-[1.5vw] hfont font-[550] text-slate-700">
+            <h2 className="mt-2 md:text-[1.5vw] hfont font-[550] text-white">
               {blog.title}
             </h2>
-            <p className="my-[1vh] md:text-[1vw]">{blog.summary}</p>
+            <p className="text-white my-[1vh] md:text-[1vw]">{blog.summary}</p>
             <button className="bg-blue-500 p-2 rounded-sm text-white">
               Read More
             </button>

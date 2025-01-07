@@ -128,14 +128,14 @@ function Blogpost({ params }) {
           <Link href="/blog" className="text-gray-400 cursor-pointer">
             Blog /
           </Link>
-          <span className="cursor-pointer hidden md:block">{blog.title}</span>
+          <span className="text-white cursor-pointer hidden md:block">{blog.title}</span>
         </p>
       </div>
-      <h2 className="md:w-[70%] pl-[4vw] headingfont md:text-[2vw] pt-[2vh] font-[550] text-[#01114A]">
+      <h2 className="md:w-[70%] pl-[4vw] headingfont md:text-[2vw] pt-[2vh] font-[550] text-white">
         {blog.title}
       </h2>
       <section className="flex w-[100%] justify-between px-[4vw]">
-        <aside className="md:w-[68%] mt-[7vh] md:pr-[4vw] md:border-r border-black">
+        <aside className="md:w-[68%] mt-[7vh] md:pr-[4vw] md:border-r border-white">
           {blog.id === 1 && (
             <Image
               src="/images/Blog/blog-lead-generation.webp"
@@ -176,51 +176,51 @@ function Blogpost({ params }) {
               height={200}
             />
           )}
-          <p className="mt-[7vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white mt-[7vh] text-justify md:text-[1vw] pfont">
             {blog.content}
           </p>
-          <h2 className="md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
+          <h2 className="text-white md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
             {blog.h1}
           </h2>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p11}
           </p>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p12}
           </p>
-          <h2 className="md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
+          <h2 className="text-white md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
             {blog.h2}
           </h2>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p21}
           </p>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className=" text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p22}
           </p>
-          <h2 className="md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
+          <h2 className="text-white md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
             {blog.h3}
           </h2>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className=" text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p31}
           </p>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p32}
           </p>
-          <h3 className="md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
+          <h3 className="text-white md:text-[2vw] font-[550] headingfont mt-[5vh] mb-[3vh]">
             {blog.h4}
           </h3>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className=" text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p41}
           </p>
-          <p className="my-[3vh] text-justify md:text-[1vw] pfont">
+          <p className="text-white my-[3vh] text-justify md:text-[1vw] pfont">
             {blog.p42}
           </p>
         </aside>
         <aside className="md:w-[30%] mt-[7vh] hidden md:block">
-          <h3 className="text-[0.9vw] font-[700] text-gray-700 headingfont">
+          <h3 className="text-white text-[0.9vw] font-[700]  headingfont">
             RECENT POST
           </h3>
-          <div className="flex flex-col gap-[2.5vh] mt-[5vh] text-[0.95vw] pfont">
+          <div className="text-white flex flex-col gap-[2.5vh] mt-[5vh] text-[0.95vw] pfont">
             <Link href="/blog/1">
               The Power of Personalization in Lead Generation?
             </Link>
