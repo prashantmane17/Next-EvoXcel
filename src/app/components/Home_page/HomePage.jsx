@@ -33,8 +33,8 @@ const HomePage = () => {
     <>
       <div className="w-[100%] scroll-smooth">
         <Hero />
-        <section className="md:h-fit w-[100%]  mb-[5vh] md:mb-0 bg-slate-50">
-          <article className="m-auto w-[90%] md:h-fit  md:flex   justify-between">
+        <section className="md:h-fit w-[100%]  mb-[5vh] md:mb-0 bg-black">
+          <article className="md:m-auto md:w-[90%] md:h-fit  md:flex justify-between mb-5">
             <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">
               <Image
                 className="w-[100%] h-[100%] object-contain"
@@ -46,10 +46,10 @@ const HomePage = () => {
               />
             </figure>
             <div
-              className="md:w-[50%] justify-center px-[5vw]"
+              className="md:w-[50%] justify-center md:px-[5vw] 2xl:px-[0vw]"
               data-aos="fade-in"
             >
-              <div className="text-center pt-[7vh] headingfont text-[#112029] md:text-[2.9vw] font-[700]">
+              <div className="text-center pt-[7vh] headingfont text-white md:text-[2.6vw] font-[700]">
                 Welcome to{" "}
                 <span
                   style={{ display: "inline-block" }}
@@ -67,7 +67,7 @@ const HomePage = () => {
                 </span>
               </div>
 
-              <p className="md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify pt-[2vh] pfont">
+              <p className=" text-white  md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify 2xl:pl-4 pt-[2vh] pfont">
                 &ldquo;We empower your business success with a comprehensive
                 range of cutting-edge services and products. From custom web,
                 software, and application development to expert lead generation
@@ -79,7 +79,8 @@ const HomePage = () => {
             </div>
           </article>
         </section>
-        <section className="bghome3 pl-[3vw]">
+        {/* bghome3 */}
+        <section className=" pl-[3vw]  bg-black">
           <article className="w-[100%] md:flex">
             <div className="md:w-[55%] pr-[3vw]">
               {/* <p className='text-white text-[2vw]'>~</p> */}
@@ -199,7 +200,7 @@ const HomePage = () => {
           </article>
         </section>
 
-        <section className=" pr-[6vw] bg-slate-50">
+        <section className=" pr-[6vw] bg-black">
           <article className="w-[100%] md:flex justify-between ">
             <figure className="md:w-[45%] hidden md:block">
               <Image
@@ -213,14 +214,14 @@ const HomePage = () => {
             </figure>
             <div className="md:w-[50%] px-[4vw] md:px-0 pt-[5vh] ">
               <p
-                className="text-[7vw] md:text-[1.3vw] font-[500] text-[#112029] headingfont"
+                className="text-[7vw] md:text-[1.3vw] font-[500] text-white  headingfont"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
                 WHAT WE PROVIDE
               </p>
               <p
-                className="text-[10vw] md:text-[3.1vw] font-bold text-[#112029] headingfont"
+                className="text-[10vw] md:text-[3.1vw] font-bold text-whit  headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -229,33 +230,33 @@ const HomePage = () => {
               <article className="md:flex justify-between gap-[2vw] text-white mt-[5vh] w-[100%]">
                 <Link href="/linkedin-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
-                    <i className="fa-brands fa-linkedin md:text-[1.5vw] p-2 bg-[#112029] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
+                    <i className="fa-brands fa-linkedin md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
+                    <p className="md:text-[1.2vw] font-[550] mt-4 text-white headingfont">
                       LinkedIn Automation
                     </p>
-                    <p className="md:text-[1vw] pfont pt-[1vh] text-[#112029]">
+                    <p className="md:text-[1vw] pfont pt-[1vh] text-white">
                       Automate your outreach with precision. Our LinkedIn
                       automation tools are designed to boost response rates,
                       bypass restrictions, and manage multiple accounts
                       effortlessly....
                     </p>
-                    <button className="mt-3 pfont md:text-[0.9vw] text-[#112029] relative z-50">
+                    <button className="mt-3 pfont md:text-[0.9vw] text-white relative z-50">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
                 </Link>
                 <Link href="/email-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
-                    <i className="fa-solid fa-envelope md:text-[1.5vw] p-2 bg-[#112029] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 text-[#112029] headingfont">
+                    <i className="fa-solid fa-envelope md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
+                    <p className="md:text-[1.2vw] font-[550] mt-4 text-white headingfont">
                       Email Automation
                     </p>
-                    <p className="md:text-[1vw] pfont pt-[1vh] text-[#112029]">
+                    <p className="md:text-[1vw] pfont pt-[1vh] text-white">
                       Maximize your email campaigns with our powerful automation
                       tools, ensuring personalized messaging that engages and
                       converts high-quality leads...
                     </p>
-                    <button className="mt-3 pfont md:text-[0.9vw] text-[#112029]">
+                    <button className="mt-3 pfont md:text-[0.9vw] text-white">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -264,7 +265,8 @@ const HomePage = () => {
             </div>
           </article>
         </section>
-        <article className="px-[5vw] py-[10vh] bghomecolor">
+        {/* bghomecolor */}
+        <article className="px-[5vw] py-[10vh] ">
           <p
             className="text-center md:text-[2.5vw] font-[600] headingfont text-white"
             data-aos="fade-right"
@@ -329,7 +331,7 @@ const HomePage = () => {
               <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Boost Conversions with Smart Sequences.
               </p>
-              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh] text-white">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
                   Automated invites and follow-ups.
@@ -407,7 +409,7 @@ const HomePage = () => {
               <p className="md:text-[2.5vw] font-[600] headingfont  text-white">
                 Optimize with Data-Driven Insights
               </p>
-              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh]">
+              <ul className="md:text-[1.2vw] pfont flex flex-col gap-[2vh] mt-[5vh] text-white">
                 <li>
                   <i className="fa-solid fa-check mr-2 bg-[#003C71] p-1 rounded-full text-white"></i>{" "}
                   Evaluate campaign performance via a powerful dashboard.

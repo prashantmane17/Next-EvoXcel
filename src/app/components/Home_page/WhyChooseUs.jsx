@@ -139,7 +139,7 @@ export default function Evoxcel() {
   return (
     <>
       <div className="pt-[4vw] pb-[2vw]">
-        <h2 className="text-4xl lg:text-[3vw] font-bold text-center mb-12 text-gray-800 ">
+        <h2 className="text-4xl lg:text-[3vw] font-bold text-center mb-12 text-white ">
           Why Choose ExoXcel{" "}
           <span className="text-sky-600"> HR Management</span>?
         </h2>
@@ -149,14 +149,12 @@ export default function Evoxcel() {
           {contentData.map((content, index) => (
             <div
               key={index}
-              className={`space-y-8 flex ${
-                index % 2 === 0 ? "flex-col" : "flex-col-reverse"
-              }`}
+              className={`space-y-8 flex ${index % 2 === 0 ? "flex-col" : "flex-col-reverse"
+                }`}
             >
               <div
-                className={`relative flex justify-center aspect-[4/3] w-full ${
-                  index % 2 === 0 ? "mt-2" : "mt-6"
-                } `}
+                className={`relative flex justify-center aspect-[4/3] w-full ${index % 2 === 0 ? "mt-2" : "mt-6"
+                  } `}
               >
                 <Image
                   src={content.image}
@@ -167,15 +165,14 @@ export default function Evoxcel() {
                 />
               </div>
               <div
-                className={` p-8 rounded-lg text-gray-800 space-y-4 ${
-                  index % 2 === 1 ? "boxColor2" : "boxColor1"
-                }`}
+                className={` p-8 rounded-lg text-white space-y-4 ${index % 2 === 1 ? "boxColor2" : "boxColor1"
+                  }`}
               >
-                <h2 className="text-3xl md:text-[3vw] py-5  font-bold">
+                <h2 className=" text-white md:text-[3vw] text-[2vw] py-5 font-bold">
                   {content.title}
                 </h2>
                 {content.items.map((item, itemIndex) => (
-                  <p key={itemIndex} className="text-gray-700 md:text-[1.2vw]">
+                  <p key={itemIndex} className="text-white md:text-[1.2vw]">
                     {item}
                   </p>
                 ))}

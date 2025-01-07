@@ -176,7 +176,7 @@ const Home = () => {
             {/* bg-gradient-to-br from-blue-50 to-indigo-100 */}
             <section className=" ">
                 <main className="container py-[6.25rem]">
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12 ">
+                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mx-[6vw] ">
                         <div className="w-full lg:w-1/2">
                             <h2 className="text-4xl font-bold text-white mb-8">Key Features</h2>
 
