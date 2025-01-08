@@ -56,26 +56,24 @@ export default function Hero() {
           <h1
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="text-white headingfont w-[100%] md:text-[3.4vw] relative text-[7vw] font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
+            className="text-white headingfont w-[100%] md:text-[3.4vw] relative font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
             Supercharge Your <br />
-            <div className="relative  h-16 overflow-hidden">
+            <div className="relative h-16 overflow-hidden">
               <div className="absolute w-full h-full">
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`absolute w-full h-full flex items-center transition-transform duration-1000 ${
-                      index === currentIndex
-                        ? "translate-y-0"
-                        : "translate-y-full"
-                    } ${
-                      index ===
-                      (currentIndex - 1 + slides.length) % slides.length
+                    className={`absolute w-full h-full flex items-center transition-transform duration-1000 ${index === currentIndex
+                      ? "translate-y-0"
+                      : "translate-y-full"
+                      } ${index ===
+                        (currentIndex - 1 + slides.length) % slides.length
                         ? "translate-y-0"
                         : "-translate-y-full"
-                    }`}
+                      }`}
                   >
                     <h2 className="md:text-[3vw] headingfont cursor-pointer text-green-400 font-semibold">
                       {slide.text}
@@ -98,16 +96,14 @@ export default function Hero() {
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`absolute w-full h-full flex  justify-center transition-transform duration-1000 ${
-                      index === currentIndex
-                        ? "translate-y-0"
-                        : "translate-y-full"
-                    } ${
-                      index ===
-                      (currentIndex - 1 + slides.length) % slides.length
+                    className={`absolute w-full h-full flex  justify-center transition-transform duration-1000 ${index === currentIndex
+                      ? "translate-y-0"
+                      : "translate-y-full"
+                      } ${index ===
+                        (currentIndex - 1 + slides.length) % slides.length
                         ? "translate-y-0"
                         : "-translate-y-full"
-                    }`}
+                      }`}
                   >
                     <p className="md:text-[1.2vw] text-[4vw] font-light cursor-pointer">
                       {slide.text1}

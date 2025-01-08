@@ -60,12 +60,12 @@ const EmailAutomation = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
+      <section className="w-[100%]   px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
-          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7.5vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
+          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7.5vh] text-white bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Revolutionize Your Communication with Our Email Automation Tool
           </h1>
-          <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
+          <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-white">
             Transform your marketing strategy with EvoXcel&apos;s email
             automation tool, designed to streamline automated email campaigns,
             enhance personalized email marketing, and deliver targeted content
@@ -83,18 +83,18 @@ const EmailAutomation = () => {
           />
         </figure>
       </section>
-      <section className="bg-gray-50 pb-13">
+      <section className=" pb-13">
         <h2 className="text-3xl text-center headingfont md:text-4xl font-semibold text-[#718BFF] mb-4">
           Comprehensive Features of Our Email Automation Service
         </h2>
-        <p className="text-lg text-center headingfont text-gray-700">
+        <p className="text-lg text-center headingfont text-white">
           Our cutting-edge solution offers a range of feature-specific
           capabilities that elevate your email marketing efforts:
         </p>
         <article className="px-[7vw] pt-[10vh] w-[100%] md:flex gap-4">
           <div
             data-aos="fade-up"
-            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-white shadow-md"
           >
             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
@@ -184,13 +184,13 @@ const EmailAutomation = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-[#E3F1F4] my-3 md:my-5 py-[5vw] px-[7vw]">
+      <section className=" my-3 md:my-5 py-[5vw] px-[7vw]">
         <div className="block md:flex  mx-auto px-4">
           <div data-aos="fade-right" className="mb-12">
             <h2 className="text-3xl md:text-4xl font-semibold headingfont text-[#718BFF] mb-4">
               Advantages of Our Email Automation Service
             </h2>
-            <p className="text-lg text-gray-700 pfont">
+            <p className="text-lg text-white pfont">
               By utilizing our email automation software, you can:
             </p>
           </div>
@@ -216,24 +216,24 @@ const EmailAutomation = () => {
           </div>
         </div>
       </section>
-      <article className="md:flex w-[100%] justify-between px-[8vw] bg-white md:h-fit">
+      <article className="md:flex w-[100%] justify-between px-[8vw]  md:h-fit">
         <div data-aos="fade-right" className="md:w-[55%]">
           <h2 className="text-[#718BFF] headingfont text-[10vw] md:text-[2.5vw] font-[600] mt-[6vh]">
             Our Values
           </h2>
-          <p className="text-black mt-[3vh] pfont">
+          <p className="text-white mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Innovation - </span>We continually
             evolve our email personalization technology to stay ahead of
             industry trends.
           </p>
-          <p className="text-black mt-[3vh] pfont">
+          <p className="text-white mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
-            <span className="font-[600]">Customer Success - </span> We
+            <span className="font-[600] ">Customer Success - </span> We
             prioritize customer-centric email automation to ensure your business
             thrives.
           </p>
-          <p className="text-black my-[3vh] pfont">
+          <p className="text-white my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Integrity - </span>Guided by honest
             business practices, we provide cutting-edge email technology to help
@@ -250,7 +250,7 @@ const EmailAutomation = () => {
           />
         </figure>
       </article>
-      <article className="flex flex-col-reverse md:flex-row w-[100%] justify-between px-[8vw] bg-white md:h-fit">
+      <article className="flex flex-col-reverse md:flex-row w-[100%] justify-between px-[8vw]  md:h-fit">
         <figure className="md:w-[35%]  flex justify-end">
           <Image
             className="w-[100%] object-contain"
@@ -264,24 +264,24 @@ const EmailAutomation = () => {
           <h2 className="text-[#718BFF] headingfont text-[10vw] md:text-[2.5vw] font-[600] mt-[6vh]">
             Why Choose Our Email Automation Tool?
           </h2>
-          <p className="text-black mt-[3vh] pfont">
+          <p className="text-white mt-[3vh] pfont">
             <i className="fa-solid fa-check bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Streamlined Automation - </span>{" "}
             Automate and manage your B2B email automation or e-commerce email
             marketing efficiently.
           </p>
-          <p className="text-black mt-[3vh] pfont">
+          <p className="text-white mt-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Smart Segmentation - </span> Use email
             list segmentation to target specific audience groups for maximum
             effectiveness.
           </p>
-          <p className="text-black my-[3vh] pfont">
+          <p className="text-white my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Seamless Integration - </span> :
             Integrate smoothly with your CRM for a cohesive, efficient workflow.
           </p>
-          <p className="text-black my-[3vh] pfont">
+          <p className="text-white my-[3vh] pfont">
             <i className="fa-solid fa-check  bg-[#718BFF] text-white p-[3px] rounded-full mr-2"></i>
             <span className="font-[600]">Advanced Analytics - </span> Access
             data-driven email insights that help you continuously improve your

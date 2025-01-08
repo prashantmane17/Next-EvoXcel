@@ -5,7 +5,7 @@ import "./hr-management.css";
 export default function Facial() {
   return (
     <div className="container mx-auto p-4 md:p-6 px-4 md:px-14">
-      <h2 className="text-center font-semibold text-[30px] py-8">
+      <h2 className="text-white text-center font-semibold text-[30px] py-8">
         Enhance Productivity with Optick, Our Premier AI Platform
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

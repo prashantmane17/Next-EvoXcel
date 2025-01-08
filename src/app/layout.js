@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <meta property="og:site_Name" content="EvoXcel" />
         <title>EvoXcel</title>
       </Head>
-      <body>
+      <body className="container bg-black m-auto">
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=GTM-KFZVZTJH`}

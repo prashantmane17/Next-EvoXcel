@@ -51,10 +51,10 @@ const NewNav = () => {
     scrolled
       ? "bg-white text-black"
       : location === "/"
-      ? "text-white bgnav"
-      : ["/sign-in/", "/sign-up/", "/blog/"].includes(location)
-      ? "bg-white text-black"
-      : "text-black bg-transparent",
+        ? "text-white bgnav"
+        : ["/sign-in/", "/sign-up/", "/blog/"].includes(location)
+          ? "bg-white text-black"
+          : "text-black bg-transparent",
   ];
 
   useEffect(() => {
@@ -72,6 +72,48 @@ const NewNav = () => {
       : "/images/Evoxcel.webp";
 
   const navItems = [
+    {
+      name: "Products",
+      href: "#",
+      dropdownContent: (
+        <section className="flex text-gray-700">
+          <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw]">
+            <div className="w-full">
+              <NavItem href="/linkedin-automation">
+                <i className="fa-brands fa-linkedin text-[2vw] mr-[1vw]"></i>
+                <div>
+                  <p className="font-semibold">Linkedin Automation</p>
+                  <p className="text-[14px] font-[500]">
+                    Unlock Your Digital Potential with Expert Web Development...
+                  </p>
+                </div>
+              </NavItem>
+              <NavItem href="/email-automation">
+                <i className="fa-solid fa-envelope-circle-check text-[2vw] mr-[1vw]"></i>
+                <div>
+                  <p className="font-semibold">Email Automation</p>
+                  <p className="text-[14px] font-[500]">
+                    In today&apos;s fast-paced digital world, having robust,
+                    scalable...
+                  </p>
+                </div>
+              </NavItem>
+            </div>
+            <div className="w-full">
+              <NavItem href="/hr-management" className="w-1/2">
+                <i className="fa-solid fa-envelope-circle-check text-[2vw] mr-[1vw]"></i>
+                <div>
+                  <p className="font-semibold">HR Management</p>
+                  <p className="text-[14px] font-[500]">
+                    HR Management boosts employee streamlines processes...
+                  </p>
+                </div>
+              </NavItem>
+            </div>
+          </article>
+        </section>
+      ),
+    },
     {
       name: "Services",
       href: "#",
@@ -123,48 +165,7 @@ const NewNav = () => {
         </section>
       ),
     },
-    {
-      name: "Products",
-      href: "#",
-      dropdownContent: (
-        <section className="flex text-gray-700">
-          <article className="w-[100%] gap-2 flex py-[2vh] px-[1vw]">
-            <div className="w-full">
-              <NavItem href="/linkedin-automation">
-                <i className="fa-brands fa-linkedin text-[2vw] mr-[1vw]"></i>
-                <div>
-                  <p className="font-semibold">Linkedin Automation</p>
-                  <p className="text-[14px] font-[500]">
-                    Unlock Your Digital Potential with Expert Web Development...
-                  </p>
-                </div>
-              </NavItem>
-              <NavItem href="/email-automation">
-                <i className="fa-solid fa-envelope-circle-check text-[2vw] mr-[1vw]"></i>
-                <div>
-                  <p className="font-semibold">Email Automation</p>
-                  <p className="text-[14px] font-[500]">
-                    In today&apos;s fast-paced digital world, having robust,
-                    scalable...
-                  </p>
-                </div>
-              </NavItem>
-            </div>
-            <div className="w-full">
-              <NavItem href="/hr-management" className="w-1/2">
-                <i className="fa-solid fa-envelope-circle-check text-[2vw] mr-[1vw]"></i>
-                <div>
-                  <p className="font-semibold">HR Management</p>
-                  <p className="text-[14px] font-[500]">
-                    HR Management boosts employee streamlines processes...
-                  </p>
-                </div>
-              </NavItem>
-            </div>
-          </article>
-        </section>
-      ),
-    },
+
     { name: "Pricing", href: "/pricing" },
     {
       name: "Insights",
@@ -228,9 +229,8 @@ const NewNav = () => {
         </Link>
         <div className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <i
-            className={`fa-solid ${
-              menuOpen ? "fa-xmark" : "fa-bars"
-            } text-black relative z-30 text-[1.5rem] cursor-pointer`}
+            className={`fa-solid ${menuOpen ? "fa-xmark" : "fa-bars"
+              } text-black relative z-30 text-[1.5rem] cursor-pointer`}
           ></i>
         </div>
         <div className="md:flex hidden justify-between pfont relative w-[55%] text-[1vw] font-[600]">
@@ -256,9 +256,8 @@ const NewNav = () => {
         )}
         <ul
           ref={menuRef}
-          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100vh] pt-5 z-50 transition-transform duration-300 ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`md:hidden flex flex-col items-start absolute bg-white top-[0vh] left-0 w-1/2 h-[100vh] pt-5 z-50 transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           {/* Mobile menu content (unchanged) */}
         </ul>

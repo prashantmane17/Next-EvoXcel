@@ -11,16 +11,16 @@ import Image from "next/image";
 export default function RemoteWork() {
   return (
     <div className="w-full p-4 md:p-14 ">
-      <h2 className="text-center text-[30px] md:text-[40px] font-bold">
+      <h2 className="text-white text-center text-[30px] md:text-[40px] font-bold">
         Revolutionize Your Remote Workforce
       </h2>
       {/* Analytics Dashboard Section */}
-      <section className="w-full py-14 bg-white">
+      <section className="w-full py-14 ">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h3 className="text-4xl font-bold mt-2">
+                <h3 className="text-white text-4xl font-bold mt-2">
                   Geo-Spatial Tracking
                 </h3>
               </div>
@@ -36,7 +36,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Monitor Remote Teams:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Track remote employees locations and statuses with high
                       accuracy.
                     </p>
@@ -53,7 +53,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Facial Attendance:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Ensure precise time tracking, reducing errors and
                       preventing fraud.
                     </p>
@@ -70,7 +70,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Location History:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Maintain a detailed record of staff movements and
                       locations.
                     </p>
@@ -87,7 +87,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Digital Onboarding:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Streamline the onboarding process for new hires with
                       efficient digital solutions.
                     </p>
@@ -122,7 +122,7 @@ export default function RemoteWork() {
       </section>
 
       {/* Task and Time Management */}
-      <section className="w-full py-14 bg-white">
+      <section className="w-full py-14">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
@@ -139,7 +139,7 @@ export default function RemoteWork() {
             </div>
             <div className="space-y-8 order-1 lg:order-2">
               <div>
-                <h3 className="text-4xl font-bold mt-2">
+                <h3 className="text-white text-4xl font-bold mt-2">
                   Task and Time Management
                 </h3>
               </div>
@@ -155,7 +155,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Task Tracking:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Gain real-time insights into task progress and employee
                       performance.
                     </p>
@@ -172,7 +172,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Auto Scheduling:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Use AI algorithms to create optimal schedules tailored to
                       your workforce’s needs
                     </p>
@@ -189,7 +189,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Shift & Roster Automation:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Automatically generate rosters based on set rules and
                       employee preferences, improving operational efficiency.
                     </p>
@@ -206,7 +206,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Payroll Automation:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Simplify payslip generation with mobile accessibility,
                       ensuring accurate and timely payroll management.
                     </p>
@@ -228,12 +228,12 @@ export default function RemoteWork() {
       </section>
 
       {/* Data-Driven Insights */}
-      <section className="w-full py-14 bg-white">
+      <section className="w-full py-14 ">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h3 className="text-4xl font-bold mt-2">
+                <h3 className=" text-white text-4xl font-bold mt-2">
                   Data-Driven Insights:
                 </h3>
               </div>
@@ -249,7 +249,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Performance Analytics
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Access real-time metrics for individuals and teams,
                       driving data-informed decisions.
                     </p>
@@ -266,7 +266,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Resource Analytics:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Analyze data on resource utilization to optimize personnel
                       use and improve productivity
                     </p>
@@ -283,7 +283,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Capacity Forecasting:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Predict future resource needs with advanced forecasting
                       tools to ensure optimal staffing levels.
                     </p>
@@ -300,7 +300,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Threat Detection:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Utilize AI to identify anomalies and potential issues in
                       operational data, enhancing security and operational
                       integrity.
@@ -335,7 +335,7 @@ export default function RemoteWork() {
         </div>
       </section>
       {/* Empower Your Sales Team */}
-      <section className="w-full py-14 bg-white">
+      <section className="w-full py-14 ">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
@@ -352,7 +352,7 @@ export default function RemoteWork() {
             </div>
             <div className="space-y-8 order-1 lg:order-2">
               <div>
-                <h3 className="text-4xl font-bold mt-2">
+                <h3 className="text-white text-4xl font-bold mt-2">
                   Empower Your Sales Team
                 </h3>
               </div>
@@ -368,7 +368,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       AI Knowledge Bot:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Enhance customer satisfaction with instant responses via
                       our AI-powered chatbot.
                     </p>
@@ -385,7 +385,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Sales Analytics:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Access detailed reports on conversion rates, sales cycles,
                       and revenue trends to drive strategic decisions
                     </p>
@@ -402,7 +402,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Expense Management:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Track and categorize sales expenses with real-time budget
                       updates, ensuring financial control.
                     </p>
@@ -419,7 +419,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Lead Management:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Oversee leads throughout the sales funnel, ensuring proper
                       prioritization and allocation for optimal conversion.
                     </p>
@@ -441,12 +441,12 @@ export default function RemoteWork() {
       </section>
 
       {/* Upskill Your Workforce */}
-      <section className="w-full py-14  bg-white ">
+      <section className="w-full py-14 ">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div>
-                <h3 className="text-4xl font-bold mt-2">
+                <h3 className=" text-white text-4xl font-bold mt-2">
                   Upskill Your Workforce
                 </h3>
               </div>
@@ -462,7 +462,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       AI-Enabled Course Recommendations:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Receive personalized training module suggestions through
                       our mobile platform to enhance skills and knowledge.
                     </p>
@@ -479,7 +479,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Competency Mapping:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Identify strengths and areas for improvement in employee
                       skills, supporting targeted development.
                     </p>
@@ -496,7 +496,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Mobile-Based Training:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Provide interactive training accessible via mobile
                       devices, facilitating learning on-the-go.
                     </p>
@@ -513,7 +513,7 @@ export default function RemoteWork() {
                     <h4 className="font-semibold text-blue-500">
                       Automatic Assessments:
                     </h4>
-                    <p className="text-gray-600">
+                    <p className="text-white">
                       Evaluate employee progress and skill acquisition with
                       automated assessments for continuous improvement.
                     </p>

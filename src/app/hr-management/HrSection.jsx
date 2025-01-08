@@ -44,7 +44,7 @@ const FeatureCard = ({ feature, index }) => (
 
 export default function HrSection() {
   return (
-    <div className="min-h-screen bg-white relative overflow-hidden flex item">
+    <div className="relative overflow-hidden flex item">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-64 h-64 bg-purple-100 rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-100 rounded-full translate-x-1/3 translate-y-1/3" />
@@ -73,15 +73,15 @@ export default function HrSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
                 <span className="text-purple-600">EvoXcel:</span> Your Premier
                 Partner for{" "}
-                <span className="relative inline-block">
+                <span className=" text-white relative inline-block">
                   QuantianTech
                   <div className="absolute bottom-0 left-0 w-full h-2 bg-yellow-300 -rotate-1" />
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-white max-w-3xl mx-auto">
                 At EvoXcel, we are honored to be a trusted business partner and
                 authorized reseller for QuantianTech. Our collaboration delivers
                 the Optick AI platform, ensuring your business stays at the

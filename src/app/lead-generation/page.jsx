@@ -60,15 +60,15 @@ const LeadGeneration = () => {
   return (
     <>
       {/* <Head>
-        <link rel="stylesheet" href="./leadgen.css" />
+        <link rel="stylesheet" href="./leadgen.css" bgwebdev />
       </Head> */}
-      <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
+      <section className="w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Unlock Your Business Potential with Advanced Lead Generation
             Solutions
           </h1>
-          <p className="mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
+          <p className="text-white mt-4 mb-10 max-w-lg pfont leading-relaxed text-[4vw] md:text-[1.2vw] text-justify ">
             At EvoXcel, our lead generation services are meticulously designed
             to attract and engage the right prospects for your business. By
             employing a data-driven approach, we ensure that your sales team is
@@ -86,35 +86,35 @@ const LeadGeneration = () => {
           />
         </figure>
       </section>
-      <section className="w-[100%] ">
+      <section className="w-[100%]">
         <div
-          className="flex justify-center items-center bg-[#f9fafb]"
-          // style={{ backgroundColor: "#f5f5f5a8" }}
+          className="flex justify-center items-center"
+        // style={{ backgroundColor: "#f5f5f5a8" }}
         >
           <div className="text-black  px-[6vw] flex flex-col items-center justify-center md:mb-[1vh] ">
             <div className="w-[100%] p-0 grid grid-cols-1 lg:grid-cols-2">
               <div className="  text-black">
-                <h2 className="text-[1.6rem] lg:text-[2.3rem] headingfont font-semibold">
+                <h2 className="text-white  text-[1.6rem] lg:text-[2.3rem] headingfont font-semibold">
                   Market Research and Audience Targeting
                 </h2>
-                <p className="text-black pfont text-[1rem] md:text-[1vw] py-2">
+                <p className="text-white   pfont text-[1rem] md:text-[1vw] py-2">
                   Understanding your target market is crucial for generating
                   quality leads. We conduct comprehensive market research to
                   identify key demographics, behaviors, and trends within your
                   industry. This enables us to create targeted lead generation
                   campaigns that resonate with the right audience.
                 </p>
-                <p className="text-black text-[1.1rem] py-2 px-4">
+                <p className="text-white text-[1.1rem] py-2 px-4">
                   <ul className="list-disc headingfont">
                     <li>
-                      <span className="font-bold headingfont">
+                      <span className="text-white  font-bold headingfont">
                         Detailed Market Analysis:
                       </span>
                       Assessing market size, competition, and potential for
                       optimal strategy development
                     </li>
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white  font-bold">
                         Precision Audience Segmentation:{" "}
                       </span>
                       : Identifying key segments based on demographics,
@@ -141,9 +141,9 @@ const LeadGeneration = () => {
 
         <div
           className="flex justify-center items-center  px-[3vw]"
-          style={{ backgroundColor: "#f9fafb" }}
+          style={{}}
         >
-          <div className="text-white p-0 flex md:flex-col bg-[#f9fafb] items-center justify-center">
+          <div className="text-white p-0 flex md:flex-col items-center justify-center">
             <div className="w-full grid grid-cols-1  lg:grid-cols-2 p-0">
               <div className="p-4 md:p-12 relative order-2 md:order-1">
                 {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
@@ -161,38 +161,38 @@ const LeadGeneration = () => {
                 data-aos="fade-right"
                 className="md:p-12 text-white order-1 md:order-2"
               >
-                <h2 className="text-[1.6rem] text-black lg:text-[2.3rem] headingfont py-4 font-semibold">
+                <h2 className="text-white text-[1.6rem]  lg:text-[2.3rem] headingfont py-4 font-semibold">
                   Multi-Channel Lead Capture
                 </h2>
-                <p className="text-black pfont text-[1rem] md:text-[1rem] py-2">
+                <p className=" text-white pfont text-[1rem] md:text-[1rem] py-2">
                   We implement a multi-channel approach to capture leads from
                   various sources, ensuring broad and effective outreach. Our
                   strategies include:
                 </p>
                 <p className="text-black text-[1.1rem] py-2 px-4 headingfont">
                   <ul className="list-disc">
-                    <li>
-                      <span className="font-semibold">
+                    <li className="text-white">
+                      <span className="text-white font-semibold">
                         Social Media Marketing:{" "}
                       </span>
                       Leveraging platforms like Facebook, LinkedIn, and
                       Instagram to attract and engage potential leads.
                     </li>
-                    <li>
-                      <span className="font-semibold">
+                    <li className="text-white">
+                      <span className="text-white font-semibold">
                         {" "}
                         Content Marketing:{" "}
                       </span>
                       Creating valuable content that draws in prospects and
                       establishes your brand as an industry leader.
                     </li>
-                    <li>
-                      <span className="font-semibold"> Email Marketing: </span>
+                    <li className="text-white">
+                      <span className="text-white font-semibold"> Email Marketing: </span>
                       Creating engaging email campaigns that increase
                       conversions and engagement.
                     </li>
-                    <li>
-                      <span className="font-semibold">
+                    <li className="text-white">
+                      <span className="text-white font-semibold">
                         {" "}
                         SEO and PPC Strategies{" "}
                       </span>
@@ -209,7 +209,7 @@ const LeadGeneration = () => {
 
         <div
           data-aos="fade-right"
-          className="flex justify-center items-center px-[3vw] bg-[#f9fafb]"
+          className="flex justify-center items-center px-[3vw] "
         >
           <div className="text-black flex flex-col items-center justify-center">
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
@@ -217,26 +217,26 @@ const LeadGeneration = () => {
                 {/* <div className="text-center p-2 bg-[#94e3bd] text-white w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
                   OUR VALUES
                 </div> */}
-                <h2 className="text-[1.6rem] lg:text-[2.3rem] py-4 font-semibold headingfont">
+                <h2 className="text-white text-[1.6rem] lg:text-[2.3rem] py-4 font-semibold headingfont">
                   Lead Qualification and Scoring
                 </h2>
-                <p className="text-black text-[1rem] pfont md:text-[1.1rem] py-2">
+                <p className="text-white  text-[1rem] pfont md:text-[1.1rem] py-2">
                   Not all leads are ready to convert immediately. We employ
                   advanced lead scoring techniques to evaluate and prioritize
                   leads based on their readiness to purchase and fit for your
                   business.
                 </p>
-                <p className="text-black text-[1.1rem] py-2 px-4">
+                <p className="text-white  text-[1.1rem] py-2 px-4">
                   <ul className="list-disc">
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white font-bold">
                         Smart Lead Scoring Models:{" "}
                       </span>
                       Implementing criteria-based scoring to rank leads
                       according to their potential value.
                     </li>
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white font-bold">
                         Behavioral Insight Tracking:{" "}
                       </span>{" "}
                       Monitoring lead interactions to gauge interest and intent,
@@ -262,7 +262,7 @@ const LeadGeneration = () => {
 
         <div
           className="flex justify-center items-center px-[3vw]"
-          style={{ backgroundColor: "#f9fafb" }}
+          style={{}}
         >
           <div className="text-white flex flex-col items-center justify-center">
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
@@ -281,34 +281,37 @@ const LeadGeneration = () => {
               <div data-aos="fade-right" className="md:p-12 text-white">
                 {/* <div className="text-center p-2 bg-white text-[#94e3bd] w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
                   OUR VALUES
+                  
+                   text-[#003C71]
+
                 </div> */}
-                <h2 className="text-[1.6rem] headingfont text-black lg:text-[2.3rem] py-4 font-semibold">
+                <h2 className="text-white text-[1.6rem] headingfont lg:text-[2.3rem] py-4 font-semibold">
                   Lead Nurturing and Engagement
                 </h2>
-                <p className="text-black pfont text-[1rem] md:text-[1.1rem] py-2">
+                <p className="text-white  pfont text-[1rem] md:text-[1.1rem] py-2">
                   Building strong relationships with prospects is key to
                   converting leads into loyal customers. Our lead nurturing
                   strategies ensure ongoing engagement through personalized
                   communication and relevant content
                 </p>
-                <p className="text-black text-[1.1rem] font py-2 px-4">
+                <p className="text-white  text-[1.1rem] font py-2 px-4">
                   <ul className="list-disc">
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white font-bold">
                         Tailored Email Campaigns:
                       </span>
                       Sending personalized messages that address the specific
                       needs and interests of each lead.
                     </li>
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white font-bold">
                         Strategic Retargeting Campaigns:{" "}
                       </span>
                       Use strategic retargeting campaigns to ensure that
                       prospects who have expressed interest remember your brand.
                     </li>
                     <li>
-                      <span className="font-bold">
+                      <span className="text-white font-bold">
                         Dynamic Content Delivery:
                       </span>
                       Offering timely and relevant content to guide leads
@@ -322,7 +325,7 @@ const LeadGeneration = () => {
         </div>
       </section>
 
-      <section className="overflow-hidden bg-[#003C71] lg:h-auto pt-[10vh] pb-[12vh]">
+      <section className="overflow-hidden  lg:h-auto pt-[10vh] pb-[12vh]">
         <h2
           data-aos="fade-down"
           className="text-[10vw] md:text-[3vw] headingfont text-white font-semibold text-center pb-7"

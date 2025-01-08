@@ -57,12 +57,13 @@ export const metadata = {
 const SoftwareDevelopment = () => {
   return (
     <>
-      <section className="w-[100%]  bgwebdev px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
+      {/* bgwebdev */}
+      <section className="w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
         <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Software Excellence, Elevating Businesses to New Heights
           </h1>
-          <p className="mt-4 mb-10 pfont max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-black">
+          <p className="text-white mt-4 mb-10 pfont max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify">
             Seamlessly integrate software, systems, and applications to optimize
             performance and drive unparalleled success. Experience the
             transformative power of unified operations that ensure peak
@@ -81,12 +82,12 @@ const SoftwareDevelopment = () => {
           />
         </figure>
       </section>
-      <section className="bg-gray-50">
+      <section className="">
         <div data-aos="zoom-in" className="h-[100%] py-4 xls:h-[80vh]">
           <p className="text-[1.8rem] headingfont text-center md:text-[2.5rem] font-bold text-[#718BFF]">
             Innovate. Build. Thrive.
           </p>
-          <p className="text-center sd:text-[1.3vw] px-[5vw] pfont  mt-4 font-[400] mb-12">
+          <p className=" text-white text-center sd:text-[1.3vw] px-[5vw] pfont  mt-4 font-[400] mb-12">
             Chart a visionary course through your digital frontier with
             state-of-the-art software solutions. We pioneer innovation with
             precision, fostering excellence in every development, and unlocking
@@ -143,7 +144,7 @@ const SoftwareDevelopment = () => {
       </section>
 
       <section>
-        <div className="py-12 h-[100%] xls:h-[70vh] flex flex-col justify-center bg-[#E3F1F4]">
+        <div className="py-12 h-[100%] xls:h-[70vh] flex flex-col justify-center ">
           <p className="text-[#718BFF] headingfont text-center font-bold text-3xl mb-8">
             Our Software Development Solutions
           </p>
@@ -196,7 +197,7 @@ const SoftwareDevelopment = () => {
         </div>
       </section>
 
-      <section className="min-h-screen bg-gray-900 text-center py-10 px-8 xl:px-0 flex flex-col justify-center">
+      <section className="min-h-screen  text-center py-10 px-8 xl:px-0 flex flex-col justify-center">
         <span className="text-gray-400 headingfont text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
           Our Approach{" "}
           <svg
