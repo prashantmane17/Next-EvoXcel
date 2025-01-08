@@ -161,7 +161,7 @@ const NewNav = () => {
                       <i className="fa-solid fa-sack-dollar text-[2vw] mr-[1vw]"></i>
                       <div>
                         <p className="font-semibold ">Finanace </p>
-                        <p className="text-[14px] font-[500]">
+                        <p className="text-[12px] font-[500]">
                           Empower Your Financial Journey with Budgeting, and Wealth Management...
                         </p>
                       </div>
@@ -180,7 +180,7 @@ const NewNav = () => {
                       <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                       <div>
                         <p className="font-semibold ">Email Automation</p>
-                        <p className="text-[14px] font-[500]">
+                        <p className="text-[12px] font-[500]">
                           In today’s fast-paced digital world, having robust,
                           scalable...
                         </p>
@@ -202,7 +202,7 @@ const NewNav = () => {
                       <i className="fa-brands fa-linkedin  text-[2vw] mr-[1vw]"></i>
                       <div>
                         <p className="font-semibold ">Linkedin Automation</p>
-                        <p className="text-[14px] font-[500]">
+                        <p className="text-[12px] font-[500]">
                           Unlock Your Digital Potential with Expert Web
                           Development...
                         </p>
@@ -222,7 +222,7 @@ const NewNav = () => {
                       <i className="fa-solid fa-envelope-circle-check  text-[2vw] mr-[1vw]"></i>
                       <div>
                         <p className="font-semibold">HR Management</p>
-                        <p className="text-[14px] font-[500]">
+                        <p className="text-[12px] font-[500]">
                           HR Management boosts employee streamlines processes...
                         </p>
                       </div>
@@ -254,7 +254,7 @@ const NewNav = () => {
                     <i className="fa-solid fa-computer text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold">Software Development</p>
-                      <p className="text-[14px]">
+                      <p className="text-[12px]">
                         In today’s fast-paced digital world, having robust,
                         scalable...
                       </p>
@@ -270,7 +270,7 @@ const NewNav = () => {
                     <i className="fa-solid fa-filter-circle-dollar text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Lead Generation</p>
-                      <p className="text-[14px] font-[500]">
+                      <p className="text-[12px] font-[500]">
                         Lead generation is more than just a marketing strategy
                         it&lsquo;s the...
                       </p>
@@ -299,7 +299,7 @@ const NewNav = () => {
                     <i className="fa-solid fa-code  text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Application Development</p>
-                      <p className="text-[14px] font-[500]">
+                      <p className="text-[12px] font-[500]">
                         We specialize in crafting tailored application
                         development solutions
                       </p>
@@ -315,7 +315,7 @@ const NewNav = () => {
                     <i className="fa-solid fa-laptop-code text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Web Development</p>
-                      <p className="text-[14px] font-normal">
+                      <p className="text-[12px] font-normal">
                         Unlock Your Digital Potential with Expert Web
                         Development...
                       </p>
@@ -349,7 +349,7 @@ const NewNav = () => {
                     <i className="fa-solid fa-clipboard text-[2vw] mr-[1vw]"></i>
                     <div>
                       <p className="font-semibold ">Blog</p>
-                      <p className="text-[14px] font-[500]">
+                      <p className="text-[12px] font-[500]">
                         Unlock Your Digital Potential with Expert Web
                         Development...
                       </p>
@@ -361,7 +361,7 @@ const NewNav = () => {
                   <i className="fa-solid fa-note-sticky text-[2vw] mr-[1vw]"></i>
                   <div>
                     <p className="font-semibold ">Case Studies</p>
-                    <p className="text-[14px] font-[500]">
+                    <p className="text-[12px] font-[500]">
                       In today’s fast-paced digital world, having robust,
                       scalable.p
                     </p>
@@ -375,7 +375,7 @@ const NewNav = () => {
                   <i className="fa-solid fa-handshake-angle text-[2vw] mr-[1vw]"></i>
                   <div>
                     <p className="font-semibold ">Helpdesk </p>
-                    <p className="text-[14px] font-[500]">
+                    <p className="text-[12px] font-[500]">
                       We specialize in crafting tailored application development
                       solutions ...
                     </p>

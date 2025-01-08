@@ -80,9 +80,9 @@ const HomePage = () => {
           </article>
         </section>
         {/* bghome3 */}
-        <section className=" pl-[3vw]  bg-black">
+        <section className=" px-[3vw]  bg-black">
           <article className="w-[100%] md:flex">
-            <div className="md:w-[55%] pr-[3vw]">
+            <div className="md:w-[55%] pl-[3vw]">
               {/* <p className='text-white text-[2vw]'>~</p> */}
               <p
                 className="text-[7vw] md:text-[1.3vw] pt-[5vh] text-[#fff] headingfont"
@@ -187,9 +187,9 @@ const HomePage = () => {
                 </Link>
               </article>
             </div>
-            <figure className="md:w-[45%] flex justify-end" data-aos="fade-in">
+            <figure className="md:w-[39%] flex justify-end" data-aos="fade-in">
               <Image
-                className="w-[100%] h-[100%] mb-5 object-cover"
+                className="w-[90%] h-[90%] mb-5 object-cover"
                 width={300}
                 height={300}
                 loading="lazy"
@@ -200,9 +200,9 @@ const HomePage = () => {
           </article>
         </section>
 
-        <section className=" pr-[6vw] bg-black">
+        <section className=" px-[6vw] bg-black">
           <article className="w-[100%] md:flex justify-between ">
-            <figure className="md:w-[45%] hidden md:block">
+            <figure className="md:w-[39%] hidden md:block">
               <Image
                 className=" w-[100%] h-[100%] mb-5 object-cover"
                 src="/images/Home/product-Image.webp"
@@ -221,7 +221,7 @@ const HomePage = () => {
                 WHAT WE PROVIDE
               </p>
               <p
-                className="text-[10vw] md:text-[3.1vw] font-bold text-whit  headingfont"
+                className="text-[10vw] md:text-[3.1vw] font-bold text-white headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
