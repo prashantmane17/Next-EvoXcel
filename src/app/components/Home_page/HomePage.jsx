@@ -37,7 +37,7 @@ const HomePage = () => {
           <article className="md:m-auto md:w-[90%] md:h-fit  md:flex justify-between mb-5">
             <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">
               <Image
-                className="w-[100%] h-[100%] object-contain"
+                className="w-[100%] h-[100%] object-contain hi"
                 src="/images/Home/welcomeImage.webp"
                 width={300}
                 height={300}
