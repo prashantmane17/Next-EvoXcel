@@ -60,19 +60,19 @@ const Home = () => {
         <div>
             {/* bg-gradient-to-r from-[#022e2b] to-[#031356] */}
             <main className=" relative overflow-hidden">
-                <div className="container mx-auto px-6 pt-[11rem] md:pt-[7rem]">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div className="container mx-auto md:px-6 px-3 pt-[1rem] md:pt-[7rem]">
+                    <div className="md:flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="w-full md:w-1/2 space-y-6 z-10 pl-[4vw]">
-                            <div className="text-gray-200 text-sm md:text-base">
+                            <div className="text-gray-200  md:text-base  text-[4.6vw]">
                                 Transform Financial Management with
                             </div>
                             <div className="space-y-4">
-                                <h1 className="text-[3.6rem] md:text-[3.1rem] font-bold text-white tracking-tight">
+                                <h1 className=" md:text-[3.1rem] text-[6vw] font-bold text-white tracking-tight">
                                     EvoXcel&apos;s Advanced
                                     <br />
                                     <span className="text-emerald-400">Finance Software</span>
                                 </h1>
-                                <p className="text-gray-200 text-lg md:text-xl max-w-xl leading-relaxed">
+                                <p className="text-gray-200 text-lg md:text-xl text-[3vw] max-w-xl leading-relaxed">
                                     EvoXcel&apos;s Finance Software empowers businesses with seamless financial
                                     management. From budget planning and expense tracking to real-time financial analytics, it’s
                                     designed to optimize resources and ensure compliance across global operations.
@@ -134,7 +134,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2 h-[500px] relative ">
+                        <div className="w-full md:w-1/2 md:h-[500px] relative ">
                             {/* <div className="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-emerald-50/50 z-10 rounded-lg"></div> */}
                             <Image
                                 width={300}
@@ -150,9 +150,9 @@ const Home = () => {
                 {/* <div className="absolute top-0 right-0 w-1/2 h-full bg-emerald-50/10 -skew-x-12 transform origin-top"></div> */}
             </main>
             {/* bg-gradient-to-br from-blue-100 to-indigo-200 */}
-            <section className=" py-12 px-4 sm:px-6 lg:px-8">
+            <section className=" md:py-12 px-4 sm:px-6 lg:px-5">
                 <div className="max-w-7xl mx-[4.2vw]">
-                    <h2 className="text-4xl font-extrabold text-center text-white mb-12">
+                    <h2 className="text-2xl font-extrabold text-center text-white mb-12">
                         Why Choose EvoXcel Finance Software?
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -161,7 +161,7 @@ const Home = () => {
                                 key={index}
                                 className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105"
                             >
-                                <div className="p-6">
+                                <div className="md:p-6 p-5">
                                     <div className="text-4xl mb-4">{feature.icon}</div>
                                     <h3 className="text-xl font-semibold text-gray-900 mb-2">
                                         {feature.title}
@@ -175,7 +175,7 @@ const Home = () => {
             </section >
             {/* bg-gradient-to-br from-blue-50 to-indigo-100 */}
             <section className=" ">
-                <main className="container py-[6.25rem]">
+                <main className="container md:py-[6.25rem] py-[1rem]">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12 mx-[6vw] ">
                         <div className="w-full lg:w-1/2">
                             <h2 className="text-4xl font-bold text-white mb-8">Key Features</h2>
@@ -212,15 +212,15 @@ const Home = () => {
                 </main>
             </section>
             {/* bg-[#191D31] */}
-            <section className="w-[100%] py-[5vh]  flex items-center">
-                <figure className="w-[50%] flex items-center justify-center">
+            <section className="md:w-[100%] md:py-[5vh]  md:flex items-center">
+                <figure className="md:w-[50%] flex items-center justify-center">
                     <Image
                         width={900}
                         height={900} className="md:h-[96%] w-[96%]"
                         src="/images/finance/finance-s.png"
                         loading="lazy" alt="" />
                 </figure>
-                <div className="w-[50%] space-y-[20px]">
+                <div className="md:w-[50%] md:px-0 px-5">
                     <h2 className="text-4xl text-white font-bold"></h2>
                     <p className="text-xl text-white">EvoXcel&apos;s financial management software combines scalability,
                         security, and efficiency to help businesses succeed globally. Unlock the power of automation, enterprise financial solutions,
