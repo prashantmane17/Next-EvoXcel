@@ -51,12 +51,13 @@ export default function Hero() {
   }, [isHovered, slides.length]);
   return (
     <>
-      <section className="h-[100vh] w-[100%] md:flex img" id="particles-js">
+      {/*img id="particles-js" */}
+      <section className="h-[100vh] w-[100%] md:flex bg-black" >
         <article className="md:w-[45%] h-[100%] pl-[5vw] flex flex-col justify-center">
           <h1
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="text-white headingfont w-[100%] md:text-[3.4vw] relative font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
+            className="text-white headingfont w-[100%] md:text-[2.4vw] lg:text-[3.5vw] relative font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -75,7 +76,7 @@ export default function Hero() {
                         : "-translate-y-full"
                       }`}
                   >
-                    <h2 className="md:text-[3vw] headingfont cursor-pointer text-green-400 font-semibold">
+                    <h2 className="md:text-[1.8vw] lg:text-[2.5vw] headingfont cursor-pointer text-green-400 font-semibold">
                       {slide.text}
                     </h2>
                   </div>
