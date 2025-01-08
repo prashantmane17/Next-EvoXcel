@@ -180,9 +180,12 @@ export default function Evoxcel() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="w-full flex justify-center my-5">
+
         <Link
           href="/contact-us"
-          className="bouce_button inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 absolute bottom-[-15vh]"
+          className="bouce_button inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 ease-in-out transform hover:scale-105 "
         >
           Get Started with ExoXcel
         </Link>

@@ -187,9 +187,9 @@ const HomePage = () => {
                 </Link>
               </article>
             </div>
-            <figure className="md:w-[39%] flex justify-end" data-aos="fade-in">
+            <figure className="md:w-[39%] flex items-center justify-end" data-aos="fade-in">
               <Image
-                className="w-[90%] h-[90%] mb-5 object-cover"
+                className="w-[90%] h-[90%] 2xl:h-[60%] mb-5 object-cover"
                 width={300}
                 height={300}
                 loading="lazy"

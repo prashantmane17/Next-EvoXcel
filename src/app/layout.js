@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <meta property="og:site_Name" content="EvoXcel" />
         <title>EvoXcel</title>
       </Head>
-      <body className="container bg-black m-auto">
+      <body className="bg-black">
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=GTM-KFZVZTJH`}
@@ -34,11 +34,11 @@ export default function RootLayout({ children }) {
           gtag('config', 'GTM-NC8WGKLC');
         `}
         </Script>
-        {/* <Nav /> */}
-        <NewNav />
-        {/* <SmoothScroll> */}
-        {children}
-        {/* </SmoothScroll> */}
+        <div className="container bg-black m-auto">
+
+          <NewNav />
+          {children}
+        </div>
         {/* <Footer /> */}
         <Footers />
         <Chatbot />

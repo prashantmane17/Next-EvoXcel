@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <>
       {/*img id="particles-js" */}
-      <section className="h-[100vh] w-[100%] md:flex bg-black" >
+      <section className="h-[90vh] w-[100%] md:flex items-center bg-black" >
         <article className="md:w-[45%] h-[100%] pl-[5vw] flex flex-col justify-center">
           <h1
             data-aos="fade-up"

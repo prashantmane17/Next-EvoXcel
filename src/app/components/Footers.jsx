@@ -19,7 +19,7 @@ const Footers = () => {
   if (!isMounted) return null; // Prevent rendering until mounted
   return (
     <>
-      <div className="w-full h-20vh relative top-[1px]">
+      {/* <div className="w-full h-20vh relative top-[1px]">
         <Image
           // src="/images/chatbot/mountain-bg.webp"
           src="/images/chatbot/footer_background.svg"
@@ -28,12 +28,13 @@ const Footers = () => {
           alt="Footer"
           className="w-full h-full"
         />
-      </div>
-      <footer className="new_footer_area bg_color relative ">
-        <div className="new_footer_top z-2">
+      </div> */}
+      {/* <footer className="new_footer_area bg_color relative "> */}
+      <footer className=" bg-gradient-to-br from-stone-500 to-slate-700 relative ">
+        <div className=" container m-auto new_footer_top z-2">
           <div className=" mx-auto px-[4vw] ">
             <div className="flex flex-wrap justify-between">
-              <div className="w-full md:w-1/2 lg:w-[15%] pl-4 mb-8">
+              <div className="w-full md:w-1/2 lg:w-[15%] pl-4 mb-1">
                 <div
                   className="company_widget wow fadeInLeft"
                   data-wow-delay="0.2s"
