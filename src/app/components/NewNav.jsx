@@ -114,9 +114,9 @@ const NewNav = () => {
   const logoSrc =
     location === "/" || location === "/finance/"
       ? scrolled
-        ? "/images/Evoxcel.webp"
+        ? "/images/Evoxcel White.webp"
         : "/images/Evoxcel White.webp"
-      : "/images/Evoxcel.webp";
+      : "/images/Evoxcel White.webp";
 
   return (
     <div className=" sticky top-0  z-50">
@@ -140,7 +140,7 @@ const NewNav = () => {
         </div>
         <div className="md:flex hidden justify-between pfont relative items-center md:w-[67%] lg:w-[64%] text-[1vw] md:text-[1.2vw] lg:text-[1vw] font-[600]">
           <div className="cursor-pointer productdropdown lg:pr-[1vw] navBar lg:py-[15px] navLink ">
-            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+            <span className=" flex text-[1vw] 2xl:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
               Products <i className="fa-solid fa-caret-down ml-1"></i>
             </span>
           </div>
@@ -234,7 +234,7 @@ const NewNav = () => {
           </div>
 
           <div className="cursor-pointer servicedropdown navBar lg:py-[15px] lg:pr-[1vw] navLink ">
-            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+            <span className=" flex text-[1vw] 2xl:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
               Services <i className="fa-solid fa-caret-down ml-1"></i>
             </span>
           </div>
@@ -327,13 +327,13 @@ const NewNav = () => {
           </div>
 
           <div className="cursor-pointer lg:pr-[1vw] navBar lg:py-[15px] text-color relative z-20 navLink">
-            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")} text-[1vw] md:text-[0.7vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
+            <Link href={"/pricing"} className={`${isActiveLink("/pricing/")} text-[1vw] 2xl:text-[0.7vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}>
               Pricing
             </Link>
           </div>
           {/* <Link to={'/about-us'}><li className='cursor-pointer navBar lg:py-[15px] text-color relative z-20'>Resources</li></Link> */}
           <div className="cursor-pointer resourcedropdown navBar lg:pr-[1vw] lg:py-[15px] navLink ">
-            <span className=" flex text-[1vw] md:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
+            <span className=" flex text-[1vw] 2xl:text-[0.7vw] py-2 p-2 rounded hover:text-white hover:bg-gray-700">
               Insights <i className="fa-solid fa-caret-down ml-1"></i>
             </span>
           </div>
@@ -388,7 +388,7 @@ const NewNav = () => {
           <div className="cursor-pointer  navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/about-us"}
-              className={`${isActiveLink("/about-us/")} text-[1vw] md:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
+              className={`${isActiveLink("/about-us/")} text-[1vw] 2xl:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               About Us
             </Link>
@@ -424,7 +424,7 @@ const NewNav = () => {
           <div className="cursor-pointer navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 navLink">
             <Link
               href={"/contact-us"}
-              className={`${isActiveLink("/contact-us/")} text-[1vw] md:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
+              className={`${isActiveLink("/contact-us/")} text-[1vw] 2xl:text-[0.66vw] py-2 p-2 rounded  hover:text-white hover:bg-gray-700`}
             >
               Let&lsquo;s Connect
             </Link>
