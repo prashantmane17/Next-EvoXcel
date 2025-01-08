@@ -139,7 +139,7 @@ export default function Evoxcel() {
   return (
     <>
       <div className="pt-[4vw] pb-[2vw]">
-        <h2 className="text-4xl lg:text-[3vw] font-bold text-center mb-12 text-white ">
+        <h2 className="text-2xl lg:text-[3vw] font-bold text-center mb-12 text-white ">
           Why Choose ExoXcel{" "}
           <span className="text-sky-600"> HR Management</span>?
         </h2>
@@ -165,10 +165,10 @@ export default function Evoxcel() {
                 />
               </div>
               <div
-                className={` p-8 rounded-lg text-white space-y-4 ${index % 2 === 1 ? "boxColor2" : "boxColor1"
+                className={` md:p-8 rounded-lg text-white space-y-4 ${index % 2 === 1 ? "boxColor2" : "boxColor1"
                   }`}
               >
-                <h2 className=" text-white md:text-[3vw] text-[2vw] py-5 font-bold">
+                <h2 className=" text-white md:text-[3vw] text-[7vw] md:py-5 font-bold">
                   {content.title}
                 </h2>
                 {content.items.map((item, itemIndex) => (

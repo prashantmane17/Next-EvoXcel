@@ -52,12 +52,12 @@ export default function Hero() {
   return (
     <>
       {/*img id="particles-js" */}
-      <section className="h-[90vh] w-[100%] md:flex items-center bg-black" >
+      <section className="md:h-[100vh] w-[100%] md:flex bg-black" >
         <article className="md:w-[45%] h-[100%] pl-[5vw] flex flex-col justify-center">
           <h1
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="text-white headingfont w-[100%] md:text-[2.4vw] lg:text-[3.5vw] relative font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
+            className="text-white headingfont w-[100%] md:text-[2.4vw] lg:text-[3.5vw] text-[8vw] relative font-thin px-2 md:px-0 md:w-[100%]  mb-[2vh] md:mb-[0vh]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -76,7 +76,7 @@ export default function Hero() {
                         : "-translate-y-full"
                       }`}
                   >
-                    <h2 className="md:text-[1.8vw] lg:text-[2.5vw] headingfont cursor-pointer text-green-400 font-semibold">
+                    <h2 className="md:text-[1.8vw] lg:text-[2.5vw] text-[6vw] headingfont cursor-pointer text-green-400 font-semibold">
                       {slide.text}
                     </h2>
                   </div>
@@ -127,7 +127,7 @@ export default function Hero() {
             </button>
           </Link>
         </article>
-        <article className="md:w-[55%] hidden md:flex justify-start items-center h-[100vh]">
+        <article className="md:w-[55%] md:flex hidden justify-start items-center md:h-[100vh]">
           <Image
             src="/images/Home/Hero-Image.webp"
             width="300"
