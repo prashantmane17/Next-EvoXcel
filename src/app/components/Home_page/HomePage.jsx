@@ -50,7 +50,7 @@ const HomePage = () => {
               className="md:w-[50%] justify-center md:px-[5vw] 2xl:px-[0vw]"
               data-aos="fade-in"
             >
-              <div className="text-center pt-[7vh] headingfont text-white md:text-[2.6vw] font-[700]">
+              <div className="text-center pt-[7vh] headingfont text-white md:text-[2.6vw] text-[6vw] font-[700]">
                 Welcome to{" "}
                 <span
                   style={{ display: "inline-block" }}
@@ -68,7 +68,7 @@ const HomePage = () => {
                 </span>
               </div>
 
-              <p className=" text-white  md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify 2xl:pl-4 pt-[2vh] pfont">
+              <p className=" text-white  md:text-[1.1vw] md:leading-8 mb-[5vh] md:mb-0 text-[4vw] text-justify 2xl:pl-4 pt-[2vh] md:px-0 px-5 pfont">
                 &ldquo;We empower your business success with a comprehensive
                 range of cutting-edge services and products. From custom web,
                 software, and application development to expert lead generation
@@ -188,9 +188,9 @@ const HomePage = () => {
                 </Link>
               </article>
             </div>
-            <figure className="md:w-[39%] flex items-center justify-end" data-aos="fade-in">
+            <figure className="md:w-[39%] w-[100%] md:flex justify-end" data-aos="fade-in">
               <Image
-                className="w-[90%] h-[90%] 2xl:h-[60%] mb-5 object-cover"
+                className="md:w-[90%] h-[90%] w-[100%] mb-5 object-cover"
                 width={300}
                 height={300}
                 loading="lazy"

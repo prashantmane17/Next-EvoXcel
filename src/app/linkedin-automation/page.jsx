@@ -57,9 +57,9 @@ export const metadata = {
 const LinkedInAutomation = () => {
   return (
     <>
-      <section className="w-[100%]   px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
-          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
+      <section className="md:w-[100%] px-[8vw] pt-[2vh] md:pt-[14vh] md:pb-[10vh] items-center justify-between md:flex">
+        <div data-aos="fade-up" className="md:w-[50%] text-white md:my-14 lg:my-0">
+          <h1 className="capitalize headingfont text-[2rem] leading-tight lg:text-[3vw] font-bold md:pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Revolutionize Your Networking with LinkedIn Automation Solutions
           </h1>
           <p className="mt-4 pfont mb-10 max-w-lg leading-relaxed text-[4vw] md:text-[1.2vw] text-justify text-white">
