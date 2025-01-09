@@ -10,6 +10,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Evoxcel from "./Evoxcel";
 import { LayoutGridDemo } from "@/components/homePage/LayoutGridDemo";
+import { HeroParallaxDemo } from "@/components/homePage/HeroParallaxDemo";
+import { SparklesPreview } from "@/components/homePage/SparklesPreview";
+import { SparklesPreviewBG } from "@/components/homePage/SparklesPreviewBG";
+import { TimelineDemo } from "@/components/homePage/TimelineDemo";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -266,6 +270,10 @@ const HomePage = () => {
             </div>
           </article>
         </section>
+        <HeroParallaxDemo />
+        <TimelineDemo />
+        {/* <SparklesPreview />
+        <SparklesPreviewBG /> */}
         {/* bghomecolor */}
         {/* <article className="px-[5vw] py-[10vh] ">
           <p
