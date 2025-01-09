@@ -57,7 +57,7 @@ export default function Hero() {
     <>
       {/*img id="particles-js" */}
 
-      <section className="h-[90vh] w-[100%] md:flex items-center bg-black" >
+      {/* <section className="h-[90vh] w-[100%] md:flex items-center bg-black" >
         <article className="md:w-[45%] h-[100%] pl-[5vw] flex flex-col justify-center">
           <h1
             data-aos="fade-up"
@@ -119,8 +119,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <Link href="pricing" className="mt-3">
-            {/* <button
+          <Link href="pricing" className="mt-3"> */}
+      {/* <button
               data-aos="fade-up"
               data-aos-duration="2500"
               className="md:py-4 md:px-16 md:text-[1vw] rounded-3xl mt-[2vh] getstarted pfont "
@@ -130,7 +130,7 @@ export default function Hero() {
               </span>
               <span>Today!</span>
             </button> */}
-            <Cover className="px-4 py-2">
+      {/* <Cover className="px-4 py-2">
               <div className=" md:text-[1vw] rounded-3xl ">
                 Get Started
               </div>
@@ -146,30 +146,49 @@ export default function Hero() {
             secondImageClassname="object-cover object-left-top"
             className="h-[250px] w-[200px] md:h-[300px] md:w-[500px]"
             slideMode="drag"
-          />
-          {/* <Image
+          /> */}
+      {/* <Image
             src="/images/Home/Hero-Image.webp"
             width="300"
             height="300"
             alt="Hero"
             className="w-[90%] imagePop"
           /> */}
-        </article>
-      </section>
-      <LampContainer>
-        <motion.h1
-          initial={{ opacity: 0.5, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.3,
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-        >
-          Supercharge Your <br /> Software With Us
-        </motion.h1>
-      </LampContainer>
+      {/* </article>
+      </section> */}
+      <div className="relative -top-14">
+
+        <LampContainer>
+          <motion.h1
+            initial={{ opacity: 0.5, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              ease: "easeInOut",
+            }}
+            className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+          >
+            {"  "}
+          </motion.h1>
+        </LampContainer>
+        <div className="absolute top-[59%] left-[31%]">
+
+          <Compare
+            firstImage="/images/Home/Campaign-Image.webp"
+            secondImage="/images/Home/Hero-Image.webp"
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top"
+            className="h-[250px] w-[200px] md:h-[300px] md:w-[500px]"
+            slideMode="drag"
+          />
+        </div>
+        <div className="absolute top-[20%] w-full">
+          <div className="text-white text-[5em] font-extrabold text-center">
+            Supercharge Your <br /> Software With<Cover className=""> Evoxcel</Cover>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
