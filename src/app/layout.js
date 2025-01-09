@@ -6,6 +6,7 @@ import NewNav from "./components/NewNav";
 import Chatbot from "./components/Chatbot";
 import { GeistSans } from "geist/font/sans";
 import SmoothScroll from "./components/SmoothScroll";
+import Nav from "./components/Nav";
 // import { GeistMono } from "geist/font/mono";
 
 // import GoogleAnalytics from "./components/GoogleAnalytics";
@@ -36,7 +37,8 @@ export default function RootLayout({ children }) {
         </Script>
         <div className="container bg-black m-auto">
 
-          <NewNav />
+          {/* <NewNav /> */}
+          <Nav />
           {children}
         </div>
         {/* <Footer /> */}

@@ -9,6 +9,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Evoxcel from "./Evoxcel";
+import { LayoutGridDemo } from "@/components/homePage/LayoutGridDemo";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -266,7 +267,7 @@ const HomePage = () => {
           </article>
         </section>
         {/* bghomecolor */}
-        <article className="px-[5vw] py-[10vh] ">
+        {/* <article className="px-[5vw] py-[10vh] ">
           <p
             className="text-center md:text-[2.5vw] font-[600] headingfont text-white"
             data-aos="fade-right"
@@ -465,8 +466,8 @@ const HomePage = () => {
                 alt="Seamless Tool Integration"
               />
             </motion.figure>
-          </section>
-          {/* <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
+          </section> */}
+        {/* <section className="flex flex-col-reverse md:flex-row homepagelast justify-between w-[100%] mt-[5vh]">
             <figure
               className="md:w-[50%] flex justify-center items-center"
               data-aos="fade-in"
@@ -622,7 +623,10 @@ const HomePage = () => {
               </ul>
             </aside>
           </section> */}
-        </article>
+        {/* </article> */}
+        <div className="px-10 flex justify-center">
+          <LayoutGridDemo />
+        </div>
         <WhyChooseUs />
         {/* <Evoxcel/> */}
       </div>

@@ -985,3 +985,8 @@ button:focus {
 .notificationModal {
   background: linear-gradient(#192c34, #29444a, #ffffff);
 }
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
