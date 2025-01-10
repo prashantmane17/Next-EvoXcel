@@ -63,46 +63,46 @@ function Navbar({
           <MenuItem setActive={setActive} active={active} item="Services">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
-                title="Algochurn"
-                href="https://algochurn.com"
+                title="Software Development"
+                href="/software-development"
                 src="https://assets.aceternity.com/demos/algochurn.webp"
-                description="Prepare for tech interviews like never before." />
+                description="In today’s fast-paced digital world, having robust, scalable..." />
               <ProductItem
-                title="Tailwind Master Kit"
-                href="https://tailwindmasterkit.com"
+                title="Lead Generation"
+                href="/lead-generation"
                 src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                description="Production ready Tailwind css components for your next project" />
+                description="Lead generation is more than just a marketing strategy it‘s the..." />
               <ProductItem
-                title="Moonbeam"
-                href="https://gomoonbeam.com"
+                title="Application Development"
+                href="/application-development"
                 src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                description="Never write from scratch again. Go from idea to blog in minutes." />
+                description="We specialize in crafting tailored application development solutions..." />
               <ProductItem
-                title="Rogue"
-                href="https://userogue.com"
+                title="Web Development"
+                href="/web-development"
                 src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI" />
+                description="Unlock Your Digital Potential with Expert Web Development..." />
             </div>
           </MenuItem>
           {/* <MenuItem setActive={setActive} active={active} item="Pricing" /> */}
-          <HoveredLink href="/hobby">Pricing</HoveredLink>
+          <HoveredLink href="/pricing">Pricing</HoveredLink>
           <MenuItem setActive={setActive} active={active} item="Insights">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
               <ProductItem
-                title="Algochurn"
-                href="https://algochurn.com"
+                title="Blog"
+                href="/blog"
                 src="https://assets.aceternity.com/demos/algochurn.webp"
-                description="Prepare for tech interviews like never before." />
+                description="Unlock Your Digital Potential with Expert Web Development..." />
               <ProductItem
-                title="Tailwind Master Kit"
+                title="Case Studies "
                 href="https://tailwindmasterkit.com"
                 src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                description="Production ready Tailwind css components for your next project" />
+                description="In today’s fast-paced digital world, having robust, scalable.p" />
               <ProductItem
-                title="Moonbeam"
+                title="Helpdesk"
                 href="https://gomoonbeam.com"
                 src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                description="Never write from scratch again. Go from idea to blog in minutes." />
+                description="We specialize in crafting tailored application development solutions ..." />
               <ProductItem
                 title="Rogue"
                 href="https://userogue.com"
@@ -110,8 +110,8 @@ function Navbar({
                 description="Respond to government RFPs, RFIs and RFQs 10x faster using AI" />
             </div>
           </MenuItem>
-          <HoveredLink href="/hobby">About Us</HoveredLink>
-          <HoveredLink href="/hobby">Let's Connect</HoveredLink>
+          <HoveredLink href="/about-us">About Us</HoveredLink>
+          <HoveredLink href="/contact-us">Let's Connect</HoveredLink>
         </div>
       </Menu>
     </div>)
