@@ -14,6 +14,9 @@ import { HeroParallaxDemo } from "@/components/homePage/HeroParallaxDemo";
 import { SparklesPreview } from "@/components/homePage/SparklesPreview";
 import { SparklesPreviewBG } from "@/components/homePage/SparklesPreviewBG";
 import { TimelineDemo } from "@/components/homePage/TimelineDemo";
+import TrueFocus from "@/components/ui/TrueFocus";
+import { StickyScrollRevealDemo } from "@/components/homePage/StickyScrollRevealDemo";
+import { FollowingPointerDemo } from "@/components/homePage/FollowingPointerDemo";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -89,20 +92,27 @@ const HomePage = () => {
           <article className="w-[100%] md:flex">
             <div className="md:w-[55%] pl-[3vw]">
               {/* <p className='text-white text-[2vw]'>~</p> */}
-              <p
+              {/* <p
                 className="text-[7vw] md:text-[1.3vw] pt-[5vh] text-[#fff] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
                 WHAT WE PROVIDE
-              </p>
-              <p
+              </p> */}
+              <div
                 className=" text-[10vw] md:text-[3.1vw] font-bold text-[#fff] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
-                Our Services
-              </p>
+
+                <TrueFocus sentence="Our Services"
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="skyblue"
+                  animationDuration={2}
+                  pauseBetweenAnimations={1}
+                />
+              </div>
               <article className="md:flex justify-between text-white mt-[5vh] w-[100%]">
                 <Link
                   href="/web-development"
@@ -218,20 +228,27 @@ const HomePage = () => {
               />
             </figure>
             <div className="md:w-[50%] px-[4vw] md:px-0 pt-[5vh] ">
-              <p
+              {/* <p
                 className="text-[7vw] md:text-[1.3vw] font-[500] text-white  headingfont"
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
                 WHAT WE PROVIDE
-              </p>
-              <p
+              </p> */}
+              <div
                 className="text-[10vw] md:text-[3.1vw] font-bold text-white headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
-                Our Products
-              </p>
+                <TrueFocus sentence="Our Products"
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="skyblue"
+                  animationDuration={2}
+                  pauseBetweenAnimations={1}
+                />
+
+              </div>
               <article className="md:flex justify-between gap-[2vw] text-white mt-[5vh] w-[100%]">
                 <Link href="/linkedin-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
@@ -272,6 +289,8 @@ const HomePage = () => {
         </section>
         <HeroParallaxDemo />
         <TimelineDemo />
+        <StickyScrollRevealDemo />
+        <FollowingPointerDemo />
         {/* <SparklesPreview />
         <SparklesPreviewBG /> */}
         {/* bghomecolor */}
@@ -632,10 +651,10 @@ const HomePage = () => {
             </aside>
           </section> */}
         {/* </article> */}
-        <div className="px-10 flex justify-center">
+        {/* <div className="px-10 flex justify-center">
           <LayoutGridDemo />
-        </div>
-        <WhyChooseUs />
+        </div> */}
+        {/* <WhyChooseUs /> */}
         {/* <Evoxcel/> */}
       </div>
     </>

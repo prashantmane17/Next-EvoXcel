@@ -5,13 +5,28 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
     const data = [
         {
-            title: "2024",
+            title: "Task & Time Management",
             content: (
                 <div>
-                    <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        Built and launched Aceternity UI and Aceternity UI Pro from scratch
-                    </p>
+                    <div className="mb-8">
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Real-time task progress and employee performance insights
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ AI-powered auto scheduling for optimal workforce management
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Automated shift and roster generation based on rules and preferences
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Mobile-accessible payroll automation for accurate management
+                        </div>
+
+                    </div>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
                             src="https://assets.aceternity.com/templates/startup-1.webp"
@@ -42,19 +57,28 @@ export function TimelineDemo() {
             ),
         },
         {
-            title: "Early 2023",
+            title: "Geo-Spatial Tracking",
             content: (
                 <div>
-                    <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        I usually run out of copy, but when I see content this big, I try to
-                        integrate lorem ipsum.
-                    </p>
-                    <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                        Lorem ipsum is for people who are too lazy to write copy. But we are
-                        not. Here are some more example of beautiful designs I built.
-                    </p>
+                    <div className="mb-8">
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Track remote employees locations and statuses
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Maintain detailed records of staff movements
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Ensure precise time tracking with facial attendance
+                        </div>
+                        <div
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Streamline digital onboarding for new hires
+                        </div>
+
+                    </div>
                     <div className="grid grid-cols-2 gap-4">
                         <Image
                             src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -85,34 +109,28 @@ export function TimelineDemo() {
             ),
         },
         {
-            title: "Changelog",
+            title: "Data-Driven Insights",
             content: (
                 <div>
-                    <p
-                        className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                        Deployed 5 new components on Aceternity today
-                    </p>
+
                     <div className="mb-8">
                         <div
-                            className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                            ✅ Card grid component
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Real-time individual and team performance metrics
                         </div>
                         <div
-                            className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                            ✅ Startup template Aceternity
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Resource utilization analysis for productivity improvement
                         </div>
                         <div
-                            className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                            ✅ Random file upload lol
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ Advanced capacity forecasting for optimal staffing
                         </div>
                         <div
-                            className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                            ✅ Himesh Reshammiya Music CD
+                            className="flex gap-2 items-center text-neutral-300 text-xs md:text-sm">
+                            ✅ AI-powered threat detection for enhanced security
                         </div>
-                        <div
-                            className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                            ✅ Salman Bhai Fan Club registrations open
-                        </div>
+
                     </div>
                     <div className="grid grid-cols-2 gap-4">
                         <Image

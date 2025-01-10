@@ -184,7 +184,7 @@ export default function Hero() {
           />
         </div>
         <div className="absolute top-[20%] w-full">
-          <div className="text-white text-[5em] font-extrabold text-center">
+          <div className="text-white text-[4em] 2xl:text-[5em] font-extrabold text-center">
             Supercharge Your <br /> Software With<Cover className=""> Evoxcel</Cover>
           </div>
         </div>

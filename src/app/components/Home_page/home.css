@@ -54,3 +54,14 @@
 
   /* background: linear-gradient(45deg, #87a2cc, #93a3bc); */
 /* } */
+
+
+.bg_scroll_hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.bg_scroll_hide::-webkit-scrollbar {
+  display: none; /* Webkit browsers */
+}
+

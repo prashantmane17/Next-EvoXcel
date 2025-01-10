@@ -1,5 +1,6 @@
 import Script from "next/script";
 import HomePage from "./components/Home_page/HomePage";
+import SplashCursor from "@/components/ui/SplashCursor";
 
 export const metadata = {
   title: "EvoXcel – Tailored IT Staffing & Business Solutions",
@@ -58,6 +59,7 @@ export const metadata = {
 const Home = () => {
   return (
     <>
+      {/* <SplashCursor /> */}
       <HomePage />
       <Script
         id="organization-schema"
