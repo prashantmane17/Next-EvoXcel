@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { FloatingDockDemo } from "@/components/homePage/FloatingDockDemo";
 
 const Footers = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -212,7 +213,8 @@ const Footers = () => {
                   <h3 className="f-title font-semibold text-lg text-gray-800 mb-4">
                     Team Solutions
                   </h3>
-                  <div className="f_social_icon flex space-x-4">
+                  <FloatingDockDemo />
+                  {/* <div className="f_social_icon flex space-x-4">
                     <Link
                       href="https://www.facebook.com/profile.php?id=61566321227448"
                       className="fab fa-facebook text-white hover:text-gray-300"
@@ -248,7 +250,7 @@ const Footers = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     />
-                  </div>
+                  </div> */}
                   <div>
                     <h3 className="mt-[5vh] mb-[1vh] text-white hover:text-gray-300">
                       INDIA
@@ -283,6 +285,7 @@ const Footers = () => {
             <p className="">© EvoXcel Inc.. 2024 All rights reserved.</p>
           </div>
         </div>
+
       </footer>
     </>
   );

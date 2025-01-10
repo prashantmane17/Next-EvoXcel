@@ -27,7 +27,7 @@ export const HeroParallax = ({
     return (
         (<div
             ref={ref}
-            className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+            className="h-[380vh] 2xl:h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
             <Header />
             <motion.div
                 style={{
@@ -61,13 +61,12 @@ export const Header = () => {
     return (
         (<div
             className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-            <h1 className="text-2xl md:text-7xl font-bold text-white">
-                The Ultimate <br /> development studio
+            <h1 className="text-2xl md:text-6xl 2xl:text-7xl font-bold text-white">
+                Transform Your Financial Management with <br /> EvoXcel's Cutting-Edge Software
+
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
-                We build beautiful products with the latest technologies and frameworks.
-                We are a team of passionate developers and designers that love to build
-                amazing products.
+                Streamline your financial processes, enhance accuracy, and unlock new levels of efficiency. Our innovative solutions are designed to help you manage investments, loans, withdrawals, and more—seamlessly and securely.
             </p>
         </div>)
     );

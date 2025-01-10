@@ -4,7 +4,7 @@ import { HeroParallax } from "../ui/hero-parallax";
 
 export function HeroParallaxDemo() {
     return (
-        <div className="p-6 px-20">
+        <div className="p-6 md:px-20">
 
             < HeroParallax products={products} />;
         </div>
@@ -13,95 +13,95 @@ export function HeroParallaxDemo() {
 export const products = [
     {
         title: "Moonbeam",
-        link: "https://gomoonbeam.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+            "/images/Home/HomeImage.jpg",
     },
     {
         title: "Cursor",
-        link: "https://cursor.so",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+            "/images/Home/01.jpg",
     },
     {
         title: "Rogue",
-        link: "https://userogue.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+            "/images/Home/03.jpg",
     },
 
     {
         title: "Editorially",
-        link: "https://editorially.org",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+            "/images/home/04.jpg",
     },
     {
         title: "Editrix AI",
-        link: "https://editrix.ai",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+            "/images/Home/05.jpg",
     },
     {
         title: "Pixel Perfect",
-        link: "https://app.pixelperfect.quest",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
+            "/images/Home/06.jpg",
     },
 
     {
         title: "Algochurn",
-        link: "https://algochurn.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
+            "/images/Home/HomeImage.jpg",
     },
     {
         title: "Aceternity UI",
-        link: "https://ui.aceternity.com",
+        link: "https://finance.evoxcel.com/login",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
+            "/images/Home/01.jpg",
     },
     {
         title: "Tailwind Master Kit",
-        link: "https://tailwindmasterkit.com",
+        link: "https://finance.evoxcel.com/signup",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
+            "/images/home/02.jpg",
     },
     {
         title: "SmartBridge",
-        link: "https://smartbridgetech.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
+            "/images/home/03.jpg",
     },
     {
         title: "Renderwork Studio",
-        link: "https://renderwork.studio",
+        link: "https://finance.evoxcel.com/login",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
+            "/images/home/04.jpg",
     },
 
     {
         title: "Creme Digital",
-        link: "https://cremedigital.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
+            "/images/home/05.jpg",
     },
     {
         title: "Golden Bells Academy",
-        link: "https://goldenbellsacademy.com",
+        link: "https://finance.evoxcel.com",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
+            "/images/home/06.jpg",
     },
     {
         title: "Invoker Labs",
-        link: "https://invoker.lol",
+        link: "https://finance.evoxcel.com/login",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/invoker.png",
+            "/images/home/02.jpg",
     },
     {
         title: "E Free Invoice",
-        link: "https://efreeinvoice.com",
+        link: "https://finance.evoxcel.com/signup",
         thumbnail:
-            "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
+            "/images/home/01.jpg",
     },
 ];

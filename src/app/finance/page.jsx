@@ -1,4 +1,5 @@
 import { BackgroundBoxesDemo } from '@/components/finance/BackgroundBoxesDemo';
+import { HeroScrollDemo } from '@/components/homePage/HeroScrollDemo';
 import { DollarSign, PieChart, Link2, ShieldCheck, Users } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -60,7 +61,8 @@ const Home = () => {
     return (
         <div>
             {/* bg-gradient-to-r from-[#022e2b] to-[#031356] */}
-            <BackgroundBoxesDemo />
+            {/* <BackgroundBoxesDemo /> */}
+            <HeroScrollDemo />
             <main className=" relative overflow-hidden">
                 <div className="container mx-auto md:px-6 px-3 pt-[1rem] md:pt-[7rem]">
                     <div className="md:flex flex-col md:flex-row items-center justify-between gap-12">

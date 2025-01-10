@@ -17,6 +17,8 @@ import { TimelineDemo } from "@/components/homePage/TimelineDemo";
 import TrueFocus from "@/components/ui/TrueFocus";
 import { StickyScrollRevealDemo } from "@/components/homePage/StickyScrollRevealDemo";
 import { FollowingPointerDemo } from "@/components/homePage/FollowingPointerDemo";
+import { BentoGridDemo } from "@/components/homePage/BentoGridDemo";
+import { HeroScrollDemo } from "@/components/homePage/HeroScrollDemo";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +42,8 @@ const HomePage = () => {
   return (
     <>
       <div className="w-[100%] scroll-smooth">
-        <Hero />
+        {/* <Hero /> */}
+        <HeroScrollDemo />
         <section className="md:h-fit w-[100%]  mb-[5vh] md:mb-0 bg-black">
           <article className="md:m-auto md:w-[90%] md:h-fit  md:flex justify-between mb-5">
             <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">
@@ -289,8 +292,14 @@ const HomePage = () => {
         </section>
         <HeroParallaxDemo />
         <TimelineDemo />
-        <StickyScrollRevealDemo />
-        <FollowingPointerDemo />
+        {/* <StickyScrollRevealDemo /> */}
+        {/* <FollowingPointerDemo /> */}
+        <div className="text-white text-center mb-8">
+          <div className="text-[3em] font-semibold">
+            Why Choose ExoXcel?
+          </div>
+        </div>
+        <BentoGridDemo />
         {/* <SparklesPreview />
         <SparklesPreviewBG /> */}
         {/* bghomecolor */}
