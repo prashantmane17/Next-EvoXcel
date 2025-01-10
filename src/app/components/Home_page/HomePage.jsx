@@ -297,7 +297,7 @@ const HomePage = () => {
         {/* <FollowingPointerDemo /> */}
         <div className="text-white text-center mb-8">
           <div className="text-[3em] font-semibold">
-            Why Choose ExoXcel?
+            Why Choose ExoXcel <span className="text-blue-400">Linkedin Automation</span> ?
           </div>
         </div>
         {/* <BentoGridDemo /> */}

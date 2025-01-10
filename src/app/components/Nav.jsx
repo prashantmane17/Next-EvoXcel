@@ -111,7 +111,7 @@ function Navbar({
             </div>
           </MenuItem>
           <HoveredLink href="/about-us">About Us</HoveredLink>
-          <HoveredLink href="/contact-us">Let's Connect</HoveredLink>
+          <HoveredLink href="/contact-us">Let&apos;s Connect</HoveredLink>
         </div>
       </Menu>
     </div>)

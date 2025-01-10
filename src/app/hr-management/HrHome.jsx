@@ -11,6 +11,7 @@ import HrSection from "./HrSection";
 import Facial from "./Facial";
 import RemoteWork from "./RemoteWork";
 
+
 const FadeInSection = ({ children }) => {
   const controls = useAnimation();
   const ref = useRef(null);

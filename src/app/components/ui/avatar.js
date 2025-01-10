@@ -1,3 +1,4 @@
+import Image from "next/image";
 import * as React from "react";
 
 export function Avatar({ children, className, ...props }) {
@@ -10,8 +11,10 @@ export function Avatar({ children, className, ...props }) {
 
 export function AvatarImage({ src, alt, className, ...props }) {
   return (
-    <img
+    <Image
       src={src}
+      width={300}
+      height={300}
       alt={alt}
       className={`rounded-full ${className}`}
       {...props}
