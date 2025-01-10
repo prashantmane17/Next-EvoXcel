@@ -19,6 +19,7 @@ import { StickyScrollRevealDemo } from "@/components/homePage/StickyScrollReveal
 import { FollowingPointerDemo } from "@/components/homePage/FollowingPointerDemo";
 import { BentoGridDemo } from "@/components/homePage/BentoGridDemo";
 import { HeroScrollDemo } from "@/components/homePage/HeroScrollDemo";
+import { WobbleCardDemo } from "@/components/homePage/WobbleCardDemo";
 
 const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -299,7 +300,10 @@ const HomePage = () => {
             Why Choose ExoXcel?
           </div>
         </div>
-        <BentoGridDemo />
+        {/* <BentoGridDemo /> */}
+        <div className="md:mb-20">
+          <WobbleCardDemo />
+        </div>
         {/* <SparklesPreview />
         <SparklesPreviewBG /> */}
         {/* bghomecolor */}
