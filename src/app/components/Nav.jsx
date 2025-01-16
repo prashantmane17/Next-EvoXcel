@@ -4,11 +4,16 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import Mobileview from "./Mobileview";
+
 
 export default function Nav() {
   return (
-    (<div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+    (<div className="relative md:w-full flex items-center justify-center">
+      <Navbar className="top-2 md:block hidden" />
+      <div className="p-0 md:hidden block">
+        <Mobileview />
+      </div>
 
     </div>)
   );

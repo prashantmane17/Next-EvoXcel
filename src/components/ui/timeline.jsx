@@ -28,8 +28,8 @@ export const Timeline = ({
         (<div
             className="w-full bg-black font-sans md:px-10"
             ref={containerRef}>
-            <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-                <h2 className="text-2xl lg:text-[3vw] font-bold mb-12 text-white ">
+            <div className="max-w-7xl mx-auto md:py-20 px-4 md:px-8 lg:px-10">
+                <h2 className="text-2xl lg:text-[3vw] font-bold md:mb-12 text-white ">
                     Why Choose ExoXcel{" "}
                     <span className="text-sky-600"> HR Management</span>?
                 </h2>

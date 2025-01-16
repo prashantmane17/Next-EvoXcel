@@ -47,7 +47,7 @@ export const Cover = ({
                                 duration: 0.2,
                             },
                         }}
-                        className="h-full w-full overflow-hidden absolute inset-0">
+                        className="md:h-full md:w-full overflow-hidden absolute inset-0">
                         <motion.div
                             animate={{
                                 translateX: ["-50%", "0%"],

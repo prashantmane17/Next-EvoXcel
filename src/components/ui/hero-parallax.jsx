@@ -27,7 +27,7 @@ export const HeroParallax = ({
     return (
         (<div
             ref={ref}
-            className="h-[380vh] 2xl:h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+            className="h-[280vh] 2xl:h-[300vh] md:py-40 overflow-hidden  antialiased relative .d:flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
             <Header />
             <motion.div
                 style={{
@@ -60,7 +60,7 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         (<div
-            className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+            className="max-w-7xl relative mx-auto py-0 md:py-40 px-4 w-full  left-0 top-0">
             <h1 className="text-2xl md:text-6xl 2xl:text-7xl font-bold text-white">
                 Transform Your Financial Management with <br /> EvoXcel&apos;s Cutting-Edge Software
 

@@ -51,11 +51,11 @@ export function HeroScrollDemo() {
         return () => clearInterval(interval);
     }, [isHovered, slides.length]);
     return (
-        (<div className="flex flex-col overflow-hidden">
+        (<div className="md:flex flex-col md:overflow-hidden">
             <ContainerScroll
                 titleComponent={
                     <>
-                        <h1 className="text-4xl font-semibold text-white mb-2 ">
+                        <h1 className="text-4xl font-semibold text-white md:mb-2 ">
                             <span className="block 2xl:text-5xl"> Supercharge your Buisness
                                 {/* <div className="relative  left-[4em] h-16 overflow-hidden">
                                     <div className="absolute w-[20em] 2xl:w-[22em] h-full text-center">
@@ -90,7 +90,7 @@ export function HeroScrollDemo() {
                     alt="hero"
                     height={720}
                     width={1400}
-                    className="mx-auto rounded-2xl object-cover bg-black h-full object-left-top"
+                    className="mx-auto rounded-2xl md:object-cover bg-black 2xl:h-full md:object-left-top"
                     draggable={false} />
             </ContainerScroll>
         </div>)
