@@ -8,7 +8,7 @@ export function WobbleCardDemo() {
         (<div
             className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full p-4 pb-7 2xl:p-0 2xl:mb-10">
             <WobbleCard
-                containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                containerClassName="col-span-1 lg:col-span-2 h-full bg-[#221e2a] min-h-[500px] lg:min-h-[300px]"
                 className="">
                 <div className="max-w-xs">
                     <h2
@@ -31,7 +31,7 @@ export function WobbleCardDemo() {
                         className="filterobject-contain rounded-2xl" />
                 </div>
             </WobbleCard>
-            <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+            <WobbleCard containerClassName="col-span-1 bg-[#1d2b2b] min-h-[300px]">
                 <h2
                     className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Confident Campaign Launches.
@@ -43,7 +43,7 @@ export function WobbleCardDemo() {
                 </p>
             </WobbleCard>
             <WobbleCard
-                containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+                containerClassName="col-span-1 lg:col-span-3 bg-[#232a35] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
                 <div className="max-w-sm">
                     <h2
                         className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -64,7 +64,7 @@ export function WobbleCardDemo() {
                         className="object-contain rounded-2xl" />
                 </div>
             </WobbleCard>
-            <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+            <WobbleCard containerClassName="col-span-1 bg-[#1d2b2b] min-h-[300px]">
                 <h2
                     className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                     Enhance Connections with Intelligent Communication.
@@ -76,7 +76,7 @@ export function WobbleCardDemo() {
                 </p>
             </WobbleCard>
             <WobbleCard
-                containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                containerClassName="col-span-1 lg:col-span-2 h-full bg-[#221e2a] min-h-[500px] lg:min-h-[300px]"
                 className="">
                 <div className="absolute -left-4  top-8 ">
                     <Image

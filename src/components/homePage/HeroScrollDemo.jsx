@@ -55,9 +55,9 @@ export function HeroScrollDemo() {
             <ContainerScroll
                 titleComponent={
                     <>
-                        <h1 className="text-4xl font-semibold text-white mb-24 ">
-                            <span className="block relative bottom-1"> Supercharge your
-                                <div className="relative  left-[4em] h-16 overflow-hidden">
+                        <h1 className="text-4xl font-semibold text-white mb-2 ">
+                            <span className="block 2xl:text-5xl"> Supercharge your Buisness
+                                {/* <div className="relative  left-[4em] h-16 overflow-hidden">
                                     <div className="absolute w-[20em] 2xl:w-[22em] h-full text-center">
                                         {slides.map((slide, index) => (
                                             <div
@@ -77,10 +77,10 @@ export function HeroScrollDemo() {
                                             </div>
                                         ))}
                                     </div>
-                                </div>
+                                </div> */}
                             </span> <br />
-                            <span className="text-4xl md:text-[6rem] font-bold leading-none mt-3">
-                                with <Cover className="mt-2"> Evoxcel</Cover>
+                            <span className="text-4xl md:text-[6rem] font-bold leading-none ">
+                                with <Cover className=""> Evoxcel</Cover>
                             </span>
                         </h1>
                     </>

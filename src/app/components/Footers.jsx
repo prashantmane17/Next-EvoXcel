@@ -43,9 +43,9 @@ const Footers = () => {
                   <h3 className="f-title font-semibold text-lg text-white mb-4">
                     Get in Touch
                   </h3>
-                  <p className="text-white mb-4">
+                  {/* <p className="text-white mb-4">
                     Don’t miss any updates of our new templates and extensions.!
-                  </p>
+                  </p> */}
                   <form
                     action="#"
                     className="f_subscribe_two mailchimp"
@@ -251,15 +251,15 @@ const Footers = () => {
                       rel="noopener noreferrer"
                     />
                   </div> */}
-                  <div>
+                  <div >
                     <h3 className="mt-[5vh] mb-[1vh] text-white hover:text-gray-300">
                       INDIA
                     </h3>
                     <ul>
-                      <li className="text-white hover:text-gray-300 md:text-[1.1vw]">
+                      <li className="text-white hover:text-gray-300 md:text-[1.1vw] 2xl:text-sm">
                         #99, 10th Cross, 20th Main
                       </li>
-                      <li className="text-white hover:text-gray-300 md:text-[1.1vw]">
+                      <li className="text-white hover:text-gray-300 md:text-[1.1vw] 2xl:text-sm">
                         BTM loayout 1st stage, Bangalore 560068
                       </li>
                       <a
