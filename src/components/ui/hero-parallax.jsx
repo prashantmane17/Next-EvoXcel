@@ -27,7 +27,7 @@ export const HeroParallax = ({
     return (
         (<div
             ref={ref}
-            className="h-[280vh] 2xl:h-[300vh] md:py-40 overflow-hidden  antialiased relative .d:flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+            className="h-[200vh] 2xl:h-[190vh] md:py-20 overflow-hidden antialiased relative .d:flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
             <Header />
             <motion.div
                 style={{
@@ -37,7 +37,7 @@ export const HeroParallax = ({
                     opacity,
                 }}
                 className="">
-                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+                <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 md:mb-20">
                     {firstRow.map((product) => (
                         <ProductCard product={product} translate={translateX} key={product.title} />
                     ))}
@@ -60,7 +60,7 @@ export const HeroParallax = ({
 export const Header = () => {
     return (
         (<div
-            className="max-w-7xl relative mx-auto py-0 md:py-40 px-4 w-full  left-0 top-0">
+            className="max-w-7xl relative mx-auto py-0 md:py-1 px-4 w-full  left-0 top-0">
             <h1 className="text-2xl md:text-6xl 2xl:text-7xl font-bold text-white">
                 Transform Your Financial Management with <br /> EvoXcel&apos;s Cutting-Edge Software
 
@@ -85,7 +85,7 @@ export const ProductCard = ({
                 y: -20,
             }}
             key={product.title}
-            className="group/product h-96 w-[30rem] relative flex-shrink-0">
+            className="group/product md:h-96 h-40 md:w-[30rem] w-[20rem] relative flex-shrink-0">
             <Link href={product.link} className="block group-hover/product:shadow-2xl ">
                 <Image
                     src={product.thumbnail}
@@ -95,9 +95,9 @@ export const ProductCard = ({
                     alt={product.title} />
             </Link>
             <div
-                className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+                className="md:absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
             <h2
-                className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+                className="md:absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
                 {product.title}
             </h2>
         </motion.div>)

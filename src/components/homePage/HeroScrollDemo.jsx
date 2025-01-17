@@ -56,7 +56,7 @@ export function HeroScrollDemo() {
                 titleComponent={
                     <>
                         <h1 className="text-4xl font-semibold text-white md:mb-2 ">
-                            <span className="block 2xl:text-5xl"> Supercharge your Buisness
+                            <span className="block 2xl:text-5xl"> Supercharge your Business
                                 {/* <div className="relative  left-[4em] h-16 overflow-hidden">
                                     <div className="absolute w-[20em] 2xl:w-[22em] h-full text-center">
                                         {slides.map((slide, index) => (

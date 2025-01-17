@@ -104,7 +104,7 @@ const HomePage = () => {
                 WHAT WE PROVIDE
               </p> */}
               <div
-                className=" text-[10vw] md:text-[3.1vw] font-bold text-[#fff] headingfont"
+                className=" text-[5vw] md:text-[3.1vw] font-bold text-[#fff] headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -240,7 +240,7 @@ const HomePage = () => {
                 WHAT WE PROVIDE
               </p> */}
               <div
-                className="text-[10vw] md:text-[3.1vw] font-bold text-white headingfont"
+                className="text-[5vw] md:text-[3.1vw] font-bold text-white headingfont"
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -296,7 +296,7 @@ const HomePage = () => {
         {/* <StickyScrollRevealDemo /> */}
         {/* <FollowingPointerDemo /> */}
         <div className="text-white text-center mb-8">
-          <div className="md:text-[3em] text-[2em] font-semibold">
+          <div className="md:text-[3em] text-[1.6em] font-semibold">
             Why Choose ExoXcel <span className="text-blue-400">Linkedin Automation</span> ?
           </div>
         </div>

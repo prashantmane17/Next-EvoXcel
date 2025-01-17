@@ -16,9 +16,6 @@ import { InstagramLogoIcon } from "@radix-ui/react-icons";
 
 export function FloatingDockDemo() {
     const links = [
-
-
-
         {
             title: "Facebook",
             icon: (
@@ -51,7 +48,7 @@ export function FloatingDockDemo() {
         },
     ];
     return (
-        (<div className="flex items-center justify-start w-full">
+        (<div className="2Xl:flex items-center justify-start w-full">
             <FloatingDock
                 // mobileClassName="translate-y-20"
                 items={links} />

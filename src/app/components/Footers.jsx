@@ -35,7 +35,7 @@ const Footers = () => {
         <div className=" container m-auto new_footer_top z-2">
           <div className=" mx-auto px-[4vw] ">
             <div className="flex flex-wrap justify-between">
-              <div className="w-full md:w-1/2 lg:w-[15%] pl-4 mb-1">
+              <div className="w-full md:w-1/2 lg:w-[15%] md:pl-4 md:mb-1 ">
                 <div
                   className="company_widget wow fadeInLeft"
                   data-wow-delay="0.2s"
@@ -55,7 +55,7 @@ const Footers = () => {
                     <input
                       type="text"
                       name="EMAIL"
-                      className="form-control ring-1 text-black ring-gray-300 memail w-full p-2 mb-4"
+                      className="form-control ring-1 text-black ring-gray-300 memail w-full p-2 md:mb-4"
                       placeholder="Email"
                     />
                     <button
