@@ -92,9 +92,9 @@ const HomePage = () => {
           </article>
         </section>
         {/* bghome3 */}
-        <section className=" px-[3vw]  bg-black">
+        <section className=" px-[3vw] pb-5 bg-black">
           <article className="w-[100%] md:flex">
-            <div className="md:w-[55%] pl-[3vw]">
+            <div className="md:w-[55%] mb-5 pl-[3vw]">
               {/* <p className='text-white text-[2vw]'>~</p> */}
               {/* <p
                 className="text-[7vw] md:text-[1.3vw] pt-[5vh] text-[#fff] headingfont"
@@ -117,24 +117,26 @@ const HomePage = () => {
                   pauseBetweenAnimations={1}
                 />
               </div>
-              <article className="md:flex justify-between text-white mt-[5vh] w-[100%]">
+              <article className="md:flex  justify-between text-white mt-[5vh] w-[100%]">
                 <Link
                   href="/web-development"
-                  className="md:w-[45%] cursor-pointer"
+                  className="md:w-[45%] cursor-pointer "
                   data-aos="fade-right"
                   data-aos-duration="700"
                 >
                   <div>
-                    <i className="fa-solid fa-laptop md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
-                      Web Development
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+                      <i className="fa-solid fa-laptop md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 headingfont">
+                        Web Development
+                      </p>
+                    </div>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Specializing in custom web development, we craft visually
                       stunning and high-performing websites that drive revenue
                       and elevate user experience.....
                     </p>
-                    <button className="mt-3 md:text-[0.9vw] text-slate-300 pfont">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -146,16 +148,18 @@ const HomePage = () => {
                   data-aos-duration="700"
                 >
                   <div>
-                    <i className="fa-solid fa-code md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
-                      Software Development
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+                      <i className="fa-solid fa-code md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 headingfont">
+                        Software Development
+                      </p>
+                    </div>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Our expert team utilizes state-of-the-art technology to
                       create scalable, secure, and innovative software solutions
                       tailored to your unique needs....
                     </p>
-                    <button className=" md:text-[0.9vw] mt-3 text-slate-300 pfont">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -169,16 +173,19 @@ const HomePage = () => {
                   data-aos-duration="700"
                 >
                   <div>
-                    <i className="fa-solid fa-computer md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
-                      Application Development
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+                      <i className="fa-solid fa-computer md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 headingfont">
+                        Application Development
+                      </p>
+                    </div>
+
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Whether you need bespoke software, scalable web apps, or
                       robust mobile applications, our skilled team delivers
                       solutions that drive business success....
                     </p>
-                    <button className="mt-3 md:text-[0.9vw] text-slate-300 pfont">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -190,16 +197,19 @@ const HomePage = () => {
                   data-aos-duration="700"
                 >
                   <div>
-                    <i className="fa-solid fa-filter-circle-dollar md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 headingfont">
-                      Lead Generation
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+
+                      <i className="fa-solid fa-filter-circle-dollar md:text-[1.5vw] px-[3vw] py-[3.5vw] md:px-[0.7vw] md:py-[0.9vw] bg-[#ffffff42] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 headingfont">
+                        Lead Generation
+                      </p>
+                    </div>
                     <p className="md:text-[1vw] pt-[1.4vh] text-slate-300 pfont">
                       Leverage targeted lead generation to attract and engage
                       high-quality prospects. Our all-encompassing approach
                       ensures you reach the right audience effectively....
                     </p>
-                    <button className="mt-3 md:text-[0.9vw] text-slate-300 pfont">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -216,14 +226,14 @@ const HomePage = () => {
                 alt="Our-services-image"
               />
             </figure>
-          </article>
-        </section>
+          </article >
+        </section >
 
-        <section className=" px-[6vw] bg-black">
-          <article className="w-[100%] md:flex justify-between ">
-            <figure className="md:w-[39%] hidden md:block">
+        <section className=" px-[3vw] bg-black">
+          <article className="w-[100%] flex flex-col-reverse md:flex-row justify-between ">
+            <figure className="md:w-[39%] ">
               <Image
-                className=" w-[100%] h-[100%] mb-5 object-cover"
+                className=" w-[100%] h-[100%] rounded-md mb-5 object-cover"
                 src="/images/Home/product-Image.webp"
                 width={300}
                 height={300}
@@ -256,33 +266,37 @@ const HomePage = () => {
               <article className="md:flex justify-between gap-[2vw] text-white mt-[5vh] w-[100%]">
                 <Link href="/linkedin-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
-                    <i className="fa-brands fa-linkedin md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 text-white headingfont">
-                      LinkedIn Automation
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+                      <i className="fa-brands fa-linkedin md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 text-white headingfont">
+                        LinkedIn Automation
+                      </p>
+                    </div>
                     <p className="md:text-[1vw] pfont pt-[1vh] text-white">
                       Automate your outreach with precision. Our LinkedIn
                       automation tools are designed to boost response rates,
                       bypass restrictions, and manage multiple accounts
                       effortlessly....
                     </p>
-                    <button className="mt-3 pfont md:text-[0.9vw] text-white relative z-50">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
                 </Link>
                 <Link href="/email-automation" data-aos="fade-right">
                   <div className="w-[100%] cursor-pointer">
-                    <i className="fa-solid fa-envelope md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
-                    <p className="md:text-[1.2vw] font-[550] mt-4 text-white headingfont">
-                      Email Automation
-                    </p>
+                    <div className="flex md:block items-center gap-3">
+                      <i className="fa-solid fa-envelope md:text-[1.5vw] p-2 bg-[#1d5476] rounded-full"></i>
+                      <p className="md:text-[1.2vw] font-[550] md:mt-4 text-white headingfont">
+                        Email Automation
+                      </p>
+                    </div>
                     <p className="md:text-[1vw] pfont pt-[1vh] text-white">
                       Maximize your email campaigns with our powerful automation
                       tools, ensuring personalized messaging that engages and
                       converts high-quality leads...
                     </p>
-                    <button className="mt-3 pfont md:text-[0.9vw] text-white">
+                    <button className="mt-3 mb-4 md:mb-2 md:text-[0.9vw] px-2 rounded-lg bg-white text-slate-900 pfont">
                       Know More <i className="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
@@ -295,13 +309,13 @@ const HomePage = () => {
         <TimelineDemo />
         {/* <StickyScrollRevealDemo /> */}
         {/* <FollowingPointerDemo /> */}
-        <div className="text-white text-center mb-8">
+        <div className="text-white text-center mb-8 md:mt-7">
           <div className="md:text-[3em] text-[1.6em] font-semibold">
             Why Choose ExoXcel <span className="text-blue-400">Linkedin Automation</span> ?
           </div>
         </div>
         {/* <BentoGridDemo /> */}
-        <div className="md:mb-20">
+        <div className="md:mb-20 md:px-10 2xl:px-3">
           <WobbleCardDemo />
         </div>
         {/* <SparklesPreview />
@@ -669,7 +683,7 @@ const HomePage = () => {
         </div> */}
         {/* <WhyChooseUs /> */}
         {/* <Evoxcel/> */}
-      </div>
+      </div >
     </>
   );
 };

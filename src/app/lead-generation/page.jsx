@@ -63,8 +63,8 @@ const LeadGeneration = () => {
         <link rel="stylesheet" href="./leadgen.css" bgwebdev />
       </Head> */}
       <section className="w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
-          <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
+        <div className="md:w-[50%] text-white my-14 lg:my-0">
+          <h1 className="capitalize  text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-[#8eb3e4] ">
             Unlock Your Business Potential with Advanced Lead Generation
             Solutions
           </h1>
@@ -158,7 +158,7 @@ const LeadGeneration = () => {
                 </div>
               </div>
               <div
-                data-aos="fade-right"
+                // data-aos="fade-right"
                 className="md:p-12 text-white order-1 md:order-2"
               >
                 <h2 className="text-white text-[1.6rem]  lg:text-[2.3rem] headingfont py-4 font-semibold">
@@ -208,7 +208,7 @@ const LeadGeneration = () => {
         </div>
 
         <div
-          data-aos="fade-right"
+          // data-aos="fade-right"
           className="flex justify-center items-center px-[3vw] "
         >
           <div className="text-black flex flex-col items-center justify-center">
@@ -278,7 +278,9 @@ const LeadGeneration = () => {
                   />
                 </div>
               </div>
-              <div data-aos="fade-right" className="md:p-12 text-white">
+              <div
+                // data-aos="fade-right"
+                className="md:p-12 text-white">
                 {/* <div className="text-center p-2 bg-white text-[#94e3bd] w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
                   OUR VALUES
                   
@@ -327,13 +329,15 @@ const LeadGeneration = () => {
 
       <section className="overflow-hidden  lg:h-auto pt-[10vh] pb-[12vh]">
         <h2
-          data-aos="fade-down"
+          // data-aos="fade-down"
           className="text-[10vw] md:text-[3vw] headingfont text-white font-semibold text-center pb-7"
         >
           Our Process
         </h2>
         <ul className="process">
-          <li data-aos="fade-right" className="process__item headingfont">
+          <li
+            // data-aos="fade-right"
+            className="process__item headingfont">
             <span className="process__number text-[15vw] md:text-[5vw]">1</span>
             <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
               High-Quality Leads
@@ -344,7 +348,9 @@ const LeadGeneration = () => {
             </span>
           </li>
 
-          <li data-aos="fade-right" className="process__item">
+          <li
+            // data-aos="fade-right"
+            className="process__item">
             <span className=" process__number text-[15vw] md:text-[5vw]">
               2
             </span>
@@ -357,7 +363,9 @@ const LeadGeneration = () => {
             </span>
           </li>
 
-          <li data-aos="fade-right" className="process__item">
+          <li
+            // data-aos="fade-right"
+            className="process__item">
             <span className="process__number text-[15vw] md:text-[5vw]">3</span>
             <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
               Cost-Effective Solutions
@@ -368,7 +376,9 @@ const LeadGeneration = () => {
             </span>
           </li>
 
-          <li data-aos="fade-right" className="process__item">
+          <li
+            // data-aos="fade-right"
+            className="process__item">
             <span className="process__number text-[15vw] md:text-[5vw]">4</span>
             <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3 ">
               Scalability
