@@ -61,7 +61,7 @@ const EmailAutomation = () => {
     <>
       {/* Hero Section */}
       <section className="w-[100%]   px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
+        <div className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7.5vh] text-white bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Revolutionize Your Communication with Our Email Automation Tool
           </h1>
@@ -83,7 +83,7 @@ const EmailAutomation = () => {
           />
         </figure>
       </section>
-      <section className=" pb-13">
+      <section className=" pb-13  max-w-6xl px-4 mx-auto">
         <h2 className="text-3xl text-center headingfont md:text-4xl font-semibold text-[#718BFF] mb-4">
           Comprehensive Features of Our Email Automation Service
         </h2>
@@ -91,21 +91,23 @@ const EmailAutomation = () => {
           Our cutting-edge solution offers a range of feature-specific
           capabilities that elevate your email marketing efforts:
         </p>
-        <article className="px-[7vw] pt-[10vh] w-[100%] md:flex gap-4">
+
+        <div class="mb-16 grid gap-8 p-8 md:grid-cols-2">
           <div
-            data-aos="fade-up"
-            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-white shadow-md"
+
+            className="relative group flex p-8 mt-[7vh] md:mt-0  flex-col rounded-xl bg-gradient-to-br from-slate-600 to-stone-600 border-purple-500 text-white"
           >
-            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className=" transition-all duration-700 group-hover:scale-105 group-hover:opacity-100 relative mx-auto h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
                 src="/images/email-automation/email-automation_Email-Campaigns.webp"
                 alt="Personalized Email Campaigns"
+                className=""
               />
             </div>
             <div className="p-6">
-              <h3 className="text-[#718BFF] headingfont mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+              <h3 className="text-[#ffffff] mb-4 mt-6 text-lg font-bold md:text-2xl ">
                 Personalized Email Campaigns
               </h3>
               <p className="block font-sans text-base pfont font-normal leading-relaxed text-inherit antialiased">
@@ -115,10 +117,10 @@ const EmailAutomation = () => {
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+
+            className="relative p-8 flex mt-[7vh] md:mt-0    flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-auto h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -137,10 +139,9 @@ const EmailAutomation = () => {
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            className="relative flex md:w-[24%] mt-[7vh] md:mt-0  hover:scale-105  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative p-8 flex mt-[7vh] md:mt-0  flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-auto h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
@@ -159,15 +160,15 @@ const EmailAutomation = () => {
             </div>
           </div>
           <div
-            data-aos="fade-up"
-            className="relative flex md:w-[24%] mt-[7vh] md:mt-0 hover:scale-105 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
+            className="relative p-8 flex mt-[7vh] md:mt-0 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md"
           >
-            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            <div className="relative mx-auto h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
               <Image
                 width={300}
                 height={300}
                 src="/images/email-automation/email-automation_Seamless-Integration.webp"
                 alt="Seamless Integration"
+                className=""
               />
             </div>
             <div className="p-6">
@@ -180,7 +181,8 @@ const EmailAutomation = () => {
               </p>
             </div>
           </div>
-        </article>
+        </div>
+
       </section>
 
       {/* Benefits Section */}

@@ -6,7 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
-import { Menu, X, ChevronDown } from 'lucide-react'
+import { Menu, c, ChevronDown, X } from 'lucide-react'
 
 const transition = {
     type: "spring",
@@ -75,8 +75,8 @@ const Mobileview = () => {
 
     return (
         <div className={cn("fixed top-0 inset-x-0 max-w-3xl mx-auto z-50")}>
-            <nav className="bg-black dark:bg-gray-800 rounded-lg shadow-md mb-6">
-                <div className="flex justify-between items-center m-2 p-3 rounded-2xl bg-[#3d3c3c]">
+            <nav className=" rounded-lg  mb-6">
+                <div className="flex justify-between shadow-md items-center m-2 p-3 rounded-2xl bg-[#3d3c3c]">
                     <Link href="/" className="text-xl font-bold text-gray-800 dark:text-white">
                         <Image
                             src="/images/Evoxcel White.webp"
