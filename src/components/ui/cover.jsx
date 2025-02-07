@@ -9,7 +9,7 @@ export const Cover = ({
     children,
     className
 }) => {
-    const [hovered, setHovered] = useState(false);
+    const [hovered, setHovered] = useState(true);
 
     const ref = useRef(null);
 
@@ -35,7 +35,7 @@ export const Cover = ({
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             ref={ref}
-            className="relative hover:bg-neutral-900  group/cover inline-block dark:bg-neutral-900 bg-neutral-100 px-2 py-2  transition duration-200 rounded-sm">
+            className="relative bg-black  group/cover inline-block   px-2   transition duration-200 rounded-sm">
             <AnimatePresence>
                 {hovered && (
                     <motion.div
@@ -122,15 +122,15 @@ export const Cover = ({
                     },
                 }}
                 className={cn(
-                    "dark:text-white inline-block text-neutral-900 relative z-20 group-hover/cover:text-white transition duration-200",
+                    "inline-block font-bold relative z-20 text-white transition duration-200",
                     className
                 )}>
                 {children}
             </motion.span>
-            <CircleIcon className="absolute -right-[2px] -top-[2px]" />
+            {/* <CircleIcon className="absolute -right-[2px] -top-[2px]" />
             <CircleIcon className="absolute -bottom-[2px] -right-[2px]" delay={0.4} />
             <CircleIcon className="absolute -left-[2px] -top-[2px]" delay={0.8} />
-            <CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} />
+            <CircleIcon className="absolute -bottom-[2px] -left-[2px]" delay={1.6} /> */}
         </div>)
     );
 };

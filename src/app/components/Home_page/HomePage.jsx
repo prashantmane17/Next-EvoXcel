@@ -35,7 +35,8 @@ const HomePage = () => {
   return (
     <>
       <div className="w-[100%] scroll-smooth">
-        <HeroScrollDemo />
+        {/* <HeroScrollDemo /> */}
+        <Hero />
         <section className="md:h-fit w-[100%]  mb-[5vh] md:mb-0 bg-black">
           <article className="md:m-auto md:w-[90%] md:h-fit  md:flex justify-between mb-5">
             <figure className="md:w-[50%] flex items-start justify-center  overflow-hidden">
