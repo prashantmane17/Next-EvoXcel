@@ -1,9 +1,101 @@
+"use client";
 import { BackgroundBoxesDemo } from '@/components/finance/BackgroundBoxesDemo';
 import { HeroScrollDemo } from '@/components/homePage/HeroScrollDemo';
 import { DollarSign, PieChart, Link2, ShieldCheck, Users } from 'lucide-react'
 import Image from 'next/image';
 import Link from 'next/link';
-import './finance.css'
+//import './finance.css'
+import styled from 'styled-components';
+
+
+const StyledWrapper = styled.div`
+  .animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 0 0 2px #622bff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: white;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #622bff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: white;
+    border-radius: 12px;
+  }
+
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+
+  .animated-button:hover svg {
+    fill: white;
+  }
+
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px 622BFF;
+  }
+
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }`;
 const Home = () => {
 
     const features = [
@@ -65,7 +157,7 @@ const Home = () => {
             {/* bg-gradient-to-r from-[#022e2b] to-[#031356] */}
             {/* <BackgroundBoxesDemo /> */}
             {/* <HeroScrollDemo /> */}
-            <main className=" relative overflow-hidden">
+            <main className=" relative overflow-hidden py-2">
                 <div className="container mx-auto md:px-6 px-3 pt-[1rem] md:pt-[7rem]">
                     <div className="md:flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="w-full md:w-1/2 space-y-6 z-10 pl-[4vw]">
@@ -84,69 +176,21 @@ const Home = () => {
                                     designed to optimize resources and ensure compliance across global operations.
                                 </p>
                                 <div className="navBar lg:py-[15px] lg:pr-[1vw] text-color relative z-20 ">
-                                        {/* <a href="https://finance.evoxcel.com/" target='_blank' className='text-white'> */}
-                                {/* get started button */}
-                                <button className="button">
-                                    <div className="outline" />
-                                    <div className="state state--default">
-                                        <div className="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em">
-                                            <g style={{ filter: "url(#shadow)" }}>
-                                            <path
-                                                fill="currentColor"
-                                                d="M14.2199 21.63C13.0399 21.63 11.3699 20.8 10.0499 16.83L9.32988 14.67L7.16988 13.95C3.20988 12.63 2.37988 10.96 2.37988 9.78001C2.37988 8.61001 3.20988 6.93001 7.16988 5.60001L15.6599 2.77001C17.7799 2.06001 19.5499 2.27001 20.6399 3.35001C21.7299 4.43001 21.9399 6.21001 21.2299 8.33001L18.3999 16.82C17.0699 20.8 15.3999 21.63 14.2199 21.63Z"
-                                            />
-                                            <path
-                                                fill="currentColor"
-                                                d="M10.11 14.4C9.92005 14.4 9.73005 14.33 9.58005 14.18C9.29005 13.89 9.29005 13.41 9.58005 13.12L13.16 9.53C13.45 9.24 13.93 9.24 14.22 9.53C14.51 9.82 14.51 10.3 14.22 10.59L10.64 14.18C10.5 14.33 10.3 14.4 10.11 14.4Z"
-                                            />
-                                            </g>
-                                            <defs>
-                                            <filter id="shadow">
-                                                <feDropShadow floodOpacity="0.5" stdDeviation="0.6" dy="1" dx="0" floodColor="black" />
-                                            </filter>
-                                            </defs>
-                                        </svg>
-                                        </div>
-                                        <p>
-                                        <span style={{ "--i": 0 }}>S</span>
-                                        <span style={{ "--i": 1 }}>e</span>
-                                        <span style={{ "--i": 2 }}>n</span>
-                                        <span style={{ "--i": 3 }}>d</span>
-                                        <span style={{ "--i": 4 }}>M</span>
-                                        <span style={{ "--i": 5 }}>e</span>
-                                        <span style={{ "--i": 6 }}>s</span>
-                                        <span style={{ "--i": 7 }}>s</span>
-                                        <span style={{ "--i": 8 }}>a</span>
-                                        <span style={{ "--i": 9 }}>g</span>
-                                        <span style={{ "--i": 10 }}>e</span>
-                                        </p>
-                                    </div>
-                                    <div className="state state--sent">
-                                        <div className="icon">
-                                        <svg stroke="black" strokeWidth="0.5px" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g style={{ filter: "url(#shadow)" }}>
-                                            <path
-                                                d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"
-                                                fill="currentColor"
-                                            />
-                                            <path
-                                                d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z"
-                                                fill="currentColor"
-                                            />
-                                            </g>
-                                        </svg>
-                                        </div>
-                                        <p>
-                                        <span style={{ "--i": 5 }}>S</span>
-                                        <span style={{ "--i": 6 }}>e</span>
-                                        <span style={{ "--i": 7 }}>n</span>
-                                        <span style={{ "--i": 8 }}>t</span>
-                                        </p>
-                                    </div>
-                                </button>
-
-
+                                         {/* get started button */}
+                                        <a href="https://finance.evoxcel.com/" target='_blank'>
+                                            <StyledWrapper>
+                                                <button className="animated-button">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="arr-2" viewBox="0 0 24 24">
+                                                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                                                    </svg>
+                                                    <span className="text">Get Started</span>
+                                                    <span className="circle" />
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="arr-1" viewBox="0 0 24 24">
+                                                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                                                    </svg>
+                                                </button>
+                                            </StyledWrapper>
+                                        </a>
                                 </div>
                             </div>
                         </div>
