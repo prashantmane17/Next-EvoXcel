@@ -1,6 +1,7 @@
 import React from "react";
 import "../email-automation/emailAutomation.css";
 import Image from "next/image";
+
 export const metadata = {
   title: "Innovative Software Development Solutions | EvoXcel",
   description:
@@ -59,7 +60,7 @@ const SoftwareDevelopment = () => {
     <>
       {/* bgwebdev */}
       <section className="w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        <div data-aos="fade-up" className="md:w-[50%] text-white my-14 lg:my-0">
+        <div className="md:w-[50%] text-white my-14 lg:my-0">
           <h1 className="capitalize headingfont text-[2rem]  leading-tight lg:text-[3vw] font-bold pt-[7vh] text-[#03449a] bg-clip-text bg-gradient-to-r from-slate-400,text-[#03449a]">
             Software Excellence, Elevating Businesses to New Heights
           </h1>
@@ -83,7 +84,7 @@ const SoftwareDevelopment = () => {
         </figure>
       </section>
       <section className="">
-        <div data-aos="zoom-in" className="h-[100%] py-4 xls:h-[80vh]">
+        <div className="h-[100%] py-4 xls:h-[80vh]">
           <p className="text-[1.8rem] headingfont text-center md:text-[2.5rem] font-bold text-[#718BFF]">
             Innovate. Build. Thrive.
           </p>
@@ -94,7 +95,7 @@ const SoftwareDevelopment = () => {
             limitless growth and success.
           </p>
           <div
-            data-aos="fade-right"
+            
             className="flex items-center justify-center gap-7 flex-wrap"
           >
             {[
