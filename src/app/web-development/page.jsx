@@ -148,379 +148,379 @@ const WebDevelopment = () => {
         </div>
       </section>
       <section>
-              <div className="w-width ">
-                <div className="w-full  py-3">
-                  <motion.h2
-                    initial={{ opacity: 0, y: -100 }} 
-                    whileInView={{ opacity: 1, y: 0 }} 
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="text-purple-500 text-center font-semibold text-[8vw] md:text-[2.5rem]  headingfont">
-                    Our Process Involves
-                  </motion.h2>
-                </div>
-                <div className=" bgcolor">
-                  <div className=" flex flex-wrap">
-                    <div className=" lg:w-1/2 px-4">
-                      <div className="">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className="text-blue-500 text-[7vw] md:text-4xl font-semibold headingfont">
-                            Discovery & Strategy
-                          </motion.p>
-                        </div>
-                        <div className="content1 py-4 px-[5vw] text-justify">
-                          <motion.div
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            We begin by thoroughly understanding your business vision
-                            and target audience. Through detailed consultations, we:
-                            <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                Set Clear Objectives: Align your business goals with a
-                                tailored web strategy.
-                              </li>
-                              <li>
-                                Understand Your Audience: Conduct in-depth market
-                                research to identify your audience&lsquo;s preferences
-                                and behaviors.
-                              </li>
-                              <li>
-                                Gather Requirements: Collaborate with stakeholders to
-                                define the specific requirements of the project.
-                              </li>
-                            </ul>
-                            This collaborative approach ensures a strategic plan with
-                            well-defined milestones and timelines, driving your
-                            project toward success.{" "}
-                          </motion.div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="lg:w-1/2 px-4">
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8 }}
-                        className=" h-[92%] w-[92%] flex justify-center bg-cover bg-center">
-                        
-                        <Image
-                          className="w-[60%] object-contain"
-                          src="/images/web-development/statergy.webp"
-                          width={300}
-                          height={300}
-                          alt="web-development_statergy"
-                        />
-                      </motion.div>
-                    </div>
-                  </div>
-                </div>
-                <div className=" my-[7vh] mx-auto bgcolor">
-                  <div className=" flex flex-wrap">
-                    <div className="flex flex-wrap flex-col-reverse md:flex-row">
-                      <div className="lg:w-1/2 px-4">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
+                    <div className="w-width ">
+                      <div className="w-full  py-3">
+                        <motion.h2
+                          initial={{ opacity: 0, y: -100 }} 
+                          whileInView={{ opacity: 1, y: 0 }} 
                           viewport={{ once: true }}
                           transition={{ duration: 0.8 }}
-                          className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
-                          <Image
-                            className="w-[60%] object-contain"
-                            src="/images/web-development/planning.webp"
-                            width={300}
-                            height={300}
-                            alt="web-development_planning"
-                          />
-                        </motion.div>
+                          className="text-purple-500 text-center font-semibold text-[8vw] md:text-[2.5rem]  headingfont">
+                          Our Process Involves
+                        </motion.h2>
                       </div>
-                      <div className=" lg:w-1/2 px-4">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className="text-blue-500 text-4xl font-semibold headingfont">
-                            Strategic Project Planning
-                          </motion.p>
+                      <div className=" bgcolor">
+                        <div className=" flex flex-wrap">
+                          <div className=" lg:w-1/2 px-4">
+                            <div className="">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className="text-blue-500 text-[7vw] md:text-4xl font-semibold headingfont">
+                                  Discovery & Strategy
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify">
+                                <motion.div
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  We begin by thoroughly understanding your business vision
+                                  and target audience. Through detailed consultations, we:
+                                  <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      Set Clear Objectives: Align your business goals with a
+                                      tailored web strategy.
+                                    </li>
+                                    <li>
+                                      Understand Your Audience: Conduct in-depth market
+                                      research to identify your audience&lsquo;s preferences
+                                      and behaviors.
+                                    </li>
+                                    <li>
+                                      Gather Requirements: Collaborate with stakeholders to
+                                      define the specific requirements of the project.
+                                    </li>
+                                  </ul>
+                                  This collaborative approach ensures a strategic plan with
+                                  well-defined milestones and timelines, driving your
+                                  project toward success.{" "}
+                                </motion.div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="lg:w-1/2 px-4">
+                            <motion.div
+                              initial={{ opacity: 0, scale: 0 }}
+                              whileInView={{ opacity: 1, scale: 1 }}
+                              viewport={{ once: true }}
+                              transition={{ duration: 0.8 }}
+                              className=" h-[92%] w-[92%] flex justify-center bg-cover bg-center">
+                              
+                              <Image
+                                className="w-[60%] object-contain"
+                                src="/images/web-development/statergy.webp"
+                                width={300}
+                                height={300}
+                                alt="web-development_statergy"
+                              />
+                            </motion.div>
+                          </div>
                         </div>
-                        <div className="content1 py-4 px-[5vw] text-justify">
-                          <motion.div
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            We create a comprehensive project roadmap that includes:{" "}
-                            <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                Timelines: Establish clear deadlines for each phase of
-                                the project.
-                              </li>
-                              <li>
-                                Milestones: Track significant progress points to
-                                ensure the project stays on course.
-                              </li>
-                              <li>
-                                Deliverables: Define the expected outcomes and
-                                deliverables for each stage.
-                              </li>
-                            </ul>
-                            This meticulous planning keeps your project aligned with
-                            your objectives and ensures timely delivery.
-                          </motion.div>
+                      </div>
+                      <div className=" my-[7vh] mx-auto bgcolor">
+                        <div className=" flex flex-wrap">
+                          <div className="flex flex-wrap flex-col-reverse md:flex-row">
+                            <div className="lg:w-1/2 px-4">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
+                                <Image
+                                  className="w-[60%] object-contain"
+                                  src="/images/web-development/planning.webp"
+                                  width={300}
+                                  height={300}
+                                  alt="web-development_planning"
+                                />
+                              </motion.div>
+                            </div>
+                            <div className=" lg:w-1/2 px-4">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className="text-blue-500 text-4xl font-semibold headingfont">
+                                  Strategic Project Planning
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify">
+                                <motion.div
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  We create a comprehensive project roadmap that includes:{" "}
+                                  <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      Timelines: Establish clear deadlines for each phase of
+                                      the project.
+                                    </li>
+                                    <li>
+                                      Milestones: Track significant progress points to
+                                      ensure the project stays on course.
+                                    </li>
+                                    <li>
+                                      Deliverables: Define the expected outcomes and
+                                      deliverables for each stage.
+                                    </li>
+                                  </ul>
+                                  This meticulous planning keeps your project aligned with
+                                  your objectives and ensures timely delivery.
+                                </motion.div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className=" mx-auto">
+                        <div className=" flex flex-wrap">
+                          <div className=" flex flex-wrap">
+                            <div className=" lg:w-1/2 px-4">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className=" text-blue-500 text-4xl font-semibold headingfont">
+                                  Our Design Process
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify">
+                                <motion.div
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  Your concept is realized by our design team using:
+                                  <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      Wireframes: Establish the structure and functionality
+                                      of the website.
+                                    </li>
+                                    <li>
+                                      Mockups: Visualize the final design before development
+                                      begins.
+                                    </li>
+                                    <li>
+                                      User-Centered Focus: Develop a user experience (UX)
+                                      that is both engaging and easy to navigate.
+                                    </li>
+                                  </ul>
+                                  We ensure that your website is not only visually appealing
+                                  but also user-friendly and intuitive.
+                                </motion.div>
+                              </div>
+                            </div>
+                            <div className="lg:w-1/2 px-4">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
+                                <Image
+                                  className="w-[55%] object-contain"
+                                  src="/images/web-development/design.webp"
+                                  width={300}
+                                  height={300}
+                                  alt="web-development_design"
+                                />
+                              </motion.div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className=" mx-auto">
+                        <div className=" flex flex-wrap">
+                          <div className=" flex flex-wrap flex-col-reverse md:flex-row">
+                            <div className="lg:w-1/2 px-4">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                className=" h-fit py-8 w-full flex justify-center bg-cover bg-center">
+                                <Image
+                                  className="w-[60%] object-contain"
+                                  width={300}
+                                  height={300}
+                                  src="/images/web-development/developmentprocess.webp"
+                                  alt="web-developmentproces"
+                                />
+                              </motion.div>
+                            </div>
+                            <div className=" lg:w-1/2 px-4 flex flex-col justify-center">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className="text-blue-500 text-4xl font-semibold headingfont">
+                                  Development Process
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify">
+                                <motion.div
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  Our developers turn designs into a fully-functional,
+                                  scalable website:
+                                  <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      Front-End Development: Create a dynamic, responsive
+                                      interface that adapts to all devices.
+                                    </li>
+                                    <li>
+                                      Back-End Development: Implement server-side logic to
+                                      ensure a seamless user experience.
+                                    </li>
+                                    <li>
+                                      Quality Assurance: Conduct thorough testing to ensure
+                                      flawless performance across all devices and browsers.
+                                    </li>
+                                  </ul>
+                                  We deliver a website that is both technically sound and
+                                  aesthetically pleasing.
+                                </motion.div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className=" mx-auto">
+                        <div className=" flex flex-wrap">
+                          <div className=" flex flex-wrap">
+                            <div className=" lg:w-1/2 px-4">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className=" text-blue-500 text-4xl font-semibold  headingfont">
+                                  Comprehensive Website Testing
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify">
+                                <motion.div
+                                   initial={{ opacity: 0, x: -100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  We guarantee top-notch performance with:
+                                  <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      UX Evaluation: Ensure smooth navigation and optimal
+                                      usability.
+                                    </li>
+                                    <li>
+                                      Security Checks: Identify and address potential
+                                      vulnerabilities to safeguard your website.
+                                    </li>
+                                  </ul>
+                                  This rigorous testing process ensures a reliable, secure,
+                                  and high-performing website.
+                                </motion.div>
+                              </div>
+                            </div>
+                            <div className="lg:w-1/2 px-4">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
+                                <Image
+                                  className="w-[55%] object-contain"
+                                  src="/images/web-development/consul.webp"
+                                  width={300}
+                                  height={300}
+                                  alt="web-development_consult"
+                                />
+                              </motion.div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content1 py-8 px-[5vw] text-justify">
+                        <div className=" flex flex-wrap">
+                          <div className=" flex flex-wrap flex-col-reverse md:flex-row">
+                            <div className="lg:w-1/2 px-4">
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.8 }}
+                                className="w-full flex justify-center bg-cover bg-center">
+                                <Image
+                                  className="w-[70%] object-contain"
+                                  src="/images/web-development/maintain.webp"
+                                  width={300}
+                                  height={300}
+                                  alt="web-development_maintain"
+                                />
+                              </motion.div>
+                            </div>
+                            <div className=" lg:w-1/2 px-4 py-[7vh]">
+                              <div className=" text-center">
+                                <motion.p
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8 }}
+                                  className="text-blue-500 text-4xl font-semibold headingfont">
+                                  Comprehensive Website Maintenance
+                                </motion.p>
+                              </div>
+                              <div className="content1 py-4 px-[5vw] text-justify flex flex-col justify-center items-center">
+                                <motion.div
+                                   initial={{ opacity: 0, x: 100 }} 
+                                   whileInView={{ opacity: 1, x: 0 }} 
+                                   viewport={{ once: true }}
+                                   transition={{ duration: 0.8, delay: 0.3 }}
+                                  className="text-white font-[400] text-[1rem] pfont sans-serif">
+                                  We keep your website running efficiently with:
+                                  <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
+                                    <li>
+                                      Regular Updates: Stay updated with the latest
+                                      technologies and industry standards.
+                                    </li>
+                                    <li>
+                                      Feature Enhancements: Continuously improve and expand
+                                      your website’s functionality.
+                                    </li>
+                                    <li>
+                                      Issue Resolution: Promptly address and resolve any
+                                      issues that arise.
+                                    </li>
+                                  </ul>
+                                  Our maintenance services ensure your website remains
+                                  optimized and evolves with your business needs.
+                                </motion.div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className=" mx-auto">
-                  <div className=" flex flex-wrap">
-                    <div className=" flex flex-wrap">
-                      <div className=" lg:w-1/2 px-4">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className=" text-blue-500 text-4xl font-semibold headingfont">
-                            Our Design Process
-                          </motion.p>
-                        </div>
-                        <div className="content1 py-4 px-[5vw] text-justify">
-                          <motion.div
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            Your concept is realized by our design team using:
-                            <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                Wireframes: Establish the structure and functionality
-                                of the website.
-                              </li>
-                              <li>
-                                Mockups: Visualize the final design before development
-                                begins.
-                              </li>
-                              <li>
-                                User-Centered Focus: Develop a user experience (UX)
-                                that is both engaging and easy to navigate.
-                              </li>
-                            </ul>
-                            We ensure that your website is not only visually appealing
-                            but also user-friendly and intuitive.
-                          </motion.div>
-                        </div>
-                      </div>
-                      <div className="lg:w-1/2 px-4">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8 }}
-                          className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
-                          <Image
-                            className="w-[55%] object-contain"
-                            src="/images/web-development/design.webp"
-                            width={300}
-                            height={300}
-                            alt="web-development_design"
-                          />
-                        </motion.div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className=" mx-auto">
-                  <div className=" flex flex-wrap">
-                    <div className=" flex flex-wrap flex-col-reverse md:flex-row">
-                      <div className="lg:w-1/2 px-4">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8 }}
-                          className=" h-fit py-8 w-full flex justify-center bg-cover bg-center">
-                          <Image
-                            className="w-[60%] object-contain"
-                            width={300}
-                            height={300}
-                            src="/images/web-development/developmentprocess.webp"
-                            alt="web-developmentproces"
-                          />
-                        </motion.div>
-                      </div>
-                      <div className=" lg:w-1/2 px-4 flex flex-col justify-center">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className="text-blue-500 text-4xl font-semibold headingfont">
-                            Development Process
-                          </motion.p>
-                        </div>
-                        <div className="content1 py-4 px-[5vw] text-justify">
-                          <motion.div
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            Our developers turn designs into a fully-functional,
-                            scalable website:
-                            <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                Front-End Development: Create a dynamic, responsive
-                                interface that adapts to all devices.
-                              </li>
-                              <li>
-                                Back-End Development: Implement server-side logic to
-                                ensure a seamless user experience.
-                              </li>
-                              <li>
-                                Quality Assurance: Conduct thorough testing to ensure
-                                flawless performance across all devices and browsers.
-                              </li>
-                            </ul>
-                            We deliver a website that is both technically sound and
-                            aesthetically pleasing.
-                          </motion.div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className=" mx-auto">
-                  <div className=" flex flex-wrap">
-                    <div className=" flex flex-wrap">
-                      <div className=" lg:w-1/2 px-4">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className=" text-blue-500 text-4xl font-semibold  headingfont">
-                            Comprehensive Website Testing
-                          </motion.p>
-                        </div>
-                        <div className="content1 py-4 px-[5vw] text-justify">
-                          <motion.div
-                             initial={{ opacity: 0, x: -100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            We guarantee top-notch performance with:
-                            <ul className=" text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                UX Evaluation: Ensure smooth navigation and optimal
-                                usability.
-                              </li>
-                              <li>
-                                Security Checks: Identify and address potential
-                                vulnerabilities to safeguard your website.
-                              </li>
-                            </ul>
-                            This rigorous testing process ensures a reliable, secure,
-                            and high-performing website.
-                          </motion.div>
-                        </div>
-                      </div>
-                      <div className="lg:w-1/2 px-4">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8 }}
-                          className="h-[92%] w-[92%] flex justify-center bg-cover bg-center">
-                          <Image
-                            className="w-[55%] object-contain"
-                            src="/images/web-development/consul.webp"
-                            width={300}
-                            height={300}
-                            alt="web-development_consult"
-                          />
-                        </motion.div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="content1 py-8 px-[5vw] text-justify">
-                  <div className=" flex flex-wrap">
-                    <div className=" flex flex-wrap flex-col-reverse md:flex-row">
-                      <div className="lg:w-1/2 px-4">
-                        <motion.div
-                          initial={{ opacity: 0, scale: 0 }}
-                          whileInView={{ opacity: 1, scale: 1 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.8 }}
-                          className="w-full flex justify-center bg-cover bg-center">
-                          <Image
-                            className="w-[70%] object-contain"
-                            src="/images/web-development/maintain.webp"
-                            width={300}
-                            height={300}
-                            alt="web-development_maintain"
-                          />
-                        </motion.div>
-                      </div>
-                      <div className=" lg:w-1/2 px-4 py-[7vh]">
-                        <div className=" text-center">
-                          <motion.p
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8 }}
-                            className="text-blue-500 text-4xl font-semibold headingfont">
-                            Comprehensive Website Maintenance
-                          </motion.p>
-                        </div>
-                        <div className="content1 py-4 px-[5vw] text-justify flex flex-col justify-center items-center">
-                          <motion.div
-                             initial={{ opacity: 0, x: 100 }} 
-                             whileInView={{ opacity: 1, x: 0 }} 
-                             viewport={{ once: true }}
-                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="text-white font-[400] text-[1rem] pfont sans-serif">
-                            We keep your website running efficiently with:
-                            <ul className="text-white list-disc pfont py-4 pl-5 sans-serif">
-                              <li>
-                                Regular Updates: Stay updated with the latest
-                                technologies and industry standards.
-                              </li>
-                              <li>
-                                Feature Enhancements: Continuously improve and expand
-                                your website’s functionality.
-                              </li>
-                              <li>
-                                Issue Resolution: Promptly address and resolve any
-                                issues that arise.
-                              </li>
-                            </ul>
-                            Our maintenance services ensure your website remains
-                            optimized and evolves with your business needs.
-                          </motion.div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
       </section>
     </>
   );

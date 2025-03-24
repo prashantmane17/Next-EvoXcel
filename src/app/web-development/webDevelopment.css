@@ -366,3 +366,20 @@
 p {
   line-height: 1.75;
 }
+.circle-wrapper{
+  background-color: blue;
+  position:relative;
+
+}
+.circle-wrapper::after{
+  content:'';
+  background: conic-gradient(
+    blue, aqua, transparent 80deg
+  );
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.circle-content{
+
+}

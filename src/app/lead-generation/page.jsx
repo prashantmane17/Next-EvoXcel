@@ -4,6 +4,35 @@ import { motion } from "framer-motion";
 // import Head from "next/head";
 import Image from "next/image";
 import "./leadgen.css";
+import styled from 'styled-components';
+import { Divide } from "lucide-react";
+
+const StyledWrapper = styled.div`
+.form-container {
+    background: linear-gradient(transparent, black) padding-box,
+                linear-gradient(145deg, transparent 35%, rgb(123, 7, 149), rgb(7, 109, 149)) border-box;
+    border: 4px solid transparent;
+    border-radius: 16px;
+    
+    /* Fix: Add background size */
+    background-size: 200% 200%;
+
+    /* Animation */
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+}`;
 
 const metadata = {
   title: "Targeted Lead Generation Services | EvoXcel",
@@ -70,15 +99,16 @@ const LeadGeneration = () => {
     return () => document.removeEventListener("mousemove", handleMouseMove);
   }, []);
   return (
-    <div>
-      <section className="w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
-        <div className="md:w-[50%] text-white my-14 lg:my-0">
+    <div className="relative">
+      {/* <div class="fixed inset-0 bg-[url('/images/lead-generation/bubble2.svg')] bg-cover min-h-screen"></div> */}
+      <section className=" rounded-2xl relative w-[100%] px-[8vw]  pt-[7vh] md:pt-[14vh] pb-[10vh] items-center justify-between md:flex">
+        <div className=" md:w-[50%] text-white my-14 lg:my-0">
           <motion.h1
             initial={{ opacity: 0, x: -100 }} 
             whileInView={{ opacity: 1, x: 0 }} 
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="capitalize  text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-blue-500 ">
+            className="capitalize  text-[2rem]  leading-tight lg:text-[3vw] font-semibold pt-[6vh] text-green-500 ">
             Unlock Your Business Potential with Advanced Lead Generation
             Solutions
           </motion.h1>
@@ -110,327 +140,320 @@ const LeadGeneration = () => {
           />
         </motion.figure>
       </section>
-      <section className="w-[100%]">
-        <div
-          className="flex justify-center items-center"
-        // style={{ backgroundColor: "#f5f5f5a8" }}
-        >
-          <div className="text-black  px-[6vw] flex flex-col items-center justify-center md:mb-[1vh] ">
-            <div className="w-[100%] p-0 grid grid-cols-1 lg:grid-cols-2">
-              <div className="  text-black">
-                <motion.h2
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className=" text-blue-500 text-[1.6rem] lg:text-[2.3rem] headingfont font-semibold">
-                  Market Research and Audience Targeting
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.2 }}
-                  className="text-white   pfont text-[1rem] md:text-[1vw] py-2">
-                  Understanding your target market is crucial for generating
-                  quality leads. We conduct comprehensive market research to
-                  identify key demographics, behaviors, and trends within your
-                  industry. This enables us to create targeted lead generation
-                  campaigns that resonate with the right audience.
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.4 }}
-                  className="text-white text-[1.1rem] py-2 px-4">
-                  <ul className="list-disc headingfont">
-                    <li>
-                      <span className="text-purple-500  font-bold headingfont">
-                        Detailed Market Analysis:
-                      </span>
-                      Assessing market size, competition, and potential for
-                      optimal strategy development
-                    </li>
-                    <li>
-                      <span className="text-purple-500  font-bold">
-                        Precision Audience Segmentation:{" "}
-                      </span>
-                      : Identifying key segments based on demographics,
-                      psychographics, and behaviors to maximize lead quality.{" "}
-                    </li>
-                  </ul>
-                </motion.p>
+      <section className=" relative w-[100%]">
+        <StyledWrapper>
+          <div className="backdrop-blur-xl form-container m-4 sm:m-8 lg:m-16 p-2 flex justify-center items-center">
+            <div className="text-black  px-[6vw] flex flex-col items-center justify-center md:mb-[1vh] ">
+              <div className="w-[100%] p-0 grid grid-cols-1 lg:grid-cols-2">
+                <div className="  text-black">
+                  <motion.h2
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className=" text-green-500 text-[1.6rem] lg:text-[2.3rem] headingfont font-semibold">
+                    Market Research and Audience Targeting
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.2 }}
+                    className="text-white   pfont text-[1rem] md:text-[1vw] py-2">
+                    Understanding your target market is crucial for generating
+                    quality leads. We conduct comprehensive market research to
+                    identify key demographics, behaviors, and trends within your
+                    industry. This enables us to create targeted lead generation
+                    campaigns that resonate with the right audience.
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    className="text-white text-[1.1rem] py-2 px-4">
+                    <ul className="list-disc headingfont">
+                      <li>
+                        <span className="text-white  font-bold headingfont">
+                          Detailed Market Analysis:
+                        </span>
+                        Assessing market size, competition, and potential for
+                        optimal strategy development
+                      </li>
+                      <li>
+                        <span className="text-white  font-bold">
+                          Precision Audience Segmentation:{" "}
+                        </span>
+                        : Identifying key segments based on demographics,
+                        psychographics, and behaviors to maximize lead quality.{" "}
+                      </li>
+                    </ul>
+                  </motion.p>
+                </div>
+                <div className=" relative">
+                  {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="flex items-center justify-center w-[100%] h-[100%]">
+                    <Image
+                      src="/images/lead-generation/lead-generation_Market-Research.webp"
+                      width={300}
+                      height={300}
+                      className="w-[60%]"
+                      alt="Market Research and Audience Targeting"
+                    />
+                  </motion.div>
+                </div>
               </div>
-              <div className=" relative">
-                {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
+            </div>
+          </div>
+        </StyledWrapper>
+        <StyledWrapper>
+          <div className="backdrop-blur-xl form-container m-4 sm:m-8 lg:m-16 p-2 flex justify-center items-center">
+            <div className="text-white flex md:flex-col items-center justify-center">
+              <div className="w-full grid grid-cols-1  lg:grid-cols-2 p-0">
+                <div className="p-4 md:p-4 relative order-2 md:order-1">
+                  {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className=" w-full h-full flex items-center justify-center">
+                    <Image
+                      src="/images/lead-generation/lead-generation_Multi-Channel-Lead-Capture.webp"
+                      width={300}
+                      height={300}
+                      className="w-[70%]"
+                      alt="Multi-Channel Lead Capture"
+                    />
+                  </motion.div>
+                </div>
+                <div
+                  // data-aos="fade-right"
+                  className="md:p-4 text-white order-1 md:order-2"
+                >
+                  <motion.h2
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className=" text-[1.6rem] text-green-500 lg:text-[2.3rem] headingfont py-4 font-semibold">
+                    Multi-Channel Lead Capture
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.2 }}
+                    className=" text-white pfont text-[1rem] md:text-[1rem] py-2">
+                    We implement a multi-channel approach to capture leads from
+                    various sources, ensuring broad and effective outreach. Our
+                    strategies include:
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    className="text-black text-[1.1rem] py-2 px-4 headingfont">
+                    <ul className="list-disc">
+                      <li className="text-white">
+                        <span className="text-white font-semibold">
+                          Social Media Marketing:{" "}
+                        </span>
+                        Leveraging platforms like Facebook, LinkedIn, and
+                        Instagram to attract and engage potential leads.
+                      </li>
+                      <li className="text-white">
+                        <span className="text-white font-semibold">
+                          {" "}
+                          Content Marketing:{" "}
+                        </span>
+                        Creating valuable content that draws in prospects and
+                        establishes your brand as an industry leader.
+                      </li>
+                      <li className="text-white">
+                        <span className="text-white font-semibold"> Email Marketing: </span>
+                        Creating engaging email campaigns that increase
+                        conversions and engagement.
+                      </li>
+                      <li className="text-white">
+                        <span className="text-white font-semibold">
+                          {" "}
+                          SEO and PPC Strategies{" "}
+                        </span>
+                        : Optimizing your online presence through search engine
+                        optimization (SEO) and utilizing pay-per-click (PPC)
+                        advertising to capture high-intent leads.{" "}
+                      </li>
+                    </ul>
+                  </motion.p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </StyledWrapper>
+        <StyledWrapper>
+          <div className="backdrop-blur-xl form-container m-4 sm:m-8 lg:m-16 p-2 flex justify-center items-center">
+            <div className="text-black flex flex-col items-center justify-center">
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
+                <div className="md:p-12 text-black">
+                  {/* <div className="text-center p-2 bg-[#94e3bd] text-white w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
+                    OUR VALUES
+                  </div> */}
+                  <motion.h2
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="text-green-500 text-[1.6rem] lg:text-[2.3rem] py-4 font-semibold headingfont">
+                    Lead Qualification and Scoring
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    className="text-white  text-[1rem] pfont md:text-[1.1rem] py-2">
+                    Not all leads are ready to convert immediately. We employ
+                    advanced lead scoring techniques to evaluate and prioritize
+                    leads based on their readiness to purchase and fit for your
+                    business.
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: -100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    className="text-white  text-[1.1rem] py-2 px-4">
+                    <ul className="list-disc">
+                      <li>
+                        <span className="text-white font-bold">
+                          Smart Lead Scoring Models:{" "}
+                        </span>
+                        Implementing criteria-based scoring to rank leads
+                        according to their potential value.
+                      </li>
+                      <li>
+                        <span className="text-white font-bold">
+                          Behavioral Insight Tracking:{" "}
+                        </span>{" "}
+                        Monitoring lead interactions to gauge interest and intent,
+                        ensuring targeted follow-ups.
+                      </li>
+                    </ul>
+                  </motion.p>
+                </div>
                 <motion.div
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
-                  className="flex items-center justify-center w-[100%] h-[100%]">
+                  className=" hidden md:flex justify-center items-center">
+                  {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
                   <Image
-                    src="/images/lead-generation/lead-generation_Market-Research.webp"
+                    src="/images/lead-generation/lead-generation_Lead-Qualification.webp"
                     width={300}
                     height={300}
                     className="w-[60%]"
-                    alt="Market Research and Audience Targeting"
+                    alt="Lead Qualification and Scoring"
                   />
+                  {/* <div className="rounded-tr-[100px]  rounded-bl-[100px] overflow-hidden min-h-[20rem] w-full h-full bg-center bg-cover"></div> */}
                 </motion.div>
               </div>
             </div>
           </div>
-        </div>
+        </StyledWrapper>
+        <StyledWrapper>
+          <div className=" backdrop-blur-xl form-container m-4 sm:m-8 lg:m-16 p-2 flex justify-center items-center">
+            <div className="text-white flex flex-col items-center justify-center">
+              <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
+                <div className="p-4 md:p-12 relative">
+                  {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className=" w-full h-full flex items-center justify-center">
+                    <Image
+                      src="/images/lead-generation/lead-generation_Lead-Nurturing-Engagement.webp"
+                      width={300}
+                      height={300}
+                      className="w-[60%]"
+                      alt="Lead Nurturing and Engagement"
+                    />
+                  </motion.div>
+                </div>
+                <div
+                  // data-aos="fade-right"
+                  className="md:p-12 text-white">
+                  {/* <div className="text-center p-2 bg-white text-[#94e3bd] w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
+                    OUR VALUES
+                    
+                    text-[#003C71]
 
-        <div
-          className="flex justify-center items-center  px-[3vw]"
-          style={{}}
-        >
-          <div className="text-white p-0 flex md:flex-col items-center justify-center">
-            <div className="w-full grid grid-cols-1  lg:grid-cols-2 p-0">
-              <div className="p-4 md:p-12 relative order-2 md:order-1">
-                {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className=" w-full h-full flex items-center justify-center">
-                  <Image
-                    src="/images/lead-generation/lead-generation_Multi-Channel-Lead-Capture.webp"
-                    width={300}
-                    height={300}
-                    className="w-[70%]"
-                    alt="Multi-Channel Lead Capture"
-                  />
-                </motion.div>
-              </div>
-              <div
-                // data-aos="fade-right"
-                className="md:p-12 text-white order-1 md:order-2"
-              >
-                <motion.h2
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className=" text-[1.6rem] text-blue-500 lg:text-[2.3rem] headingfont py-4 font-semibold">
-                  Multi-Channel Lead Capture
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.2 }}
-                  className=" text-white pfont text-[1rem] md:text-[1rem] py-2">
-                  We implement a multi-channel approach to capture leads from
-                  various sources, ensuring broad and effective outreach. Our
-                  strategies include:
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.4 }}
-                  className="text-black text-[1.1rem] py-2 px-4 headingfont">
-                  <ul className="list-disc">
-                    <li className="text-white">
-                      <span className="text-purple-500 font-semibold">
-                        Social Media Marketing:{" "}
-                      </span>
-                      Leveraging platforms like Facebook, LinkedIn, and
-                      Instagram to attract and engage potential leads.
-                    </li>
-                    <li className="text-white">
-                      <span className="text-purple-500 font-semibold">
-                        {" "}
-                        Content Marketing:{" "}
-                      </span>
-                      Creating valuable content that draws in prospects and
-                      establishes your brand as an industry leader.
-                    </li>
-                    <li className="text-white">
-                      <span className="text-purple-500 font-semibold"> Email Marketing: </span>
-                      Creating engaging email campaigns that increase
-                      conversions and engagement.
-                    </li>
-                    <li className="text-white">
-                      <span className="text-purple-500 font-semibold">
-                        {" "}
-                        SEO and PPC Strategies{" "}
-                      </span>
-                      : Optimizing your online presence through search engine
-                      optimization (SEO) and utilizing pay-per-click (PPC)
-                      advertising to capture high-intent leads.{" "}
-                    </li>
-                  </ul>
-                </motion.p>
+                  </div> */}
+                  <motion.h2
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="text-green-500 text-[1.6rem] headingfont lg:text-[2.3rem] py-4 font-semibold">
+                    Lead Nurturing and Engagement
+                  </motion.h2>
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.2 }}
+                    className="text-white  pfont text-[1rem] md:text-[1.1rem] py-2">
+                    Building strong relationships with prospects is key to
+                    converting leads into loyal customers. Our lead nurturing
+                    strategies ensure ongoing engagement through personalized
+                    communication and relevant content
+                  </motion.p>
+                  <motion.p
+                    initial={{ opacity: 0, x: 100 }} 
+                    whileInView={{ opacity: 1, x: 0 }} 
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay:0.4 }}
+                    className="text-white  text-[1.1rem] font py-2 px-4">
+                    <ul className="list-disc">
+                      <li>
+                        <span className="text-white font-bold">
+                          Tailored Email Campaigns:
+                        </span>
+                        Sending personalized messages that address the specific
+                        needs and interests of each lead.
+                      </li>
+                      <li>
+                        <span className="text-white font-bold">
+                          Strategic Retargeting Campaigns:{" "}
+                        </span>
+                        Use strategic retargeting campaigns to ensure that
+                        prospects who have expressed interest remember your brand.
+                      </li>
+                      <li>
+                        <span className="text-white font-bold">
+                          Dynamic Content Delivery:
+                        </span>
+                        Offering timely and relevant content to guide leads
+                        through the sales funnel.
+                      </li>
+                    </ul>
+                  </motion.p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div
-          // data-aos="fade-right"
-          className="flex justify-center items-center px-[3vw] "
-        >
-          <div className="text-black flex flex-col items-center justify-center">
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
-              <div className="md:p-12 text-black">
-                {/* <div className="text-center p-2 bg-[#94e3bd] text-white w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
-                  OUR VALUES
-                </div> */}
-                <motion.h2
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className="text-blue-500 text-[1.6rem] lg:text-[2.3rem] py-4 font-semibold headingfont">
-                  Lead Qualification and Scoring
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.4 }}
-                  className="text-white  text-[1rem] pfont md:text-[1.1rem] py-2">
-                  Not all leads are ready to convert immediately. We employ
-                  advanced lead scoring techniques to evaluate and prioritize
-                  leads based on their readiness to purchase and fit for your
-                  business.
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: -100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.4 }}
-                  className="text-white  text-[1.1rem] py-2 px-4">
-                  <ul className="list-disc">
-                    <li>
-                      <span className="text-purple-500 font-bold">
-                        Smart Lead Scoring Models:{" "}
-                      </span>
-                      Implementing criteria-based scoring to rank leads
-                      according to their potential value.
-                    </li>
-                    <li>
-                      <span className="text-purple-500 font-bold">
-                        Behavioral Insight Tracking:{" "}
-                      </span>{" "}
-                      Monitoring lead interactions to gauge interest and intent,
-                      ensuring targeted follow-ups.
-                    </li>
-                  </ul>
-                </motion.p>
-              </div>
-              <motion.div
-                 initial={{ opacity: 0, scale: 0 }}
-                 whileInView={{ opacity: 1, scale: 1 }}
-                 viewport={{ once: true }}
-                 transition={{ duration: 0.8 }}
-                 className=" hidden md:flex justify-center items-center">
-                {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
-                <Image
-                  src="/images/lead-generation/lead-generation_Lead-Qualification.webp"
-                  width={300}
-                  height={300}
-                  className="w-[60%]"
-                  alt="Lead Qualification and Scoring"
-                />
-                {/* <div className="rounded-tr-[100px]  rounded-bl-[100px] overflow-hidden min-h-[20rem] w-full h-full bg-center bg-cover"></div> */}
-              </motion.div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="flex justify-center items-center px-[3vw]"
-          style={{}}
-        >
-          <div className="text-white flex flex-col items-center justify-center">
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 p-0">
-              <div className="p-4 md:p-12 relative">
-                {/* <span className="absolute bg-[#E2E8F0] rounded-tl-[50px] rounded-br-[50px] lg:h-[10rem] lg:w-[25rem] h-[5rem] w-[15rem] bottom-0 right-0"></span> */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className=" w-full h-full flex items-center justify-center">
-                  <Image
-                    src="/images/lead-generation/lead-generation_Lead-Nurturing-Engagement.webp"
-                    width={300}
-                    height={300}
-                    className="w-[60%]"
-                    alt="Lead Nurturing and Engagement"
-                  />
-                </motion.div>
-              </div>
-              <div
-                // data-aos="fade-right"
-                className="md:p-12 text-white">
-                {/* <div className="text-center p-2 bg-white text-[#94e3bd] w-32 rounded-tl-[10px] rounded-br-[10px] overflow-hidden">
-                  OUR VALUES
-                  
-                   text-[#003C71]
-
-                </div> */}
-                <motion.h2
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8 }}
-                  className="text-blue-500 text-[1.6rem] headingfont lg:text-[2.3rem] py-4 font-semibold">
-                  Lead Nurturing and Engagement
-                </motion.h2>
-                <motion.p
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.2 }}
-                  className="text-white  pfont text-[1rem] md:text-[1.1rem] py-2">
-                  Building strong relationships with prospects is key to
-                  converting leads into loyal customers. Our lead nurturing
-                  strategies ensure ongoing engagement through personalized
-                  communication and relevant content
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, x: 100 }} 
-                  whileInView={{ opacity: 1, x: 0 }} 
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay:0.4 }}
-                  className="text-white  text-[1.1rem] font py-2 px-4">
-                  <ul className="list-disc">
-                    <li>
-                      <span className="text-purple-500 font-bold">
-                        Tailored Email Campaigns:
-                      </span>
-                      Sending personalized messages that address the specific
-                      needs and interests of each lead.
-                    </li>
-                    <li>
-                      <span className="text-purple-500 font-bold">
-                        Strategic Retargeting Campaigns:{" "}
-                      </span>
-                      Use strategic retargeting campaigns to ensure that
-                      prospects who have expressed interest remember your brand.
-                    </li>
-                    <li>
-                      <span className="text-purple-500 font-bold">
-                        Dynamic Content Delivery:
-                      </span>
-                      Offering timely and relevant content to guide leads
-                      through the sales funnel.
-                    </li>
-                  </ul>
-                </motion.p>
-              </div>
-            </div>
-          </div>
-        </div>
+        </StyledWrapper>
       </section>
-      <section className="overflow-hidden  lg:h-auto pt-[10vh] pb-[12vh]">
+      <section className=" relative overflow-hidden  lg:h-auto pt-[10vh] pb-[12vh]">
         <motion.h2
           // data-aos="fade-down"
           initial={{ opacity: 0, y: -100 }} 
@@ -441,7 +464,7 @@ const LeadGeneration = () => {
         >
           Our Process
         </motion.h2>
-        <ul className="process grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
+        <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
           {/* Item 1 */}
           <motion.div
             initial={{ opacity: 0, y: 50 }} // Initial state (hidden)
@@ -449,7 +472,7 @@ const LeadGeneration = () => {
             transition={{ duration: 0.5, delay: 0.2 }} // Animation duration and delay
             viewport={{ once: true }} // Animate only once
           >
-            <li className="process__item headingfont rounded-[30px] hover:border-2 hover:border-blue-500">
+            <div className="process__item w-[100%] headingfont rounded-[30px]">
               <span className="process__number text-[15vw] md:text-[5vw]">1</span>
               <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
                 High-Quality Leads
@@ -457,7 +480,7 @@ const LeadGeneration = () => {
               <span className="process__subtitle">
                 Our targeted approach ensures that you receive leads that are more likely to convert into paying customers.
               </span>
-            </li>
+            </div>
           </motion.div>
           <hr className="sm:hidden border-t-4 border-1 border-blue-500 my-6" />
 
@@ -468,7 +491,7 @@ const LeadGeneration = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <li className="process__item rounded-[30px] hover:border-2 hover:border-blue-500">
+            <div className="process__item w-[100%] rounded-[30px]">
               <span className="process__number text-[15vw] md:text-[5vw]">2</span>
               <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
                 Increased Sales Efficiency
@@ -476,7 +499,7 @@ const LeadGeneration = () => {
               <span className="process__subtitle">
                 By focusing on qualified leads, your sales team can operate more efficiently and close deals faster.
               </span>
-            </li>
+            </div>
           </motion.div>
           <hr className="sm:hidden border-t-4 border-1 border-blue-500 my-6" />
 
@@ -487,7 +510,7 @@ const LeadGeneration = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            <li className="process__item rounded-[30px] hover:border-2 hover:border-blue-500">
+            <div className="process__item w-[100%] rounded-[30px]">
               <span className="process__number text-[15vw] md:text-[5vw]">3</span>
               <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
                 Cost-Effective Solutions
@@ -495,7 +518,7 @@ const LeadGeneration = () => {
               <span className="process__subtitle">
                 Our lead generation strategies are designed to maximize ROI while minimizing cost per lead.
               </span>
-            </li>
+            </div>
           </motion.div>
           <hr className="sm:hidden border-t-4 border-1 border-blue-500 my-6" />
 
@@ -506,7 +529,7 @@ const LeadGeneration = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
           >
-            <li className="process__item rounded-[30px] hover:border-2 hover:border-blue-500">
+            <div className="process__item w-[100%] rounded-[30px]">
               <span className="process__number text-[15vw] md:text-[5vw]">4</span>
               <span className="process__title text-[1.7rem] h-[6rem] block font-bold tracking-wider text-white uppercase mt-3">
                 Scalability
@@ -514,9 +537,9 @@ const LeadGeneration = () => {
               <span className="process__subtitle">
                 Whether you&lsquo;re a startup or a large enterprise, our solutions are scalable to meet your evolving business needs.
               </span>
-            </li>
+            </div>
           </motion.div>
-        </ul>
+        </div>
       </section>
     </div>
   );
